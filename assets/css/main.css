@@ -1,9 +1,9 @@
-@import url("https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap");
-@import "tailwindcss";
-@config "../../tailwind.config.js";
+@import url('https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap');
+@import 'tailwindcss';
+@config '../../tailwind.config.js';
 
 @theme {
-  --font-sans: "Figtree", sans-serif;
+  --font-sans: 'Figtree', sans-serif;
 }
 
 @layer base {
