@@ -22,7 +22,7 @@ useIntervalFn(() => {
 </script>
 
 <template>
-  <div class="bg-primary">
+  <div class="bg-primary dark:bg-black">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
@@ -42,7 +42,7 @@ useIntervalFn(() => {
           </NuxtLink>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+          <ThemeToggle />
         </div>
       </nav>
     </header>
@@ -64,7 +64,7 @@ useIntervalFn(() => {
               Eu cuido dos detalhes, você aproveita a jornada.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
+              <a href="#" class="rounded-md bg-primary dark:bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
               <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
             </div>
           </div>

@@ -67,13 +67,13 @@ const navigation = {
 </script>
 
 <template>
-  <footer class="bg-white">
+  <footer class="bg-background">
     <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:justify-center xl:items-center">
           <div class="space-y-2">
-            <Logo class="h-16 text-black mx-auto xl:mx-0" />
-            <p class="text-sm/6 text-balance text-slate-600 text-center xl:text-left">
+            <Logo class="h-16 text-black dark:!text-white mx-auto xl:mx-0" />
+            <p class="text-sm/6 text-balance text-slate-600 text-center xl:text-left dark:text-slate-400">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
             </p>
           </div>
@@ -84,7 +84,7 @@ const navigation = {
               :title="item.name"
               :href="item.href"
               target="_blank"
-              class="text-slate-600 hover:text-slate-800"
+              class="text-slate-600 hover:text-slate-900 dark:text-slate-400 hover:dark:text-slate-100"
             >
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="size-6" aria-hidden="true" />
@@ -94,44 +94,44 @@ const navigation = {
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm/6 font-semibold text-slate-900">
+              <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
                 Links úteis
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.pages" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm/6 font-semibold text-slate-900">
+              <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
                 Blog
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.blog" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm/6 font-semibold text-slate-900">
+              <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
                 Descontos
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.discounts" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm/6 font-semibold text-slate-900">
+              <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
                 Destinos
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.legal" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
@@ -139,8 +139,8 @@ const navigation = {
         </div>
       </div>
       <div class="mt-16 border-t border-slate-900/10 pt-8 sm:mt-20 lg:mt-24">
-        <p class="text-sm/6 text-slate-600">
-          &copy; {{ new Date().getFullYear() }} Roteirize.
+        <p class="text-sm/6 text-slate-600 dark:text-slate-400">
+          &copy; 2024 - {{ new Date().getFullYear() }} Roteirize.
         </p>
       </div>
     </div>

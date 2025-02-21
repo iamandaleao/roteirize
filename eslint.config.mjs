@@ -15,11 +15,7 @@ export default withNuxt(
 ).prepend(
   {
     ignores: [
-      'app/pages/app/feedback.vue',
       'public/*',
-      'layers/*',
-      '!layers/api',
-      'tests/e2e/playwright/*',
     ],
   },
 )
