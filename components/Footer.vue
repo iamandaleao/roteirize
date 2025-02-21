@@ -70,15 +70,22 @@ const navigation = {
   <footer class="bg-white">
     <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="space-y-6">
+        <div class="space-y-6 xl:flex-col xl:justify-center xl:items-center">
           <div class="space-y-2">
-            <Logo class="h-16 text-black" />
-            <p class="text-sm/6 text-balance text-slate-600">
+            <Logo class="h-16 text-black mx-auto xl:mx-0" />
+            <p class="text-sm/6 text-balance text-slate-600 text-center xl:text-left">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
             </p>
           </div>
-          <div class="flex gap-x-6">
-            <a v-for="item in navigation.social" :key="item.name" :href="item.href" target="_blank" class="text-slate-600 hover:text-slate-800">
+          <div class="flex gap-x-6 items-center justify-center xl:justify-start">
+            <a
+              v-for="item in navigation.social"
+              :key="item.name"
+              :title="item.name"
+              :href="item.href"
+              target="_blank"
+              class="text-slate-600 hover:text-slate-800"
+            >
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="size-6" aria-hidden="true" />
             </a>
