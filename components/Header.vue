@@ -1,3 +1,14 @@
+<script setup>
+import { ref } from 'vue'
+
+const navigation = [
+  { name: 'Sobre', href: '#' },
+  { name: 'Blog', href: '#' },
+]
+
+const mobileMenuOpen = ref(false)
+</script>
+
 <template>
   <div class="bg-primary">
     <header class="absolute inset-x-0 top-0 z-50">
@@ -5,7 +16,7 @@
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Roteirize</span>
-            <img class="h-12 " src="/assets/images/logo.svg" alt="" />
+            <img class="h-12 " src="/assets/images/logo.svg" alt="">
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -23,7 +34,7 @@
     </header>
 
     <div class="relative isolate overflow-hidden pt-14">
-      <img src="/assets/images/hero1.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover opacity-40" />
+      <img src="/assets/images/hero1.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover opacity-40">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div class="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -32,7 +43,9 @@
             </div>
           </div>
           <div class="text-center">
-            <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Viaje Mais, Planeje Menos.</h1>
+            <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+              Viaje Mais, Planeje Menos.
+            </h1>
             <p class="mt-8 text-lg font-medium text-pretty text-slate-300 sm:text-xl/8">
               Eu cuido dos detalhes, você aproveita a jornada.
             </p>
@@ -46,14 +59,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-
-const navigation = [
-  { name: 'Sobre', href: '#' },
-  { name: 'Blog', href: '#' },
-]
-
-const mobileMenuOpen = ref(false)
-</script>
