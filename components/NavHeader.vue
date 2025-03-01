@@ -6,8 +6,25 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
+
+const blog: { title: string, href: string, description: string }[] = [
+  {
+    title: 'Todos os posts',
+    href: '/docs/components/tooltip',
+    description: 'Não quer perder nenhum post? Aqui você encontra todos.',
+  },
+  {
+    title: 'Experiências',
+    href: '#',
+    description: 'Relatos e aventuras pessoais, com dicas e insights exclusivos.',
+  },
+  {
+    title: 'Sobre',
+    href: '/sobre',
+    description: 'Conheça a história e a missão por trás do blog e da autora.',
+  },
+]
 
 const tips: { title: string, href: string, description: string }[] = [
   {
@@ -77,26 +94,38 @@ const tips: { title: string, href: string, description: string }[] = [
   <NavigationMenu>
     <NavigationMenuList>
       <NavigationMenuItem>
-        <NavigationMenuLink
-          as-child
-          :class="navigationMenuTriggerStyle()"
-          class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent"
-        >
-          <NuxtLink to="/">
-            Home
-          </NuxtLink>
-        </NavigationMenuLink>
+        <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
+          Blog
+        </NavigationMenuTrigger>
+        <NavigationMenuContent>
+          <ul class="grid w-72 gap-3 p-4">
+            <li v-for="item in blog" :key="item.title">
+              <NavigationMenuLink as-child>
+                <a
+                  :href="item.href"
+                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                >
+                  <div class="text-sm font-medium leading-none">{{ item.title }}</div>
+                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                    {{ item.description }}
+                  </p>
+                </a>
+              </NavigationMenuLink>
+            </li>
+          </ul>
+        </NavigationMenuContent>
       </NavigationMenuItem>
+
       <NavigationMenuItem>
         <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
           Roteiros
         </NavigationMenuTrigger>
         <NavigationMenuContent>
-          <ul class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
+          <ul class="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
             <li class="row-span-3">
               <NavigationMenuLink as-child>
                 <a
-                  class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
+                  class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md"
                   href="/"
                 >
                   <img src="https://www.reka-ui.com/logo.svg" class="size-6">
@@ -144,16 +173,17 @@ const tips: { title: string, href: string, description: string }[] = [
           </ul>
         </NavigationMenuContent>
       </NavigationMenuItem>
+
       <NavigationMenuItem>
         <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
           Destinos
         </NavigationMenuTrigger>
         <NavigationMenuContent>
-          <ul class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
+          <ul class="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
             <li class="row-span-3">
               <NavigationMenuLink as-child>
                 <a
-                  class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
+                  class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md"
                   href="/"
                 >
                   <img src="https://www.reka-ui.com/logo.svg" class="size-6">
