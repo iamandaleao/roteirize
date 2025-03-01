@@ -7,7 +7,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <Header />
+    <LandingHeader />
     <Footer />
   </div>
 </template>

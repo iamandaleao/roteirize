@@ -7,11 +7,20 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu'
+import { ref } from 'vue'
 
-const blog: { title: string, href: string, description: string }[] = [
+const mobileMenuOpen = ref(false)
+
+interface NavItem {
+  title: string
+  href: string
+  description: string
+}
+
+const blog: NavItem[] = [
   {
     title: 'Todos os posts',
-    href: '/docs/components/tooltip',
+    href: '/blog',
     description: 'Não quer perder nenhum post? Aqui você encontra todos.',
   },
   {
@@ -26,7 +35,7 @@ const blog: { title: string, href: string, description: string }[] = [
   },
 ]
 
-const tips: { title: string, href: string, description: string }[] = [
+const tips: NavItem[] = [
   {
     title: 'Bagagem',
     href: '/docs/components/tooltip',
@@ -91,183 +100,203 @@ const tips: { title: string, href: string, description: string }[] = [
 </script>
 
 <template>
-  <NavigationMenu>
-    <NavigationMenuList>
-      <NavigationMenuItem>
-        <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
-          Blog
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul class="grid w-72 gap-3 p-4">
-            <li v-for="item in blog" :key="item.title">
-              <NavigationMenuLink as-child>
-                <a
-                  :href="item.href"
-                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-                >
-                  <div class="text-sm font-medium leading-none">{{ item.title }}</div>
-                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                    {{ item.description }}
-                  </p>
-                </a>
-              </NavigationMenuLink>
-            </li>
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <NuxtLink href="/" class="-m-1.5 p-1.5">
+          <span class="sr-only">Roteirize</span>
+          <Logo class="h-12 text-white" />
+        </NuxtLink>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-300" @click="mobileMenuOpen = true">
+          <span class="sr-only">Open main menu</span>
+        </button>
+      </div>
+      <NavigationMenu class="hidden lg:block">
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
+              Blog
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul class="grid w-72 gap-3 p-4">
+                <li v-for="item in blog" :key="item.title">
+                  <NavigationMenuLink as-child>
+                    <NuxtLink
+                      :to="item.href"
+                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                    >
+                      <div class="text-sm font-medium leading-none">
+                        {{ item.title }}
+                      </div>
+                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                        {{ item.description }}
+                      </p>
+                    </NuxtLink>
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
 
-      <NavigationMenuItem>
-        <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
-          Roteiros
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul class="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
-            <li class="row-span-3">
-              <NavigationMenuLink as-child>
-                <a
-                  class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md"
-                  href="/"
-                >
-                  <img src="https://www.reka-ui.com/logo.svg" class="size-6">
-                  <div class="mb-2 mt-4 text-lg font-medium">
-                    shadcn/ui
-                  </div>
-                  <p class="text-muted-foreground text-sm leading-tight">
-                    Beautifully designed components built with Radix UI and
-                    Tailwind CSS.
-                  </p>
-                </a>
-              </NavigationMenuLink>
-            </li>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
+              Roteiros
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul class="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
+                <li class="row-span-3">
+                  <NavigationMenuLink as-child>
+                    <a
+                      class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md"
+                      href="/"
+                    >
+                      <img src="https://www.reka-ui.com/logo.svg" class="size-6">
+                      <div class="mb-2 mt-4 text-lg font-medium">
+                        shadcn/ui
+                      </div>
+                      <p class="text-muted-foreground text-sm leading-tight">
+                        Beautifully designed components built with Radix UI and
+                        Tailwind CSS.
+                      </p>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
 
-            <li>
-              <NavigationMenuLink as-child>
-                <NuxtLink
-                  to="/docs/introduction"
-                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-                >
-                  <div class="text-sm font-medium leading-none">
-                    Prontos
-                  </div>
-                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                    Roteiros já elaborados para diferentes estilos.
-                  </p>
-                </NuxtLink>
-              </NavigationMenuLink>
-            </li>
-            <li>
-              <NavigationMenuLink as-child>
-                <NuxtLink
-                  to="/docs/installation"
-                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-                >
-                  <div class="text-sm font-medium leading-none">
-                    Personalizados
-                  </div>
-                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                    Informações sobre como solicitar um roteiro personalizado.
-                  </p>
-                </NuxtLink>
-              </NavigationMenuLink>
-            </li>
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
+                <li>
+                  <NavigationMenuLink as-child>
+                    <NuxtLink
+                      to="/docs/introduction"
+                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                    >
+                      <div class="text-sm font-medium leading-none">
+                        Prontos
+                      </div>
+                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                        Roteiros já elaborados para diferentes estilos.
+                      </p>
+                    </NuxtLink>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink as-child>
+                    <NuxtLink
+                      to="/docs/installation"
+                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                    >
+                      <div class="text-sm font-medium leading-none">
+                        Personalizados
+                      </div>
+                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                        Informações sobre como solicitar um roteiro personalizado.
+                      </p>
+                    </NuxtLink>
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
 
-      <NavigationMenuItem>
-        <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
-          Destinos
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul class="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
-            <li class="row-span-3">
-              <NavigationMenuLink as-child>
-                <a
-                  class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md"
-                  href="/"
-                >
-                  <img src="https://www.reka-ui.com/logo.svg" class="size-6">
-                  <div class="mb-2 mt-4 text-lg font-medium">
-                    shadcn/ui
-                  </div>
-                  <p class="text-muted-foreground text-sm leading-tight">
-                    Beautifully designed components built with Radix UI and
-                    Tailwind CSS.
-                  </p>
-                </a>
-              </NavigationMenuLink>
-            </li>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
+              Destinos
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul class="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
+                <li class="row-span-3">
+                  <NavigationMenuLink as-child>
+                    <a
+                      class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md"
+                      href="/"
+                    >
+                      <img src="https://www.reka-ui.com/logo.svg" class="size-6">
+                      <div class="mb-2 mt-4 text-lg font-medium">
+                        shadcn/ui
+                      </div>
+                      <p class="text-muted-foreground text-sm leading-tight">
+                        Beautifully designed components built with Radix UI and
+                        Tailwind CSS.
+                      </p>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
 
-            <li>
-              <NavigationMenuLink as-child>
-                <NuxtLink
-                  to="/docs/installation"
-                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-                >
-                  <div class="text-sm font-medium leading-none">
-                    Europa
-                  </div>
-                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                    Conheça a Suíça, França, Itália e todo o charme da Europa.
-                  </p>
-                </NuxtLink>
-              </NavigationMenuLink>
-            </li>
-            <li>
-              <NavigationMenuLink as-child>
-                <NuxtLink
-                  to="/docs/installation"
-                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-                >
-                  <div class="text-sm font-medium leading-none">
-                    América do Norte
-                  </div>
-                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                    Descubra as maravilhas dos Estados Unidos, Canadá e México.
-                  </p>
-                </NuxtLink>
-              </NavigationMenuLink>
-            </li>
-            <li>
-              <NavigationMenuLink as-child>
-                <NuxtLink
-                  to="/docs/introduction"
-                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-                >
-                  <div class="text-sm font-medium leading-none">
-                    América do Sul
-                  </div>
-                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                    Explore os melhores destinos do Brasil, Chile, Argentina e Uruguai.
-                  </p>
-                </NuxtLink>
-              </NavigationMenuLink>
-            </li>
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
-          Dicas de Viagem
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-            <li v-for="component in tips" :key="component.title">
-              <NavigationMenuLink as-child>
-                <a
-                  :href="component.href"
-                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-                >
-                  <div class="text-sm font-medium leading-none">{{ component.title }}</div>
-                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
-                    {{ component.description }}
-                  </p>
-                </a>
-              </NavigationMenuLink>
-            </li>
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-    </NavigationMenuList>
-  </NavigationMenu>
+                <li>
+                  <NavigationMenuLink as-child>
+                    <NuxtLink
+                      to="/docs/installation"
+                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                    >
+                      <div class="text-sm font-medium leading-none">
+                        Europa
+                      </div>
+                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                        Conheça a Suíça, França, Itália e todo o charme da Europa.
+                      </p>
+                    </NuxtLink>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink as-child>
+                    <NuxtLink
+                      to="/docs/installation"
+                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                    >
+                      <div class="text-sm font-medium leading-none">
+                        América do Norte
+                      </div>
+                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                        Descubra as maravilhas dos Estados Unidos, Canadá e México.
+                      </p>
+                    </NuxtLink>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink as-child>
+                    <NuxtLink
+                      to="/docs/introduction"
+                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                    >
+                      <div class="text-sm font-medium leading-none">
+                        América do Sul
+                      </div>
+                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                        Explore os melhores destinos do Brasil, Chile, Argentina e Uruguai.
+                      </p>
+                    </NuxtLink>
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger class="bg-transparent text-sm/6 font-semibold text-white hover:bg-transparent hover:text-white data-[active]:bg-transparent data-[state=open]:bg-transparent">
+              Dicas de Viagem
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                <li v-for="component in tips" :key="component.title">
+                  <NavigationMenuLink as-child>
+                    <a
+                      :href="component.href"
+                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                    >
+                      <div class="text-sm font-medium leading-none">{{ component.title }}</div>
+                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                        {{ component.description }}
+                      </p>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <ThemeToggle />
+      </div>
+    </nav>
+  </header>
 </template>
