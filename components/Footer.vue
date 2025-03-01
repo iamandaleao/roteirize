@@ -10,7 +10,6 @@ const navigation = {
   pages: [
     { name: 'Home', href: '#' },
     { name: 'Sobre', href: 'sobre' },
-    { name: 'Contato', href: '#' },
     { name: 'Peça seu roteiro', href: '#' },
   ],
   blog: [
@@ -72,8 +71,8 @@ const navigation = {
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
           <div class="space-y-2">
-            <Logo class="mx-auto h-16 text-black dark:!text-white xl:mx-0" />
-            <p class="text-balance text-center text-sm/6 text-slate-600 dark:text-slate-400 xl:text-left">
+            <Logo class="mx-auto h-16 text-black xl:mx-0 dark:!text-white" />
+            <p class="text-balance text-center text-sm/6 text-slate-600 xl:text-left dark:text-slate-400">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
             </p>
           </div>
@@ -119,18 +118,8 @@ const navigation = {
               <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
                 Descontos
               </h3>
-              <ul role="list" class="mt-6 space-y-4">
+              <ul role="list" class="mt-6 grid gap-y-4 lg:grid-cols-2 lg:gap-x-48">
                 <li v-for="item in navigation.discounts" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
-                Destinos
-              </h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.legal" :key="item.name">
                   <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
                 </li>
               </ul>
