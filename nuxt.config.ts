@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/icon',
     'shadcn-nuxt',
+    '@nuxt/fonts',
   ],
   devtools: { enabled: true },
   eslint: {

@@ -30,7 +30,7 @@ useIntervalFn(() => {
             <span class="sr-only">Open main menu</span>
           </button>
         </div>
-        <NavHeader />
+        <NavHeader class="hidden lg:block" />
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <ThemeToggle />
         </div>
