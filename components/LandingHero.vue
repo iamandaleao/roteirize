@@ -25,14 +25,14 @@ useIntervalFn(() => {
           </div>
         </div>
         <div class="text-center">
-          <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+          <h1 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
             Viaje Mais, Planeje Menos.
           </h1>
-          <p class="mt-8 text-pretty text-lg font-medium text-slate-300 sm:text-xl/8">
-            Eu cuido dos detalhes, você aproveita a jornada.
-          </p>
+          <h2 class="mt-8 text-pretty text-lg font-medium text-slate-200 sm:text-xl/8">
+            Eu cuido dos detalhes,<br>você aproveita a jornada.
+          </h2>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="shadow-xs bg-primary hover:bg-primary/80 rounded-md px-3.5 py-2.5 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 dark:bg-black">Get started</a>
+            <a href="#" class="shadow-xs rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 dark:bg-black">Get started</a>
             <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
           </div>
         </div>

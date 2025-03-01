@@ -1,6 +1,6 @@
 <template>
-  <main class="mt-20">
-    <article class="prose mx-auto max-w-2xl">
+  <main class="py-20">
+    <article class="prose mx-auto max-w-prose px-4 dark:prose-invert">
       <slot />
     </article>
   </main>

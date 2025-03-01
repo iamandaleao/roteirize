@@ -61,7 +61,7 @@ const navigation = {
 </script>
 
 <template>
-  <footer class="bg-background">
+  <footer class="border-t bg-background">
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
