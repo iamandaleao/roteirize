@@ -71,14 +71,14 @@ const components: { title: string, href: string, description: string }[] = [
             <li class="row-span-3">
               <NavigationMenuLink as-child>
                 <a
-                  class="flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                  class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
                   href="/"
                 >
                   <img src="https://www.reka-ui.com/logo.svg" class="size-6">
                   <div class="mb-2 mt-4 text-lg font-medium">
                     shadcn/ui
                   </div>
-                  <p class="text-sm leading-tight text-muted-foreground">
+                  <p class="text-muted-foreground text-sm leading-tight">
                     Beautifully designed components built with Radix UI and
                     Tailwind CSS.
                   </p>
@@ -90,12 +90,12 @@ const components: { title: string, href: string, description: string }[] = [
               <NavigationMenuLink as-child>
                 <NuxtLink
                   to="/docs/introduction"
-                  class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
                 >
                   <div class="text-sm font-medium leading-none">
                     Prontos
                   </div>
-                  <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
                     Roteiros já elaborados para diferentes estilos.
                   </p>
                 </NuxtLink>
@@ -105,12 +105,12 @@ const components: { title: string, href: string, description: string }[] = [
               <NavigationMenuLink as-child>
                 <NuxtLink
                   to="/docs/installation"
-                  class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
                 >
                   <div class="text-sm font-medium leading-none">
                     Personalizados
                   </div>
-                  <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
                     Informações sobre como solicitar um roteiro personalizado.
                   </p>
                 </NuxtLink>
@@ -129,10 +129,10 @@ const components: { title: string, href: string, description: string }[] = [
               <NavigationMenuLink as-child>
                 <a
                   :href="component.href"
-                  class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
                 >
                   <div class="text-sm font-medium leading-none">{{ component.title }}</div>
-                  <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                  <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
                     {{ component.description }}
                   </p>
                 </a>
