@@ -1,8 +1,8 @@
 ::blog-post-hero
 ---
-title: 'Hospedagem Ideal'
-description: 'Dica do Dia: Como Escolher a Hospedagem Perfeita? 🏨✨'
+description: "Dica do Dia: Como Escolher a Hospedagem Perfeita? 🏨✨"
 image: hero2.jpg
+title: Hospedagem Ideal
 ---
 ::
 
