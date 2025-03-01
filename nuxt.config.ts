@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxt/fonts',
   ],
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   eslint: {
     config: {
       standalone: false,

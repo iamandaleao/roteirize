@@ -1,6 +1,7 @@
 <template>
-  <div class="bg-black">
+  <div>
     <NavHeader />
-    <LandingHero />
+    <slot />
+    <Footer />
   </div>
 </template>

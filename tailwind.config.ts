@@ -1,3 +1,4 @@
+import typography from '@tailwindcss/typography'
 import animate from 'tailwindcss-animate'
 // @ts-expect-error
 import defaultTheme from 'tailwindcss/defaultTheme'
@@ -60,5 +61,5 @@ export default {
       },
     },
   },
-  plugins: [animate],
+  plugins: [animate, typography],
 }
