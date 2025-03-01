@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import type { NavigationMenuLinkEmits, NavigationMenuLinkProps } from 'reka-ui'
 import {
   NavigationMenuLink,
-  type NavigationMenuLinkEmits,
-  type NavigationMenuLinkProps,
+
   useForwardPropsEmits,
 } from 'reka-ui'
 

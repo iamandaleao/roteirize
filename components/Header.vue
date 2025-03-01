@@ -2,12 +2,6 @@
 import { useIntervalFn } from '@vueuse/core'
 import { ref } from 'vue'
 
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Sobre', href: '#' },
-  { name: 'Blog', href: '/blog' },
-]
-
 const mobileMenuOpen = ref(false)
 const heroIdx = ref(1)
 
@@ -36,11 +30,7 @@ useIntervalFn(() => {
             <span class="sr-only">Open main menu</span>
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <NuxtLink v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm/6 font-semibold text-white">
-            {{ item.name }}
-          </NuxtLink>
-        </div>
+        <NavHeader />
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <ThemeToggle />
         </div>
@@ -57,14 +47,14 @@ useIntervalFn(() => {
             </div>
           </div>
           <div class="text-center">
-            <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+            <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
               Viaje Mais, Planeje Menos.
             </h1>
-            <p class="mt-8 text-lg font-medium text-pretty text-slate-300 sm:text-xl/8">
+            <p class="mt-8 text-pretty text-lg font-medium text-slate-300 sm:text-xl/8">
               Eu cuido dos detalhes, você aproveita a jornada.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#" class="rounded-md bg-primary dark:bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
+              <a href="#" class="shadow-xs rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 dark:bg-black">Get started</a>
               <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
             </div>
           </div>
