@@ -61,13 +61,13 @@ const navigation = {
 </script>
 
 <template>
-  <footer class="bg-background border-t">
+  <footer class="border-t bg-background">
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
           <div class="space-y-2">
-            <Logo class="mx-auto h-16 text-black xl:mx-0 dark:!text-white" />
-            <p class="text-balance text-center text-sm/6 text-slate-600 xl:text-left dark:text-slate-400">
+            <Logo class="mx-auto h-16 text-black dark:!text-white xl:mx-0" />
+            <p class="text-balance text-center text-sm/6 text-slate-600 dark:text-slate-400 xl:text-left">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
             </p>
           </div>

@@ -125,12 +125,12 @@ const tips: NavItem[] = [
                   <NavigationMenuLink as-child>
                     <NuxtLink
                       :to="item.href"
-                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
                         {{ item.title }}
                       </div>
-                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         {{ item.description }}
                       </p>
                     </NuxtLink>
@@ -149,14 +149,14 @@ const tips: NavItem[] = [
                 <li class="row-span-3">
                   <NavigationMenuLink as-child>
                     <a
-                      class="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md"
+                      class="flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
                       href="/"
                     >
                       <img src="https://www.reka-ui.com/logo.svg" class="size-6">
                       <div class="mb-2 mt-4 text-lg font-medium">
                         shadcn/ui
                       </div>
-                      <p class="text-muted-foreground text-sm leading-tight">
+                      <p class="text-sm leading-tight text-muted-foreground">
                         Beautifully designed components built with Radix UI and
                         Tailwind CSS.
                       </p>
@@ -168,12 +168,12 @@ const tips: NavItem[] = [
                   <NavigationMenuLink as-child>
                     <NuxtLink
                       to="/docs/introduction"
-                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
                         Prontos
                       </div>
-                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Roteiros já elaborados para diferentes estilos.
                       </p>
                     </NuxtLink>
@@ -183,12 +183,12 @@ const tips: NavItem[] = [
                   <NavigationMenuLink as-child>
                     <NuxtLink
                       to="/docs/installation"
-                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
                         Personalizados
                       </div>
-                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Informações sobre como solicitar um roteiro personalizado.
                       </p>
                     </NuxtLink>
@@ -223,12 +223,12 @@ const tips: NavItem[] = [
                   <NavigationMenuLink as-child>
                     <NuxtLink
                       to="/docs/installation"
-                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
                         Europa
                       </div>
-                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Conheça a Suíça, França, Itália e todo o charme da Europa.
                       </p>
                     </NuxtLink>
@@ -238,12 +238,12 @@ const tips: NavItem[] = [
                   <NavigationMenuLink as-child>
                     <NuxtLink
                       to="/docs/installation"
-                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
                         América do Norte
                       </div>
-                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Descubra as maravilhas dos Estados Unidos, Canadá e México.
                       </p>
                     </NuxtLink>
@@ -253,12 +253,12 @@ const tips: NavItem[] = [
                   <NavigationMenuLink as-child>
                     <NuxtLink
                       to="/docs/introduction"
-                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
                         América do Sul
                       </div>
-                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Explore os melhores destinos do Brasil, Chile, Argentina e Uruguai.
                       </p>
                     </NuxtLink>
@@ -277,10 +277,10 @@ const tips: NavItem[] = [
                   <NavigationMenuLink as-child>
                     <a
                       :href="component.href"
-                      class="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">{{ component.title }}</div>
-                      <p class="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         {{ component.description }}
                       </p>
                     </a>

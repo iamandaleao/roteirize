@@ -1,4 +1,4 @@
-::blog-post-hero
+::blog-page-hero
 ---
 h1: Sobre
 h2: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"

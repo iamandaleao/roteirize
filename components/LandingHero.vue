@@ -15,7 +15,7 @@ useIntervalFn(() => {
 </script>
 
 <template>
-  <div class="relative isolate h-screen overflow-hidden pt-14">
+  <div class="relative isolate min-h-screen overflow-hidden pt-14">
     <img :key="`hero-${heroIdx}`" :src="`/assets/images/hero${heroIdx}.jpg`" alt="" class="absolute inset-0 -z-10 size-full object-cover opacity-40">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
@@ -29,10 +29,10 @@ useIntervalFn(() => {
             Viaje Mais, Planeje Menos.
           </h1>
           <h2 class="mt-8 text-pretty text-lg font-medium text-slate-200 sm:text-xl/8">
-            Eu cuido dos detalhes,<br>você aproveita a jornada.
+            Eu cuido dos detalhes,<br class="lg:hidden"> você aproveita a jornada.
           </h2>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="shadow-xs rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-primary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 dark:bg-black">Get started</a>
+            <a href="#" class="shadow-xs bg-primary hover:bg-primary/80 rounded-md px-3.5 py-2.5 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 dark:bg-black">Get started</a>
             <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
           </div>
         </div>
