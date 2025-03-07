@@ -15,7 +15,7 @@ defineProps<{
           <h1 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
             {{ h1 }}
           </h1>
-          <h2 class="mt-8 text-pretty text-lg font-medium text-slate-200 sm:text-xl/8">
+          <h2 class="mx-auto mt-8 max-w-lg text-pretty text-lg font-medium text-slate-200 sm:text-xl/8">
             {{ h2 }}
           </h2>
         </div>
