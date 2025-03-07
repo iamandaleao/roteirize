@@ -15,10 +15,10 @@ useIntervalFn(() => {
 </script>
 
 <template>
-  <div class="relative isolate min-h-screen overflow-hidden pt-14">
+  <div class="relative isolate overflow-hidden pt-14">
     <img :key="`hero-${heroIdx}`" :src="`/assets/images/hero${heroIdx}.jpg`" alt="" class="absolute inset-0 -z-10 size-full object-cover opacity-40">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="mx-auto max-w-2xl py-32">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div class="relative rounded-full px-3 py-1 text-sm/6 text-slate-300 ring-1 ring-white/10 hover:ring-white/20">
             Roteiros para todo tipo de bolso. <a href="#" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true" />Ler mais <span aria-hidden="true">&rarr;</span></a>
