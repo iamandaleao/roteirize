@@ -2,13 +2,12 @@
 ---
 h1: Paris
 h2: A Cidade dos Sonhos e Descobertas
-image: hero1.jpg
+image: paris.jpg
 ---
 ::
 
-[//]: # (::blog-post-menu)
-
-[//]: # (::)
+::blog-post-city
+::
 
 ::blog-post-body
 A capital da França e uma das cidades mais visitadas do mundo, Paris é um destino que encanta qualquer viajante. Com sua história rica, arquitetura deslumbrante e uma atmosfera romântica, a cidade luz é um daqueles lugares que todo mundo sonha em conhecer pelo menos uma vez na vida.
