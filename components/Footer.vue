@@ -8,8 +8,8 @@ import YouTubeIcon from '~/components/YouTubeIcon.vue'
 
 const navigation = {
   pages: [
-    { name: 'Home', href: '#' },
-    { name: 'Sobre', href: '/blog/sobre' },
+    { name: 'Home', href: '/' },
+    { name: 'Sobre', href: '/sobre' },
     { name: 'Peça seu roteiro', href: '#' },
   ],
   blog: [
