@@ -2,7 +2,56 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      htmlAttrs: {
+        lang: 'pt-BR',
+        class: 'scroll-smooth',
+      },
+      bodyAttrs: {
+        class: 'antialiased',
+      },
+      link: [
+        {
+          rel: 'icon',
+          href: '/favicon.ico',
+        },
+        {
+          rel: 'shortcut icon',
+          href: '/favicon.ico',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/favicon.ico',
+        },
+      ],
+    },
+  },
+
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ThemeToggle',
+    classPrefix: '',
+    classSuffix: '',
+    storage: 'localStorage',
+    storageKey: 'nuxt-color-mode',
+  },
+
   compatibilityDate: '2024-11-01',
+
+  devtools: { enabled: false },
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
@@ -12,21 +61,4 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/color-mode',
   ],
-  colorMode: {
-    preference: 'system', // default value of $colorMode.preference
-    fallback: 'light', // fallback value if not system preference found
-    hid: 'nuxt-color-mode-script',
-    globalName: '__NUXT_COLOR_MODE__',
-    componentName: 'ThemeToggle',
-    classPrefix: '',
-    classSuffix: '',
-    storage: 'localStorage', // or 'sessionStorage' or 'cookie'
-    storageKey: 'nuxt-color-mode',
-  },
-  devtools: { enabled: false },
-  eslint: {
-    config: {
-      standalone: false,
-    },
-  },
 })

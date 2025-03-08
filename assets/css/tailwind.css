@@ -64,3 +64,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+.prose h1 a,
+.prose h2 a,
+.prose h3 a,
+.prose h4 a,
+.prose h5 a,
+.prose h6 a {
+  text-decoration: none;
+  pointer-events: none;
+  color: inherit;
+}
