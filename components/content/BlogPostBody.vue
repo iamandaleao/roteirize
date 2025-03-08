@@ -3,7 +3,7 @@ defineProps<{ date: string }>()
 </script>
 
 <template>
-  <main class="relative py-20">
+  <main class="relative pt-10">
     <div class="mx-auto px-4">
       <!-- Realistic airplane with globe -->
       <div class="pointer-events-none absolute left-0 top-0 hidden opacity-10 lg:block">
@@ -37,10 +37,8 @@ defineProps<{ date: string }>()
       <article class="prose dark:prose-invert prose-a:text-blue-600 hover:prose-a:text-blue-500 relative mx-auto max-w-prose">
         <slot />
         <div class="mt-4 text-right text-sm text-slate-500">
-          <slot name="date" />
+          <i>Postado por Amanda - {{ date }}</i>
         </div>
-        <hr>
-        <BlogWhatsappCta />
       </article>
     </div>
   </main>

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="mx-auto grid max-w-5xl gap-3 lg:grid-cols-3">
+  <div class="not-prose grid w-full gap-3 lg:grid-cols-3">
     <div class="overflow-hidden rounded-lg border shadow">
       <div class="aspect-video overflow-hidden rounded-t-lg">
         <img
