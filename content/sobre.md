@@ -16,9 +16,9 @@ Sou a Amanda Leão, criadora da Roteirize! Minha paixão por viagens sempre este
 Assim nasceu a Roteirize! Aqui, eu crio roteiros sob medida para quem quer viajar sem preocupações, considerando seu estilo, orçamento e interesses. Nada de roteiros genéricos - cada viagem que planejo é única e feita especialmente para você.
 
 Por que escolher a Roteirize?
-- ✔️ Economia de tempo e dinheiro
-- ✔️ Roteiros 100% personalizados
-- ✔️ Dicas e recomendações reais
 
-::blog-whatsapp-cta
-::
+✅ Economia de tempo e dinheiro
+
+✅ Roteiros 100% personalizados
+
+✅ Dicas e recomendações reais
