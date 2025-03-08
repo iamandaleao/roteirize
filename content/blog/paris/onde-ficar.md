@@ -3,6 +3,7 @@
 h1: "Paris: Onde Ficar"
 h2: Principais Bairros para se Hospedar em Paris
 image: paris.jpg
+date: 18/02/2025
 ---
 ::
 
@@ -10,6 +11,7 @@ image: paris.jpg
 ::
 
 ::blog-post-body
+
 Escolher o lugar ideal para se hospedar em Paris pode fazer toda a diferença na sua viagem, e eu estou aqui para te ajudar com isso. Cada bairro tem seu próprio charme e oferece uma experiência única. Vou te apresentar as principais regiões para que você encontre a que mais combina com o seu estilo de viagem.
 
 ### Os Melhores Bairros para se Hospedar

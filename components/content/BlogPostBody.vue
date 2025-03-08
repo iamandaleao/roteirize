@@ -1,4 +1,5 @@
 <script setup lang="ts">
+defineProps<{ date: string }>()
 </script>
 
 <template>
@@ -35,6 +36,9 @@
 
       <article class="prose dark:prose-invert prose-a:text-blue-600 hover:prose-a:text-blue-500 relative mx-auto max-w-prose">
         <slot />
+        <div class="mt-4 text-right text-sm text-slate-500">
+          <slot name="date" />
+        </div>
         <hr>
         <BlogWhatsappCta />
       </article>

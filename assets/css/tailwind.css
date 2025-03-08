@@ -55,23 +55,23 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%
   }
-}
-@layer base {
+
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
-}
 
-.prose h1 a,
-.prose h2 a,
-.prose h3 a,
-.prose h4 a,
-.prose h5 a,
-.prose h6 a {
-  text-decoration: none;
-  pointer-events: none;
-  color: inherit;
+  .prose h1 a,
+  .prose h2 a,
+  .prose h3 a,
+  .prose h4 a,
+  .prose h5 a,
+  .prose h6 a {
+    text-decoration: none;
+    pointer-events: none;
+    color: inherit;
+  }
 }
