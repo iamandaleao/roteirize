@@ -1,15 +1,18 @@
-::blog-post-hero
 ---
 h1: "Paris: Compras"
 h2: "Como Aproveitar sem Gastar Muito"
 image: paris.jpg
+date: "18/02/2025"
 ---
+
+::blog-post-hero{:h1="h1" :h2="h2" :image="image"}
 ::
 
 ::blog-post-stats
 ::
 
-::blog-post-body
+::blog-post-body{:date="date"}
+
 Paris é famosa pelas suas lojas de luxo e marcas icônicas, mas também oferece diversas opções para quem quer aproveitar a cidade sem estourar o orçamento. Se você está buscando dicas para comprar bastante e gastar menos, aqui estão algumas sugestões para aproveitar o melhor da moda parisiense de forma acessível.
 
 ### 1. Lojas de Fast Fashion: Estilo a Preços Acessíveis

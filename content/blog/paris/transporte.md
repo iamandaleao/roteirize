@@ -1,15 +1,17 @@
-::blog-post-hero
 ---
 h1: "Paris: Transporte"
-h2: "Como Se Locomover. Dicas Práticas e Econômicas"
+h2: Como Se Locomover. Dicas Práticas e Econômicas"
 image: paris.jpg
+date: "18/02/2025"
 ---
+
+::blog-post-hero{:h1="h1" :h2="h2" :image="image"}
 ::
 
 ::blog-post-stats
 ::
 
-::blog-post-body
+::blog-post-body{:date="date"}
 
 Planejar como se locomover por Paris é essencial para aproveitar cada momento sem perder tempo. A cidade tem várias opções de transporte, e vou te explicar tudo o que você precisa saber para escolher o que melhor se encaixa no seu estilo de viagem.
 

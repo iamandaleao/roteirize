@@ -1,7 +1,5 @@
 import typography from '@tailwindcss/typography'
 import animate from 'tailwindcss-animate'
-// @ts-expect-error
-import defaultTheme from 'tailwindcss/defaultTheme'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,7 +8,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+        sans: [
+          'Nunito',
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+        ],
       },
       borderRadius: {
         lg: 'var(--radius)',

@@ -1,15 +1,18 @@
-::blog-post-hero
 ---
 h1: "Paris: Alimentação"
-h2: Um Banquete para os Sentidos
+h2: "Um Banquete para os Sentidos"
 image: paris.jpg
+date: "18/02/2025"
 ---
+
+::blog-post-hero{:h1="h1" :h2="h2" :image="image"}
 ::
 
 ::blog-post-stats
 ::
 
-::blog-post-body
+::blog-post-body{:date="date"}
+
 Ah, Paris e sua gastronomia… só de pensar já dá água na boca! A cidade é um verdadeiro paraíso para quem ama comer bem, e eu quero compartilhar algumas das experiências que considero imperdíveis para você aproveitar o melhor da culinária parisiense.
 
 ### Delícias Clássicas para Começar o Dia
