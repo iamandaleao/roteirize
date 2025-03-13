@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 
 // Default city
-const city = ref('Canada')
+const city = ref('Washington')
 const coords = ref<{ lat: string, lon: string } | null>(null)
 const temperature = ref<number | null>(null)
 const localTime = ref<string | null>(null)
@@ -32,8 +32,7 @@ async function getWeatherData(latitude: string, longitude: string) {
   try {
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m&timezone=auto`
     const res = await fetch(url)
-    const data = await res.json()
-    return data
+    return await res.json()
   }
   catch (error) {
     console.error('Error fetching weather data:', error)
@@ -77,15 +76,53 @@ async function getWikidataInfo(cityName: string): Promise<{
     const cityDataRes = await fetch(cityDataUrl)
     const cityData = await cityDataRes.json()
 
-    // Get population data
-    const populationClaim = cityData.claims?.P1082?.[0]?.mainsnak?.datavalue?.value?.amount
+    // Get population data - find the most recent one
     let population = null
-    if (populationClaim) {
-      population = formatNumber(Number.parseInt(populationClaim))
+    if (cityData.claims?.P1082) {
+      // Get all population claims
+      const populationClaims = cityData.claims.P1082
+
+      // Get the qualifiers for each claim to find the determination date (P585)
+      const populationWithDates = []
+
+      for (const claim of populationClaims) {
+        const populationValue = claim.mainsnak?.datavalue?.value?.amount
+        if (!populationValue) {
+          continue
+        }
+
+        // Check if there's a determination date qualifier
+        let determinationDate = null
+        if (claim.qualifiers?.P585) {
+          // P585 is "point in time" property in Wikidata
+          determinationDate = claim.qualifiers.P585[0]?.datavalue?.value?.time
+        }
+
+        populationWithDates.push({
+          population: Number.parseInt(populationValue),
+          date: determinationDate || '0', // Default to 0 if no date
+        })
+      }
+
+      // Sort by date in descending order (most recent first)
+      populationWithDates.sort((a, b) => {
+        return b.date.localeCompare(a.date)
+      })
+
+      // Use the most recent population
+      if (populationWithDates.length > 0) {
+        population = formatNumber(populationWithDates[0].population)
+      }
     }
 
     // Get country QID (P17 is "country" property in Wikidata)
-    const countryQid = cityData.claims?.P17?.[0]?.mainsnak?.datavalue?.value?.id
+    // For countries, they are their own country, so we can use the same QID
+    const isCountry = cityData.claims?.P31?.some(claim =>
+      claim.mainsnak?.datavalue?.value?.id === 'Q6256' // Q6256 is "country"
+      || claim.mainsnak?.datavalue?.value?.id === 'Q3624078', // Q3624078 is "sovereign state"
+    )
+
+    const countryQid = isCountry ? cityQid : cityData.claims?.P17?.[0]?.mainsnak?.datavalue?.value?.id
     let currencyCode = null
 
     if (countryQid) {
@@ -150,11 +187,10 @@ async function convertCurrency(fromCurrency: string, toCurrency: string = 'BRL')
 }
 
 function formatNumber(num: number): string {
-  const million = 1000000
-  if (num >= million) {
-    return `${(num / million).toFixed(3)}M`
-  }
-  return num.toString()
+  return new Intl.NumberFormat('pt', {
+    notation: 'compact',
+    compactDisplay: 'long',
+  }).format(num)
 }
 
 async function loadAllData() {
