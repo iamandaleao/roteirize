@@ -1,11 +1,11 @@
 ---
-h1: "Paris: Compras"
-h2: "Como Aproveitar sem Gastar Muito"
+title: "Paris: Compras"
+description: "Como Aproveitar sem Gastar Muito"
 image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:h1="h1" :h2="h2" :image="image"}
+::blog-post-hero{:title="title" :description="description" :image="image"}
 ::
 
 ::blog-post-stats

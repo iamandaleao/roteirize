@@ -1,11 +1,11 @@
 ---
-h1: "Paris: Transporte"
-h2: Como Se Locomover. Dicas Práticas e Econômicas"
+title: "Paris: Transporte"
+description: "Como Se Locomover. Dicas Práticas e Econômicas"
 image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:h1="h1" :h2="h2" :image="image"}
+::blog-post-hero{:title="title" :description="description" :image="image"}
 ::
 
 ::blog-post-stats

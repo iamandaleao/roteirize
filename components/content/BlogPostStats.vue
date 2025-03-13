@@ -84,7 +84,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="dark:bg-background mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black lg:rounded-lg xl:grid-cols-4 dark:text-white">
+  <div class="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black dark:bg-background dark:text-white lg:rounded-lg xl:grid-cols-4">
     <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
       <Icon name="ph:snowflake" />
       <span v-if="temperature !== null">

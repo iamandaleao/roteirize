@@ -1,14 +1,14 @@
 <script setup lang="ts">
 defineProps<{
-  h1: string
-  h2: string
+  title: string
+  description: string
   image?: string
 }>()
 </script>
 
 <template>
   <div class="relative isolate overflow-hidden bg-black pt-14">
-    <img :src="`/assets/images/${image}`" :alt="h1" class="absolute inset-0 -z-10 size-full object-cover opacity-40">
+    <img :src="`/assets/images/${image}`" :alt="title" class="absolute inset-0 -z-10 size-full object-cover opacity-40">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32">
         <div class="mb-8 flex justify-center">
@@ -18,11 +18,11 @@ defineProps<{
         </div>
         <div class="text-center">
           <h1 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
-            {{ h1 }}
+            {{ title }}
           </h1>
-          <h2 class="mx-auto mt-8 max-w-lg text-pretty text-lg font-medium text-slate-200 sm:text-xl/8">
-            {{ h2 }}
-          </h2>
+          <p class="mx-auto mt-8 max-w-lg text-pretty text-lg font-medium text-slate-200 sm:text-xl/8">
+            {{ description }}
+          </p>
         </div>
       </div>
     </div>

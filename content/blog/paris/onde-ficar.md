@@ -1,11 +1,11 @@
 ---
-h1: "Paris: Onde Ficar"
-h2: "Principais Bairros para se Hospedar em Paris"
+title: "Paris: Onde Ficar"
+description: "Principais Bairros para se Hospedar em Paris"
 image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:h1="h1" :h2="h2" :image="image"}
+::blog-post-hero{:title="title" :description="description" :image="image"}
 ::
 
 ::blog-post-stats

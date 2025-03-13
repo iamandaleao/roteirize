@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Roteirize',
-  description: 'Roteirize website',
+  title: 'Viaje Mais, Planeje Menos',
+  description: 'Eu cuido dos detalhes, você aproveita a jornada.',
 })
 </script>
 
