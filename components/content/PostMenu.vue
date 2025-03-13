@@ -54,6 +54,11 @@ const items = [
     href: 'roteiros',
   },
 ]
+
+function isActive(path: string) {
+  const itemPath = `/blog/${city}/${path}`
+  return route.path === itemPath || route.path.startsWith(`${itemPath}/`)
+}
 </script>
 
 <template>
@@ -63,8 +68,9 @@ const items = [
         v-for="(item, index) in items"
         :key="index"
         :to="`/blog/${city}/${item.href}`"
-        active-class="bg-white text-black"
-        class="m-2 flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center transition-all duration-300 hover:bg-black/50 hover:text-white"
+        class="m-2 flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center transition-all duration-300 hover:bg-black/50 hover:text-white" :class="[
+          isActive(item.href) ? 'bg-white text-black' : '',
+        ]"
       >
         <Icon :name="item.icon" /> <span>{{ item.name }}</span>
       </NuxtLink>

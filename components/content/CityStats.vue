@@ -317,6 +317,6 @@ onMounted(() => {
     </div>
   </div>
   <div class="mx-auto mt-2 text-center text-sm text-slate-500">
-    Dados recentes aproximados
+    Dados atualizados a cada 15 minutos
   </div>
 </template>
