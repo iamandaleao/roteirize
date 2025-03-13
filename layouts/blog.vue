@@ -1,7 +1,9 @@
 <template>
   <div>
     <NavHeader />
-    <slot />
+    <KeepAlive>
+      <slot />
+    </KeepAlive>
     <div class="py-20">
       <WhatsappCta />
     </div>

@@ -1,9 +1,20 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
+import { onMounted, ref } from 'vue'
 
+// Add a key for component caching
+defineOptions({
+  name: 'CityStats',
+  // This ensures the component is cached by city
+  key: props => `city-stats-${props.city}`,
+})
+
+// Define props with city
 const props = defineProps<{
   city: string
 }>()
+
+// Create a cache for city data
+const cityDataCache = useState('city-data-cache', () => new Map())
 
 const coords = ref<{ lat: string, lon: string } | null>(null)
 const temperature = ref<number | null>(null)
@@ -12,6 +23,7 @@ const population = ref<string | null>(null)
 const currency = ref<string | null>(null)
 const currencyCode = ref<string | null>(null)
 const displayName = ref<string>(props.city)
+const isLoading = ref<boolean>(false)
 
 async function getCoords(cityName: string): Promise<{ lat: string, lon: string } | null> {
   try {
@@ -216,6 +228,23 @@ function formatNumber(num: number): string {
 }
 
 async function loadAllData() {
+  // Check if we already have cached data for this city
+  const cachedData = cityDataCache.value.get(props.city)
+  if (cachedData) {
+    // Use cached data
+    coords.value = cachedData.coords
+    temperature.value = cachedData.temperature
+    localTime.value = cachedData.localTime
+    population.value = cachedData.population
+    currency.value = cachedData.currency
+    currencyCode.value = cachedData.currencyCode
+    displayName.value = cachedData.displayName
+    return
+  }
+
+  // If no cached data, fetch new data
+  isLoading.value = true
+
   // Reset values
   temperature.value = null
   localTime.value = null
@@ -249,6 +278,19 @@ async function loadAllData() {
   if (currencyCode.value) {
     currency.value = await convertCurrency(currencyCode.value)
   }
+
+  // Cache the data
+  cityDataCache.value.set(props.city, {
+    coords: coords.value,
+    temperature: temperature.value,
+    localTime: localTime.value,
+    population: population.value,
+    currency: currency.value,
+    currencyCode: currencyCode.value,
+    displayName: displayName.value,
+  })
+
+  isLoading.value = false
 }
 
 // Load data when component is mounted
@@ -256,10 +298,8 @@ onMounted(() => {
   loadAllData()
 })
 
-// Watch for changes in the city prop and reload data when it changes
-watch(() => props.city, () => {
-  loadAllData()
-})
+// No need to watch for city changes since we're using a keyed component
+// The component will be recreated with a new key when the city changes
 </script>
 
 <template>
