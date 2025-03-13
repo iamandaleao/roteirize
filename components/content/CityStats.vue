@@ -2,12 +2,13 @@
 import { onMounted, ref } from 'vue'
 
 // Default city
-const city = ref('Paris')
+const city = ref('Canada')
 const coords = ref<{ lat: string, lon: string } | null>(null)
 const temperature = ref<number | null>(null)
 const localTime = ref<string | null>(null)
 const population = ref<string | null>(null)
 const currency = ref<string | null>(null)
+const currencyCode = ref<string | null>(null)
 
 async function getCoords(cityName: string): Promise<{ lat: string, lon: string } | null> {
   try {
@@ -54,41 +55,78 @@ function getLocalTimeFromData(data: any): string | null {
   return data.current.time.split('T')[1]
 }
 
-async function getPopulationData(cityName: string): Promise<string | null> {
+async function getWikidataInfo(cityName: string): Promise<{
+  population: string | null
+  currencyCode: string | null
+}> {
   try {
-    // First, get the Wikidata ID
+    // First, get the Wikidata ID for the city
     const searchUrl = `https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=${encodeURIComponent(cityName)}&language=en&origin=*`
     const searchRes = await fetch(searchUrl)
     const searchData = await searchRes.json()
 
     if (!searchData.search || !searchData.search.length) {
       console.error('City not found in Wikidata')
-      return null
+      return { population: null, currencyCode: null }
     }
 
-    const qid = searchData.search[0].id
+    const cityQid = searchData.search[0].id
 
-    // Then, get the population data using the ID
-    const dataUrl = `https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&entity=${qid}&origin=*`
-    const dataRes = await fetch(dataUrl)
-    const data = await dataRes.json()
+    // Get the city data
+    const cityDataUrl = `https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&entity=${cityQid}&origin=*`
+    const cityDataRes = await fetch(cityDataUrl)
+    const cityData = await cityDataRes.json()
 
-    const populationClaim = data.claims?.P1082?.[0]?.mainsnak?.datavalue?.value?.amount
-    if (!populationClaim) {
-      console.error('Population data not available')
-      return null
+    // Get population data
+    const populationClaim = cityData.claims?.P1082?.[0]?.mainsnak?.datavalue?.value?.amount
+    let population = null
+    if (populationClaim) {
+      population = formatNumber(Number.parseInt(populationClaim))
     }
 
-    return formatNumber(Number.parseInt(populationClaim))
+    // Get country QID (P17 is "country" property in Wikidata)
+    const countryQid = cityData.claims?.P17?.[0]?.mainsnak?.datavalue?.value?.id
+    let currencyCode = null
+
+    if (countryQid) {
+      // Get country data to find currency
+      const countryDataUrl = `https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&entity=${countryQid}&property=P38&origin=*`
+      const countryDataRes = await fetch(countryDataUrl)
+      const countryData = await countryDataRes.json()
+
+      // P38 is "currency" property in Wikidata
+      const currencyQid = countryData.claims?.P38?.[0]?.mainsnak?.datavalue?.value?.id
+
+      if (currencyQid) {
+        // Get currency data to find currency code
+        const currencyDataUrl = `https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&entity=${currencyQid}&property=P498&origin=*`
+        const currencyDataRes = await fetch(currencyDataUrl)
+        const currencyData = await currencyDataRes.json()
+
+        // P498 is "ISO 4217 code" property in Wikidata
+        currencyCode = currencyData.claims?.P498?.[0]?.mainsnak?.datavalue?.value
+      }
+    }
+
+    return {
+      population,
+      currencyCode,
+    }
   }
   catch (error) {
-    console.error('Error fetching population data:', error)
-    return null
+    console.error('Error fetching Wikidata info:', error)
+    return { population: null, currencyCode: null }
   }
 }
 
-async function convertCurrency(pair: string): Promise<string | null> {
+async function convertCurrency(fromCurrency: string, toCurrency: string = 'BRL'): Promise<string | null> {
   try {
+    if (!fromCurrency) {
+      console.error('Source currency code not available')
+      return null
+    }
+
+    const pair = `${fromCurrency}-${toCurrency}`
     const res = await fetch(`https://economia.awesomeapi.com.br/json/${pair}`)
     const data = await res.json()
 
@@ -132,11 +170,15 @@ async function loadAllData() {
     }
   }
 
-  // Get population data independently
-  population.value = await getPopulationData(city.value)
+  // Get Wikidata info (population and currency code)
+  const wikidataInfo = await getWikidataInfo(city.value)
+  population.value = wikidataInfo.population
+  currencyCode.value = wikidataInfo.currencyCode
 
-  // Get currency data independently
-  currency.value = await convertCurrency('EUR-BRL')
+  // Get currency conversion if currency code is available
+  if (currencyCode.value) {
+    currency.value = await convertCurrency(currencyCode.value)
+  }
 }
 
 onMounted(() => {
@@ -145,9 +187,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black dark:bg-background dark:text-white lg:rounded-lg xl:grid-cols-4">
+  <div class="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black dark:bg-background dark:text-white lg:rounded-lg">
     <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
-      <Icon name="ph:snowflake" />
+      <Icon name="ph:snowflake" class="shrink-0" />
       <span v-if="temperature !== null">
         {{ temperature }}°C
       </span>
@@ -155,7 +197,7 @@ onMounted(() => {
     </div>
 
     <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
-      <Icon name="ph:alarm" />
+      <Icon name="ph:alarm" class="shrink-0" />
       <span v-if="localTime !== null">
         {{ localTime }}
       </span>
@@ -171,9 +213,9 @@ onMounted(() => {
     </div>
 
     <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
-      <Icon name="ph:currency-eur" />
+      <Icon name="ph:currency-eur" class="shrink-0" />
       <span v-if="currency !== null">
-        {{ currency }}
+        {{ currencyCode?.toUpperCase() }}: R${{ currency }}
       </span>
       <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
     </div>
