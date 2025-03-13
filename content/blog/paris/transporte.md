@@ -5,13 +5,13 @@ image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:title="title" :description="description" :image="image"}
+::post-hero{:title="title" :description="description" :image="image"}
 ::
 
-::blog-post-stats
+::city-stats
 ::
 
-::blog-post-body{:date="date"}
+::post-body{:date="date"}
 
 Planejar como se locomover por Paris é essencial para aproveitar cada momento sem perder tempo. A cidade tem várias opções de transporte, e vou te explicar tudo o que você precisa saber para escolher o que melhor se encaixa no seu estilo de viagem.
 

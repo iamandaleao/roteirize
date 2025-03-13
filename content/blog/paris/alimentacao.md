@@ -5,13 +5,13 @@ image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:title="title" :description="description" :image="image"}
+::post-hero{:title="title" :description="description" :image="image"}
 ::
 
-::blog-post-stats
+::city-stats
 ::
 
-::blog-post-body{:date="date"}
+::post-body{:date="date"}
 
 Ah, Paris e sua gastronomia… só de pensar já dá água na boca! A cidade é um verdadeiro paraíso para quem ama comer bem, e eu quero compartilhar algumas das experiências que considero imperdíveis para você aproveitar o melhor da culinária parisiense.
 

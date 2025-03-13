@@ -5,13 +5,13 @@ image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:title="title" :description="description" :image="image"}
+::post-hero{:title="title" :description="description" :image="image"}
 ::
 
-::blog-post-stats
+::city-stats
 ::
 
-::blog-post-body{:date="date"}
+::post-body{:date="date"}
 
 Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz um planejamento ideal para explorar Paris em 1, 5 ou 10 dias, com sugestões de passeios, restaurantes e experiências imperdíveis.
 

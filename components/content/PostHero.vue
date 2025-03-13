@@ -13,7 +13,7 @@ defineProps<{
       <div class="mx-auto max-w-2xl py-32">
         <div class="mb-8 flex justify-center">
           <div class="relative rounded-full px-3 py-1 text-sm/6 text-slate-300 ring-1 ring-white/20">
-            <BlogPostBreadcrumb />
+            <PostBreadcrumb />
           </div>
         </div>
         <div class="text-center">
@@ -26,6 +26,6 @@ defineProps<{
         </div>
       </div>
     </div>
-    <BlogPostMenu />
+    <PostMenu />
   </div>
 </template>

@@ -5,13 +5,13 @@ image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:title="title" :description="description" :image="image"}
+::post-hero{:title="title" :description="description" :image="image"}
 ::
 
-::blog-post-stats
+::city-stats
 ::
 
-::blog-post-body{:date="date"}
+::post-body{:date="date"}
 
 Quando penso na história de Paris, fico fascinada pela sua jornada, que começa lá no século III a.C. com uma pequena vila celta chamada Lutetia. Ela foi fundada pelos Parisii, uma tribo gaulesa que se estabeleceu às margens do Rio Sena. Não dá para imaginar o quanto essa pequena vila mudou ao longo dos séculos, não é? Com o tempo, os romanos chegaram e tomaram conta da região, construindo as primeiras pontes, aquedutos e estradas. Lutetia foi se transformando em um centro de comércio vibrante. Só mais tarde, no século IV, a cidade passou a se chamar Paris, em homenagem aos seus primeiros habitantes, e começou a se destacar como um importante centro religioso e político da região.
 

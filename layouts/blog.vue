@@ -3,7 +3,7 @@
     <NavHeader />
     <slot />
     <div class="py-20">
-      <BlogWhatsappCta />
+      <WhatsappCta />
     </div>
     <Footer />
   </div>

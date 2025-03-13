@@ -5,13 +5,13 @@ image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:title="title" :description="description" :image="image"}
+::post-hero{:title="title" :description="description" :image="image"}
 ::
 
-::blog-post-stats
+::city-stats
 ::
 
-::blog-post-body{:date="date"}
+::post-body{:date="date"}
 
 Paris é famosa pelas suas lojas de luxo e marcas icônicas, mas também oferece diversas opções para quem quer aproveitar a cidade sem estourar o orçamento. Se você está buscando dicas para comprar bastante e gastar menos, aqui estão algumas sugestões para aproveitar o melhor da moda parisiense de forma acessível.
 

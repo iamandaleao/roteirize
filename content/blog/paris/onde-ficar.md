@@ -5,13 +5,13 @@ image: paris.jpg
 date: "18/02/2025"
 ---
 
-::blog-post-hero{:title="title" :description="description" :image="image"}
+::post-hero{:title="title" :description="description" :image="image"}
 ::
 
-::blog-post-stats
+::city-stats
 ::
 
-::blog-post-body{:date="date"}
+::post-body{:date="date"}
 
 Escolher o lugar ideal para se hospedar em Paris pode fazer toda a diferença na sua viagem, e eu estou aqui para te ajudar com isso. Cada bairro tem seu próprio charme e oferece uma experiência única. Vou te apresentar as principais regiões para que você encontre a que mais combina com o seu estilo de viagem.
 

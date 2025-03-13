@@ -6,7 +6,7 @@ image: sobre.jpeg
 ---
 ::
 
-::blog-post-body
+::post-body
 Que bom te ver por aqui! Se chegou até essa página, é porque está curioso para saber mais sobre mim e a Roteirize.
 
 Nunca gostei de roteiros prontos. Quando fui planejar minha viagem internacional, percebi que poderia criar algo muito mais especial.
