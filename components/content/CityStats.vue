@@ -214,12 +214,10 @@ function formatNumber(num: number): string {
 }
 
 async function loadAllData() {
-  // Get Wikidata info first to determine if it's a country
   const wikidataInfo = await getWikidataInfo(city.value)
   population.value = wikidataInfo.population
   currencyCode.value = wikidataInfo.currencyCode
 
-  // If it's a country and has a capital city, use the capital for weather data
   let locationForWeather = city.value
   if (wikidataInfo.isCountry && wikidataInfo.capitalCity) {
     locationForWeather = wikidataInfo.capitalCity
@@ -229,10 +227,8 @@ async function loadAllData() {
     displayName.value = city.value
   }
 
-  // Get coordinates for the appropriate location
   coords.value = await getCoords(locationForWeather)
 
-  // If coordinates are available, get weather data
   if (coords.value) {
     const weatherData = await getWeatherData(coords.value.lat, coords.value.lon)
     if (weatherData) {
@@ -241,7 +237,6 @@ async function loadAllData() {
     }
   }
 
-  // Get currency conversion if currency code is available
   if (currencyCode.value) {
     currency.value = await convertCurrency(currencyCode.value)
   }
