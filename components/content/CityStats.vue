@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 
-// Default city
-const city = ref('uruguaiana')
+const props = defineProps<{
+  city: string
+}>()
+
 const coords = ref<{ lat: string, lon: string } | null>(null)
 const temperature = ref<number | null>(null)
 const localTime = ref<string | null>(null)
 const population = ref<string | null>(null)
 const currency = ref<string | null>(null)
 const currencyCode = ref<string | null>(null)
-const displayName = ref<string>(city.value)
+const displayName = ref<string>(props.city)
 
 async function getCoords(cityName: string): Promise<{ lat: string, lon: string } | null> {
   try {
@@ -214,17 +216,24 @@ function formatNumber(num: number): string {
 }
 
 async function loadAllData() {
-  const wikidataInfo = await getWikidataInfo(city.value)
+  // Reset values
+  temperature.value = null
+  localTime.value = null
+  population.value = null
+  currency.value = null
+  currencyCode.value = null
+
+  const wikidataInfo = await getWikidataInfo(props.city)
   population.value = wikidataInfo.population
   currencyCode.value = wikidataInfo.currencyCode
 
-  let locationForWeather = city.value
+  let locationForWeather = props.city
   if (wikidataInfo.isCountry && wikidataInfo.capitalCity) {
     locationForWeather = wikidataInfo.capitalCity
-    displayName.value = `${city.value} (${wikidataInfo.capitalCity})`
+    displayName.value = `${props.city} (${wikidataInfo.capitalCity})`
   }
   else {
-    displayName.value = city.value
+    displayName.value = props.city
   }
 
   coords.value = await getCoords(locationForWeather)
@@ -242,14 +251,20 @@ async function loadAllData() {
   }
 }
 
+// Load data when component is mounted
 onMounted(() => {
+  loadAllData()
+})
+
+// Watch for changes in the city prop and reload data when it changes
+watch(() => props.city, () => {
   loadAllData()
 })
 </script>
 
 <template>
-  <div class="mx-auto mt-4 grid max-w-3xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black dark:bg-background dark:text-white lg:grid-cols-4 lg:rounded-lg">
-    <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
+  <div class="mx-auto mt-4 grid max-w-3xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black shadow dark:bg-background dark:text-white lg:grid-cols-4 lg:rounded-lg">
+    <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
       <Icon name="ph:snowflake" class="shrink-0" />
       <span v-if="temperature !== null">
         {{ temperature }}°C
@@ -257,7 +272,7 @@ onMounted(() => {
       <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
     </div>
 
-    <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
+    <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
       <Icon name="ph:alarm" class="shrink-0" />
       <span v-if="localTime !== null">
         {{ localTime }}
@@ -265,7 +280,7 @@ onMounted(() => {
       <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
     </div>
 
-    <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
+    <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
       <Icon name="ph:users-three" class="shrink-0" />
       <span v-if="population !== null">
         {{ population }}
@@ -273,14 +288,14 @@ onMounted(() => {
       <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
     </div>
 
-    <div v-if="currencyCode !== 'BRL'" class="flex items-center justify-center gap-x-2 rounded-md p-2">
+    <div v-if="currencyCode !== 'BRL'" class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
       <span v-if="currency !== null">
         {{ currencyCode?.toUpperCase() }}: R${{ currency }}
       </span>
       <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
     </div>
   </div>
-  <div class="mx-auto mt-2 text-center text-sm text-gray-500">
-    {{ displayName }}
+  <div class="mx-auto mt-2 text-center text-sm text-slate-500">
+    Dados recentes aproximados
   </div>
 </template>

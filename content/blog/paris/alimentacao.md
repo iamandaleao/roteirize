@@ -1,4 +1,5 @@
 ---
+city: "paris"
 title: "Paris: Alimentação"
 description: "Um Banquete para os Sentidos"
 image: paris.jpg
@@ -8,7 +9,7 @@ date: "18/02/2025"
 ::post-hero{:title="title" :description="description" :image="image"}
 ::
 
-::city-stats
+::city-stats{:city="city"}
 ::
 
 ::post-body{:date="date"}

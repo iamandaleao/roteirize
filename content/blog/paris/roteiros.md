@@ -1,4 +1,5 @@
 ---
+city: "paris"
 title: "Paris: Roteiros"
 description: "A Cidade dos Sonhos e Descobertas"
 image: paris.jpg
@@ -8,7 +9,7 @@ date: "18/02/2025"
 ::post-hero{:title="title" :description="description" :image="image"}
 ::
 
-::city-stats
+::city-stats{:city="city"}
 ::
 
 ::post-body{:date="date"}
