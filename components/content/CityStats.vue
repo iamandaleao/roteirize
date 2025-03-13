@@ -2,13 +2,14 @@
 import { onMounted, ref } from 'vue'
 
 // Default city
-const city = ref('Washington')
+const city = ref('Paris')
 const coords = ref<{ lat: string, lon: string } | null>(null)
 const temperature = ref<number | null>(null)
 const localTime = ref<string | null>(null)
 const population = ref<string | null>(null)
 const currency = ref<string | null>(null)
 const currencyCode = ref<string | null>(null)
+const displayName = ref<string>(city.value)
 
 async function getCoords(cityName: string): Promise<{ lat: string, lon: string } | null> {
   try {
@@ -16,7 +17,7 @@ async function getCoords(cityName: string): Promise<{ lat: string, lon: string }
     const res = await fetch(url)
     const data = await res.json()
     if (data.length === 0) {
-      console.error('City not found')
+      console.error('Location not found')
       return null
     }
 
@@ -57,30 +58,52 @@ function getLocalTimeFromData(data: any): string | null {
 async function getWikidataInfo(cityName: string): Promise<{
   population: string | null
   currencyCode: string | null
+  isCountry: boolean
+  capitalCity: string | null
 }> {
   try {
-    // First, get the Wikidata ID for the city
+    // First, get the Wikidata ID for the location
     const searchUrl = `https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=${encodeURIComponent(cityName)}&language=en&origin=*`
     const searchRes = await fetch(searchUrl)
     const searchData = await searchRes.json()
 
     if (!searchData.search || !searchData.search.length) {
-      console.error('City not found in Wikidata')
-      return { population: null, currencyCode: null }
+      console.error('Location not found in Wikidata')
+      return { population: null, currencyCode: null, isCountry: false, capitalCity: null }
     }
 
-    const cityQid = searchData.search[0].id
+    const entityQid = searchData.search[0].id
 
-    // Get the city data
-    const cityDataUrl = `https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&entity=${cityQid}&origin=*`
-    const cityDataRes = await fetch(cityDataUrl)
-    const cityData = await cityDataRes.json()
+    // Get the entity data
+    const entityDataUrl = `https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&entity=${entityQid}&origin=*`
+    const entityDataRes = await fetch(entityDataUrl)
+    const entityData = await entityDataRes.json()
+
+    // Check if this is a country
+    const isCountry = entityData.claims?.P31?.some((claim: any) =>
+      claim.mainsnak?.datavalue?.value?.id === 'Q6256' // Q6256 is "country"
+      || claim.mainsnak?.datavalue?.value?.id === 'Q3624078', // Q3624078 is "sovereign state"
+    )
+
+    // Get capital city if this is a country
+    let capitalCity = null
+    if (isCountry && entityData.claims?.P36) {
+      // P36 is "capital" property in Wikidata
+      const capitalQid = entityData.claims.P36[0]?.mainsnak?.datavalue?.value?.id
+      if (capitalQid) {
+        // Get the capital city name
+        const capitalDataUrl = `https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=${capitalQid}&props=labels&languages=en&origin=*`
+        const capitalDataRes = await fetch(capitalDataUrl)
+        const capitalData = await capitalDataRes.json()
+        capitalCity = capitalData.entities?.[capitalQid]?.labels?.en?.value || null
+      }
+    }
 
     // Get population data - find the most recent one
     let population = null
-    if (cityData.claims?.P1082) {
+    if (entityData.claims?.P1082) {
       // Get all population claims
-      const populationClaims = cityData.claims.P1082
+      const populationClaims = entityData.claims.P1082
 
       // Get the qualifiers for each claim to find the determination date (P585)
       const populationWithDates = []
@@ -117,12 +140,7 @@ async function getWikidataInfo(cityName: string): Promise<{
 
     // Get country QID (P17 is "country" property in Wikidata)
     // For countries, they are their own country, so we can use the same QID
-    const isCountry = cityData.claims?.P31?.some(claim =>
-      claim.mainsnak?.datavalue?.value?.id === 'Q6256' // Q6256 is "country"
-      || claim.mainsnak?.datavalue?.value?.id === 'Q3624078', // Q3624078 is "sovereign state"
-    )
-
-    const countryQid = isCountry ? cityQid : cityData.claims?.P17?.[0]?.mainsnak?.datavalue?.value?.id
+    const countryQid = isCountry ? entityQid : entityData.claims?.P17?.[0]?.mainsnak?.datavalue?.value?.id
     let currencyCode = null
 
     if (countryQid) {
@@ -148,11 +166,13 @@ async function getWikidataInfo(cityName: string): Promise<{
     return {
       population,
       currencyCode,
+      isCountry,
+      capitalCity,
     }
   }
   catch (error) {
     console.error('Error fetching Wikidata info:', error)
-    return { population: null, currencyCode: null }
+    return { population: null, currencyCode: null, isCountry: false, capitalCity: null }
   }
 }
 
@@ -194,8 +214,23 @@ function formatNumber(num: number): string {
 }
 
 async function loadAllData() {
-  // Get coordinates
-  coords.value = await getCoords(city.value)
+  // Get Wikidata info first to determine if it's a country
+  const wikidataInfo = await getWikidataInfo(city.value)
+  population.value = wikidataInfo.population
+  currencyCode.value = wikidataInfo.currencyCode
+
+  // If it's a country and has a capital city, use the capital for weather data
+  let locationForWeather = city.value
+  if (wikidataInfo.isCountry && wikidataInfo.capitalCity) {
+    locationForWeather = wikidataInfo.capitalCity
+    displayName.value = `${city.value} (${wikidataInfo.capitalCity})`
+  }
+  else {
+    displayName.value = city.value
+  }
+
+  // Get coordinates for the appropriate location
+  coords.value = await getCoords(locationForWeather)
 
   // If coordinates are available, get weather data
   if (coords.value) {
@@ -205,11 +240,6 @@ async function loadAllData() {
       localTime.value = getLocalTimeFromData(weatherData)
     }
   }
-
-  // Get Wikidata info (population and currency code)
-  const wikidataInfo = await getWikidataInfo(city.value)
-  population.value = wikidataInfo.population
-  currencyCode.value = wikidataInfo.currencyCode
 
   // Get currency conversion if currency code is available
   if (currencyCode.value) {
@@ -223,7 +253,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black dark:bg-background dark:text-white lg:rounded-lg">
+  <div class="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black dark:bg-background dark:text-white lg:grid-cols-4 lg:rounded-lg">
     <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
       <Icon name="ph:snowflake" class="shrink-0" />
       <span v-if="temperature !== null">
@@ -255,5 +285,8 @@ onMounted(() => {
       </span>
       <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
     </div>
+  </div>
+  <div class="mx-auto mt-2 text-center text-sm text-gray-500">
+    {{ displayName }}
   </div>
 </template>
