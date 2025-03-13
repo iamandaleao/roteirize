@@ -24,6 +24,6 @@ useSeoMeta({
 
 <template>
   <div>
-    <ContentRenderer v-if="page" :key="route.path" :value="page" />
+    <ContentRenderer v-if="page" :value="page" />
   </div>
 </template>

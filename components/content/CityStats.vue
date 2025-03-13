@@ -1,19 +1,10 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
-// Add a key for component caching
-defineOptions({
-  name: 'CityStats',
-  // This ensures the component is cached by city
-  key: props => `city-stats-${props.city}`,
-})
-
-// Define props with city
 const props = defineProps<{
   city: string
 }>()
 
-// Create a cache for city data
 const cityDataCache = useState('city-data-cache', () => new Map())
 
 const coords = ref<{ lat: string, lon: string } | null>(null)
@@ -228,10 +219,8 @@ function formatNumber(num: number): string {
 }
 
 async function loadAllData() {
-  // Check if we already have cached data for this city
   const cachedData = cityDataCache.value.get(props.city)
   if (cachedData) {
-    // Use cached data
     coords.value = cachedData.coords
     temperature.value = cachedData.temperature
     localTime.value = cachedData.localTime
@@ -242,10 +231,7 @@ async function loadAllData() {
     return
   }
 
-  // If no cached data, fetch new data
   isLoading.value = true
-
-  // Reset values
   temperature.value = null
   localTime.value = null
   population.value = null
@@ -279,7 +265,6 @@ async function loadAllData() {
     currency.value = await convertCurrency(currencyCode.value)
   }
 
-  // Cache the data
   cityDataCache.value.set(props.city, {
     coords: coords.value,
     temperature: temperature.value,
@@ -293,13 +278,9 @@ async function loadAllData() {
   isLoading.value = false
 }
 
-// Load data when component is mounted
 onMounted(() => {
   loadAllData()
 })
-
-// No need to watch for city changes since we're using a keyed component
-// The component will be recreated with a new key when the city changes
 </script>
 
 <template>
