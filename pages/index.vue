@@ -8,6 +8,7 @@ useSeoMeta({
 <template>
   <div>
     <LandingHeader />
+    <LandingServices />
     <Footer />
   </div>
 </template>
