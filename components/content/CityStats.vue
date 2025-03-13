@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 
 // Default city
-const city = ref('Paris')
+const city = ref('uruguaiana')
 const coords = ref<{ lat: string, lon: string } | null>(null)
 const temperature = ref<number | null>(null)
 const localTime = ref<string | null>(null)
@@ -209,7 +209,7 @@ async function convertCurrency(fromCurrency: string, toCurrency: string = 'BRL')
 function formatNumber(num: number): string {
   return new Intl.NumberFormat('pt', {
     notation: 'compact',
-    compactDisplay: 'long',
+    compactDisplay: 'short',
   }).format(num)
 }
 
@@ -253,7 +253,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black dark:bg-background dark:text-white lg:grid-cols-4 lg:rounded-lg">
+  <div class="mx-auto mt-4 grid max-w-3xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black dark:bg-background dark:text-white lg:grid-cols-4 lg:rounded-lg">
     <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
       <Icon name="ph:snowflake" class="shrink-0" />
       <span v-if="temperature !== null">
@@ -278,8 +278,7 @@ onMounted(() => {
       <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
     </div>
 
-    <div class="flex items-center justify-center gap-x-2 rounded-md p-2">
-      <Icon name="ph:currency-eur" class="shrink-0" />
+    <div v-if="currencyCode !== 'BRL'" class="flex items-center justify-center gap-x-2 rounded-md p-2">
       <span v-if="currency !== null">
         {{ currencyCode?.toUpperCase() }}: R${{ currency }}
       </span>
