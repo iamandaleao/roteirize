@@ -2,6 +2,7 @@
 title: "Paris"
 description: "A Cidade dos Sonhos e Descobertas"
 image: paris.jpg
+date: "18/02/2025"
 ---
 
 ::post-hero{:title="title" :description="description" :image="image"}
@@ -10,7 +11,7 @@ image: paris.jpg
 ::city-stats
 ::
 
-::post-body
+::post-body{:date="date"}
 
 A capital da França e uma das cidades mais visitadas do mundo, Paris é um destino que encanta qualquer viajante. Com sua história rica, arquitetura deslumbrante e uma atmosfera romântica, a cidade luz é um daqueles lugares que todo mundo sonha em conhecer pelo menos uma vez na vida.
 
