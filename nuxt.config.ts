@@ -61,4 +61,17 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/color-mode',
   ],
+
+  vite: {
+    optimizeDeps: {
+      entries: [
+        '@vueuse/core',
+        'class-variance-authority',
+        'reka-ui',
+        'lucide-vue-next',
+        'clsx',
+        'tailwind-merge',
+      ],
+    },
+  },
 })

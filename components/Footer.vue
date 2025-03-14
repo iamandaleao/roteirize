@@ -1,11 +1,4 @@
 <script setup>
-import EmailIcon from '~/components/EmailIcon.vue'
-import FacebookIcon from '~/components/FacebookIcon.vue'
-import InstagramIcon from '~/components/InstagramIcon.vue'
-import TikTokIcon from '~/components/TikTokIcon.vue'
-import WhatsAppIcon from '~/components/WhatsAppIcon.vue'
-import YouTubeIcon from '~/components/YouTubeIcon.vue'
-
 const navigation = {
   pages: [
     { name: 'Home', href: '/' },
@@ -29,32 +22,32 @@ const navigation = {
     {
       name: 'Facebook',
       href: 'https://www.facebook.com/roteirizeoficial',
-      icon: FacebookIcon,
+      icon: 'ph:facebook-logo',
     },
     {
       name: 'Instagram',
       href: 'https://www.instagram.com/roteirizeoficial',
-      icon: InstagramIcon,
+      icon: 'ph:instagram-logo',
     },
     {
       name: 'YouTube',
       href: 'https://www.youtube.com/@roteirizeoficial',
-      icon: YouTubeIcon,
+      icon: 'ph:youtube-logo',
     },
     {
       name: 'TikTok',
       href: 'https://www.tiktok.com/@roteirizeoficial',
-      icon: TikTokIcon,
+      icon: 'ph:tiktok-logo',
     },
     {
       name: 'Email',
       href: 'mailto:admroteirize@gmail.com',
-      icon: EmailIcon,
+      icon: 'ph:envelope',
     },
     {
       name: 'WhatsApp',
       href: 'https://api.whatsapp.com/send?phone=5547933814178&text=Oi%2C%20encontrei%20suas%20informa%C3%A7%C3%B5es%20do%20WhatsApp%20no%20seu%20site',
-      icon: WhatsAppIcon,
+      icon: 'ph:whatsapp-logo',
     },
   ],
 }
@@ -84,7 +77,7 @@ const navigation = {
               class="text-secondary-foreground hover:text-white"
             >
               <span class="sr-only">{{ item.name }}</span>
-              <component :is="item.icon" class="size-6" aria-hidden="true" />
+              <Icon :name="item.icon" aria-hidden="true" />
             </a>
           </div>
         </div>
