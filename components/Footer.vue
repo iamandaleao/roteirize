@@ -66,7 +66,7 @@ const navigation = {
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
           <div class="space-y-2">
-            <Logo class="mx-auto h-16 text-black dark:!text-white xl:mx-0" />
+            <Logo class="mx-auto h-16 text-primary-foreground xl:mx-0" />
             <p class="text-balance text-center text-sm/6 text-slate-600 dark:text-slate-400 xl:text-left">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
             </p>
