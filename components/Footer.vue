@@ -61,13 +61,16 @@ const navigation = {
 </script>
 
 <template>
-  <footer class="border-t bg-background">
+  <footer class="border-t bg-primary dark:bg-background">
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
           <div class="space-y-2">
-            <Logo class="mx-auto h-16 text-primary-foreground xl:mx-0" />
-            <p class="text-balance text-center text-sm/6 text-slate-600 dark:text-slate-400 xl:text-left">
+            <NuxtLink to="/" class="-m-1.5 p-1.5">
+              <span class="sr-only">Roteirize</span>
+              <Logo class="mx-auto h-16 text-primary-foreground xl:mx-0" />
+            </NuxtLink>
+            <p class="text-balance text-center text-sm/6 text-slate-400 xl:text-left">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
             </p>
           </div>
@@ -78,7 +81,7 @@ const navigation = {
               :title="item.name"
               :href="item.href"
               target="_blank"
-              class="text-slate-600 hover:text-slate-900 dark:text-slate-400 hover:dark:text-slate-100"
+              class="text-slate-400 hover:text-slate-100"
             >
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="size-6" aria-hidden="true" />
@@ -88,34 +91,34 @@ const navigation = {
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
+              <h3 class="text-sm/6 font-semibold text-white">
                 Links úteis
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.pages" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-slate-400 hover:text-slate-100">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
+              <h3 class="text-sm/6 font-semibold text-white">
                 Blog
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.blog" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-slate-400 hover:text-slate-100">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm/6 font-semibold text-slate-900 dark:text-white">
+              <h3 class="text-sm/6 font-semibold text-white">
                 Descontos
               </h3>
               <ul role="list" class="mt-6 grid gap-y-4 lg:grid-cols-2 lg:gap-x-48">
                 <li v-for="item in navigation.discounts" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-slate-400 hover:text-slate-100">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
@@ -123,7 +126,7 @@ const navigation = {
         </div>
       </div>
       <div class="mt-16 border-t border-slate-900/10 pt-8 sm:mt-20 lg:mt-24">
-        <p class="text-sm/6 text-slate-600 dark:text-slate-400">
+        <p class="text-sm/6 text-slate-400">
           &copy; 2024 - {{ new Date().getFullYear() }} Roteirize.
         </p>
       </div>
