@@ -3,47 +3,21 @@ import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-const searchQuery = ref(route.query.q)
-const searchResults = ref([])
+const query = ref(route.query.q)
 const isSearching = ref(false)
-const noResults = ref(false)
 
-async function performSearch(query) {
-  if (!query) {
-    searchResults.value = []
-    return
-  }
+const { data: posts } = await useAsyncData(`search-${query.value}`, () => {
+  return queryCollection('blog')
+    .where('body', 'LIKE', `%${query.value}%`)
+    .all()
+}, {
+  lazy: true,
+  watch: [query],
+})
 
-  searchQuery.value = query
-  isSearching.value = true
-  noResults.value = false
-
-  try {
-    const { data: results } = await useAsyncData(`search-${query}`, () => {
-      return queryCollection('blog')
-        .where('title', 'LIKE', `%${query}%`)
-        .limit(20)
-        .all()
-    })
-
-    searchResults.value = results.value
-    noResults.value = results.value.length === 0
-  }
-  catch (error) {
-    console.error('Search error:', error)
-    searchResults.value = []
-    noResults.value = true
-  }
-  finally {
-    isSearching.value = false
-  }
+async function updateSearch(q) {
+  query.value = q
 }
-
-watch(() => route.query.q, (newQuery) => {
-  if (newQuery) {
-    performSearch(newQuery)
-  }
-}, { immediate: true })
 </script>
 
 <template>
@@ -54,7 +28,7 @@ watch(() => route.query.q, (newQuery) => {
       </h1>
 
       <div class="max-w-xl">
-        <ContentSearch @search="performSearch" />
+        <ContentSearch @search="updateSearch" />
       </div>
     </div>
 
@@ -62,23 +36,23 @@ watch(() => route.query.q, (newQuery) => {
       <div class="size-12 animate-spin rounded-full border-y-2 border-primary" />
     </div>
 
-    <div v-else-if="noResults" class="py-12 text-center">
+    <div v-else-if="!posts" class="py-12 text-center">
       <p class="text-xl text-gray-600 dark:text-gray-400">
-        Nenhum resultado encontrado para "{{ searchQuery }}".
+        Nenhum resultado encontrado para "{{ query }}".
       </p>
       <p class="mt-2 text-gray-500 dark:text-gray-500">
         Tente buscar por outros termos ou explorar nossos destinos populares.
       </p>
     </div>
 
-    <div v-else-if="searchResults.length > 0" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <NuxtLink v-for="post in searchResults" :key="post.id" :to="post.stem">
+    <div v-else-if="posts.length > 0" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <NuxtLink v-for="post in posts" :key="post.id" :to="post.stem">
         {{ post.title }}
       </NuxtLink>
     </div>
 
     <code>
-      {{ searchResults }}
+      {{ posts }}
     </code>
   </div>
 </template>

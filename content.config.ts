@@ -21,6 +21,7 @@ export default defineContentConfig({
         city: z.string().optional(),
         image: z.string(),
         date: z.string(),
+        tags: z.array(z.string()),
       }),
     }),
   },
