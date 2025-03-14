@@ -105,7 +105,7 @@ const tips: NavItem[] = [
       <div class="flex lg:flex-1">
         <NuxtLink to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Roteirize</span>
-          <Logo class="h-12 text-primary-foreground" />
+          <Logo class="h-12 text-primary" />
         </NuxtLink>
       </div>
       <div class="flex lg:hidden">

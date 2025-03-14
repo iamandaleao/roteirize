@@ -61,16 +61,16 @@ const navigation = {
 </script>
 
 <template>
-  <footer class="border-t bg-primary dark:bg-background">
+  <footer class="border-t bg-secondary">
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
           <div class="space-y-2">
             <NuxtLink to="/" class="-m-1.5 p-1.5">
               <span class="sr-only">Roteirize</span>
-              <Logo class="mx-auto h-16 text-primary-foreground xl:mx-0" />
+              <Logo class="mx-auto h-16 text-primary xl:mx-0" />
             </NuxtLink>
-            <p class="text-balance text-center text-sm/6 text-slate-400 xl:text-left">
+            <p class="text-balance text-center text-sm/6 text-secondary-foreground xl:text-left">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
             </p>
           </div>
@@ -81,7 +81,7 @@ const navigation = {
               :title="item.name"
               :href="item.href"
               target="_blank"
-              class="text-slate-400 hover:text-slate-100"
+              class="text-secondary-foreground hover:text-white"
             >
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="size-6" aria-hidden="true" />
@@ -96,7 +96,7 @@ const navigation = {
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.pages" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-400 hover:text-slate-100">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
@@ -106,7 +106,7 @@ const navigation = {
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.blog" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-400 hover:text-slate-100">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
@@ -118,7 +118,7 @@ const navigation = {
               </h3>
               <ul role="list" class="mt-6 grid gap-y-4 lg:grid-cols-2 lg:gap-x-48">
                 <li v-for="item in navigation.discounts" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-slate-400 hover:text-slate-100">{{ item.name }}</a>
+                  <a :href="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
