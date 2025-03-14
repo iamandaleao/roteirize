@@ -1,15 +1,14 @@
 <script setup>
-import { onMounted, ref, watch } from 'vue'
+import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-const searchQuery = ref('')
+const searchQuery = ref(route.query.q)
 const searchResults = ref([])
 const isSearching = ref(false)
 const noResults = ref(false)
 
-// Perform search when the page loads or when the query parameter changes
-const performSearch = async (query) => {
+async function performSearch(query) {
   if (!query) {
     searchResults.value = []
     return
@@ -40,24 +39,11 @@ const performSearch = async (query) => {
   }
 }
 
-// Handle new search submissions
-const handleSearch = (query) => {
-  performSearch(query)
-}
-
-// Watch for route query changes
 watch(() => route.query.q, (newQuery) => {
   if (newQuery) {
     performSearch(newQuery)
   }
 }, { immediate: true })
-
-onMounted(() => {
-  if (route.query.q) {
-    searchQuery.value = route.query.q
-    performSearch(route.query.q)
-  }
-})
 </script>
 
 <template>
@@ -67,18 +53,15 @@ onMounted(() => {
         Resultados da busca
       </h1>
 
-      <!-- Search input -->
       <div class="max-w-xl">
-        <ContentSearch @search="handleSearch" />
+        <ContentSearch @search="performSearch" />
       </div>
     </div>
 
-    <!-- Loading state -->
     <div v-if="isSearching" class="flex justify-center py-12">
       <div class="size-12 animate-spin rounded-full border-y-2 border-primary" />
     </div>
 
-    <!-- No results -->
     <div v-else-if="noResults" class="py-12 text-center">
       <p class="text-xl text-gray-600 dark:text-gray-400">
         Nenhum resultado encontrado para "{{ searchQuery }}".
@@ -88,36 +71,14 @@ onMounted(() => {
       </p>
     </div>
 
-    <!-- Results list -->
     <div v-else-if="searchResults.length > 0" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <div
-        v-for="result in searchResults"
-        :key="result._id"
-        class="overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-gray-800"
-      >
-        <NuxtLink :to="result._path" class="block">
-          <img
-            v-if="result.image"
-            :src="result.image"
-            :alt="result.title"
-            class="h-48 w-full object-cover"
-          >
-          <div class="p-4">
-            <h2 class="mb-2 text-xl font-semibold">
-              {{ result.title }}
-            </h2>
-            <p v-if="result.description" class="mb-3 line-clamp-2 text-gray-600 dark:text-gray-300">
-              {{ result.description }}
-            </p>
-            <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
-              <span v-if="result.date">{{ new Date(result.date).toLocaleDateString('pt-BR') }}</span>
-              <span v-if="result.category" class="ml-auto rounded bg-gray-100 px-2 py-1 dark:bg-gray-700">
-                {{ result.category }}
-              </span>
-            </div>
-          </div>
-        </NuxtLink>
-      </div>
+      <NuxtLink v-for="post in searchResults" :key="post.id" :to="post.stem">
+        {{ post.title }}
+      </NuxtLink>
     </div>
+
+    <code>
+      {{ searchResults }}
+    </code>
   </div>
 </template>
