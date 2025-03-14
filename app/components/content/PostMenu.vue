@@ -34,9 +34,9 @@ const items = [
     href: 'o-que-fazer',
   },
   {
-    name: 'Alimentação',
+    name: 'Gastronomia',
     icon: 'ph:fork-knife',
-    href: 'alimentacao',
+    href: 'gastronomia',
   },
   {
     name: 'Transporte',

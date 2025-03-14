@@ -20,20 +20,15 @@ const performSearch = async (query) => {
   noResults.value = false
 
   try {
-    // Using the Nuxt Content v3 search API
-    const results = await queryCollection()
-      .where({
-        $or: [
-          { title: { $regex: query, $options: 'i' } },
-          { description: { $regex: query, $options: 'i' } },
-          { body: { $regex: query, $options: 'i' } },
-        ],
-      })
-      .limit(20)
-      .all()
+    const { data: results } = await useAsyncData('search', () => {
+      return queryCollection('blog')
+        .where('title', 'LIKE', `%${query}%`)
+        .limit(20)
+        .all()
+    })
 
-    searchResults.value = results
-    noResults.value = results.length === 0
+    searchResults.value = results.value
+    noResults.value = results.value.length === 0
   }
   catch (error) {
     console.error('Search error:', error)
@@ -74,11 +69,7 @@ onMounted(() => {
 
       <!-- Search input -->
       <div class="max-w-xl">
-        <ContentSearch
-          :placeholders="['Buscar por destinos, dicas...']"
-          :redirect-to-results="false"
-          @search="handleSearch"
-        />
+        <ContentSearch @search="handleSearch" />
       </div>
     </div>
 

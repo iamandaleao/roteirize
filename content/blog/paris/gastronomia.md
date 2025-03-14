@@ -1,6 +1,6 @@
 ---
 city: "paris"
-title: "Paris: Alimentação"
+title: "Paris: Gastronomia"
 description: "Um Banquete para os Sentidos"
 image: paris.jpg
 date: "18/02/2025"
