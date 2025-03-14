@@ -3,8 +3,8 @@
   "style": "new-york",
   "typescript": true,
   "tailwind": {
-    "config": "tailwind.config.js",
-    "css": "assets/css/tailwind.css",
+    "config": "tailwind.config.ts",
+    "css": "app/assets/css/tailwind.css",
     "baseColor": "slate",
     "cssVariables": true,
     "prefix": ""

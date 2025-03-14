@@ -52,6 +52,20 @@ export default defineNuxtConfig({
     },
   },
 
+  experimental: {
+    writeEarlyHints: true,
+    headNext: true,
+    viewTransition: true,
+  },
+
+  features: {
+    inlineStyles: false,
+  },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
@@ -61,6 +75,11 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/color-mode',
   ],
+
+  shadcn: {
+    prefix: '',
+    componentDir: './app/components/ui',
+  },
 
   vite: {
     optimizeDeps: {
