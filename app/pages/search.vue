@@ -4,11 +4,13 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const query = ref(route.query.q)
-const isSearching = ref(false)
 
-const { data: posts } = await useAsyncData(`search-${query.value}`, () => {
+const { data: posts, pending } = await useAsyncData(`search-${query.value}`, () => {
   return queryCollection('blog')
-    .where('body', 'LIKE', `%${query.value}%`)
+    .where('title', 'LIKE', `%${query.value}%`)
+    .orWhere(b => b.where('description', 'LIKE', `%${query.value}%`))
+    .orWhere(b => b.where('body', 'LIKE', `%${query.value}%`))
+    .limit(12)
     .all()
 }, {
   lazy: true,
@@ -32,7 +34,7 @@ async function updateSearch(q) {
       </div>
     </div>
 
-    <div v-if="isSearching" class="flex justify-center py-12">
+    <div v-if="pending" class="flex justify-center py-12">
       <div class="size-12 animate-spin rounded-full border-y-2 border-primary" />
     </div>
 
@@ -52,7 +54,7 @@ async function updateSearch(q) {
     </div>
 
     <code>
-      {{ posts }}
+      {{ posts.length }}
     </code>
   </div>
 </template>

@@ -4,6 +4,7 @@ title: "Paris: Roteiro 1 dia"
 description: "A Cidade dos Sonhos e Descobertas"
 image: paris.jpg
 date: "18/02/2025"
+tags: ['roteiros']
 ---
 
 ::post-hero{:title="title" :description="description" :image="image"}

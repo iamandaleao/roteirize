@@ -4,6 +4,7 @@ title: "Paris: Roteiros"
 description: A Cidade dos Sonhos e Descobertas
 image: paris.jpg
 date: 18/02/2025
+tags: ['roteiros']
 ---
 
 ::post-hero{:description="description" :image="image" :title="title"}
