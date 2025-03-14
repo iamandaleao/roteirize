@@ -1,7 +1,6 @@
 <script setup>
 import { useIntervalFn } from '@vueuse/core'
 import { ref } from 'vue'
-import { AnimatedPlaceholderInput } from '~/components/ui/animated-placeholder-input/index.js'
 
 const heroIdx = ref(1)
 
@@ -13,14 +12,6 @@ useIntervalFn(() => {
     heroIdx.value = 1
   }
 }, 4000)
-
-const placeholders = [
-  'Chip Europa...',
-  'Seguro Viagem...',
-  'Roma...',
-  'Paris...',
-  'Suíça...',
-]
 </script>
 
 <template>
@@ -41,7 +32,7 @@ const placeholders = [
             Eu cuido dos detalhes,<br class="lg:hidden"> você aproveita a jornada.
           </h2>
           <div class="mt-10">
-            <AnimatedPlaceholderInput :placeholders />
+            <ContentSearch />
           </div>
         </div>
       </div>
