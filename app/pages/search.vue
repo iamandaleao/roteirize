@@ -19,7 +19,7 @@ async function performSearch(query) {
   noResults.value = false
 
   try {
-    const { data: results } = await useAsyncData('search', () => {
+    const { data: results } = await useAsyncData(`search-${query}`, () => {
       return queryCollection('blog')
         .where('title', 'LIKE', `%${query}%`)
         .limit(20)
