@@ -1,21 +1,20 @@
-<script setup>
+<script setup lang="ts">
+import Fuse from 'fuse.js'
 import { ref } from 'vue'
-import { useRoute } from 'vue-router'
 
 const route = useRoute()
-const query = ref(route.query.q)
 
-const { data: posts, pending } = await useAsyncData(`search-${query.value}`, () => {
-  return queryCollection('blog')
-    .where('title', 'LIKE', `%${query.value}%`)
-    .orWhere(b => b.where('description', 'LIKE', `%${query.value}%`))
-    .orWhere(b => b.where('body', 'LIKE', `%${query.value}%`))
-    .limit(12)
-    .all()
-}, {
-  lazy: true,
+const query = ref(route.query.q as string)
+const { data, pending } = await useAsyncData(`search-${query.value}`, () => queryCollectionSearchSections('blog'), {
+  lazy: false,
   watch: [query],
 })
+
+const fuse = new Fuse(data.value, {
+  keys: ['title', 'rawbody'],
+})
+
+const posts = computed(() => fuse.search(toValue(query)).slice(0, 10))
 
 async function updateSearch(q) {
   query.value = q
@@ -28,6 +27,10 @@ async function updateSearch(q) {
       <h1 class="mb-4 text-3xl font-bold">
         Resultados da busca
       </h1>
+
+      <NuxtLink to="/">
+        Home
+      </NuxtLink>
 
       <div class="max-w-xl">
         <ContentSearch @search="updateSearch" />
@@ -48,13 +51,13 @@ async function updateSearch(q) {
     </div>
 
     <div v-else-if="posts.length > 0" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <NuxtLink v-for="post in posts" :key="post.id" :to="post.stem">
-        {{ post.title }}
+      <NuxtLink v-for="post in posts" :key="post.item.id" :to="post.item.id">
+        {{ post.item.title }}
       </NuxtLink>
     </div>
 
     <code>
-      {{ posts.length }}
+      {{ posts }}
     </code>
   </div>
 </template>
