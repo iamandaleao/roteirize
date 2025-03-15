@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Fuse from 'fuse.js'
+import MiniSearch from 'minisearch'
 import { ref } from 'vue'
 
 const route = useRoute()
@@ -10,11 +10,17 @@ const { data, pending } = await useAsyncData(`search-${query.value}`, () => quer
   watch: [query],
 })
 
-const fuse = new Fuse(data.value, {
-  keys: ['title', 'rawbody'],
+const miniSearch = new MiniSearch({
+  fields: ['title', 'content'],
+  storeFields: ['title', 'content'],
+  searchOptions: {
+    prefix: true,
+    fuzzy: 0.2,
+  },
 })
 
-const posts = computed(() => fuse.search(toValue(query)).slice(0, 10))
+miniSearch.addAll(toValue(data.value))
+const posts = computed(() => miniSearch.search(toValue(query)))
 
 async function updateSearch(q) {
   query.value = q
@@ -51,8 +57,8 @@ async function updateSearch(q) {
     </div>
 
     <div v-else-if="posts.length > 0" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <NuxtLink v-for="post in posts" :key="post.item.id" :to="post.item.id">
-        {{ post.item.title }}
+      <NuxtLink v-for="post in posts" :key="post.id" :to="post.id">
+        {{ post.title }}
       </NuxtLink>
     </div>
 
