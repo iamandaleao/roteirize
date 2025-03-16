@@ -3,20 +3,16 @@ const navigation = {
   pages: [
     { name: 'Home', href: '/' },
     { name: 'Sobre', href: '/sobre' },
-    { name: 'Peça seu roteiro', href: '#' },
+    { name: 'Peça seu roteiro', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
   ],
-  blog: [
-    { name: 'Posts', href: '/blog' },
-    { name: 'Dicas', href: '/blog/dicas' },
-    { name: 'Roteiros', href: '/blog/roteiros' },
+  itineraries: [
+    { name: 'Roteiro Paris', href: '/blog/paris/roteiros' },
   ],
   discounts: [
-    { name: 'Hotel', href: '#' },
-    { name: 'Chip', href: '#' },
-    { name: 'Carro', href: '#' },
-    { name: 'Seguros', href: '#' },
-    { name: 'Passagem', href: '#' },
-    { name: 'Ingressos', href: '#' },
+    { name: 'Chip Internacional', href: '#' },
+    { name: 'Hospedagem', href: '#' },
+    { name: 'Seguro Viagem', href: '#' },
+    { name: 'Passeios e Tours', href: '#' },
   ],
   social: [
     {
@@ -95,10 +91,10 @@ const navigation = {
             </div>
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm/6 font-semibold text-white">
-                Blog
+                Roteiros de Viagem
               </h3>
               <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.blog" :key="item.name">
+                <li v-for="item in navigation.itineraries" :key="item.name">
                   <a :href="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">{{ item.name }}</a>
                 </li>
               </ul>
@@ -109,7 +105,7 @@ const navigation = {
               <h3 class="text-sm/6 font-semibold text-white">
                 Descontos
               </h3>
-              <ul role="list" class="mt-6 grid gap-y-4 md:grid-cols-2 md:gap-x-48">
+              <ul role="list" class="mt-6 grid gap-y-4">
                 <li v-for="item in navigation.discounts" :key="item.name">
                   <a :href="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">{{ item.name }}</a>
                 </li>

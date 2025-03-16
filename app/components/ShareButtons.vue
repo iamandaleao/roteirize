@@ -19,13 +19,13 @@ const { copy, copied } = useClipboard()
     <Icon
       v-if="copied"
       name="ph:check"
-      class="mt-2 px-4 text-muted-foreground hover:text-black dark:hover:text-white"
+      class="mt-2 px-6 text-muted-foreground hover:text-black dark:hover:text-white"
       size="24"
     />
     <Icon
       v-else
       name="ph:link"
-      class="mt-2 px-4 text-muted-foreground hover:text-black dark:hover:text-white"
+      class="mt-2 px-6 text-muted-foreground hover:text-black dark:hover:text-white"
       size="24"
       @click="copy(url.href)"
     />
