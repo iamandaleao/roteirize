@@ -20,7 +20,7 @@ defineProps<{
       <h4 class="font-medium">
         {{ title }}
       </h4>
-      <div class="mt-1 line-clamp-3 text-sm text-slate-500 dark:text-slate-400">
+      <div class="mt-1 line-clamp-3 text-sm text-slate-600 dark:text-slate-300">
         <slot />
       </div>
     </div>

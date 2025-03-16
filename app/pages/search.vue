@@ -40,7 +40,7 @@ miniSearch.search(toValue(query)).map(async (item) => {
     title: item.title,
     content: item.content,
     slug: item.id,
-    image: page.value.image,
+    image: page.value?.image || '',
   })
 })
 
@@ -76,13 +76,13 @@ useSeoMeta({
       </div>
 
       <div v-else-if="posts.length > 0" class="grid grid-cols-1 gap-4 px-4 lg:grid-cols-2 lg:px-8">
-        <NuxtLink v-for="post in posts" :key="post.id" :to="post.slug" class="flex rounded-lg border shadow">
-          <img :src="`/assets/images/${post.image}`" :alt="post.title" class="aspect-video h-40 rounded-l-lg">
+        <NuxtLink v-for="post in posts" :key="post.slug" :to="post.slug" class="flex flex-col rounded-lg border shadow lg:flex-row">
+          <img :src="`/assets/images/${post.image}`" :alt="post.title" class="w-full rounded-t-lg lg:h-40 lg:w-auto lg:rounded-l-lg lg:rounded-tr-none">
           <div class="flex flex-col gap-2 p-4">
             <h4 class="font-medium">
               {{ post.title }}
             </h4>
-            <p class="line-clamp-4 text-slate-600 dark:text-slate-300">
+            <p class="line-clamp-3 text-slate-600 dark:text-slate-300 lg:line-clamp-4">
               {{ post.content }}
             </p>
           </div>
