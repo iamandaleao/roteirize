@@ -1,28 +1,25 @@
 <script setup lang="ts">
-defineProps<{
-  title: string
-  to: string
-  image: string
-}>()
+import type { PostCardProps } from '~~/types'
+
+defineProps<PostCardProps>()
 </script>
 
 <template>
-  <NuxtLink :to class="overflow-hidden rounded-lg border shadow">
-    <div class="aspect-video overflow-hidden rounded-t-lg">
+  <NuxtLink :to class="overflow-hidden rounded-lg border shadow lg:flex lg:flex-row">
+    <div class="aspect-video shrink-0 overflow-hidden rounded-t-lg lg:aspect-auto lg:h-36 lg:w-auto lg:rounded-l-lg lg:rounded-tr-none">
       <img
-        :src="`/assets/images/${image}`"
-        alt="Paris roteiro 1 dia"
-        class="aspect-video scale-110 rounded-t-lg object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125"
+        :src="`/assets/images/${thumbnail}`"
+        :alt="title"
+        class="aspect-video scale-110 object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125 lg:h-full lg:w-auto lg:rounded-l-lg lg:rounded-tr-none"
       >
     </div>
-
-    <div class="p-2">
+    <div class="flex flex-col gap-2 p-4">
       <h4 class="font-medium">
         {{ title }}
       </h4>
-      <div class="mt-1 line-clamp-3 text-sm text-slate-600 dark:text-slate-300">
-        <slot />
-      </div>
+      <p class="line-clamp-3 text-sm text-slate-600 dark:text-slate-300 lg:line-clamp-4">
+        {{ excerpt }}
+      </p>
     </div>
   </NuxtLink>
 </template>
