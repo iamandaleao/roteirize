@@ -5,7 +5,7 @@ defineProps<PostCardProps>()
 </script>
 
 <template>
-  <NuxtLink :to class="overflow-hidden rounded-lg border shadow lg:flex lg:flex-row">
+  <NuxtLink :to class="block rounded-lg border border-solid border-gray-200 shadow-md lg:flex lg:flex-row">
     <div class="aspect-video shrink-0 overflow-hidden rounded-t-lg lg:aspect-auto lg:h-36 lg:w-auto lg:rounded-l-lg lg:rounded-tr-none">
       <img
         :src="`/assets/images/${thumbnail}`"
