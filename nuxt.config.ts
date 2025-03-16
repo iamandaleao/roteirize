@@ -74,10 +74,15 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxt/fonts',
     '@nuxtjs/color-mode',
+    '@stefanobartoletti/nuxt-social-share',
   ],
 
   shadcn: {
     prefix: '',
     componentDir: './app/components/ui',
+  },
+
+  socialShare: {
+    baseUrl: 'https://roteirize.com.br',
   },
 })

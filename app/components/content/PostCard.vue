@@ -5,7 +5,7 @@ defineProps<PostCardProps>()
 </script>
 
 <template>
-  <NuxtLink :to class="block rounded-lg border border-solid border-gray-200 shadow-md md:flex md:flex-row">
+  <NuxtLink :to class="block rounded-lg border shadow-md md:flex md:flex-row">
     <div class="aspect-video shrink-0 overflow-hidden rounded-t-lg md:aspect-auto md:h-36 md:w-auto md:rounded-l-lg md:rounded-tr-none">
       <img
         :src="`/assets/images/${thumbnail}`"
@@ -17,7 +17,7 @@ defineProps<PostCardProps>()
       <h4 class="font-medium">
         {{ title }}
       </h4>
-      <p class="line-clamp-3 text-sm text-slate-600 dark:text-slate-300">
+      <p class="line-clamp-3 text-sm text-muted-foreground">
         {{ excerpt }}
       </p>
     </div>

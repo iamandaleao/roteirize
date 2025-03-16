@@ -316,7 +316,7 @@ onMounted(() => {
       <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
     </div>
   </div>
-  <div class="mx-auto mt-2 text-center text-sm text-slate-500">
+  <div class="mx-auto mt-2 text-center text-sm text-muted-foreground">
     Dados atualizados a cada 15 minutos
   </div>
 </template>

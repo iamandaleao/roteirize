@@ -36,7 +36,7 @@ defineProps<{ date?: string }>()
 
       <article class="prose relative mx-auto max-w-prose dark:prose-invert prose-a:text-blue-600 hover:prose-a:text-blue-500">
         <slot />
-        <div class="mt-4 text-right text-sm text-slate-500 dark:text-slate-400">
+        <div class="mt-4 text-right text-sm text-muted-foreground">
           <i>Postado por Amanda - <time datetime="{{ date }}">{{ date }}</time></i>
         </div>
       </article>
