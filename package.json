@@ -30,6 +30,7 @@
     "eslint-plugin-tailwindcss": "^3.18.0",
     "lucide-vue-next": "^0.475.0",
     "nuxt": "^3.16.0",
+    "nuxt-disqus": "1.1.1",
     "reka-ui": "^2.0.2",
     "shadcn-nuxt": "1.0.2",
     "tailwind-merge": "^3.0.2",

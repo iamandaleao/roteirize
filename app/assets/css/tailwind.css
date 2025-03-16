@@ -72,4 +72,8 @@
     pointer-events: none;
     color: inherit;
   }
+
+  div#disqus_thread iframe[sandbox] {
+    max-height: 0 !important;
+  }
 }

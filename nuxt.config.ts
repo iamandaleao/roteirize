@@ -46,6 +46,10 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
 
+  disqus: {
+    shortname: 'roteirizeoficial',
+  },
+
   eslint: {
     config: {
       standalone: false,
@@ -75,6 +79,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxtjs/color-mode',
     '@stefanobartoletti/nuxt-social-share',
+    'nuxt-disqus',
   ],
 
   shadcn: {
