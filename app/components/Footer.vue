@@ -109,7 +109,7 @@ const navigation = {
               <h3 class="text-sm/6 font-semibold text-white">
                 Descontos
               </h3>
-              <ul role="list" class="mt-6 grid gap-y-4 lg:grid-cols-2 lg:gap-x-48">
+              <ul role="list" class="mt-6 grid gap-y-4 md:grid-cols-2 md:gap-x-48">
                 <li v-for="item in navigation.discounts" :key="item.name">
                   <a :href="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">{{ item.name }}</a>
                 </li>
