@@ -8,51 +8,80 @@ const route = useRoute()
 const router = useRouter()
 const posts = ref<PostCardProps[]>([])
 const query = ref(route.query.q as string)
-const miniSearch = new MiniSearch({
-  fields: ['title', 'content'],
-  storeFields: ['title', 'content'],
-  searchOptions: {
-    prefix: true,
-    fuzzy: 0.2,
-  },
-})
+const isSearching = ref(false)
 
-const { data, pending } = await useAsyncData(`search-${query.value}`, () => queryCollectionSearchSections('blog'), {
+// Fix TypeScript error
+function createSearchIndex(data: any[]) {
+  const miniSearch = new MiniSearch({
+    fields: ['title', 'content'],
+    storeFields: ['title', 'content', 'id'],
+    searchOptions: {
+      prefix: true,
+      fuzzy: 0.2,
+    },
+  })
+
+  miniSearch.addAll(data)
+  return miniSearch
+}
+
+// Fetch blog data only once
+const { data: blogData, pending } = await useAsyncData('blog-data', () =>
+  queryCollectionSearchSections('blog'), {
   lazy: false,
 })
 
 // Function to perform search and update results
 async function performSearch(searchQuery: string) {
-  posts.value = []
+  // Prevent concurrent searches
+  if (isSearching.value) { return }
+  isSearching.value = true
 
-  if (!searchQuery || !data.value) {
-    return
+  try {
+    // Clear previous results
+    posts.value = []
+
+    if (!searchQuery || !blogData.value) {
+      return
+    }
+
+    // Create a fresh search index for each search
+    const miniSearch = createSearchIndex(toValue(blogData.value))
+    const results = miniSearch.search(searchQuery)
+
+    // Get unique IDs from results
+    const uniqueIds = [...new Set(results.map(item => item.id))]
+
+    // Create a new array for results to avoid reactivity issues
+    const newPosts: PostCardProps[] = []
+
+    // Process each unique ID
+    for (const id of uniqueIds) {
+      // Find the corresponding result
+      const result = results.find(item => item.id === id)
+      if (!result) { continue }
+
+      // Fetch image data
+      const { data: page } = await useAsyncData(`page-${id}-${Date.now()}`, () => {
+        // @ts-ignore - Ignoring type error for now
+        return queryCollection('blog').path(id).select(['image']).first()
+      })
+
+      // Add to new posts array
+      newPosts.push({
+        title: result.title,
+        excerpt: result.content,
+        to: id,
+        thumbnail: page.value?.image || '',
+      })
+    }
+
+    // Update posts with the new array
+    posts.value = newPosts
   }
-
-  // Clear and re-add all data to minisearch
-  miniSearch.removeAll()
-  // @ts-ignore
-  miniSearch.addAll(toValue(data.value))
-  const results = miniSearch.search(searchQuery)
-
-  for (const item of results) {
-    const { data: page } = await useAsyncData(item.id, () => {
-      // @ts-ignore - Ignoring type error for now
-      return queryCollection('blog').path(item.id).select(['image']).first()
-    })
-
-    posts.value.push({
-      title: item.title,
-      excerpt: item.content,
-      to: item.id,
-      thumbnail: page.value?.image || '',
-    })
+  finally {
+    isSearching.value = false
   }
-}
-
-// Initial search with the query from URL
-if (query.value) {
-  performSearch(query.value)
 }
 
 // Watch for query changes from route
@@ -60,6 +89,9 @@ watch(() => route.query.q, (newQuery) => {
   if (newQuery && typeof newQuery === 'string') {
     query.value = newQuery
     performSearch(newQuery)
+  }
+  else {
+    posts.value = []
   }
 }, { immediate: true })
 
@@ -74,10 +106,8 @@ async function updateSearch(q: string) {
     query: { q },
   })
 
-  // Update local query
+  // Update local query and perform search
   query.value = q
-
-  // Perform search
   performSearch(q)
 }
 
@@ -94,7 +124,7 @@ useSeoMeta({
       <SearchHero :query="query" @search="updateSearch" />
     </div>
     <div class="mx-auto max-w-7xl py-20">
-      <div v-if="pending" class="flex justify-center py-12">
+      <div v-if="pending || isSearching" class="flex justify-center py-12">
         <div class="size-12 animate-spin rounded-full border-y-2 border-primary" />
       </div>
 
