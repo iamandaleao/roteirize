@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PostCardProps } from '~~/types'
-import MiniSearch from 'minisearch'
 import { ref } from 'vue'
 import SearchHero from '~/components/SearchHero.vue'
 
@@ -10,19 +9,26 @@ const posts = ref<PostCardProps[]>([])
 const query = ref(route.query.q as string)
 const isSearching = ref(false)
 
-// Fix TypeScript error
-function createSearchIndex(data: any[]) {
-  const miniSearch = new MiniSearch({
-    fields: ['title', 'content'],
-    storeFields: ['title', 'content', 'id'],
-    searchOptions: {
-      prefix: true,
-      fuzzy: 0.2,
-    },
-  })
+// Helper function to normalize text (remove accents)
+function normalizeText(text: string): string {
+  return text.normalize('NFD').replace(/[\u0300-\u036F]/g, '')
+}
 
-  miniSearch.addAll(data)
-  return miniSearch
+// Helper function to get word variations (singular/plural)
+function getWordVariations(word: string): string[] {
+  const variations = [word]
+
+  // Handle Portuguese plural forms
+  if (word.endsWith('s')) {
+    // If plural, add singular form (remove 's')
+    variations.push(word.slice(0, -1))
+  }
+  else {
+    // If singular, add plural form (add 's')
+    variations.push(`${word}s`)
+  }
+
+  return variations
 }
 
 // Fetch blog data only once
@@ -34,7 +40,9 @@ const { data: blogData, pending } = await useAsyncData('blog-data', () =>
 // Function to perform search and update results
 async function performSearch(searchQuery: string) {
   // Prevent concurrent searches
-  if (isSearching.value) { return }
+  if (isSearching.value) {
+    return
+  }
   isSearching.value = true
 
   try {
@@ -45,9 +53,29 @@ async function performSearch(searchQuery: string) {
       return
     }
 
-    // Create a fresh search index for each search
-    const miniSearch = createSearchIndex(toValue(blogData.value))
-    const results = miniSearch.search(searchQuery)
+    // Normalize the search query
+    const normalizedQuery = normalizeText(searchQuery.toLowerCase())
+    const searchTerms = normalizedQuery.split(/\s+/).filter(term => term.length > 1)
+
+    // Expand search terms with variations
+    const expandedSearchTerms = searchTerms.flatMap(term => getWordVariations(term))
+
+    // Get all data for manual filtering
+    const allData = toValue(blogData.value)
+
+    // Manual filtering for exact matches
+    const results = allData.filter((item) => {
+      const normalizedTitle = normalizeText(item.title.toLowerCase())
+      const normalizedContent = normalizeText(item.content.toLowerCase())
+
+      return expandedSearchTerms.some((term) => {
+        // Create a regex that matches the term as a whole word
+        const wordBoundaryRegex = new RegExp(`\\b${term}\\b`, 'i')
+
+        // Only match exact words
+        return wordBoundaryRegex.test(normalizedTitle) || wordBoundaryRegex.test(normalizedContent)
+      })
+    })
 
     // Get unique IDs from results
     const uniqueIds = [...new Set(results.map(item => item.id))]
@@ -93,7 +121,6 @@ async function updateSearch(q: string) {
 
   // Update URL first
   await router.push({
-    path: '/search',
     query: { q },
   })
 
@@ -109,7 +136,7 @@ onMounted(async () => {
 })
 
 useSeoMeta({
-  title: 'Resultados para a busca',
+  title: () => computed(() => `Resultados "${query.value}"`),
   description: 'Eu cuido dos detalhes, você aproveita a jornada.',
 })
 </script>
