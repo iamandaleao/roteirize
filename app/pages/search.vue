@@ -5,7 +5,7 @@ import { ref, watch } from 'vue'
 import SearchHero from '~/components/SearchHero.vue'
 
 const route = useRoute()
-
+const router = useRouter()
 const posts = ref<PostCardProps[]>([])
 const query = ref(route.query.q as string)
 const miniSearch = new MiniSearch({
@@ -25,14 +25,19 @@ const { data, pending } = await useAsyncData(`search-${query.value}`, () => quer
 async function performSearch(searchQuery: string) {
   posts.value = []
 
-  if (!searchQuery || !data.value) { return }
+  if (!searchQuery || !data.value) {
+    return
+  }
 
+  // Clear and re-add all data to minisearch
+  miniSearch.removeAll()
   // @ts-ignore
   miniSearch.addAll(toValue(data.value))
   const results = miniSearch.search(searchQuery)
 
   for (const item of results) {
     const { data: page } = await useAsyncData(item.id, () => {
+      // @ts-ignore - Ignoring type error for now
       return queryCollection('blog').path(item.id).select(['image']).first()
     })
 
@@ -46,15 +51,34 @@ async function performSearch(searchQuery: string) {
 }
 
 // Initial search with the query from URL
-performSearch(query.value)
+if (query.value) {
+  performSearch(query.value)
+}
 
-// Watch for query changes
-watch(query, (newQuery) => {
-  performSearch(newQuery)
-})
+// Watch for query changes from route
+watch(() => route.query.q, (newQuery) => {
+  if (newQuery && typeof newQuery === 'string') {
+    query.value = newQuery
+    performSearch(newQuery)
+  }
+}, { immediate: true })
 
-function updateSearch(q: string) {
+async function updateSearch(q: string) {
+  if (!q) {
+    return
+  }
+
+  // Update URL first
+  await router.push({
+    path: '/search',
+    query: { q },
+  })
+
+  // Update local query
   query.value = q
+
+  // Perform search
+  performSearch(q)
 }
 
 useSeoMeta({
