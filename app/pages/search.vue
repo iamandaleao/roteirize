@@ -7,7 +7,7 @@ const route = useRoute()
 const router = useRouter()
 const posts = ref<PostCardProps[]>([])
 const query = ref(route.query.q as string)
-const isSearching = ref(false)
+const isSearching = ref(true)
 
 // Fetch blog data only once
 const { data: blogData, pending } = await useAsyncData('blog-data', () =>
@@ -85,9 +85,12 @@ async function updateSearch(q: string) {
 }
 
 onMounted(async () => {
-  if (query.value) {
-    await performSearch(query.value)
-  }
+  setTimeout(async () => {
+    isSearching.value = false
+    if (query.value) {
+      await performSearch(query.value)
+    }
+  }, 1000)
 })
 
 useSeoMeta({
@@ -102,6 +105,7 @@ useSeoMeta({
       <NavHeader />
       <SearchHero :query="query" @search="updateSearch" />
     </div>
+
     <div class="mx-auto max-w-7xl py-20">
       <div v-if="pending || isSearching" class="flex justify-center py-12">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g><circle cx="3" cy="12" r="2" fill="currentColor" /><circle cx="21" cy="12" r="2" fill="currentColor" /><circle cx="12" cy="21" r="2" fill="currentColor" /><circle cx="12" cy="3" r="2" fill="currentColor" /><circle cx="5.64" cy="5.64" r="2" fill="currentColor" /><circle cx="18.36" cy="18.36" r="2" fill="currentColor" /><circle cx="5.64" cy="18.36" r="2" fill="currentColor" /><circle cx="18.36" cy="5.64" r="2" fill="currentColor" /><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" /></g></svg>
@@ -122,6 +126,7 @@ useSeoMeta({
         </div>
       </div>
     </div>
+
     <Footer />
   </div>
 </template>
