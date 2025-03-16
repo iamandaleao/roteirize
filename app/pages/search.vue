@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { PostCardProps } from '~~/types'
 import MiniSearch from 'minisearch'
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import SearchHero from '~/components/SearchHero.vue'
 
 const route = useRoute()
@@ -59,7 +59,9 @@ async function performSearch(searchQuery: string) {
     for (const id of uniqueIds) {
       // Find the corresponding result
       const result = results.find(item => item.id === id)
-      if (!result) { continue }
+      if (!result) {
+        continue
+      }
 
       // Fetch image data
       const { data: page } = await useAsyncData(`page-${id}-${Date.now()}`, () => {
@@ -84,17 +86,6 @@ async function performSearch(searchQuery: string) {
   }
 }
 
-// Watch for query changes from route
-watch(() => route.query.q, (newQuery) => {
-  if (newQuery && typeof newQuery === 'string') {
-    query.value = newQuery
-    performSearch(newQuery)
-  }
-  else {
-    posts.value = []
-  }
-}, { immediate: true })
-
 async function updateSearch(q: string) {
   if (!q) {
     return
@@ -108,8 +99,14 @@ async function updateSearch(q: string) {
 
   // Update local query and perform search
   query.value = q
-  performSearch(q)
+  await performSearch(q)
 }
+
+onMounted(async () => {
+  if (query.value) {
+    await performSearch(query.value)
+  }
+})
 
 useSeoMeta({
   title: 'Resultados para a busca',
@@ -125,7 +122,7 @@ useSeoMeta({
     </div>
     <div class="mx-auto max-w-7xl py-20">
       <div v-if="pending || isSearching" class="flex justify-center py-12">
-        <div class="size-12 animate-spin rounded-full border-y-2 border-primary" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g><circle cx="3" cy="12" r="2" fill="currentColor" /><circle cx="21" cy="12" r="2" fill="currentColor" /><circle cx="12" cy="21" r="2" fill="currentColor" /><circle cx="12" cy="3" r="2" fill="currentColor" /><circle cx="5.64" cy="5.64" r="2" fill="currentColor" /><circle cx="18.36" cy="18.36" r="2" fill="currentColor" /><circle cx="5.64" cy="18.36" r="2" fill="currentColor" /><circle cx="18.36" cy="5.64" r="2" fill="currentColor" /><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" /></g></svg>
       </div>
 
       <div v-else-if="posts.length === 0" class="py-12 text-center">
