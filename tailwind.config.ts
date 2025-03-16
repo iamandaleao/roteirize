@@ -4,7 +4,13 @@ import animate from 'tailwindcss-animate'
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: [],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,vue}',
+    './components/**/*.{js,ts,jsx,tsx,vue}',
+    './content/**/*.{md,yml,json,yaml,toml,csv}',
+    './layouts/**/*.{js,ts,jsx,tsx,vue}',
+    './pages/**/*.{js,ts,jsx,tsx,vue}',
+  ],
   theme: {
     extend: {
       fontFamily: {
