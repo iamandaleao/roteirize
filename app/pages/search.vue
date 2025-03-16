@@ -9,28 +9,6 @@ const posts = ref<PostCardProps[]>([])
 const query = ref(route.query.q as string)
 const isSearching = ref(false)
 
-// Helper function to normalize text (remove accents)
-function normalizeText(text: string): string {
-  return text.normalize('NFD').replace(/[\u0300-\u036F]/g, '')
-}
-
-// Helper function to get word variations (singular/plural)
-function getWordVariations(word: string): string[] {
-  const variations = [word]
-
-  // Handle Portuguese plural forms
-  if (word.endsWith('s')) {
-    // If plural, add singular form (remove 's')
-    variations.push(word.slice(0, -1))
-  }
-  else {
-    // If singular, add plural form (add 's')
-    variations.push(`${word}s`)
-  }
-
-  return variations
-}
-
 // Fetch blog data only once
 const { data: blogData, pending } = await useAsyncData('blog-data', () =>
   queryCollectionSearchSections('blog'), {
@@ -39,74 +17,57 @@ const { data: blogData, pending } = await useAsyncData('blog-data', () =>
 
 // Function to perform search and update results
 async function performSearch(searchQuery: string) {
-  // Prevent concurrent searches
-  if (isSearching.value) {
+  if (isSearching.value || !searchQuery || !blogData.value) {
     return
   }
   isSearching.value = true
+  posts.value = []
 
   try {
-    // Clear previous results
-    posts.value = []
-
-    if (!searchQuery || !blogData.value) {
-      return
-    }
-
-    // Normalize the search query
-    const normalizedQuery = normalizeText(searchQuery.toLowerCase())
-    const searchTerms = normalizedQuery.split(/\s+/).filter(term => term.length > 1)
-
-    // Expand search terms with variations
-    const expandedSearchTerms = searchTerms.flatMap(term => getWordVariations(term))
-
-    // Get all data for manual filtering
-    const allData = toValue(blogData.value)
-
-    // Manual filtering for exact matches
-    const results = allData.filter((item) => {
-      const normalizedTitle = normalizeText(item.title.toLowerCase())
-      const normalizedContent = normalizeText(item.content.toLowerCase())
-
-      return expandedSearchTerms.some((term) => {
-        // Create a regex that matches the term as a whole word
-        const wordBoundaryRegex = new RegExp(`\\b${term}\\b`, 'i')
-
-        // Only match exact words
-        return wordBoundaryRegex.test(normalizedTitle) || wordBoundaryRegex.test(normalizedContent)
+    // Normalize query and create word boundary regex patterns
+    const normalizedTerms = searchQuery.toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036F]/g, '') // Remove accents
+      .split(/\s+/)
+      .filter(term => term.length > 1)
+      .flatMap((term) => {
+        // Add singular/plural variations
+        const variations = [term]
+        if (term.endsWith('s')) {
+          variations.push(term.slice(0, -1))
+        }
+        else {
+          variations.push(`${term}s`)
+        }
+        return variations
       })
+      .map(term => new RegExp(`\\b${term}\\b`, 'i'))
+
+    // Filter data
+    const results = toValue(blogData.value).filter((item) => {
+      const normalizedText = (`${item.title} ${item.content}`)
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036F]/g, '')
+
+      return normalizedTerms.some(regex => regex.test(normalizedText))
     })
 
-    // Get unique IDs from results
-    const uniqueIds = [...new Set(results.map(item => item.id))]
+    // Process results
+    const newPosts = []
+    for (const item of results) {
+      const { data: page } = await useAsyncData(`page-${item.id}-${Date.now()}`, () =>
+        // @ts-ignore
+        queryCollection('blog').path(item.id).select(['image']).first())
 
-    // Create a new array for results to avoid reactivity issues
-    const newPosts: PostCardProps[] = []
-
-    // Process each unique ID
-    for (const id of uniqueIds) {
-      // Find the corresponding result
-      const result = results.find(item => item.id === id)
-      if (!result) {
-        continue
-      }
-
-      // Fetch image data
-      const { data: page } = await useAsyncData(`page-${id}-${Date.now()}`, () => {
-        // @ts-ignore - Ignoring type error for now
-        return queryCollection('blog').path(id).select(['image']).first()
-      })
-
-      // Add to new posts array
       newPosts.push({
-        title: result.title,
-        excerpt: result.content,
-        to: id,
+        title: item.title,
+        excerpt: item.content,
+        to: item.id,
         thumbnail: page.value?.image || '',
       })
     }
 
-    // Update posts with the new array
     posts.value = newPosts
   }
   finally {
@@ -118,13 +79,7 @@ async function updateSearch(q: string) {
   if (!q) {
     return
   }
-
-  // Update URL first
-  await router.push({
-    query: { q },
-  })
-
-  // Update local query and perform search
+  await router.push({ query: { q } })
   query.value = q
   await performSearch(q)
 }
@@ -136,7 +91,7 @@ onMounted(async () => {
 })
 
 useSeoMeta({
-  title: () => computed(() => `Resultados "${query.value}"`),
+  title: computed(() => `Resultados "${query.value}"`),
   description: 'Eu cuido dos detalhes, você aproveita a jornada.',
 })
 </script>
