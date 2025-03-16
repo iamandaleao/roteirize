@@ -1,9 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { AnimatedPlaceholderInput } from '~/components/ui/animated-placeholder-input'
 
-const emit = defineEmits(['search', 'results'])
+const emit = defineEmits<{
+  search: [query: string]
+}>()
 
 const placeholders = [
   'Chip Europa...',

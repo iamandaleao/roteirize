@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { useIntervalFn } from '@vueuse/core'
 import { ref } from 'vue'
 

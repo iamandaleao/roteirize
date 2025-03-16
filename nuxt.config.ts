@@ -80,17 +80,4 @@ export default defineNuxtConfig({
     prefix: '',
     componentDir: './app/components/ui',
   },
-
-  vite: {
-    optimizeDeps: {
-      entries: [
-        '@vueuse/core',
-        'class-variance-authority',
-        'reka-ui',
-        'lucide-vue-next',
-        'clsx',
-        'tailwind-merge',
-      ],
-    },
-  },
 })
