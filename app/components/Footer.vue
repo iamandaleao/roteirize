@@ -3,10 +3,11 @@ const navigation = {
   pages: [
     { name: 'Home', href: '/' },
     { name: 'Sobre', href: '/sobre' },
-    { name: 'Peça seu roteiro', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
+    { name: 'Colaborar', href: '/colaborar' },
   ],
   itineraries: [
     { name: 'Roteiro Paris', href: '/blog/paris/roteiros' },
+    { name: 'Peça seu roteiro', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
   ],
   discounts: [
     { name: 'Chip Internacional', href: '#' },
