@@ -62,7 +62,7 @@ function isActive(path: string) {
 </script>
 
 <template>
-  <div class="bg-black/20 p-2 text-white">
+  <div class="bg-secondary/20 p-2 text-white">
     <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5">
       <NuxtLink
         v-for="(item, index) in items"

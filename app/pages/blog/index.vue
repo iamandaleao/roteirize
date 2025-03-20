@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData('blog', () => queryCollection('blog').all())
+const { data: posts } = await useAsyncData('blog', () => queryCollection('blog')
+  .order('date', 'DESC')
+  .all())
 
 useSeoMeta({
   title: 'Blog',
