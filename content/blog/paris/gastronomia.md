@@ -2,11 +2,12 @@
 city: "paris"
 title: "Paris: Gastronomia"
 description: "Um Banquete para os Sentidos"
-image: paris.jpg
+cover: paris.jpg
+thumbnail: paris.jpg
 date: "18/02/2025"
 ---
 
-::post-hero{:title="title" :description="description" :image="image"}
+::post-hero{:title="title" :description="description" :cover="cover"}
 ::
 
 ::city-stats{:city="city"}

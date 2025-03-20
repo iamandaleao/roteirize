@@ -1,8 +1,8 @@
 ::blog-page-hero
 ---
-h1: Sobre
-h2: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"
-image: sobre.jpeg
+title: Sobre
+description: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"
+cover: sobre.jpeg
 ---
 ::
 

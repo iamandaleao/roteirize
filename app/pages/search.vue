@@ -56,15 +56,15 @@ async function performSearch(searchQuery: string) {
     // Process results
     const newPosts = []
     for (const item of results) {
-      const { data: page } = await useAsyncData(`page-${item.id}-${Date.now()}`, () =>
+      const { data: post } = await useAsyncData(`post-${item.id}-${Date.now()}`, () =>
         // @ts-ignore
-        queryCollection('blog').path(item.id).select(['image']).first())
+        queryCollection('blog').path(item.id).select(['thumbnail']).first())
 
       newPosts.push({
         title: item.title,
         excerpt: item.content,
         to: item.id,
-        thumbnail: page.value?.image || '',
+        thumbnail: post.value?.thumbnail || '',
       })
     }
 

@@ -25,7 +25,7 @@ const { copy, copied } = useClipboard()
     <Icon
       v-else
       name="ph:link"
-      class="text-muted-foreground hover:text-black dark:hover:text-white"
+      class="cursor-pointer text-muted-foreground hover:text-black dark:hover:text-white"
       size="24"
       @click="copy(url.href)"
     />

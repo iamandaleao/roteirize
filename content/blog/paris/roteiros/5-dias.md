@@ -2,12 +2,13 @@
 city: "paris"
 title: "Paris: Roteiro 5 dias"
 description: "A Cidade dos Sonhos e Descobertas"
-image: paris.jpg
+cover: paris.jpg
+thumbnail: paris-roteiro-5-dias.jpg
 date: "18/02/2025"
 tags: ['roteiros']
 ---
 
-::post-hero{:title="title" :description="description" :image="image"}
+::post-hero{:title="title" :description="description" :cover="cover"}
 ::
 
 ::city-stats{:city="city"}

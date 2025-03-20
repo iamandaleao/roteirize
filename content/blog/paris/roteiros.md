@@ -2,12 +2,13 @@
 city: paris
 title: "Paris: Roteiros"
 description: A Cidade dos Sonhos e Descobertas
-image: paris.jpg
+cover: paris.jpg
+thumbnail: paris.jpg
 date: 18/02/2025
 tags: ['roteiros']
 ---
 
-::post-hero{:description="description" :image="image" :title="title"}
+::post-hero{:title="title" :description="description" :cover="cover"}
 ::
 
 ::city-stats{:city="city"}
