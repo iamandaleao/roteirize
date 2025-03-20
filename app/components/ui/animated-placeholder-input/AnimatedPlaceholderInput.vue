@@ -43,6 +43,19 @@ function vanishAndSubmit(): void {
 
 function handleSubmit(): void {
   vanishAndSubmit()
+  // Blur the input to hide the keyboard on mobile devices
+  if (inputRef.value) {
+    inputRef.value.blur()
+  }
+}
+
+function handleKeyUp(event: KeyboardEvent): void {
+  if (event.key === 'Enter') {
+    if (inputRef.value) {
+      inputRef.value.blur()
+    }
+    vanishAndSubmit()
+  }
 }
 
 // Watch for value changes
@@ -79,6 +92,7 @@ onBeforeUnmount(() => {
       v-model="vanishingText"
       type="text"
       class="relative z-50 size-full rounded-full border-none bg-transparent pl-4 pr-20 text-sm !text-slate-500 focus:outline-none focus:ring-0 dark:text-white sm:pl-10 sm:text-base"
+      @keyup="handleKeyUp"
     >
 
     <!-- Submit Button -->
