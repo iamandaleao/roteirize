@@ -8,8 +8,8 @@ const emit = defineEmits<{
 }>()
 
 const placeholders = [
-  'Chip Europa...',
-  'Seguro Viagem...',
+  'Chip internacional...',
+  'Seguro viagem...',
   'Roma...',
   'Paris...',
   'Suíça...',
@@ -19,7 +19,7 @@ const router = useRouter()
 const searchQuery = ref('')
 const isSearching = ref(false)
 
-const handleSearch = async (query) => {
+const handleSearch = async (query: string) => {
   if (!query) {
     return
   }
