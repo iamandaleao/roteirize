@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { PostCardProps } from '~~/types'
 import { ref } from 'vue'
+import Pagination from '~/components/Pagination.vue'
 import SearchHero from '~/components/SearchHero.vue'
 
 const route = useRoute()
@@ -12,7 +13,6 @@ const postsPerPage = 6
 const isSearching = ref(true)
 const totalPages = ref(0)
 
-// Fetch blog data only once
 const { data: blogData, pending } = await useAsyncData(`blog-search-${query.value}`, () =>
   queryCollectionSearchSections('blog', {
     extraFields: ['thumbnail', 'description'],
@@ -155,43 +155,11 @@ useSeoMeta({
           </div>
         </div>
 
-        <!-- Pagination Controls -->
-        <div v-if="totalPages > 1" class="mt-10 flex items-center justify-center gap-2">
-          <button
-            :disabled="page === 1"
-            class="aspect-square rounded-md border border-border px-4 py-2 disabled:opacity-50"
-            title="Página anterior"
-            aria-label="Página anterior"
-            @click="goToPage(page - 1)"
-          >
-            &laquo;
-          </button>
-
-          <div class="flex gap-1">
-            <button
-              v-for="pageNum in totalPages"
-              :key="pageNum"
-              :title="`Página ${pageNum}`"
-              :aria-label="`Página ${pageNum}`"
-              class="aspect-square rounded-md px-4 py-2" :class="[
-                page === pageNum ? 'bg-primary text-white' : 'border border-border',
-              ]"
-              @click="goToPage(pageNum)"
-            >
-              {{ pageNum }}
-            </button>
-          </div>
-
-          <button
-            :disabled="page === totalPages"
-            class="aspect-square rounded-md border border-border px-4 py-2 disabled:opacity-50"
-            title="Próxima página"
-            aria-label="Próxima página"
-            @click="goToPage(page + 1)"
-          >
-            &raquo;
-          </button>
-        </div>
+        <Pagination
+          :current-page="page"
+          :total-pages="totalPages"
+          @page-change="goToPage"
+        />
       </div>
     </div>
 
