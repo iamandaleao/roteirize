@@ -1,4 +1,4 @@
-::blog-page-hero
+::page-hero
 ---
 title: Sobre
 description: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"

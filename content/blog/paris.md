@@ -3,6 +3,7 @@ city: "paris"
 title: "Paris"
 description: "A Cidade dos Sonhos e Descobertas"
 cover: paris.jpg
+thumbnail: paris.jpg
 date: "18/02/2025"
 ---
 
