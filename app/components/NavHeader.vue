@@ -49,9 +49,7 @@ function closeDrawer() {
 }
 
 const route = useRoute()
-watch(() => route.path, () => {
-  closeDrawer()
-})
+watch(() => route.path, () => closeDrawer)
 </script>
 
 <template>

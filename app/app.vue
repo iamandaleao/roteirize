@@ -1,14 +1,11 @@
 <script setup lang="ts">
-const route = useRoute()
 const { seo } = useAppConfig()
 
-const page = computed(() => Number.parseInt((route.query.page as string) ?? '1'))
-
-watch(page, () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  })
+const router = useRouter()
+router.afterEach(() => {
+  setTimeout(() => {
+    window.scrollTo(0, 0)
+  }, 500)
 })
 
 useSeoMeta({
