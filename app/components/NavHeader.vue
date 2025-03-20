@@ -36,6 +36,22 @@ const navigation: NavItem[] = [
     href: '/blog',
   },
 ]
+
+const isDrawerOpen = ref(false)
+
+function closeDrawer() {
+  isDrawerOpen.value = false
+  setTimeout(() => {
+    document.body.style.overflow = ''
+    document.body.style.pointerEvents = ''
+    document.body.style.touchAction = ''
+  }, 100)
+}
+
+const route = useRoute()
+watch(() => route.path, () => {
+  closeDrawer()
+})
 </script>
 
 <template>
@@ -49,7 +65,7 @@ const navigation: NavItem[] = [
       </div>
       <div class="flex space-x-3 lg:hidden">
         <ThemeToggle />
-        <Drawer>
+        <Drawer v-model:open="isDrawerOpen" @close="closeDrawer">
           <DrawerTrigger as-child>
             <button type="button" class="inline-flex items-center justify-center rounded-md text-white">
               <Icon name="ph:list" size="24" />
@@ -64,7 +80,7 @@ const navigation: NavItem[] = [
               <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/25">
                   <div class="space-y-2 py-6">
-                    <NuxtLink v-for="item in navigation" :key="item.title" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-secondary dark:text-secondary-foreground">
+                    <NuxtLink v-for="item in navigation" :key="item.title" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-secondary dark:text-secondary-foreground" @click="closeDrawer">
                       {{ item.title }}
                     </NuxtLink>
                   </div>
