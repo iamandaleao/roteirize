@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: {
         lang: 'pt-BR',
-        class: 'scroll-smooth',
+        style: 'scroll-behavior: smooth',
       },
       bodyAttrs: {
         class: 'antialiased',
