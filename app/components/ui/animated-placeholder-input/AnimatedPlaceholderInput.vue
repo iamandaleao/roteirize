@@ -51,7 +51,6 @@ watch(vanishingText, (newVal: string) => {
 })
 
 onMounted(() => {
-  inputRef.value.focus()
   changePlaceholder()
   document.addEventListener('visibilitychange', handleVisibilityChange)
 })
