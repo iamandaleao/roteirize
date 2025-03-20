@@ -27,11 +27,6 @@ const handleSearch = async (query: string) => {
   searchQuery.value = query
   isSearching.value = true
 
-  // Ensure any active element is blurred to hide the keyboard
-  if (document.activeElement instanceof HTMLElement) {
-    document.activeElement.blur()
-  }
-
   emit('search', query)
 
   try {
