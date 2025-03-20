@@ -284,39 +284,41 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="mx-auto mt-4 grid max-w-3xl grid-cols-2 gap-4 border bg-gray-50 p-4 text-2xl text-black shadow dark:bg-background dark:text-white lg:grid-cols-4 lg:rounded-lg">
-    <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
-      <Icon name="ph:snowflake" class="shrink-0" />
-      <span v-if="temperature !== null">
-        {{ temperature }}°C
-      </span>
-      <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
-    </div>
+  <div class="px-4">
+    <div class="mx-auto mt-4 grid max-w-3xl grid-cols-2 gap-4 rounded-lg border bg-gray-50 p-4 text-2xl text-black shadow dark:bg-background dark:text-white lg:grid-cols-4">
+      <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
+        <Icon name="ph:snowflake" class="shrink-0" />
+        <span v-if="temperature !== null">
+          {{ temperature }}°C
+        </span>
+        <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
+      </div>
 
-    <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
-      <Icon name="ph:alarm" class="shrink-0" />
-      <span v-if="localTime !== null">
-        {{ localTime }}
-      </span>
-      <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
-    </div>
+      <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
+        <Icon name="ph:alarm" class="shrink-0" />
+        <span v-if="localTime !== null">
+          {{ localTime }}
+        </span>
+        <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
+      </div>
 
-    <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
-      <Icon name="ph:users-three" class="shrink-0" />
-      <span v-if="population !== null">
-        {{ population }}
-      </span>
-      <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
-    </div>
+      <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
+        <Icon name="ph:users-three" class="shrink-0" />
+        <span v-if="population !== null">
+          {{ population }}
+        </span>
+        <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
+      </div>
 
-    <div v-if="currencyCode !== 'BRL'" class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
-      <span v-if="currency !== null">
-        {{ currencyCode?.toUpperCase() }}: R${{ currency }}
-      </span>
-      <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
+      <div v-if="currencyCode !== 'BRL'" class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
+        <span v-if="currency !== null">
+          {{ currencyCode?.toUpperCase() }}: R${{ currency }}
+        </span>
+        <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
+      </div>
     </div>
-  </div>
-  <div class="mx-auto mt-2 text-center text-sm text-muted-foreground">
-    Dados atualizados a cada 15 minutos
+    <div class="mx-auto mt-2 text-center text-sm text-muted-foreground">
+      Dados atualizados a cada 15 minutos
+    </div>
   </div>
 </template>

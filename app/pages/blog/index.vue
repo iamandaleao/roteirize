@@ -20,7 +20,7 @@ useSeoMeta({
           <PostCard
             :to="post.stem"
             :title="post.title"
-            :excerpt="post.description"
+            :description="post.description"
             :thumbnail="post.thumbnail"
           />
         </div>

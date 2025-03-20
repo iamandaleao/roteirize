@@ -10,9 +10,9 @@ const query = ref(route.query.q as string)
 const isSearching = ref(true)
 
 // Fetch blog data only once
-const { data: blogData, pending } = await useAsyncData('blog-data', () =>
+const { data: blogData, pending } = await useAsyncData(`blog-search-${query.value}`, () =>
   queryCollectionSearchSections('blog', {
-    extraFields: ['thumbnail'],
+    extraFields: ['thumbnail', 'description'],
   }), {
   lazy: true,
   watch: [query],
@@ -61,9 +61,9 @@ async function performSearch(searchQuery: string) {
     const newPosts = []
     for (const item of results) {
       newPosts.push({
-        title: item.title,
-        excerpt: item.content,
         to: item.id,
+        title: item.title,
+        description: item.description,
         thumbnail: item.thumbnail || '',
       })
     }

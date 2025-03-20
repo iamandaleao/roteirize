@@ -1,6 +1,6 @@
 <template>
-  <div class="relative isolate overflow-hidden pt-14">
-    <div class="absolute inset-0 -z-10 bg-cover opacity-40" style="background-image: url('/assets/images/blog-hero-bg.jpg');" />
+  <div class="relative isolate min-h-[550px] overflow-hidden pt-14">
+    <div class="absolute inset-0 -z-10 bg-cover bg-center opacity-40" style="background-image: url('/assets/images/blog-hero-bg.jpg');" />
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32">
         <div class="text-center">

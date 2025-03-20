@@ -13,13 +13,19 @@ defineProps<PostCardProps>()
         class="aspect-video scale-110 object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125 md:h-full md:w-auto md:rounded-l-lg md:rounded-tr-none"
       >
     </div>
-    <div class="flex flex-col gap-2 p-4">
+    <div class="relative flex w-full flex-col gap-2 p-4">
       <h4 class="font-medium">
         {{ title }}
       </h4>
-      <p class="line-clamp-3 text-sm text-muted-foreground">
-        {{ excerpt }}
+      <p class="line-clamp-3 pr-12 text-sm text-muted-foreground">
+        {{ description }}
       </p>
+
+      <div class="absolute bottom-2 right-2">
+        <Button variant="link">
+          Ler mais
+        </Button>
+      </div>
     </div>
   </NuxtLink>
 </template>
