@@ -14,7 +14,8 @@ const { data: blogData, pending } = await useAsyncData('blog-data', () =>
   queryCollectionSearchSections('blog', {
     extraFields: ['thumbnail'],
   }), {
-  lazy: false,
+  lazy: true,
+  watch: [query],
 })
 
 // Function to perform search and update results
