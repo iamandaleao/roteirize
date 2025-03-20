@@ -24,6 +24,6 @@ useSeoMeta({
   <NuxtLayout>
     <NuxtLoadingIndicator />
     <NuxtRouteAnnouncer />
-    <NuxtPage />
+    <NuxtPage vaul-drawer-wrapper />
   </NuxtLayout>
 </template>

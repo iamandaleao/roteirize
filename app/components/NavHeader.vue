@@ -1,7 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
-const mobileMenuOpen = ref(false)
+import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from '@/components/ui/drawer'
 
 interface NavItem {
   title: string
@@ -43,10 +49,30 @@ const navigation: NavItem[] = [
       </div>
       <div class="flex space-x-3 lg:hidden">
         <ThemeToggle />
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white" @click="mobileMenuOpen = true">
-          <span class="sr-only">Open main menu</span>
-          <Icon name="ph:list" size="24" />
-        </button>
+        <Drawer>
+          <DrawerTrigger as-child>
+            <button type="button" class="inline-flex items-center justify-center rounded-md text-white">
+              <Icon name="ph:list" size="24" />
+            </button>
+          </DrawerTrigger>
+          <DrawerContent>
+            <DrawerHeader>
+              <DrawerTitle>Viaje Mais, Planeje Menos.</DrawerTitle>
+              <DrawerDescription>Eu cuido dos detalhes, você aproveita a jornada.</DrawerDescription>
+            </DrawerHeader>
+            <DrawerFooter>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/25">
+                  <div class="space-y-2 py-6">
+                    <NuxtLink v-for="item in navigation" :key="item.title" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-secondary dark:text-secondary-foreground">
+                      {{ item.title }}
+                    </NuxtLink>
+                  </div>
+                </div>
+              </div>
+            </DrawerFooter>
+          </DrawerContent>
+        </Drawer>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <NuxtLink v-for="item in navigation" :key="item.title" :href="item.href" class="text-sm/6 font-semibold text-white">
@@ -57,29 +83,5 @@ const navigation: NavItem[] = [
         <ThemeToggle />
       </div>
     </nav>
-    <div v-if="mobileMenuOpen" class="lg:hidden" role="dialog" aria-modal="true">
-      <div class="fixed inset-0 z-50" />
-      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-        <div class="flex items-center justify-between">
-          <NuxtLink to="/">
-            <span class="sr-only">Roteirize</span>
-            <Logo class="h-12 text-primary" />
-          </NuxtLink>
-          <button type="button" class="inline-flex items-center justify-center rounded-md p-2.5 text-white" @click="mobileMenuOpen = false">
-            <span class="sr-only">Close menu</span>
-            <Icon name="ph:x" size="24" />
-          </button>
-        </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/25">
-            <div class="space-y-2 py-6">
-              <NuxtLink v-for="item in navigation" :key="item.title" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">
-                {{ item.title }}
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
 </template>
