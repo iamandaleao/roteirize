@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const page = ref(1)
+const route = useRoute()
+const router = useRouter()
+const page = ref(Number.parseInt(route.query.page as string) || 1)
 const postsPerPage = 6
 const { data: paginatedData } = await useAsyncData('blog', async () => {
   const [posts, count] = await Promise.all([
@@ -12,14 +14,16 @@ const { data: paginatedData } = await useAsyncData('blog', async () => {
   ])
 
   return { posts, count, totalPages: Math.ceil(count / postsPerPage) }
+}, {
+  watch: [page],
 })
 
 const posts = computed(() => paginatedData.value?.posts || [])
 const totalPages = computed(() => paginatedData.value?.totalPages || 0)
 
-function goToPage(newPage: number) {
+async function goToPage(newPage: number) {
   page.value = newPage
-  refreshNuxtData('blog')
+  await router.push({ query: { page: newPage === 1 ? undefined : newPage } })
 }
 
 useSeoMeta({
@@ -51,7 +55,7 @@ useSeoMeta({
       <div v-if="totalPages > 1" class="mt-10 flex items-center justify-center gap-2">
         <button
           :disabled="page === 1"
-          class="rounded-md border border-border px-4 py-2 disabled:opacity-50"
+          class="aspect-square rounded-md border border-border px-4 py-2 disabled:opacity-50"
           title="Página anterior"
           aria-label="Página anterior"
           @click="goToPage(page - 1)"
@@ -65,7 +69,7 @@ useSeoMeta({
             :key="pageNum"
             :title="`Página ${pageNum}`"
             :aria-label="`Página ${pageNum}`"
-            class="rounded-md px-4 py-2" :class="[
+            class="aspect-square rounded-md px-4 py-2" :class="[
               page === pageNum ? 'bg-primary text-white' : 'border border-border',
             ]"
             @click="goToPage(pageNum)"
@@ -76,7 +80,7 @@ useSeoMeta({
 
         <button
           :disabled="page === totalPages"
-          class="rounded-md border border-border px-4 py-2 disabled:opacity-50"
+          class="aspect-square rounded-md border border-border px-4 py-2 disabled:opacity-50"
           title="Próxima página"
           aria-label="Próxima página"
           @click="goToPage(page + 1)"
