@@ -9,7 +9,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div class="relative isolate min-h-[550px] overflow-hidden bg-center pt-14">
+  <div class="relative isolate overflow-hidden bg-center pt-14">
     <div class="absolute inset-0 -z-10 bg-cover opacity-10" style="background-image: url('/assets/images/search-hero-bg.png');" />
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32">
