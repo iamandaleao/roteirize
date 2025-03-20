@@ -11,7 +11,9 @@ const isSearching = ref(true)
 
 // Fetch blog data only once
 const { data: blogData, pending } = await useAsyncData('blog-data', () =>
-  queryCollectionSearchSections('blog'), {
+  queryCollectionSearchSections('blog', {
+    extraFields: ['thumbnail'],
+  }), {
   lazy: false,
 })
 
@@ -20,6 +22,7 @@ async function performSearch(searchQuery: string) {
   if (isSearching.value || !searchQuery || !blogData.value) {
     return
   }
+
   isSearching.value = true
   posts.value = []
 
@@ -56,15 +59,11 @@ async function performSearch(searchQuery: string) {
     // Process results
     const newPosts = []
     for (const item of results) {
-      const { data: post } = await useAsyncData(`post-${item.id}-${Date.now()}`, () =>
-        // @ts-ignore
-        queryCollection('blog').path(item.id).select(['thumbnail']).first())
-
       newPosts.push({
         title: item.title,
         excerpt: item.content,
         to: item.id,
-        thumbnail: post.value?.thumbnail || '',
+        thumbnail: item.thumbnail || '',
       })
     }
 

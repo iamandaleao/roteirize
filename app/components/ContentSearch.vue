@@ -48,7 +48,7 @@ const handleSearch = async (query: string) => {
       :placeholders="placeholders"
       @submit="handleSearch"
     />
-    <div v-if="isSearching" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+    <div v-if="isSearching" class="mt-2 text-sm text-white">
       Buscando...
     </div>
   </div>
