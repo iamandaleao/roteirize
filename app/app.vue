@@ -8,8 +8,11 @@ router.afterEach(() => {
   }, 500)
 })
 
+useHead({
+  titleTemplate: '%s • Roteirize',
+})
+
 useSeoMeta({
-  titleTemplate: `%s - ${seo?.siteName}`,
   ogSiteName: seo?.siteName,
   twitterCard: 'summary_large_image',
 })
