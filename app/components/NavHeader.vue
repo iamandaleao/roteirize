@@ -41,11 +41,6 @@ const isDrawerOpen = ref(false)
 
 function closeDrawer() {
   isDrawerOpen.value = false
-  setTimeout(() => {
-    document.body.style.overflow = ''
-    document.body.style.pointerEvents = ''
-    document.body.style.touchAction = ''
-  }, 100)
 }
 
 const route = useRoute()

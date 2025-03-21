@@ -35,7 +35,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
+  <div class="bg-background">
     <div class="bg-secondary">
       <NavHeader />
       <BlogHero />

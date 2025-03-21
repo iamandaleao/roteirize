@@ -1,5 +1,7 @@
 <script setup lang="ts">
 defineProps<{
+  isSearching: boolean
+  resultsCount: number
   query: string
 }>()
 
@@ -15,7 +17,12 @@ const emit = defineEmits<{
       <div class="mx-auto max-w-2xl py-32">
         <div class="text-center">
           <h1 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
-            Resultados para a busca: "{{ query }}"
+            <template v-if="isSearching">
+              Pesquisando...
+            </template>
+            <template v-else>
+              {{ resultsCount > 0 ? resultsCount : 'Nenhum' }} {{ resultsCount > 1 ? 'resultados' : 'resultado' }} para a busca: "{{ query }}"
+            </template>
           </h1>
           <div class="mt-10">
             <ContentSearch @search="emit('search', $event)" />
