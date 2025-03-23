@@ -21,7 +21,7 @@ const { data: page } = await useAsyncData(route.path, () => {
       class="mt-20"
       :current-tags="page.tags"
     />
-    <div class="flex justify-center px-4">
+    <div class="mt-20 flex justify-center px-4">
       <DisqusComments :identifier="route.fullPath" />
     </div>
     <Footer />
