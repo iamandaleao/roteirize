@@ -14,11 +14,11 @@ defineProps<PostCardProps>()
       >
     </NuxtLink>
     <div class="relative flex h-32 w-full flex-col gap-2 p-4">
-      <h4 class="font-medium">
-        <NuxtLink :to class="underline-offset-4 hover:underline">
+      <NuxtLink :to class="underline-offset-4 hover:underline">
+        <h4 class="font-medium">
           {{ title }}
-        </NuxtLink>
-      </h4>
+        </h4>
+      </NuxtLink>
 
       <p class="line-clamp-3 pr-12 text-sm text-muted-foreground">
         {{ description }}
