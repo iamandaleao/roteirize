@@ -58,9 +58,28 @@ const items = [
   },
 ]
 
+function buildPath(path: string) {
+  const segments = ['/blog', continent]
+  if (country) {
+    segments.push(country)
+  }
+
+  if (city) {
+    segments.push(city)
+  }
+
+  segments.push(path)
+  return segments.join('/')
+}
+
 function isActive(path: string) {
-  const itemPath = `/blog/${continent}/${country}/${city}/${path}`
-  return route.path === itemPath || route.path.startsWith(`${itemPath}/`)
+  const currentPath = route.path
+  const itemPath = buildPath(path)
+
+  return currentPath === itemPath
+    || currentPath.startsWith(`${itemPath}/`)
+    || currentPath.endsWith(`/${path}`)
+    || currentPath.includes(`/${path}/`)
 }
 </script>
 
@@ -70,12 +89,12 @@ function isActive(path: string) {
       <NuxtLink
         v-for="(item, index) in items"
         :key="index"
-        :to="`/blog/${continent}/${country}/${city}/${item.href}`"
-        class="m-2 flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center transition-all duration-300 hover:bg-black/50 hover:text-white" :class="[
-          isActive(item.href) ? 'bg-white text-black' : '',
-        ]"
+        :to="buildPath(item.href)"
+        class="m-2 flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center transition-all duration-300 hover:bg-black/50 hover:text-white"
+        :class="[isActive(item.href) ? 'bg-white text-black' : '']"
       >
-        <Icon :name="item.icon" /> <span>{{ item.name }}</span>
+        <Icon :name="item.icon" />
+        <span>{{ item.name }}</span>
       </NuxtLink>
     </div>
   </div>
