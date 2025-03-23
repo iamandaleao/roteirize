@@ -1,10 +1,11 @@
 ---
 city: "france"
-title: "França"
-description: "Descrição"
 cover: "nao-encontrada.jpg"
+date: "2025-03-23"
+description: "Descrição"
+published: true
 thumbnail: "nao-encontrada.jpg"
-date: "2025/03/23"
+title: "França"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

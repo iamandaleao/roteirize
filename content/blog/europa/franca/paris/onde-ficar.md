@@ -1,10 +1,11 @@
 ---
 city: "paris"
-title: "Paris: Onde Ficar"
-description: "Principais Bairros para se Hospedar em Paris"
 cover: paris.jpg
+date: "2025-02-18"
+description: "Principais Bairros para se Hospedar em Paris"
+published: true
 thumbnail: paris.jpg
-date: "2025/02/18"
+title: "Paris: Onde Ficar"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

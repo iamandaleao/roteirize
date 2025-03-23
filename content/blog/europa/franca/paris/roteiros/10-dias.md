@@ -1,11 +1,12 @@
 ---
 city: "paris"
-title: "Paris: Roteiro 10 dias"
-description: "Descrição"
 cover: paris.jpg
-thumbnail: paris-roteiro-10-dias.jpg
-date: "2025/02/18"
+date: "2025-02-18"
+description: "Descrição"
+published: true
 tags: ["roteiros"]
+thumbnail: paris-roteiro-10-dias.jpg
+title: "Paris: Roteiro 10 dias"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

@@ -1,10 +1,11 @@
 ---
 city: "paris"
-title: "Paris: História"
-description: "Da Vila Celta à Capital da Cultura"
 cover: paris.jpg
+date: "2025-02-18"
+description: "Da Vila Celta à Capital da Cultura"
+published: true
 thumbnail: paris.jpg
-date: "2025/02/18"
+title: "Paris: História"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

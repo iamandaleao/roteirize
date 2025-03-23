@@ -1,11 +1,12 @@
 ---
 city: france
-title: "França: Roteiros"
-description: "Descrição"
 cover: "nao-encontrada.jpg"
-thumbnail: "nao-encontrada.jpg"
-date: "2025/02/23"
+date: "2025-02-23"
+description: "Descrição"
+published: true
 tags: ["roteiros"]
+thumbnail: "nao-encontrada.jpg"
+title: "França: Roteiros"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

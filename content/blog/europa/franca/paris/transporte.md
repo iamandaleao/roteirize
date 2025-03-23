@@ -1,10 +1,11 @@
 ---
 city: "paris"
-title: "Paris: Transporte"
-description: "Como Se Locomover. Dicas Práticas e Econômicas"
 cover: paris.jpg
+date: "2025-02-18"
+description: "Como Se Locomover. Dicas Práticas e Econômicas"
+published: true
 thumbnail: paris.jpg
-date: "2025/02/18"
+title: "Paris: Transporte"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

@@ -1,10 +1,11 @@
 ---
 city: "paris"
-title: "Paris"
-description: "A Cidade dos Sonhos e Descobertas"
 cover: paris.jpg
+date: "2025-02-18"
+description: "A Cidade dos Sonhos e Descobertas"
+published: true
 thumbnail: paris.jpg
-date: "2025/02/18"
+title: "Paris"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

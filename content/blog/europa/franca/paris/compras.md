@@ -1,10 +1,11 @@
 ---
 city: "paris"
-title: "Paris: Compras"
-description: "Como Aproveitar sem Gastar Muito"
 cover: paris.jpg
+date: "2025-02-18"
+description: "Como Aproveitar sem Gastar Muito"
+published: true
 thumbnail: paris.jpg
-date: "2025/02/18"
+title: "Paris: Compras"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}
