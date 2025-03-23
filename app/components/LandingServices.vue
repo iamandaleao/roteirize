@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="cols-2 grid grid-cols-2 gap-4 bg-secondary text-center lg:grid-cols-4">
+  <div class="cols-2 grid grid-cols-2 gap-4 bg-secondary text-center md:grid-cols-4">
     <div class="flex h-32 flex-col items-center justify-center gap-2 text-primary">
       <Icon name="ph:map-pin-simple-area" class="" size="48" />
       <h4>Roteiros <br class="lg:hidden"> personalizados</h4>

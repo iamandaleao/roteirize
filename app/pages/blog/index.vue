@@ -8,6 +8,7 @@ const postsPerPage = 6
 const { data: paginatedData } = await useAsyncData('blog', async () => {
   const [posts, count] = await Promise.all([
     queryCollection('blog')
+      .where('published', '=', true)
       .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)
       .limit(postsPerPage)
@@ -42,7 +43,7 @@ useSeoMeta({
     </div>
 
     <div class="mx-auto max-w-7xl py-20">
-      <div class="grid grid-cols-1 gap-4 px-4 lg:grid-cols-2 lg:px-8">
+      <div class="grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:px-8">
         <div v-for="post in posts" :key="post.stem">
           <PostCard
             :to="post.stem"
