@@ -17,7 +17,7 @@ function goToPage(page: number) {
   <div v-if="totalPages > 1" class="mt-10 flex items-center justify-center gap-2">
     <button
       :disabled="currentPage === 1"
-      class="aspect-square rounded-md border border-border px-4 py-2 disabled:opacity-50"
+      class="aspect-square rounded-md border border-border px-4 py-2 hover:bg-muted disabled:opacity-50"
       title="Página anterior"
       aria-label="Página anterior"
       @click="goToPage(currentPage - 1)"
@@ -31,9 +31,9 @@ function goToPage(page: number) {
         :key="pageNum"
         :title="`Página ${pageNum}`"
         :aria-label="`Página ${pageNum}`"
-        class="aspect-square rounded-md px-4 py-2"
+        class="aspect-square rounded-md border border-border px-4 py-2"
         :class="[
-          currentPage === pageNum ? 'bg-primary text-white' : 'border border-border',
+          currentPage === pageNum ? 'bg-primary text-white' : ' hover:bg-muted',
         ]"
         @click="goToPage(pageNum)"
       >
@@ -43,7 +43,7 @@ function goToPage(page: number) {
 
     <button
       :disabled="currentPage === totalPages"
-      class="aspect-square rounded-md border border-border px-4 py-2 disabled:opacity-50"
+      class="aspect-square rounded-md border border-border px-4 py-2 hover:bg-muted disabled:opacity-50"
       title="Próxima página"
       aria-label="Próxima página"
       @click="goToPage(currentPage + 1)"
