@@ -4,7 +4,7 @@ title: "Paris: Roteiro 10 dias"
 description: "Descrição"
 cover: paris.jpg
 thumbnail: paris-roteiro-10-dias.jpg
-date: "18/02/2025"
+date: "2025/02/18"
 tags: ["roteiros"]
 ---
 

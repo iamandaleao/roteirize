@@ -4,7 +4,7 @@ title: "França: Roteiros"
 description: "Descrição"
 cover: "nao-encontrada.jpg"
 thumbnail: "nao-encontrada.jpg"
-date: "23/02/2025"
+date: "2025/02/23"
 tags: ["roteiros"]
 ---
 

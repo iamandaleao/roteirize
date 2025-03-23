@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { PostCardProps } from '~~/types'
+import { useDateFormat } from '@vueuse/core'
 
-defineProps<PostCardProps>()
+const props = defineProps<PostCardProps>()
+const formattedDate = useDateFormat(props.date, 'DD/MM/YYYY', { locales: 'pt-BR' })
 </script>
 
 <template>
@@ -24,7 +26,7 @@ defineProps<PostCardProps>()
 
       <div class="absolute inset-x-4 bottom-0">
         <div class="flex w-full items-center justify-between">
-          <time class="text-sm text-muted-foreground" datetime="">{{ date }}</time>
+          <time class="text-sm text-muted-foreground" :datetime="date.toString()">{{ formattedDate }}</time>
           <span class="text-primary underline-offset-4 hover:underline">
             Ler mais
           </span>

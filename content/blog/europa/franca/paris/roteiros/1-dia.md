@@ -4,7 +4,7 @@ title: "Paris: Roteiro 1 dia"
 description: "Descrição"
 cover: paris.jpg
 thumbnail: paris-roteiro-1-dia.jpg
-date: "18/02/2025"
+date: "2025/02/18"
 tags: ["roteiros"]
 ---
 

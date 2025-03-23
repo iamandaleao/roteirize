@@ -4,7 +4,7 @@ title: "Paris: Compras"
 description: "Como Aproveitar sem Gastar Muito"
 cover: paris.jpg
 thumbnail: paris.jpg
-date: "18/02/2025"
+date: "2025/02/18"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

@@ -3,5 +3,5 @@ export interface PostCardProps {
   title: string
   description: string
   thumbnail: string
-  date: string
+  date: Date
 }

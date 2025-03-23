@@ -4,7 +4,7 @@ title: "Paris: Transporte"
 description: "Como Se Locomover. Dicas Práticas e Econômicas"
 cover: paris.jpg
 thumbnail: paris.jpg
-date: "18/02/2025"
+date: "2025/02/18"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :city="city"}

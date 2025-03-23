@@ -1,5 +1,8 @@
 <script setup lang="ts">
-defineProps<{ date?: string }>()
+import { useDateFormat } from '@vueuse/core'
+
+const props = defineProps<{ date?: string }>()
+const formattedDate = useDateFormat(props.date, 'DD/MM/YYYY', { locales: 'pt-BR' })
 </script>
 
 <template>
@@ -37,7 +40,7 @@ defineProps<{ date?: string }>()
       <article class="prose relative mx-auto max-w-prose dark:prose-invert prose-a:text-blue-600 hover:prose-a:text-blue-500">
         <slot />
         <div class="mt-4 text-right text-sm text-muted-foreground">
-          <i>Postado por Amanda - <time datetime="{{ date }}">{{ date }}</time></i>
+          <i>Postado por Amanda - <time :datetime="date">{{ formattedDate }}</time></i>
         </div>
       </article>
     </div>
