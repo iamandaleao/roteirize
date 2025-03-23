@@ -6,13 +6,15 @@ defineProps<PostCardProps>()
 
 <template>
   <div class="block rounded-lg border shadow-md lg:flex lg:flex-row">
-    <NuxtLink :to class="aspect-video shrink-0 overflow-hidden rounded-t-lg lg:aspect-auto lg:h-36 lg:w-auto lg:rounded-l-lg lg:rounded-tr-none">
-      <img
-        :src="`/assets/images/${thumbnail}`"
-        :alt="title"
-        class="aspect-video scale-110 object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125 lg:h-full lg:w-auto lg:rounded-l-lg lg:rounded-tr-none"
-      >
-    </NuxtLink>
+    <div class="aspect-video shrink-0 overflow-hidden rounded-t-lg lg:aspect-auto lg:h-36 lg:w-auto lg:rounded-l-lg lg:rounded-tr-none">
+      <NuxtLink :to>
+        <img
+          :src="`/assets/images/${thumbnail}`"
+          :alt="title"
+          class="aspect-video scale-110 object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125 lg:h-full lg:w-auto lg:rounded-l-lg lg:rounded-tr-none"
+        >
+      </NuxtLink>
+    </div>
     <div class="relative flex h-32 w-full flex-col gap-2 p-4">
       <NuxtLink :to class="underline-offset-4 hover:underline">
         <h4 class="font-medium">
@@ -20,7 +22,7 @@ defineProps<PostCardProps>()
         </h4>
       </NuxtLink>
 
-      <p class="line-clamp-3 pr-12 text-sm text-muted-foreground">
+      <p class="line-clamp-3 text-sm text-muted-foreground">
         {{ description }}
       </p>
 
@@ -31,7 +33,9 @@ defineProps<PostCardProps>()
               {{ tag }}
             </div>
           </div>
-          <span v-else />
+          <div v-else class="px-2 py-1">
+            &nbsp;
+          </div>
           <NuxtLink :to class="text-primary underline-offset-4 hover:underline">
             Ler mais
           </NuxtLink>
