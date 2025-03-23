@@ -23,11 +23,11 @@ const pages = computed(() => {
   <div class="w-full max-w-xs md:max-w-none">
     <nav class="relative" aria-label="Breadcrumb">
       <div class="overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <ol role="list" class="flex items-center space-x-4">
+        <ol role="list" class="flex items-center space-x-3 pr-3">
           <li v-for="(page, idx) in pages" :key="page.name">
             <div class="flex items-center">
               <Icon v-if="idx > 0" name="ph:caret-right" class="shrink-0 text-white" aria-hidden="true" />
-              <NuxtLink :to="page.href" class="ml-4 whitespace-nowrap text-sm font-medium text-slate-300 hover:text-white" :aria-current="page.current ? 'page' : undefined">
+              <NuxtLink :to="page.href" class="whitespace-nowrap pl-3 text-sm font-medium text-slate-300 hover:text-white" :aria-current="page.current ? 'page' : undefined">
                 {{ page.name }}
               </NuxtLink>
             </div>

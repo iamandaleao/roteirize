@@ -1,14 +1,14 @@
 ---
 city: "paris"
 title: "Paris: Roteiro 1 dia"
-description: "A Cidade dos Sonhos e Descobertas"
+description: "Descrição"
 cover: paris.jpg
 thumbnail: paris-roteiro-1-dia.jpg
 date: "18/02/2025"
-tags: ['roteiros']
+tags: ["roteiros"]
 ---
 
-::post-hero{:title="title" :description="description" :cover="cover"}
+::post-hero{:title="title" :description="description" :cover="cover" :city="city"}
 ::
 
 ::city-stats{:city="city"}

@@ -264,6 +264,9 @@ async function loadAllData() {
   if (currencyCode.value) {
     currency.value = await convertCurrency(currencyCode.value)
   }
+  else {
+    currencyCode.value = 'BRL'
+  }
 
   cityDataCache.value.set(props.city, {
     coords: coords.value,
@@ -279,12 +282,14 @@ async function loadAllData() {
 }
 
 onMounted(() => {
-  loadAllData()
+  if (props.city) {
+    loadAllData()
+  }
 })
 </script>
 
 <template>
-  <div class="px-4">
+  <div v-if="city" class="px-4">
     <div class="mx-auto mt-4 grid max-w-3xl grid-cols-2 gap-4 rounded-lg border bg-gray-50 p-4 text-2xl text-black shadow dark:bg-background dark:text-white lg:grid-cols-4">
       <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
         <Icon name="ph:snowflake" class="shrink-0" />
@@ -315,6 +320,9 @@ onMounted(() => {
           {{ currencyCode?.toUpperCase() }}: R${{ currency }}
         </span>
         <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
+      </div>
+      <div v-else class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
+        -
       </div>
     </div>
     <div class="mx-auto mt-2 text-center text-sm text-muted-foreground">

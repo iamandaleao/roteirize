@@ -59,7 +59,7 @@ const items = [
 ]
 
 function isActive(path: string) {
-  const itemPath = `/blog/${city}/${path}`
+  const itemPath = `/blog/${continent}/${country}/${city}/${path}`
   return route.path === itemPath || route.path.startsWith(`${itemPath}/`)
 }
 </script>

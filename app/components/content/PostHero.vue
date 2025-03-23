@@ -3,6 +3,7 @@ defineProps<{
   title: string
   description: string
   cover: string
+  city: string
 }>()
 </script>
 
@@ -26,6 +27,6 @@ defineProps<{
         </div>
       </div>
     </div>
-    <PostMenu />
+    <PostMenu v-if="city" />
   </div>
 </template>

@@ -1,14 +1,14 @@
 ---
 city: paris
 title: "Paris: Roteiros"
-description: A Cidade dos Sonhos e Descobertas
+description: "Descrição"
 cover: paris.jpg
 thumbnail: paris.jpg
 date: 18/02/2025
-tags: ['roteiros']
+tags: ["roteiros"]
 ---
 
-::post-hero{:title="title" :description="description" :cover="cover"}
+::post-hero{:title="title" :description="description" :cover="cover" :city="city"}
 ::
 
 ::city-stats{:city="city"}
@@ -23,7 +23,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     thumbnail: paris-roteiro-1-dia.jpg
     title: "Paris: Roteiro de 1 dia"
     to: /blog/europa/franca/paris/roteiros/1-dia
-    description: "A Cidade dos Sonhos e Descobertas"
+    description: "Descrição"
     ---
     ::::
 
@@ -32,7 +32,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     thumbnail: paris-roteiro-5-dias.jpg
     title: "Paris: Roteiro de 5 dias"
     to: /blog/europa/franca/paris/roteiros/5-dias
-    description: "A Cidade dos Sonhos e Descobertas"
+    description: "Descrição"
 
     ---
     ::::
@@ -42,7 +42,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     thumbnail: paris-roteiro-10-dias.jpg
     title: "Paris: Roteiro de 10 dias"
     to: /blog/europa/franca/paris/roteiros/10-dias
-    description: "A Cidade dos Sonhos e Descobertas"
+    description: "Descrição"
     ---
     ::::
   :::

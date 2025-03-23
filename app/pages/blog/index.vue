@@ -49,6 +49,7 @@ useSeoMeta({
             :title="post.title"
             :description="post.description"
             :thumbnail="post.thumbnail"
+            :date="post.date"
           />
         </div>
       </div>

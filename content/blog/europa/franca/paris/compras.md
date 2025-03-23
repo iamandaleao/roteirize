@@ -7,7 +7,7 @@ thumbnail: paris.jpg
 date: "18/02/2025"
 ---
 
-::post-hero{:title="title" :description="description" :cover="cover"}
+::post-hero{:title="title" :description="description" :cover="cover" :city="city"}
 ::
 
 ::city-stats{:city="city"}
