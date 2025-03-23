@@ -1,6 +1,9 @@
 <script setup lang="ts">
 const route = useRoute()
-const city = route.path.split('/')[2]
+const paths = route.path.split('/')
+const continent = paths[2]
+const country = paths[3]
+const city = paths[4]
 
 const items = [
   {
@@ -67,7 +70,7 @@ function isActive(path: string) {
       <NuxtLink
         v-for="(item, index) in items"
         :key="index"
-        :to="`/blog/${city}/${item.href}`"
+        :to="`/blog/${continent}/${country}/${city}/${item.href}`"
         class="m-2 flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center transition-all duration-300 hover:bg-black/50 hover:text-white" :class="[
           isActive(item.href) ? 'bg-white text-black' : '',
         ]"
