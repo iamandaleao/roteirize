@@ -15,8 +15,10 @@ const totalPages = ref(0)
 
 const { data: blogData, pending } = await useAsyncData(`blog-search-${query.value}`, () =>
   queryCollectionSearchSections('blog', {
-    extraFields: ['thumbnail', 'description', 'date'],
-  }), {
+    extraFields: ['thumbnail', 'description', 'tags'],
+  })
+    .where('published', '=', true)
+    .order('date', 'DESC'), {
   lazy: true,
   watch: [query],
 })
@@ -66,7 +68,7 @@ async function performSearch(searchQuery: string) {
       newPosts.push({
         to: item.id,
         title: item.title,
-        date: item.date,
+        tags: item.tags,
         description: item.description,
         thumbnail: item.thumbnail || '',
       })

@@ -25,7 +25,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     title: "Paris: Roteiro de 1 dia"
     to: /blog/europa/franca/paris/roteiros/1-dia
     description: "Descrição"
-    date: "2025-02-18"
+    tags: ["roteiros"]
     ---
     ::::
 
@@ -35,7 +35,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     title: "Paris: Roteiro de 5 dias"
     to: /blog/europa/franca/paris/roteiros/5-dias
     description: "Descrição"
-    date: "2025-02-18"
+    tags: ["roteiros"]
     ---
     ::::
 
@@ -45,7 +45,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     title: "Paris: Roteiro de 10 dias"
     to: /blog/europa/franca/paris/roteiros/10-dias
     description: "Descrição"
-    date: "2025-02-18"
+    tags: ["roteiros"]
     ---
     ::::
   :::

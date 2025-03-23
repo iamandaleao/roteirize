@@ -23,7 +23,7 @@ export default defineContentConfig({
         thumbnail: z.string(),
         date: z.date().or(z.string()),
         published: z.boolean(),
-        tags: z.array(z.string()),
+        tags: z.array(z.string()).optional(),
       }),
     }),
   },

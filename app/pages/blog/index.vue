@@ -50,7 +50,7 @@ useSeoMeta({
             :title="post.title"
             :description="post.description"
             :thumbnail="post.thumbnail"
-            :date="post.date"
+            :tags="post.tags"
           />
         </div>
       </div>
