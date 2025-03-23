@@ -21,9 +21,9 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
   :::post-card-group
     ::::post-card
     ---
-    thumbnail: paris-roteiro-1-dia.jpg
+    thumbnail: "paris-roteiro-1-dia.jpg"
     title: "Paris: Roteiro de 1 dia"
-    to: /blog/europa/franca/paris/roteiros/1-dia
+    to: "/blog/europa/franca/paris/roteiros/1-dia"
     description: "Descrição"
     tags: ["roteiros"]
     ---
@@ -31,9 +31,9 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
 
     ::::post-card
     ---
-    thumbnail: paris-roteiro-5-dias.jpg
+    thumbnail: "paris-roteiro-5-dias.jpg"
     title: "Paris: Roteiro de 5 dias"
-    to: /blog/europa/franca/paris/roteiros/5-dias
+    to: "/blog/europa/franca/paris/roteiros/5-dias"
     description: "Descrição"
     tags: ["roteiros"]
     ---
@@ -41,9 +41,9 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
 
     ::::post-card
     ---
-    thumbnail: paris-roteiro-10-dias.jpg
+    thumbnail: "paris-roteiro-10-dias.jpg"
     title: "Paris: Roteiro de 10 dias"
-    to: /blog/europa/franca/paris/roteiros/10-dias
+    to: "/blog/europa/franca/paris/roteiros/10-dias"
     description: "Descrição"
     tags: ["roteiros"]
     ---
