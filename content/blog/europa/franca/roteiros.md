@@ -1,5 +1,5 @@
 ---
-city: france
+region: france
 cover: "nao-encontrada.jpg"
 date: "2025-02-23"
 description: "Descrição"
@@ -9,10 +9,10 @@ thumbnail: "nao-encontrada.jpg"
 title: "França: Roteiros"
 ---
 
-::post-hero{:title="title" :description="description" :cover="cover" :city="city"}
+::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
 ::
 
-::city-stats{:city="city"}
+::region-stats{:region="region"}
 ::
 
 ::post-body{:date="date"}

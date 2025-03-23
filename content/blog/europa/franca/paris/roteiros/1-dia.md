@@ -1,5 +1,5 @@
 ---
-city: "paris"
+region: "paris"
 cover: paris.jpg
 date: "2025-02-18"
 description: "Descrição"
@@ -9,10 +9,10 @@ thumbnail: paris-roteiro-1-dia.jpg
 title: "Paris: Roteiro 1 dia"
 ---
 
-::post-hero{:title="title" :description="description" :cover="cover" :city="city"}
+::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
 ::
 
-::city-stats{:city="city"}
+::region-stats{:region="region"}
 ::
 
 ::post-body{:date="date"}

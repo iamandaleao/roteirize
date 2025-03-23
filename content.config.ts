@@ -18,7 +18,7 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         description: z.string(),
-        city: z.string().optional(),
+        region: z.string().optional(),
         cover: z.string(),
         thumbnail: z.string(),
         date: z.date().or(z.string()),

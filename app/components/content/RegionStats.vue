@@ -2,10 +2,10 @@
 import { onMounted, ref } from 'vue'
 
 const props = defineProps<{
-  city: string
+  region: string
 }>()
 
-const cityDataCache = useState('city-data-cache', () => new Map())
+const regionDataCache = useState('region-data-cache', () => new Map())
 
 const coords = ref<{ lat: string, lon: string } | null>(null)
 const temperature = ref<number | null>(null)
@@ -13,12 +13,12 @@ const localTime = ref<string | null>(null)
 const population = ref<string | null>(null)
 const currency = ref<string | null>(null)
 const currencyCode = ref<string | null>(null)
-const displayName = ref<string>(props.city)
+const displayName = ref<string>(props.region)
 const isLoading = ref<boolean>(false)
 
-async function getCoords(cityName: string): Promise<{ lat: string, lon: string } | null> {
+async function getCoords(regionName: string): Promise<{ lat: string, lon: string } | null> {
   try {
-    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(cityName)}`
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(regionName)}`
     const res = await fetch(url)
     const data = await res.json()
     if (data.length === 0) {
@@ -60,7 +60,7 @@ function getLocalTimeFromData(data: any): string | null {
   return data.current.time.split('T')[1]
 }
 
-async function getWikidataInfo(cityName: string): Promise<{
+async function getWikidataInfo(regionName: string): Promise<{
   population: string | null
   currencyCode: string | null
   isCountry: boolean
@@ -68,7 +68,7 @@ async function getWikidataInfo(cityName: string): Promise<{
 }> {
   try {
     // First, get the Wikidata ID for the location
-    const searchUrl = `https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=${encodeURIComponent(cityName)}&language=en&origin=*`
+    const searchUrl = `https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&search=${encodeURIComponent(regionName)}&language=en&origin=*`
     const searchRes = await fetch(searchUrl)
     const searchData = await searchRes.json()
 
@@ -219,7 +219,7 @@ function formatNumber(num: number): string {
 }
 
 async function loadAllData() {
-  const cachedData = cityDataCache.value.get(props.city)
+  const cachedData = regionDataCache.value.get(props.region)
   if (cachedData) {
     coords.value = cachedData.coords
     temperature.value = cachedData.temperature
@@ -238,17 +238,17 @@ async function loadAllData() {
   currency.value = null
   currencyCode.value = null
 
-  const wikidataInfo = await getWikidataInfo(props.city)
+  const wikidataInfo = await getWikidataInfo(props.region)
   population.value = wikidataInfo.population
   currencyCode.value = wikidataInfo.currencyCode
 
-  let locationForWeather = props.city
+  let locationForWeather = props.region
   if (wikidataInfo.isCountry && wikidataInfo.capitalCity) {
     locationForWeather = wikidataInfo.capitalCity
-    displayName.value = `${props.city} (${wikidataInfo.capitalCity})`
+    displayName.value = `${props.region} (${wikidataInfo.capitalCity})`
   }
   else {
-    displayName.value = props.city
+    displayName.value = props.region
   }
 
   coords.value = await getCoords(locationForWeather)
@@ -268,7 +268,7 @@ async function loadAllData() {
     currencyCode.value = 'BRL'
   }
 
-  cityDataCache.value.set(props.city, {
+  regionDataCache.value.set(props.region, {
     coords: coords.value,
     temperature: temperature.value,
     localTime: localTime.value,
@@ -282,14 +282,14 @@ async function loadAllData() {
 }
 
 onMounted(() => {
-  if (props.city) {
+  if (props.region) {
     loadAllData()
   }
 })
 </script>
 
 <template>
-  <div v-if="city" class="px-4">
+  <div v-if="region" class="px-4">
     <div class="mx-auto mt-4 grid max-w-3xl grid-cols-2 gap-4 rounded-lg border bg-gray-50 p-4 text-2xl text-black shadow dark:bg-background dark:text-white lg:grid-cols-4">
       <div class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
         <Icon name="ph:snowflake" class="shrink-0" />

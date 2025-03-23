@@ -1,5 +1,5 @@
 ---
-city: "paris"
+region: "paris"
 cover: paris.jpg
 date: "2025-02-18"
 description: "Como Aproveitar sem Gastar Muito"
@@ -8,10 +8,10 @@ thumbnail: paris.jpg
 title: "Paris: Compras"
 ---
 
-::post-hero{:title="title" :description="description" :cover="cover" :city="city"}
+::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
 ::
 
-::city-stats{:city="city"}
+::region-stats{:region="region"}
 ::
 
 ::post-body{:date="date"}

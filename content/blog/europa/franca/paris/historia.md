@@ -1,5 +1,5 @@
 ---
-city: "paris"
+region: "paris"
 cover: paris.jpg
 date: "2025-02-18"
 description: "Da Vila Celta à Capital da Cultura"
@@ -8,10 +8,10 @@ thumbnail: paris.jpg
 title: "Paris: História"
 ---
 
-::post-hero{:title="title" :description="description" :cover="cover" :city="city"}
+::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
 ::
 
-::city-stats{:city="city"}
+::region-stats{:region="region"}
 ::
 
 ::post-body{:date="date"}
