@@ -12,6 +12,9 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
+const { setPage } = useBlogPage()
+setPage(page.value)
+
 definePageMeta({
   layout: 'blog',
 })

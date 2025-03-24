@@ -2,11 +2,7 @@
 import ShareButtons from '~/components/ShareButtons.vue'
 
 const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection('blog').path(route.path).first()
-}, {
-  watch: [route],
-})
+const { page } = useBlogPage()
 </script>
 
 <template>
@@ -17,7 +13,7 @@ const { data: page } = await useAsyncData(route.path, () => {
     <WhatsappCta class="mt-6" />
     <RelatedPosts
       v-if="page?.tags?.length"
-      :key="`related-posts${route.path}`"
+      :key="`related-posts-${route.path}`"
       class="mt-20"
       :current-tags="page.tags"
     />
