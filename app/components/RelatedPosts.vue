@@ -10,14 +10,14 @@ const route = useRoute()
 const { data: relatedPosts } = await useAsyncData(`related-posts-${route.path}`, () =>
   queryCollection('blog')
     .where('published', '=', true)
+    .where('path', '<>', route.path)
     .where('tags', 'LIKE', props.currentTags.map(tag => `%${tag}%`).join(' OR '))
     .order('date', 'DESC')
-    .limit(3)
+    .limit(2)
     .all())
 
 const posts = computed(() => {
   return (relatedPosts.value || [])
-    .filter(post => post.path !== route.path)
     .map(post => ({
       to: post.path,
       title: post.title,
