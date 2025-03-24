@@ -31,9 +31,9 @@ const posts = computed(() => {
 
 <template>
   <div v-if="posts.length > 0" class="mx-auto max-w-7xl px-4 lg:px-8">
-    <h2 class="mb-6 text-2xl font-semibold">
-      Posts Relacionados
-    </h2>
+    <h4 class="mb-6 text-center text-2xl font-semibold">
+      Conteúdos Relacionados
+    </h4>
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
       <PostCard
         v-for="post in posts"

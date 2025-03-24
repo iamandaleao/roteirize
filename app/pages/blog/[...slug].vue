@@ -4,6 +4,8 @@ const { seo } = useAppConfig()
 
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('blog').path(route.path).first()
+}, {
+  watch: [route],
 })
 
 if (!page.value) {
