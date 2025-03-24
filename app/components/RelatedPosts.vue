@@ -7,10 +7,10 @@ const props = defineProps<{
 
 const route = useRoute()
 
-const { data: relatedPosts } = await useAsyncData(`related-posts-${props.currentTags.join('-')}`, () =>
+const { data: relatedPosts } = await useAsyncData(`related-posts-${route.path}`, () =>
   queryCollection('blog')
     .where('published', '=', true)
-    .where('tags', 'LIKE', `%${props.currentTags.join('%')}%`)
+    .where('tags', 'LIKE', props.currentTags.map(tag => `%${tag}%`).join(' OR '))
     .order('date', 'DESC')
     .limit(3)
     .all())
