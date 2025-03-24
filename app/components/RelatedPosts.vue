@@ -17,9 +17,9 @@ const { data: relatedPosts } = await useAsyncData(`related-posts-${props.current
 
 const posts = computed(() => {
   return (relatedPosts.value || [])
-    .filter(post => post.stem !== route.path)
+    .filter(post => post.path !== route.path)
     .map(post => ({
-      to: post.stem,
+      to: post.path,
       title: post.title,
       description: post.description,
       thumbnail: post.thumbnail,
