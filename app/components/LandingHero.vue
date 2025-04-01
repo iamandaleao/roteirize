@@ -28,9 +28,9 @@ useIntervalFn(() => {
           <h1 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
             Viaje Mais, Planeje Menos.
           </h1>
-          <h2 class="mt-8 text-pretty text-lg font-medium text-secondary-foreground sm:text-xl/8">
+          <p class="mt-8 text-pretty text-lg font-medium text-secondary-foreground sm:text-xl/8">
             Eu cuido dos detalhes,<br class="lg:hidden"> você aproveita a jornada.
-          </h2>
+          </p>
           <div class="mt-10">
             <ContentSearch />
           </div>

@@ -117,7 +117,16 @@ function isActive(path: string) {
           <Icon name="ph:globe-hemisphere-east" />
           <span>História</span>
         </NuxtLink>
-        <CollapsibleTrigger as-child>
+        <NuxtLink
+          v-if="isOpen"
+          :to="buildPath('quando-ir')"
+          class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
+          :class="[isActive('quando-ir') ? 'bg-white text-black' : '']"
+        >
+          <Icon name="ph:calendar-dots" />
+          <span>Quando ir</span>
+        </NuxtLink>
+        <CollapsibleTrigger v-else as-child>
           <div class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white">
             <Icon name="ph:caret-up-down" class="size-4" />
             <span>Ver mais</span>
@@ -127,7 +136,7 @@ function isActive(path: string) {
       <CollapsibleContent class="collapsible-content">
         <div class="grid grid-cols-2 gap-2">
           <NuxtLink
-            v-for="(item, index) in items.slice(1)"
+            v-for="(item, index) in items.slice(2)"
             :key="index"
             :to="buildPath(item.href)"
             class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
