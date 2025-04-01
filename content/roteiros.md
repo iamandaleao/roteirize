@@ -8,7 +8,7 @@ menu:
     icon: "ph:whatsapp-logo"
     href: "roteiros"
   - name: "Prontos"
-    icon: "ph:airplane"
+    icon: "ph:island"
     href: "/blog/tag/roteiros"
 ---
 ::

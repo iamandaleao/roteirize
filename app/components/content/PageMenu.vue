@@ -37,7 +37,15 @@ function isActive(path: string) {
 
 <template>
   <div class="bg-secondary/20 p-4 text-white lg:p-8">
-    <div class="hidden grid-cols-2 gap-4 lg:grid lg:grid-cols-5">
+    <div
+      class="mx-auto hidden gap-4 lg:grid"
+      :class="{
+        'w-96 grid-cols-2': items.length === 2,
+        'grid-cols-3': items.length % 3 === 0,
+        'grid-cols-4': items.length % 4 === 0,
+        'grid-cols-5': items.length % 5 === 0,
+      }"
+    >
       <NuxtLink
         v-for="(item, index) in items"
         :key="index"
