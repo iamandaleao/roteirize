@@ -15,12 +15,16 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          'Nunito',
+          'Montserrat',
           'ui-sans-serif',
           'system-ui',
           'sans-serif',
           'Apple Color Emoji',
           'Segoe UI Emoji',
+        ],
+        heading: [
+          'Libre Baskerville',
+          'serif',
         ],
       },
       borderRadius: {
