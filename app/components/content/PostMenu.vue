@@ -6,11 +6,6 @@ import {
 } from '@/components/ui/collapsible'
 
 const route = useRoute()
-const paths = route.path.split('/')
-const continent = paths[2]
-const country = paths[3]
-const city = paths[4]
-const isOpen = ref(false)
 
 const items = [
   {
@@ -65,6 +60,22 @@ const items = [
   },
 ]
 
+const paths = route.path.split('/')
+const continent = paths[2]
+const country = paths[3]
+const city = paths[4]
+const isOpen = ref(false)
+
+const mobileMenuItems = computed(() => {
+  const activeItem = items.find(item => isActive(item.href))
+  if (!activeItem) {
+    return items
+  }
+
+  const otherItems = items.filter(item => item.href !== activeItem.href)
+  return [activeItem, ...otherItems]
+})
+
 function buildPath(path: string) {
   const segments = ['/blog', continent]
   if (country) {
@@ -110,34 +121,41 @@ function isActive(path: string) {
     >
       <div class="grid grid-cols-2 gap-2">
         <NuxtLink
-          :to="buildPath('historia')"
+          v-for="item in mobileMenuItems.slice(0, 1)"
+          :key="item.href"
+          :to="buildPath(item.href)"
           class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
-          :class="[isActive('historia') ? 'bg-white text-black' : '']"
+          :class="[isActive(item.href) ? 'bg-white text-black' : '']"
         >
-          <Icon name="ph:globe-hemisphere-east" />
-          <span>História</span>
+          <Icon :name="item.icon" />
+          <span>{{ item.name }}</span>
         </NuxtLink>
-        <NuxtLink
-          v-if="isOpen"
-          :to="buildPath('quando-ir')"
-          class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
-          :class="[isActive('quando-ir') ? 'bg-white text-black' : '']"
-        >
-          <Icon name="ph:calendar-dots" />
-          <span>Quando ir</span>
-        </NuxtLink>
-        <CollapsibleTrigger v-else as-child>
-          <div class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white">
-            <Icon name="ph:caret-up-down" class="size-4" />
-            <span>Ver mais</span>
-          </div>
-        </CollapsibleTrigger>
+        <template v-if="!isOpen">
+          <CollapsibleTrigger as-child>
+            <div class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white">
+              <Icon name="ph:caret-up-down" class="size-4" />
+              <span>Ver mais</span>
+            </div>
+          </CollapsibleTrigger>
+        </template>
+        <template v-else>
+          <NuxtLink
+            v-for="item in mobileMenuItems.slice(1, 2)"
+            :key="item.href"
+            :to="buildPath(item.href)"
+            class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
+            :class="[isActive(item.href) ? 'bg-white text-black' : '']"
+          >
+            <Icon :name="item.icon" />
+            <span>{{ item.name }}</span>
+          </NuxtLink>
+        </template>
       </div>
       <CollapsibleContent class="collapsible-content">
         <div class="grid grid-cols-2 gap-2">
           <NuxtLink
-            v-for="(item, index) in items.slice(2)"
-            :key="index"
+            v-for="item in mobileMenuItems.slice(2)"
+            :key="item.href"
             :to="buildPath(item.href)"
             class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
             :class="[isActive(item.href) ? 'bg-white text-black' : '']"
