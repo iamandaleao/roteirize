@@ -3,16 +3,20 @@ const route = useRoute()
 const router = useRouter()
 const page = ref(Number.parseInt(route.query.page as string) || 1)
 const postsPerPage = 6
-const { data: paginatedData } = await useAsyncData('blog', async () => {
+const tag = route.path.split('/')[3] ?? ''
+
+const { data: paginatedData } = await useAsyncData(`tag-${tag}`, async () => {
   const [posts, count] = await Promise.all([
     queryCollection('blog')
       .where('published', '=', true)
+      .where('tags', 'LIKE', `%${tag}%`)
       .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)
       .limit(postsPerPage)
       .all(),
     queryCollection('blog')
       .where('published', '=', true)
+      .where('tags', 'LIKE', `%${tag}%`)
       .count(),
   ])
 
@@ -46,7 +50,7 @@ useSeoMeta({
       <div class="grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:px-8">
         <div v-for="post in posts" :key="post.stem">
           <PostCard
-            :to="post.stem"
+            :to="`/${post.stem}`"
             :title="post.title"
             :description="post.description"
             :thumbnail="post.thumbnail"

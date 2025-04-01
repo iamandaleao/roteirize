@@ -29,9 +29,9 @@ defineProps<PostCardProps>()
       <div class="absolute inset-x-4 bottom-2 text-xs lg:bottom-0">
         <div class="flex w-full items-center justify-between">
           <div v-if="tags" class="flex items-center space-x-1 text-muted-foreground">
-            <div v-for="tag in tags.slice(0, 2)" :key="tag" class="rounded-full bg-muted px-2 py-1">
+            <NuxtLink v-for="tag in tags.slice(0, 2)" :key="tag" :to="`/blog/tag/${tag}`" class="rounded-full bg-muted px-2 py-1">
               {{ tag }}
-            </div>
+            </NuxtLink>
           </div>
           <div v-else class="px-2 py-1">
             &nbsp;

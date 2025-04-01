@@ -9,7 +9,7 @@ menu:
     href: "roteiros"
   - name: "Prontos"
     icon: "ph:airplane"
-    href: "historia"
+    href: "/blog/tag/roteiros"
 ---
 ::
 
