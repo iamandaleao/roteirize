@@ -91,33 +91,46 @@ function isActive(path: string) {
 </script>
 
 <template>
-  <div class="bg-secondary/20 p-2 text-white">
-    <div class="hidden grid-cols-2 md:grid md:grid-cols-2 lg:grid-cols-5">
+  <div class="bg-secondary/20 p-4 text-white lg:p-8">
+    <div class="hidden grid-cols-2 gap-4 lg:grid lg:grid-cols-5">
       <NuxtLink
         v-for="(item, index) in items"
         :key="index"
         :to="buildPath(item.href)"
-        class="m-2 flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center transition-all duration-300 hover:bg-black/50 hover:text-white"
+        class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
         :class="[isActive(item.href) ? 'bg-white text-black' : '']"
       >
         <Icon :name="item.icon" />
         <span>{{ item.name }}</span>
       </NuxtLink>
     </div>
-    <Collapsible v-model:open="isOpen" class="md:hidden">
-      <CollapsibleTrigger as-child>
-        <Button variant="ghost" size="sm" class="w-9 p-0">
-          <Icon name="ph:caret-up-down" />
-          <span class="sr-only">Toggle</span>
-        </Button>
-      </CollapsibleTrigger>
+    <Collapsible
+      v-model:open="isOpen"
+      class="grid gap-2 lg:hidden"
+    >
+      <div class="grid grid-cols-2 gap-2">
+        <NuxtLink
+          :to="buildPath('historia')"
+          class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
+          :class="[isActive('historia') ? 'bg-white text-black' : '']"
+        >
+          <Icon name="ph:globe-hemisphere-east" />
+          <span>História</span>
+        </NuxtLink>
+        <CollapsibleTrigger as-child>
+          <div class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white">
+            <Icon name="ph:caret-up-down" class="size-4" />
+            <span>Ver mais</span>
+          </div>
+        </CollapsibleTrigger>
+      </div>
       <CollapsibleContent class="collapsible-content">
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-2">
           <NuxtLink
-            v-for="(item, index) in items"
+            v-for="(item, index) in items.slice(1)"
             :key="index"
             :to="buildPath(item.href)"
-            class="m-2 flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center transition-all duration-300 hover:bg-black/50 hover:text-white"
+            class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
             :class="[isActive(item.href) ? 'bg-white text-black' : '']"
           >
             <Icon :name="item.icon" />

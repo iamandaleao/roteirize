@@ -315,7 +315,7 @@ onMounted(() => {
         <Icon v-else name="ph:arrow-clockwise" class="animate-spin" />
       </div>
 
-      <div v-if="currencyCode !== 'BRL'" class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2">
+      <div v-if="currencyCode !== 'BRL'" class="flex h-12 items-center justify-center gap-x-2 rounded-md p-2 text-center">
         <span v-if="currency !== null">
           {{ currencyCode?.toUpperCase() }}: R${{ currency }}
         </span>
