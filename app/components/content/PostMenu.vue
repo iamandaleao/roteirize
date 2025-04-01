@@ -111,7 +111,7 @@ function isActive(path: string) {
         class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
         :class="[isActive(item.href) ? 'bg-white text-black' : '']"
       >
-        <Icon :name="item.icon" />
+        <Icon :name="item.icon" class="shrink-0" />
         <span>{{ item.name }}</span>
       </NuxtLink>
     </div>
@@ -127,7 +127,7 @@ function isActive(path: string) {
           class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
           :class="[isActive(item.href) ? 'bg-white text-black' : '']"
         >
-          <Icon :name="item.icon" />
+          <Icon :name="item.icon" class="shrink-0" />
           <span>{{ item.name }}</span>
         </NuxtLink>
         <template v-if="!isOpen">
@@ -146,7 +146,7 @@ function isActive(path: string) {
             class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
             :class="[isActive(item.href) ? 'bg-white text-black' : '']"
           >
-            <Icon :name="item.icon" />
+            <Icon :name="item.icon" class="shrink-0" />
             <span>{{ item.name }}</span>
           </NuxtLink>
         </template>
@@ -160,7 +160,7 @@ function isActive(path: string) {
             class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white"
             :class="[isActive(item.href) ? 'bg-white text-black' : '']"
           >
-            <Icon :name="item.icon" />
+            <Icon :name="item.icon" class="shrink-0" />
             <span>{{ item.name }}</span>
           </NuxtLink>
         </div>
