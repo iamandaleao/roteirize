@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ShareButtons from '~/components/ShareButtons.vue'
-
 const route = useRoute()
 const { page } = useBlogPage()
 </script>

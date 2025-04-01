@@ -1,64 +1,16 @@
 <script setup lang="ts">
+import type { MenuItem } from '~~/types'
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible'
 
-const route = useRoute()
+const { items } = defineProps<{
+  items: MenuItem[]
+}>()
 
-const items = [
-  {
-    name: 'História',
-    icon: 'ph:globe-hemisphere-east',
-    href: 'historia',
-  },
-  {
-    name: 'Quando ir',
-    icon: 'ph:calendar-dots',
-    href: 'quando-ir',
-  },
-  {
-    name: 'Passagens',
-    icon: 'ph:airplane',
-    href: 'passages',
-  },
-  {
-    name: 'Como chegar',
-    icon: 'ph:map-pin-simple-area',
-    href: 'como-chegar',
-  },
-  {
-    name: 'Onde ficar',
-    icon: 'ph:building-apartment',
-    href: 'onde-ficar',
-  },
-  {
-    name: 'O que fazer',
-    icon: 'ph:sailboat',
-    href: 'o-que-fazer',
-  },
-  {
-    name: 'Gastronomia',
-    icon: 'ph:fork-knife',
-    href: 'gastronomia',
-  },
-  {
-    name: 'Transporte',
-    icon: 'ph:taxi',
-    href: 'transporte',
-  },
-  {
-    name: 'Compras',
-    icon: 'ph:handbag',
-    href: 'compras',
-  },
-  {
-    name: 'Roteiros',
-    icon: 'ph:island',
-    href: 'roteiros',
-  },
-]
+const route = useRoute()
 
 const paths = route.path.split('/')
 const continent = paths[2]

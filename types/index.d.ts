@@ -5,3 +5,9 @@ export interface PostCardProps {
   thumbnail: string
   tags: string[] | undefined
 }
+
+export interface MenuItem {
+  name: string
+  icon: string
+  href: string
+}

@@ -3,6 +3,13 @@
 title: Roteiros
 description: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"
 cover: roteiros-hero-bg.jpg
+menu:
+  - name: "Personalizados"
+    icon: "ph:whatsapp-logo"
+    href: "roteiros"
+  - name: "Prontos"
+    icon: "ph:airplane"
+    href: "historia"
 ---
 ::
 

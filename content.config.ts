@@ -9,7 +9,11 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string(),
         cover: z.string(),
-        date: z.string(),
+        menu: z.array(z.object({
+          name: z.string(),
+          icon: z.string(),
+          href: z.string(),
+        })).optional(),
       }),
     }),
     blog: defineCollection({

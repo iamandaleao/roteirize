@@ -1,13 +1,16 @@
 <script setup lang="ts">
+import type { MenuItem } from '~~/types'
+
 defineProps<{
   title: string
   description: string
   cover: string
+  menu?: MenuItem[]
 }>()
 </script>
 
 <template>
-  <div class="relative isolate overflow-hidden bg-secondary py-14">
+  <div class="relative isolate overflow-hidden bg-secondary pt-14">
     <img :src="`/assets/images/${cover}`" :alt="title" class="absolute inset-0 -z-10 size-full object-cover opacity-40">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32">
@@ -21,5 +24,6 @@ defineProps<{
         </div>
       </div>
     </div>
+    <PageMenu v-if="menu" :items="menu" />
   </div>
 </template>
