@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="relative isolate overflow-hidden bg-black pt-14">
+  <div class="relative isolate overflow-hidden bg-secondary py-14">
     <img :src="`/assets/images/${cover}`" :alt="title" class="absolute inset-0 -z-10 size-full object-cover opacity-40">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-32">

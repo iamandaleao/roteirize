@@ -13,7 +13,7 @@ if (!page.value) {
 }
 
 definePageMeta({
-  layout: 'blog',
+  layout: 'page',
 })
 
 useSeoMeta({

@@ -21,7 +21,7 @@ const navigation: NavItem[] = [
   },
   {
     title: 'Roteiros',
-    href: '/blog',
+    href: '/roteiros',
   },
   {
     title: 'Destinos',

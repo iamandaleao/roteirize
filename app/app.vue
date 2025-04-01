@@ -22,6 +22,6 @@ useSeoMeta({
   <NuxtLayout>
     <NuxtLoadingIndicator />
     <NuxtRouteAnnouncer />
-    <NuxtPage vaul-drawer-wrapper />
+    <NuxtPage class="bg-background" vaul-drawer-wrapper />
   </NuxtLayout>
 </template>

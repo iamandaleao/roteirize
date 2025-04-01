@@ -6,7 +6,7 @@ const formattedDate = useDateFormat(props.date, 'DD/MM/YYYY', { locales: 'pt-BR'
 </script>
 
 <template>
-  <main class="relative pt-10">
+  <main class="relative py-14">
     <div class="mx-auto px-4">
       <!-- Realistic airplane with globe -->
       <div class="pointer-events-none absolute left-0 top-0 hidden opacity-10 lg:block">

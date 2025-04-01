@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Pagination from '~/components/Pagination.vue'
-
 const route = useRoute()
 const router = useRouter()
 const page = ref(Number.parseInt(route.query.page as string) || 1)

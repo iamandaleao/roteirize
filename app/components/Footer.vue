@@ -81,9 +81,9 @@ const navigation = {
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm/6 font-semibold text-white">
+              <h4 class="text-sm/6 font-semibold text-white">
                 Links úteis
-              </h3>
+              </h4>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.pages" :key="item.name">
                   <NuxtLink :href="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">
@@ -93,9 +93,9 @@ const navigation = {
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm/6 font-semibold text-white">
+              <h4 class="text-sm/6 font-semibold text-white">
                 Roteiros de Viagem
-              </h3>
+              </h4>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.itineraries" :key="item.name">
                   <NuxtLink :to="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">
@@ -107,9 +107,9 @@ const navigation = {
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm/6 font-semibold text-white">
+              <h4 class="text-sm/6 font-semibold text-white">
                 Descontos
-              </h3>
+              </h4>
               <ul role="list" class="mt-6 grid gap-y-4">
                 <li v-for="item in navigation.discounts" :key="item.name">
                   <NuxtLink :to="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">
