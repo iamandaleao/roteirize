@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from '@/components/ui/collapsible'
+
 const route = useRoute()
 const paths = route.path.split('/')
 const continent = paths[2]
 const country = paths[3]
 const city = paths[4]
+const isOpen = ref(false)
 
 const items = [
   {
@@ -85,7 +92,7 @@ function isActive(path: string) {
 
 <template>
   <div class="bg-secondary/20 p-2 text-white">
-    <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5">
+    <div class="hidden grid-cols-2 md:grid md:grid-cols-2 lg:grid-cols-5">
       <NuxtLink
         v-for="(item, index) in items"
         :key="index"
@@ -97,5 +104,57 @@ function isActive(path: string) {
         <span>{{ item.name }}</span>
       </NuxtLink>
     </div>
+    <Collapsible v-model:open="isOpen" class="md:hidden">
+      <CollapsibleTrigger as-child>
+        <Button variant="ghost" size="sm" class="w-9 p-0">
+          <Icon name="ph:caret-up-down" />
+          <span class="sr-only">Toggle</span>
+        </Button>
+      </CollapsibleTrigger>
+      <CollapsibleContent class="collapsible-content">
+        <div class="grid grid-cols-2">
+          <NuxtLink
+            v-for="(item, index) in items"
+            :key="index"
+            :to="buildPath(item.href)"
+            class="m-2 flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center transition-all duration-300 hover:bg-black/50 hover:text-white"
+            :class="[isActive(item.href) ? 'bg-white text-black' : '']"
+          >
+            <Icon :name="item.icon" />
+            <span>{{ item.name }}</span>
+          </NuxtLink>
+        </div>
+      </CollapsibleContent>
+    </Collapsible>
   </div>
 </template>
+
+<style scoped>
+.collapsible-content {
+  overflow: hidden;
+}
+.collapsible-content[data-state="open"] {
+  animation: slideDown 300ms ease-out;
+}
+.collapsible-content[data-state="closed"] {
+  animation: slideUp 300ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--reka-collapsible-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--reka-collapsible-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+</style>
