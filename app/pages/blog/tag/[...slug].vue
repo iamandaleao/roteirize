@@ -40,10 +40,10 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="bg-background">
+  <div>
     <div class="bg-secondary">
       <NavHeader />
-      <BlogHero />
+      <TagHero :tag />
     </div>
 
     <div class="mx-auto max-w-7xl py-20">

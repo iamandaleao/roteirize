@@ -36,11 +36,9 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="bg-background">
-    <div class="bg-secondary">
-      <NavHeader />
-      <BlogHero />
-    </div>
+  <div>
+    <NavHeader />
+    <BlogHero />
 
     <div class="mx-auto max-w-7xl py-20">
       <div class="grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:px-8">

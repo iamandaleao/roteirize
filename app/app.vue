@@ -19,9 +19,9 @@ useSeoMeta({
 </script>
 
 <template>
-  <NuxtLayout>
+  <NuxtLayout class="bg-background">
     <NuxtLoadingIndicator />
     <NuxtRouteAnnouncer />
-    <NuxtPage class="bg-background" vaul-drawer-wrapper />
+    <NuxtPage vaul-drawer-wrapper />
   </NuxtLayout>
 </template>

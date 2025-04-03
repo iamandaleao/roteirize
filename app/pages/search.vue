@@ -133,7 +133,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="bg-background">
+  <div>
     <div class="bg-secondary">
       <NavHeader />
       <SearchHero
