@@ -22,8 +22,8 @@ const posts = computed(() => {
 </script>
 
 <template>
-  <div v-if="posts.length > 0" class="mx-auto max-w-7xl px-4 py-24 lg:px-8">
-    <h2 class="mb-6 text-center text-2xl font-semibold">
+  <div v-if="posts.length > 0" class="mx-auto max-w-7xl space-y-6 px-4 py-16 lg:px-8 lg:py-24">
+    <h2 class="text-center text-2xl font-semibold">
       Últimas postagens
     </h2>
     <Carousel class="relative w-full">
