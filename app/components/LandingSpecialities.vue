@@ -28,7 +28,7 @@ const regions = [
 </script>
 
 <template>
-  <div class="border-t bg-muted text-center font-medium text-white dark:bg-secondary">
+  <div class="border-t bg-secondary text-center font-medium text-secondary-foreground">
     <div class="mx-auto max-w-7xl space-y-6 px-4 py-16 lg:px-8 lg:py-24">
       <h4 class="text-center text-2xl font-semibold">
         Minhas especialidades
