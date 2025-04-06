@@ -13,6 +13,10 @@ const placeholders = [
   'Roma...',
   'Paris...',
   'Suíça...',
+  'Passaporte...',
+  'Chile...',
+  'Europa...',
+  'Africa...',
 ]
 
 const router = useRouter()

@@ -88,9 +88,9 @@ onBeforeUnmount(() => {
     <button
       v-if="vanishingText"
       type="submit"
-      class="absolute right-0 top-1/2 z-50 flex h-full w-min -translate-y-1/2 cursor-pointer items-center justify-center rounded-r-full bg-primary px-4 text-primary-foreground hover:bg-primary/80"
+      class="absolute right-0 top-1/2 z-50 flex h-full w-min -translate-y-1/2 cursor-pointer items-center justify-center rounded-r-full bg-primary px-4 text-primary-foreground hover:bg-secondary hover:text-white"
     >
-      <Icon name="ph:magnifying-glass" size="24" class="text-primary-foreground" />
+      <Icon name="ph:magnifying-glass" size="24" />
     </button>
 
     <!-- Placeholder Text -->
