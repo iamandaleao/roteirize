@@ -3,8 +3,7 @@
 
 <template>
   <div class="px-4">
-    <div class="prose relative mx-auto max-w-prose underline-offset-4 dark:prose-invert prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
-      <hr>
+    <div class="prose relative mx-auto max-w-prose border-t pt-14 underline-offset-4 dark:prose-invert prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
       Quer um roteiro perfeito para sua próxima viagem? Me chama no <a href="https://api.whatsapp.com/send?phone=5547933814178" target="_blank">WhatsApp</a> e vamos planejar juntos!
     </div>
   </div>

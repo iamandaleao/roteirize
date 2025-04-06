@@ -28,12 +28,12 @@ const posts = computed(() => {
     </h2>
     <Carousel class="relative w-full">
       <CarouselContent>
-        <CarouselItem v-for="post in posts" :key="post.to" class="basis-2/3 md:basis-2/5 lg:basis-1/4">
+        <CarouselItem v-for="post in posts" :key="post.to" class="basis-4/5 md:basis-2/5 lg:basis-1/4">
           <PostHoverCard v-bind="post" />
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious class="hidden lg:flex" />
-      <CarouselNext class="hidden lg:flex" />
+      <CarouselPrevious class="hidden xl:flex" />
+      <CarouselNext class="hidden xl:flex" />
     </Carousel>
   </div>
 </template>

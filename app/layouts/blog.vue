@@ -9,7 +9,7 @@ const { page } = useBlogPage()
     <slot />
     <div class="space-y-14">
       <ShareButtons :key="`share-buttons-${route.path}`" />
-      <WhatsappCta class="mt-6" />
+      <WhatsappCta />
       <RelatedPosts
         v-if="page?.tags?.length"
         :key="`related-posts-${route.path}`"

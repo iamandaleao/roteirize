@@ -2,7 +2,7 @@
 ---
 title: Dicas
 description: "Descrição"
-cover: inspiracoes-hero-bg.jpg
+cover: dicas-hero-bg.jpg
 menu:
   - name: "Bagagem"
     icon: "ph:backpack"
