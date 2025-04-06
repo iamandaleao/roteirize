@@ -16,7 +16,13 @@ useIntervalFn(() => {
 
 <template>
   <div class="relative isolate min-h-[400px] overflow-hidden bg-secondary pt-14 lg:min-h-[500px]">
-    <img :key="`hero-${heroIdx}`" :src="`/assets/images/hero${heroIdx}.jpg`" alt="" class="absolute inset-0 -z-10 size-full object-cover object-center opacity-40">
+    <video
+      :key="`hero-${heroIdx}`"
+      :src="`/assets/videos/hero${heroIdx}.mp4`"
+      autoplay
+      muted
+      class="absolute inset-0 -z-10 size-full object-cover object-center opacity-40"
+    />
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-24">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
