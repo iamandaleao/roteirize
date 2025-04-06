@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import type { PostCardProps } from '~~/types'
+import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 
 const { data: lastPosts } = await useAsyncData('lastest-posts', () =>
   queryCollection('blog')
     .where('published', '=', true)
     .order('date', 'DESC')
-    .limit(4)
+    .limit(6)
     .all())
 
 const posts = computed(() => {
@@ -25,12 +26,14 @@ const posts = computed(() => {
     <h2 class="mb-6 text-center text-2xl font-semibold">
       Últimas postagens
     </h2>
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-4">
-      <PostHoverCard
-        v-for="post in posts"
-        :key="post.to"
-        v-bind="post"
-      />
-    </div>
+    <Carousel class="relative w-full">
+      <CarouselContent>
+        <CarouselItem v-for="post in posts" :key="post.to" class="basis-2/3 md:basis-2/5 lg:basis-1/4">
+          <PostHoverCard v-bind="post" />
+        </CarouselItem>
+      </CarouselContent>
+      <CarouselPrevious class="hidden lg:flex" />
+      <CarouselNext class="hidden lg:flex" />
+    </Carousel>
   </div>
 </template>
