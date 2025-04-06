@@ -15,7 +15,7 @@ useIntervalFn(() => {
 </script>
 
 <template>
-  <div class="relative isolate min-h-[400px] overflow-hidden bg-secondary pt-14 lg:min-h-[500px]">
+  <div class="relative isolate min-h-[400px] overflow-hidden bg-secondary pt-14 lg:h-screen xl:h-auto">
     <video
       :key="`hero-${heroIdx}`"
       :src="`/assets/videos/hero${heroIdx}.mp4`"

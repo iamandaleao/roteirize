@@ -14,10 +14,6 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint --fix ."
   },
-  "dependencies": {
-    "embla-carousel-vue": "^8.6.0",
-    "vaul-vue": "^0.4.1"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^4.8.1",
     "@iconify-json/lucide": "^1.2.2",
@@ -34,6 +30,7 @@
     "@vueuse/core": "^12.8.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "embla-carousel-vue": "^8.6.0",
     "eslint": "^9.22.0",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "lucide-vue-next": "^0.475.0",
@@ -44,6 +41,7 @@
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "5.5.4",
+    "vaul-vue": "^0.4.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },

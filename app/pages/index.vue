@@ -11,6 +11,7 @@ useSeoMeta({
   <div>
     <NavHeader />
     <LandingHero />
+    <LandingPresentation />
     <LandingLatestPosts />
     <LandingSpecialities />
     <LandingServices />
