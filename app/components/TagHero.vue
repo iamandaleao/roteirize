@@ -6,6 +6,7 @@ const props = defineProps<{
 const heroImage = computed(() => {
   return {
     roteiros: 'roteiros-hero-bg.jpg',
+    destinos: 'destinos-hero-bg.jpg',
   }[props.tag] ?? 'blog-hero-bg.jpg'
 })
 </script>

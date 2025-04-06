@@ -25,7 +25,7 @@ const navigation: NavItem[] = [
   },
   {
     title: 'Destinos',
-    href: '/destinos',
+    href: '/blog/tag/destinos',
   },
   {
     title: 'Dicas',

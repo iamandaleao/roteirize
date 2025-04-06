@@ -4,6 +4,7 @@ cover: paris.jpg
 date: "2025-02-18"
 description: "A Cidade dos Sonhos e Descobertas"
 published: true
+tags: ["destinos"]
 thumbnail: paris.jpg
 title: "Paris"
 ---
