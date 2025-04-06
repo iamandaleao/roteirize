@@ -33,7 +33,7 @@ const navigation: NavItem[] = [
   },
   {
     title: 'Inspirações',
-    href: '/blog',
+    href: '/inspiracoes',
   },
 ]
 
