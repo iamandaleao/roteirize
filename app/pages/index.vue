@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import LandingLatestPosts from '~/components/LandingLatestPosts.vue'
+
 useSeoMeta({
   title: 'Viaje Mais, Planeje Menos',
   description: 'Eu cuido dos detalhes, você aproveita a jornada.',
@@ -9,6 +11,7 @@ useSeoMeta({
   <div>
     <NavHeader />
     <LandingHero />
+    <LandingLatestPosts />
     <LandingServices />
     <Footer />
   </div>
