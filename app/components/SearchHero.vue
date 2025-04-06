@@ -19,7 +19,7 @@ const emit = defineEmits<{
       fetchpriority="high"
       decoding="async"
     >
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="max-w-7xlpx-4 mx-auto md:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-20">
         <div class="text-center">
           <h1 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">

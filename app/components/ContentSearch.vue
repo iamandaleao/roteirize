@@ -42,7 +42,7 @@ const handleSearch = async (query: string) => {
 </script>
 
 <template>
-  <div class="content-search">
+  <div class="content-search px-4 md:px-6 lg:px-8">
     <AnimatedPlaceholderInput
       v-model="searchQuery"
       :placeholders="placeholders"

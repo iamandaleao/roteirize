@@ -33,7 +33,7 @@ const regions = [
       <h4 class="text-center text-2xl font-semibold">
         Minhas especialidades
       </h4>
-      <div class="grid grid-cols-2 gap-8 fill-slate-300 lg:grid-cols-6">
+      <div class="grid grid-cols-2 gap-8 fill-slate-300 md:grid-cols-3 lg:grid-cols-6">
         <div v-for="region in regions" :key="region.name" class="flex flex-col items-center justify-center space-y-2 transition-all lg:hover:scale-125">
           <img :src="`/assets/images/${region.map}`" class="h-24" alt="">
           <h4 class="font-medium">

@@ -22,7 +22,7 @@ const posts = computed(() => {
 </script>
 
 <template>
-  <div v-if="posts.length > 0" class="mx-auto max-w-7xl space-y-6 px-4 lg:px-8">
+  <div v-if="posts.length > 0" class="mx-auto max-w-7xl space-y-6 px-4 md:px-6 lg:px-8">
     <h4 class="text-center text-2xl font-semibold">
       Últimas postagens
     </h4>

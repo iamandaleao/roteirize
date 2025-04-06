@@ -15,7 +15,6 @@ useSeoMeta({
       <LandingLatestPosts />
       <LandingSpecialities />
     </div>
-    <LandingServices />
     <Footer />
   </div>
 </template>

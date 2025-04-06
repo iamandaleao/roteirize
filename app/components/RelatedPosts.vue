@@ -30,7 +30,7 @@ const posts = computed(() => {
 </script>
 
 <template>
-  <div v-if="posts.length > 0" class="mx-auto max-w-7xl px-4 lg:px-8">
+  <div v-if="posts.length > 0" class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
     <h4 class="mb-6 text-center text-2xl font-semibold">
       Conteúdos Relacionados
     </h4>

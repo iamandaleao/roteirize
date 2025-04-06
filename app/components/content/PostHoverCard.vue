@@ -13,7 +13,7 @@ defineProps<PostCardProps>()
           :alt="title"
           class="aspect-[9/12] scale-110 object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125"
         >
-        <div class="absolute bottom-0 flex h-12 w-full items-center justify-center bg-secondary/40 font-medium text-white">
+        <div class="absolute bottom-0 flex h-12 w-full items-center justify-center bg-secondary/80 font-medium text-white">
           <h4>{{ title }}</h4>
         </div>
       </NuxtLink>
