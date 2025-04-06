@@ -28,11 +28,11 @@ const regions = [
 </script>
 
 <template>
-  <div class="border-t bg-muted text-center font-medium text-white">
+  <div class="border-t bg-muted text-center font-medium text-white dark:bg-secondary">
     <div class="mx-auto max-w-7xl space-y-6 px-4 py-16 lg:px-8 lg:py-24">
-      <h2 class="text-center text-2xl font-semibold">
+      <h4 class="text-center text-2xl font-semibold">
         Minhas especialidades
-      </h2>
+      </h4>
       <div class="grid grid-cols-2 gap-8 fill-slate-300 lg:grid-cols-6">
         <div v-for="region in regions" :key="region.name" class="flex flex-col items-center justify-center space-y-2 transition-all lg:hover:scale-125">
           <img :src="`/assets/images/${region.map}`" class="h-24" alt="">

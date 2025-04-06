@@ -22,14 +22,14 @@ defineProps<PostCardProps>()
         </h4>
       </NuxtLink>
 
-      <p class="line-clamp-3 text-sm text-muted-foreground">
+      <p class="line-clamp-3 text-sm">
         {{ description }}
       </p>
 
       <div class="absolute inset-x-4 bottom-2 text-xs lg:bottom-0">
         <div class="flex w-full items-center justify-between">
           <div v-if="tags" class="flex items-center space-x-1 text-muted-foreground">
-            <NuxtLink v-for="tag in tags.slice(0, 2)" :key="tag" :to="`/blog/tag/${tag}`" class="rounded-full bg-muted px-2 py-1">
+            <NuxtLink v-for="tag in tags.slice(0, 2)" :key="tag" :to="`/blog/tag/${tag}`" class="rounded-full bg-accent px-2 py-1 text-accent-foreground">
               {{ tag }}
             </NuxtLink>
           </div>

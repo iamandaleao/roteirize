@@ -51,7 +51,7 @@ const navigation = {
 </script>
 
 <template>
-  <footer class="border-t bg-secondary">
+  <footer class="border-t">
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
@@ -60,7 +60,7 @@ const navigation = {
               <span class="sr-only">Roteirize</span>
               <Logo class="mx-auto h-16 text-primary xl:mx-0" />
             </NuxtLink>
-            <p class="text-balance text-center text-sm/6 text-secondary-foreground xl:text-left">
+            <p class="text-balance text-center text-sm/6  xl:text-left">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
             </p>
           </div>
@@ -71,7 +71,6 @@ const navigation = {
               :title="item.name"
               :href="item.href"
               target="_blank"
-              class="text-secondary-foreground hover:text-white"
             >
               <span class="sr-only">{{ item.name }}</span>
               <Icon :name="item.icon" aria-hidden="true" />
@@ -81,24 +80,24 @@ const navigation = {
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h4 class="text-sm/6 font-semibold text-white">
+              <h4 class="text-sm/6 font-semibold ">
                 Links úteis
               </h4>
               <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.pages" :key="item.name">
-                  <NuxtLink :href="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">
+                <li v-for="item in navigation.pages" :key="item.name" class="transition-all hover:scale-105 hover:font-medium">
+                  <NuxtLink :href="item.href" class="text-sm/6">
                     {{ item.name }}
                   </NuxtLink>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h4 class="text-sm/6 font-semibold text-white">
+              <h4 class="text-sm/6 font-semibold">
                 Roteiros de Viagem
               </h4>
               <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.itineraries" :key="item.name">
-                  <NuxtLink :to="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">
+                <li v-for="item in navigation.itineraries" :key="item.name" class="transition-all hover:scale-105 hover:font-medium">
+                  <NuxtLink :to="item.href" class="text-sm/6">
                     {{ item.name }}
                   </NuxtLink>
                 </li>
@@ -107,12 +106,12 @@ const navigation = {
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h4 class="text-sm/6 font-semibold text-white">
+              <h4 class="text-sm/6 font-semibold">
                 Descontos
               </h4>
               <ul role="list" class="mt-6 grid gap-y-4">
-                <li v-for="item in navigation.discounts" :key="item.name">
-                  <NuxtLink :to="item.href" class="text-sm/6 text-secondary-foreground hover:text-white">
+                <li v-for="item in navigation.discounts" :key="item.name" class="transition-all hover:scale-105 hover:font-medium">
+                  <NuxtLink :to="item.href" class="text-sm/6 transition-all hover:scale-105">
                     {{ item.name }}
                   </NuxtLink>
                 </li>
