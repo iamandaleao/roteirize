@@ -227,7 +227,7 @@ const posts = {
           >
             <template v-if="feature.image" #background>
               <div
-                class="absolute right-0 top-0 size-full bg-center opacity-40 transition ease-in-out group-hover:opacity-20"
+                class="absolute right-0 top-0 size-full bg-cover bg-center opacity-40 transition ease-in-out group-hover:opacity-20"
                 :style="`background-image: url('${feature.image}')`"
               />
             </template>
