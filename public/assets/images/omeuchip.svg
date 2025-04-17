@@ -1,0 +1,10 @@
+<svg width="250" height="60" viewBox="0 0 250 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        .text { font-family: Arial, sans-serif; font-weight: bold; font-size: 36px; }
+        .circle-text { fill: #002b54; }
+        .main-text { fill: #d21b4c; }
+    </style>
+    <text x="0" y="40" class="text circle-text">o</text>
+    <text x="25" y="40" class="text main-text">meuchip</text>
+    <polyline points="195,33 204,42 222,23" fill="none" stroke="#00b6f1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

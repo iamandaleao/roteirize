@@ -1,11 +1,51 @@
 <script setup lang="ts">
 import { useElementVisibility } from '@vueuse/core'
 import { useTemplateRef } from 'vue'
+import { AnimatedLogoCloud } from '~/components/ui/logo-cloud'
 
 const target = useTemplateRef<HTMLDivElement>('target')
 const targetIsVisible = useElementVisibility(target, {
   rootMargin: '0px 0px 1000px 0px',
 })
+
+const logos = [
+  {
+    name: 'Latam',
+    path: '/assets/images/latam.svg',
+  },
+  {
+    name: 'Rent Cars',
+    path: '/assets/images/rentcars.svg',
+  },
+  {
+    name: 'Unidas',
+    path: '/assets/images/unidas.svg',
+  },
+  {
+    name: 'Seguros Promo',
+    path: '/assets/images/segurospromo.svg',
+  },
+  {
+    name: 'Vai de Promo',
+    path: '/assets/images/vaidepromo.svg',
+  },
+  {
+    name: 'Tiqets',
+    path: '/assets/images/tiqets.svg',
+  },
+  {
+    name: 'Real Seguros',
+    path: '/assets/images/realseguros.svg',
+  },
+  {
+    name: 'Get Your Guide',
+    path: '/assets/images/getyourguide.svg',
+  },
+  {
+    name: 'O meu chip',
+    path: '/assets/images/omeuchip.svg',
+  },
+]
 </script>
 
 <template>
@@ -19,18 +59,9 @@ const targetIsVisible = useElementVisibility(target, {
         Na Roteirize, eu trabalho com empresas confiáveis e reconhecidas no mercado de turismo, pra garantir que sua experiência seja ainda melhor 💚
       </p>
     </div>
-    <div class="mx-auto mt-12 grid max-w-3xl grid-cols-2 bg-accent px-4 dark:bg-slate-100 lg:grid-cols-5 lg:rounded-md">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/booking.png" alt="Booking.com">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/getyourguide.png" alt="Get Your Guide">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/latam.svg" alt="Latam Airlines">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/omeuchip.png" alt="O Meu Chip">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/realseguro.png" alt="Real Seguro">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/rentcars.png" alt="Rent Cars">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/seguropromo.png" alt="Seguro Promo">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/tiqets-logo.png" alt="Tiqets">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/unidas.png" alt="Unidas">
-      <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/vaidepromo.png" alt="Vai de Promo">
-    </div>
+
+    <AnimatedLogoCloud :logos />
+
     <div
       class="relative flex size-full flex-col items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-60"
     >
