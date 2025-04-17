@@ -5,6 +5,8 @@ import { AnimatedLogoCloud } from '~/components/ui/logo-cloud'
 
 const target = useTemplateRef<HTMLDivElement>('target')
 const targetIsVisible = useElementVisibility(target)
+const sectionRef = ref(null)
+const sectionIsVisible = useElementVisibility(sectionRef)
 
 const logos = [
   {
@@ -47,7 +49,11 @@ const logos = [
 </script>
 
 <template>
-  <section class="relative w-full">
+  <section
+    ref="sectionRef"
+    class="relative w-full transition-all duration-1000"
+    :class="sectionIsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+  >
     <div class="prose mx-auto max-w-prose text-center dark:prose-invert">
       <h2 class="text-2xl tracking-tight md:text-4xl">
         Viaje com segurança!
@@ -58,7 +64,7 @@ const logos = [
       </p>
     </div>
 
-    <AnimatedLogoCloud :logos />
+    <AnimatedLogoCloud :logos class="dark:bg-secondary" />
 
     <div
       class="relative flex size-full flex-col items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-60"

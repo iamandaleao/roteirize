@@ -1,8 +1,10 @@
 <script setup>
-import { useIntervalFn } from '@vueuse/core'
+import { useElementVisibility, useIntervalFn } from '@vueuse/core'
 import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card/index'
 
 const activeHoverCard = ref(1)
+const sectionRef = ref(null)
+const isVisible = useElementVisibility(sectionRef)
 
 const { pause, resume } = useIntervalFn(simulateHover, 4000)
 
@@ -19,7 +21,11 @@ onMounted(() => resume)
 </script>
 
 <template>
-  <section class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+  <section
+    ref="sectionRef"
+    class="mx-auto max-w-7xl px-4 transition-all duration-1000 md:px-6 lg:px-8"
+    :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+  >
     <div class="prose mx-auto dark:prose-invert">
       <h2 class="text-center text-2xl tracking-tight md:text-4xl">
         Vantagens de planejar sua viagem com a Roteirize <span class="animate-pulse">💚</span>
