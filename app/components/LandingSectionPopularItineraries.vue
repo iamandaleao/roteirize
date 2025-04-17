@@ -78,7 +78,12 @@ const features = [
 
     <Tabs default-value="europe">
       <TabsList class="grid w-full grid-cols-2 md:grid-cols-4">
-        <TabsTrigger v-for="tab in tabs" :key="`trigger-${tab.value}`" :value="tab.value">
+        <TabsTrigger
+          v-for="tab in tabs"
+          :key="`trigger-${tab.value}`"
+          class="h-10 data-[state=active]:bg-primary data-[state=active]:text-white"
+          :value="tab.value"
+        >
           {{ tab.label }}
         </TabsTrigger>
       </TabsList>
