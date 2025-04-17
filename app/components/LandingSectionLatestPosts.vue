@@ -23,9 +23,9 @@ const posts = computed(() => {
 
 <template>
   <div v-if="posts.length > 0" class="mx-auto max-w-7xl space-y-6 px-4 md:px-6 lg:px-8">
-    <h4 class="text-center text-2xl font-semibold">
+    <h2 class="text-center text-2xl tracking-tight md:text-4xl">
       Últimas postagens
-    </h4>
+    </h2>
     <Carousel class="relative w-full">
       <CarouselContent>
         <CarouselItem v-for="post in posts" :key="post.to" class="basis-4/5 md:basis-2/5 lg:basis-1/4">

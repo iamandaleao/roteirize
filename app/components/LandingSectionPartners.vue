@@ -19,7 +19,7 @@ const targetIsVisible = useElementVisibility(target, {
         Na Roteirize, eu trabalho com empresas confiáveis e reconhecidas no mercado de turismo, pra garantir que sua experiência seja ainda melhor 💚
       </p>
     </div>
-    <div class="mx-auto mt-12 grid max-w-3xl grid-cols-2 bg-accent px-4 lg:grid-cols-5 lg:rounded-md">
+    <div class="mx-auto mt-12 grid max-w-3xl grid-cols-2 bg-accent px-4 dark:bg-slate-100 lg:grid-cols-5 lg:rounded-md">
       <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/booking.png" alt="Booking.com">
       <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/getyourguide.png" alt="Get Your Guide">
       <img class="mx-auto max-w-36 self-center object-contain" src="/assets/images/latam.svg" alt="Latam Airlines">
