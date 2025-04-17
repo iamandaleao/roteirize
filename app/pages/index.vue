@@ -14,6 +14,7 @@ useSeoMeta({
       <LandingSection2 />
       <LandingSectionLatestPosts />
       <LandingSectionSpecialities />
+      <LandingSectionMostPopularItineraries />
       <LandingSectionPartners />
     </div>
     <Footer />
