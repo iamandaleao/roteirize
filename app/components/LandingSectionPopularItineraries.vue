@@ -81,7 +81,7 @@ const features = [
         <TabsTrigger
           v-for="tab in tabs"
           :key="`trigger-${tab.value}`"
-          class="h-10 data-[state=active]:bg-primary data-[state=active]:text-white"
+          class="h-10 data-[state=active]:border data-[state=active]:border-primary"
           :value="tab.value"
         >
           {{ tab.label }}
