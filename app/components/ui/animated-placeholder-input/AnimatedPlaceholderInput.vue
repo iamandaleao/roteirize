@@ -71,7 +71,7 @@ onBeforeUnmount(() => {
 
 <template>
   <form
-    class="relative mx-auto h-12 w-full max-w-xl overflow-hidden rounded-full bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),_0px_1px_0px_0px_rgba(25,28,33,0.02),_0px_0px_0px_1px_rgba(25,28,33,0.08)] transition duration-200" :class="[
+    class="relative mx-auto h-12 w-full max-w-xl overflow-hidden rounded-full bg-white transition duration-200" :class="[
       vanishingText && 'bg-slate-50',
     ]"
     @submit.prevent="handleSubmit"
@@ -88,7 +88,7 @@ onBeforeUnmount(() => {
     <button
       v-if="vanishingText"
       type="submit"
-      class="absolute right-0 top-1/2 z-50 flex h-full w-min -translate-y-1/2 cursor-pointer items-center justify-center rounded-r-full bg-primary px-4 text-primary-foreground hover:bg-secondary hover:text-white"
+      class="absolute right-0 top-1/2 z-50 flex h-full w-min -translate-y-1/2 cursor-pointer items-center justify-center rounded-r-full bg-primary px-4 text-white hover:bg-secondary hover:text-white"
     >
       <Icon name="ph:magnifying-glass" size="24" />
     </button>

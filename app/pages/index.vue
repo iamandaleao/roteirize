@@ -12,8 +12,9 @@ useSeoMeta({
       <LandingHero />
       <LandingSection1 />
       <LandingSection2 />
-      <LandingLatestPosts />
-      <LandingSpecialities />
+      <LandingSectionLatestPosts />
+      <LandingSectionSpecialities />
+      <LandingSectionPartners />
     </div>
     <Footer />
   </div>

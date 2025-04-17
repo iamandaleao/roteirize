@@ -89,6 +89,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/icon',
+    '@nuxt/image',
     'shadcn-nuxt',
     '@nuxt/fonts',
     '@nuxtjs/color-mode',
