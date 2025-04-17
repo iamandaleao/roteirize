@@ -23,5 +23,8 @@ useSeoMeta({
     <NuxtLoadingIndicator />
     <NuxtRouteAnnouncer />
     <NuxtPage class="bg-background" vaul-drawer-wrapper />
+    <a href="https://api.whatsapp.com/send?phone=5547933814178" target="_blank" class="fixed bottom-2 right-4 flex size-12 items-center justify-center rounded-full bg-primary transition-all hover:scale-110">
+      <Icon name="ph:whatsapp-logo" class="text-white" size="32" />
+    </a>
   </NuxtLayout>
 </template>
