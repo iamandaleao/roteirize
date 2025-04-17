@@ -84,7 +84,7 @@ watch(() => route.path, () => closeDrawer)
         </Drawer>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <NuxtLink v-for="item in navigation" :key="item.title" :href="item.href" class="text-sm/6 font-semibold text-white">
+        <NuxtLink v-for="item in navigation" :key="item.title" :href="item.href" class="text-sm/6 font-semibold text-white transition-all hover:scale-110">
           {{ item.title }}
         </NuxtLink>
       </div>
