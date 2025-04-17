@@ -4,9 +4,7 @@ import { useTemplateRef } from 'vue'
 import { AnimatedLogoCloud } from '~/components/ui/logo-cloud'
 
 const target = useTemplateRef<HTMLDivElement>('target')
-const targetIsVisible = useElementVisibility(target, {
-  rootMargin: '0px 0px 1000px 0px',
-})
+const targetIsVisible = useElementVisibility(target)
 
 const logos = [
   {
