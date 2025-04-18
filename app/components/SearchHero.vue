@@ -3,6 +3,7 @@ defineProps<{
   isSearching: boolean
   resultsCount: number
   query: string
+  tag?: string
 }>()
 
 const emit = defineEmits<{
@@ -31,7 +32,7 @@ const emit = defineEmits<{
             </template>
           </h1>
           <div class="mt-10">
-            <ContentSearch @search="emit('search', $event)" />
+            <ContentSearch :tag @search="emit('search', $event)" />
           </div>
         </div>
       </div>

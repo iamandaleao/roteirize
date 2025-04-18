@@ -3,6 +3,10 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { AnimatedPlaceholderInput } from '~/components/ui/animated-placeholder-input'
 
+const { tag } = defineProps<{
+  tag?: string
+}>()
+
 const emit = defineEmits<{
   search: [query: string]
 }>()
@@ -36,7 +40,10 @@ const handleSearch = async (query: string) => {
   try {
     await router.push({
       path: '/search',
-      query: { q: query },
+      query: {
+        q: query,
+        ...(tag ? { tag } : {}),
+      },
     })
   }
   finally {

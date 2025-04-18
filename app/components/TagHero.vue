@@ -27,7 +27,7 @@ const heroImage = computed(() => {
             Tag: {{ tag }}
           </h1>
           <div class="mt-10">
-            <ContentSearch />
+            <ContentSearch :tag />
           </div>
         </div>
       </div>

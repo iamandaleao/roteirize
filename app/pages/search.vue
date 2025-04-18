@@ -8,17 +8,25 @@ const route = useRoute()
 const router = useRouter()
 const allPosts = ref<PostCardProps[]>([])
 const query = ref(route.query.q as string)
+const tag = ref(route.query.tag as string)
 const page = ref(Number.parseInt(route.query.page as string) || 1)
 const postsPerPage = 6
 const isSearching = ref(true)
 const totalPages = ref(0)
 
-const { data: blogData, pending } = await useAsyncData(`blog-search-${query.value}`, () =>
-  queryCollectionSearchSections('blog', {
+const { data: blogData, pending } = await useAsyncData(`blog-search-${query.value}`, () => {
+  let query = queryCollectionSearchSections('blog', {
     extraFields: ['thumbnail', 'description', 'tags'],
-  })
-    .where('published', '=', true)
-    .order('date', 'DESC'), {
+  }).where('published', '=', true)
+
+  if (tag.value) {
+    query = query.where('tags', 'LIKE', `%${tag.value}%`)
+  }
+
+  query = query.order('date', 'DESC')
+
+  return query
+}, {
   lazy: true,
   watch: [query],
 })
@@ -112,6 +120,7 @@ async function goToPage(newPage: number) {
   await router.push({
     query: {
       q: query.value,
+      tag: tag.value,
       page: newPage === 1 ? undefined : newPage,
     },
   })
@@ -139,7 +148,8 @@ useSeoMeta({
       <SearchHero
         :is-searching="isSearching"
         :results-count="resultsCount"
-        :query="query"
+        :query
+        :tag
         @search="updateSearch"
       />
     </div>
