@@ -7,10 +7,6 @@ const { tag } = defineProps<{
   tag?: string
 }>()
 
-const emit = defineEmits<{
-  search: [query: string]
-}>()
-
 const placeholders = [
   'Chip internacional...',
   'Seguro viagem...',
@@ -34,8 +30,6 @@ const handleSearch = async (query: string) => {
 
   searchQuery.value = query
   isSearching.value = true
-
-  emit('search', query)
 
   try {
     await router.push({

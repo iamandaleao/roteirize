@@ -7,14 +7,14 @@ import SearchHero from '~/components/SearchHero.vue'
 const route = useRoute()
 const router = useRouter()
 const allPosts = ref<PostCardProps[]>([])
-const query = ref(route.query.q as string)
-const tag = ref(route.query.tag as string)
+const query = computed(() => route.query.q as string)
+const tag = computed(() => route.query.tag as string)
 const page = ref(Number.parseInt(route.query.page as string) || 1)
 const postsPerPage = 6
 const isSearching = ref(true)
 const totalPages = ref(0)
 
-const { data: blogData, pending } = await useAsyncData(`blog-search-${query.value}`, () => {
+const { data: blogData, pending } = await useAsyncData(`blog-search-${query.value}-${tag.value}`, () => {
   let query = queryCollectionSearchSections('blog', {
     extraFields: ['thumbnail', 'description', 'tags'],
   }).where('published', '=', true)
@@ -28,7 +28,7 @@ const { data: blogData, pending } = await useAsyncData(`blog-search-${query.valu
   return query
 }, {
   lazy: true,
-  watch: [query],
+  watch: [query, tag],
 })
 
 // Function to perform search and update results
@@ -104,16 +104,7 @@ const posts = computed(() => {
 
 const resultsCount = computed(() => allPosts.value.length)
 
-async function updateSearch(q: string) {
-  if (!q) {
-    return
-  }
-
-  await router.push({ query: { q } })
-  query.value = q
-  page.value = 1
-  await performSearch(q)
-}
+watch(pending, () => performSearch(query.value))
 
 async function goToPage(newPage: number) {
   page.value = newPage
@@ -150,7 +141,6 @@ useSeoMeta({
         :results-count="resultsCount"
         :query
         :tag
-        @search="updateSearch"
       />
     </div>
 
@@ -159,14 +149,7 @@ useSeoMeta({
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g><circle cx="3" cy="12" r="2" fill="currentColor" /><circle cx="21" cy="12" r="2" fill="currentColor" /><circle cx="12" cy="21" r="2" fill="currentColor" /><circle cx="12" cy="3" r="2" fill="currentColor" /><circle cx="5.64" cy="5.64" r="2" fill="currentColor" /><circle cx="18.36" cy="18.36" r="2" fill="currentColor" /><circle cx="5.64" cy="18.36" r="2" fill="currentColor" /><circle cx="18.36" cy="5.64" r="2" fill="currentColor" /><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" /></g></svg>
       </div>
 
-      <div v-else-if="allPosts.length === 0" class="px-4 py-12 text-center">
-        <h2 class="text-xl font-medium">
-          Nenhum resultado encontrado para "{{ query }}"
-        </h2>
-        <p class="mt-2 text-secondary dark:text-secondary-foreground">
-          Tente buscar por outros termos ou explorar nossos destinos populares.
-        </p>
-      </div>
+      <TagCloud v-else-if="allPosts.length === 0" />
 
       <div v-else-if="allPosts.length > 0">
         <div class="grid grid-cols-1 gap-4 px-4 lg:grid-cols-2 lg:px-8">

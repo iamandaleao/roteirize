@@ -47,6 +47,8 @@ useSeoMeta({
     </div>
 
     <div class="mx-auto max-w-7xl py-20">
+      <TagCloud v-if="totalPages === 0" />
+
       <div class="grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:px-8">
         <div v-for="post in posts" :key="post.stem">
           <PostCard

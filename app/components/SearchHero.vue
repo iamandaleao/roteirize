@@ -1,20 +1,47 @@
 <script setup lang="ts">
-defineProps<{
+import { useRouter } from '#vue-router'
+
+const { query, tag } = defineProps<{
   isSearching: boolean
   resultsCount: number
   query: string
   tag?: string
 }>()
 
-const emit = defineEmits<{
-  search: [query: string]
-}>()
+const router = useRouter()
+
+const heroImage = computed(() => {
+  return {
+    roteiros: 'roteiros-hero-bg.jpg',
+    destinos: 'destinos-hero-bg.jpg',
+    bagagem: 'dicas-hero-bg.jpg',
+    voos: 'dicas-hero-bg.jpg',
+    passaporte: 'dicas-hero-bg.jpg',
+    historia: 'inspiracoes-hero-bg.jpg',
+    cruzeiros: 'inspiracoes-hero-bg.jpg',
+    natureza: 'inspiracoes-hero-bg.jpg',
+    jardins: 'inspiracoes-hero-bg.jpg',
+    praias: 'inspiracoes-hero-bg.jpg',
+    parques: 'inspiracoes-hero-bg.jpg',
+    romanticos: 'inspiracoes-hero-bg.jpg',
+    termais: 'inspiracoes-hero-bg.jpg',
+  }[tag ?? ''] ?? 'search-hero-bg.png'
+})
+
+async function searchWithoutTag() {
+  await router.push({
+    path: '/search',
+    query: {
+      q: query,
+    },
+  })
+}
 </script>
 
 <template>
   <div class="relative isolate min-h-[400px] overflow-hidden bg-secondary pt-14 lg:min-h-[500px]">
     <img
-      src="/assets/images/search-hero-bg.png"
+      :src="`/assets/images/${heroImage}`"
       alt="Pesquisa"
       class="absolute inset-0 -z-10 size-full object-cover object-center opacity-10"
       fetchpriority="high"
@@ -32,8 +59,18 @@ const emit = defineEmits<{
             </template>
           </h1>
           <div class="mt-10">
-            <ContentSearch :tag @search="emit('search', $event)" />
+            <ContentSearch :tag />
           </div>
+        </div>
+        <div v-if="tag" class="mt-4 flex items-center justify-center space-x-1 text-xs text-muted-foreground">
+          <button
+            type="button"
+            class="flex items-center space-x-2 rounded-full bg-accent px-2 py-1 text-accent-foreground"
+            @click="searchWithoutTag"
+          >
+            <span>{{ tag }}</span>
+            <Icon name="ph:x" />
+          </button>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ cover: roteiros-hero-bg.jpg
 menu:
   - name: "Personalizados"
     icon: "ph:whatsapp-logo"
-    href: "https://api.whatsapp.com/send?phone=5547933814178"
+    href: "roteiros"
   - name: "Prontos"
     icon: "ph:island"
     href: "/blog/tag/roteiros"
