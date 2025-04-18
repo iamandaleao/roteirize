@@ -1,8 +1,11 @@
-::page-hero
 ---
 title: Dicas
 description: "Descrição"
 cover: dicas-hero-bg.jpg
+---
+
+::page-hero{:title="title" :description="description" :cover="cover"}
+---
 menu:
   - name: "Bagagem"
     icon: "ph:backpack"

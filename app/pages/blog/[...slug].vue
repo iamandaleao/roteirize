@@ -14,9 +14,7 @@ if (!page.value) {
 const { setPage } = useBlogPage()
 setPage(page.value)
 
-if (page.value?.ogImage) {
-  defineOgImage(page.value?.ogImage) // <-- Nuxt OG Image
-}
+defineOgImageComponent('BlogPostOgImage')
 
 definePageMeta({
   layout: 'blog',

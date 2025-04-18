@@ -1,8 +1,11 @@
-::page-hero
 ---
 title: Inspirações
 description: "Descrição"
 cover: inspiracoes-hero-bg.jpg
+---
+
+::page-hero{:title="title" :description="description" :cover="cover"}
+---
 menu:
   - name: "História"
     icon: "ph:globe-hemisphere-east"

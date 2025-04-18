@@ -98,6 +98,11 @@ export default defineNuxtConfig({
     'nuxt-disqus',
   ],
 
+  site: {
+    url: 'https://roteirize.com.br',
+    name: 'Roteirize',
+  },
+
   shadcn: {
     prefix: '',
     componentDir: './app/components/ui',

@@ -1,9 +1,9 @@
-::page-hero
 ---
 title: Sobre
 description: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"
 cover: sobre.jpeg
 ---
+::page-hero{:title="title" :description="description" :cover="cover"}
 ::
 
 ::page-body

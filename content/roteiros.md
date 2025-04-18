@@ -1,15 +1,18 @@
-::page-hero
 ---
-title: Roteiros
-description: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"
-cover: roteiros-hero-bg.jpg
+title: "Roteiros"
+description: "Descrição"
+cover: "roteiros-hero-bg.jpg"
+---
+
+::page-hero{:title="title" :description="description" :cover="cover"}
+---
 menu:
-  - name: "Personalizados"
-    icon: "ph:whatsapp-logo"
-    href: "roteiros"
-  - name: "Prontos"
-    icon: "ph:island"
-    href: "/blog/tag/roteiros"
+- name: "Personalizados"
+  icon: "ph:whatsapp-logo"
+  href: "roteiros"
+- name: "Prontos"
+  icon: "ph:island"
+  href: "/blog/tag/roteiros"
 ---
 ::
 

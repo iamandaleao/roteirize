@@ -11,11 +11,7 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-defineOgImageComponent('OgImage')
-
-if (page.value?.ogImage) {
-  defineOgImage(page.value?.ogImage) // <-- Nuxt OG Image
-}
+defineOgImageComponent('BlogPostOgImage')
 
 definePageMeta({
   layout: 'blog',
