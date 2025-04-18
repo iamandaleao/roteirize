@@ -14,12 +14,16 @@
         <p>É assim que cada roteiro da Roteirize nasce: sob medida, com atenção aos detalhes e pronto pra transformar a sua viagem em uma experiência inesquecível.</p>
       </div>
 
-      <div class="overflow-hidden xl:h-80">
-        <img
-          src="/assets/images/menu-roteiros.jpg"
-          class="size-full rounded-2xl object-cover shadow-xl md:order-1"
-          alt="Apresentação"
-        >
+      <div class="aspect-video overflow-hidden rounded-2xl xl:h-80">
+        <video
+          key="section-1"
+          src="/assets/videos/section1.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          class="size-full scale-105 rounded-2xl object-cover object-center shadow-xl md:order-1"
+        />
       </div>
     </div>
   </section>

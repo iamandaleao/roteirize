@@ -21,6 +21,7 @@ useIntervalFn(() => {
       :src="`/assets/videos/hero${heroIdx}.mp4`"
       autoplay
       muted
+      playsinline
       class="absolute inset-0 -z-10 size-full object-cover object-center opacity-40"
     />
     <div class="max-w-7xlpx-4 mx-auto md:px-6 lg:px-8">
