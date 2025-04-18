@@ -4,18 +4,18 @@ cover: paris.jpg
 date: "2025-02-18"
 description: "Descrição teste"
 published: true
-tags: ["roteiros"]
+
 thumbnail: paris.jpg
 title: "Paris: Roteiros"
 sitemap:
   lastmod: 2025-02-18
 schemaOrg:
   - "@type": "BlogPosting"
-    headline: "Paris: Roteiros"
+    headline: "Europa"
+    datePublished: "2025-02-18"
     author:
       type: "Person"
       name: "Amanda Leão"
-      datePublished: "2025-02-18"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

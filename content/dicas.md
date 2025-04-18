@@ -2,6 +2,15 @@
 title: Dicas
 description: "Descrição"
 cover: dicas-hero-bg.jpg
+sitemap:
+  lastmod: 2025-02-18
+schemaOrg:
+  - "@type": "WebPage"
+    headline: "Dicas"
+    datePublished: "2025-02-18"
+    author:
+      type: "Person"
+      name: "Amanda Leão"
 ---
 
 ::page-hero{:title="title" :description="description" :cover="cover"}

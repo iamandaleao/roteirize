@@ -6,6 +6,15 @@ description: "Como Aproveitar sem Gastar Muito"
 published: true
 thumbnail: paris.jpg
 title: "Paris: Compras"
+sitemap:
+  lastmod: 2025-02-18
+schemaOrg:
+  - "@type": "BlogPosting"
+    headline: "Europa"
+    datePublished: "2025-02-18"
+    author:
+      type: "Person"
+      name: "Amanda Leão"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

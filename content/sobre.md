@@ -2,6 +2,15 @@
 title: Sobre
 description: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"
 cover: sobre.jpeg
+sitemap:
+  lastmod: 2025-02-18
+schemaOrg:
+  - "@type": "WebPage"
+    headline: "Sobre"
+    datePublished: "2025-02-18"
+    author:
+      type: "Person"
+      name: "Amanda Leão"
 ---
 ::page-hero{:title="title" :description="description" :cover="cover"}
 ::

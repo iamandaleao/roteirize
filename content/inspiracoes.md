@@ -2,6 +2,15 @@
 title: Inspirações
 description: "Descrição"
 cover: inspiracoes-hero-bg.jpg
+sitemap:
+  lastmod: 2025-02-18
+schemaOrg:
+  - "@type": "WebPage"
+    headline: "Inspirações"
+    datePublished: "2025-02-18"
+    author:
+      type: "Person"
+      name: "Amanda Leão"
 ---
 
 ::page-hero{:title="title" :description="description" :cover="cover"}

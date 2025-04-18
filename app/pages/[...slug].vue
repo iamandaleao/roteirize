@@ -11,14 +11,12 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-defineOgImageComponent('BlogPostOgImage')
-
 definePageMeta({
   layout: 'blog',
 })
 
-useHead(page.value.head || {}) // <-- Nuxt Schema.org
-useSeoMeta(page.value.seo || {}) // <-- Nuxt Robots
+useHead(page.value.head || {})
+useSeoMeta(page.value.seo || {})
 </script>
 
 <template>
