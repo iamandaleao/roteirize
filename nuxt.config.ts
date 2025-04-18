@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   disqus: {
     shortname: 'roteirizeoficial',
@@ -59,6 +59,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/fonts',
+    '@nuxthub/core',
     'shadcn-nuxt',
     '@stefanobartoletti/nuxt-social-share',
     'nuxt-disqus',
