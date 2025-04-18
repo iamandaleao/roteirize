@@ -33,8 +33,6 @@ async function goToPage(newPage: number) {
   await router.push({ query: { page: newPage === 1 ? undefined : newPage } })
 }
 
-defineOgImageComponent('BlogPostOgImage')
-
 useSeoMeta({
   title: 'Blog',
   description: 'Eu cuido dos detalhes, você aproveita a jornada.',

@@ -1,43 +1,9 @@
+// @ts-expect-error
+import { defineOrganization } from 'nuxt-schema-org/schema'
 import { defineNuxtConfig } from 'nuxt/config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'pt-BR',
-        style: 'scroll-behavior: smooth',
-      },
-      bodyAttrs: {
-        class: 'antialiased',
-      },
-      meta: [
-        {
-          name: 'charset',
-          content: `utf-8`,
-        },
-        {
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1, maximum-scale=1',
-        },
-      ],
-      link: [
-        {
-          rel: 'icon',
-          href: '/favicon.ico',
-        },
-        {
-          rel: 'shortcut icon',
-          href: '/favicon.ico',
-        },
-        {
-          rel: 'apple-touch-icon',
-          href: '/favicon.ico',
-        },
-      ],
-    },
-  },
-
   colorMode: {
     preference: 'system',
     fallback: 'light',
@@ -98,9 +64,53 @@ export default defineNuxtConfig({
     'nuxt-disqus',
   ],
 
+  schemaOrg: {
+    identity: defineOrganization({
+      name: 'Roteirize',
+      alternateName: 'Roteirize Viagens',
+      description: 'Eu cuido dos detalhes, você aproveita a jornada.',
+      url: 'https://roteirize.com.br',
+      logo: '/assets/images/logo.svg',
+
+      address: {
+        '@type': 'PostalAddress',
+        'streetAddress': 'Rua Dom Duarte, 363, casa 02',
+        'addressLocality': 'Quinta dos Açorianos',
+        'addressRegion': 'SC',
+        'postalCode': '88390000',
+        'addressCountry': 'BR',
+      },
+
+      email: 'admroteirize@gmail.com',
+      telephone: '+5547933814178',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        'telephone': '+5547933814178',
+        'email': 'admroteirize@gmail.com',
+      },
+
+      foundingDate: '2024-11-01',
+      numberOfEmployees: {
+        '@type': 'QuantitativeValue',
+        'minValue': 1,
+        'maxValue': 1,
+      },
+
+      sameAs: [
+        'https://www.instagram.com/roteirizeoficial',
+        'https://www.facebook.com/roteirizeoficial',
+        'https://www.youtube.com/@roteirizeoficial',
+        'https://www.tiktok.com/@roteirizeoficial',
+        'https://api.whatsapp.com/send?phone=5547933814178',
+      ],
+    }),
+  },
+
   site: {
     url: 'https://roteirize.com.br',
     name: 'Roteirize',
+    description: 'Eu cuido dos detalhes, você aproveita a jornada.',
+    defaultLocale: 'pt-BR',
   },
 
   shadcn: {

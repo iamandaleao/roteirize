@@ -1,3 +1,7 @@
+<script setup lang="ts">
+defineOgImageComponent('Screenshot')
+</script>
+
 <template>
   <main class="relative inset-0 isolate flex min-h-screen w-full items-center justify-center">
     <img

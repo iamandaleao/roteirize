@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const { seo } = useAppConfig()
-
 const router = useRouter()
 router.afterEach(() => {
   setTimeout(() => {
@@ -8,13 +6,49 @@ router.afterEach(() => {
   }, 500)
 })
 
+defineOgImageComponent('BlogPostOgImage')
+
 useHead({
+  htmlAttrs: {
+    lang: 'pt-BR',
+    style: 'scroll-behavior: smooth',
+  },
+  bodyAttrs: {
+    class: 'antialiased',
+  },
+  meta: [
+    {
+      name: 'charset',
+      content: `utf-8`,
+    },
+    {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1, maximum-scale=1',
+    },
+  ],
+  link: [
+    {
+      rel: 'shortcut icon',
+      href: '/favicon.ico',
+    },
+    {
+      rel: 'icon',
+      href: '/icon-512x512.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '/apple-touch-icon.png',
+    },
+  ],
   titleTemplate: '%s • Roteirize',
 })
 
 useSeoMeta({
-  ogSiteName: seo?.siteName,
+  ogSiteName: 'Roteirize',
   twitterCard: 'summary_large_image',
+  twitterTitle: '%s • Roteirize',
+  twitterDescription: '%s',
+  ogLocale: 'pt-BR',
 })
 </script>
 

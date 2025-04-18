@@ -14,14 +14,15 @@ if (!page.value) {
 const { setPage } = useBlogPage()
 setPage(page.value)
 
-defineOgImageComponent('BlogPostOgImage')
-
 definePageMeta({
   layout: 'blog',
 })
 
-useHead(page.value.head || {}) // <-- Nuxt Schema.org
-useSeoMeta(page.value.seo || {}) // <-- Nuxt Robots
+useHead(page.value.head || {})
+useSeoMeta({
+  ...page.value.seo,
+  ogType: 'article',
+})
 </script>
 
 <template>
