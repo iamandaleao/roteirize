@@ -40,6 +40,7 @@
     "lucide-vue-next": "^0.475.0",
     "nuxt": "^3.16.2",
     "nuxt-disqus": "1.1.1",
+    "nuxt-schema-org": "^5.0.5",
     "reka-ui": "^2.2.0",
     "shadcn-nuxt": "1.0.2",
     "tailwind-merge": "^3.2.0",

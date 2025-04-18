@@ -83,6 +83,9 @@ importers:
       nuxt-disqus:
         specifier: 1.1.1
         version: 1.1.1(magicast@0.3.5)(typescript@5.5.4)
+      nuxt-schema-org:
+        specifier: ^5.0.5
+        version: 5.0.5(@unhead/vue@2.0.8(vue@3.5.13(typescript@5.5.4)))(magicast@0.3.5)(vue@3.5.13(typescript@5.5.4))
       reka-ui:
         specifier: ^2.2.0
         version: 2.2.0(typescript@5.5.4)(vue@3.5.13(typescript@5.5.4))
