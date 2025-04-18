@@ -1,8 +1,9 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { asSeoCollection } from '@nuxtjs/seo/content'
 
 export default defineContentConfig({
   collections: {
-    page: defineCollection({
+    page: defineCollection(asSeoCollection({
       source: '*.md',
       type: 'page',
       schema: z.object({
@@ -15,8 +16,8 @@ export default defineContentConfig({
           href: z.string(),
         })).optional(),
       }),
-    }),
-    blog: defineCollection({
+    })),
+    blog: defineCollection(asSeoCollection({
       source: 'blog/**/*.md',
       type: 'page',
       schema: z.object({
@@ -29,6 +30,6 @@ export default defineContentConfig({
         published: z.boolean(),
         tags: z.array(z.string()).optional(),
       }),
-    }),
+    })),
   },
 })

@@ -7,6 +7,22 @@ published: true
 tags: ["roteiros"]
 thumbnail: paris.jpg
 title: "Paris: Roteiros"
+ogImage:
+  component: OgImage
+  props:
+    title: "Paris: Roteiros"
+    description: "Descrição"
+    logo: "http://localhost:3000/assets/images/paris.jpg"
+sitemap:
+  lastmod: 2025-02-18
+robots: "index, nofollow"
+schemaOrg:
+- "@type": "BlogPosting"
+  headline: "Paris: Roteiros"
+  author:
+    type: "Person"
+    name: "Amanda Leão"
+    datePublished: "2025-02-18"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

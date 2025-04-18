@@ -58,7 +58,7 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: { enabled: false },
+  devtools: { enabled: true },
 
   disqus: {
     shortname: 'roteirizeoficial',
@@ -86,13 +86,14 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/seo',
+    '@nuxtjs/color-mode',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/icon',
     '@nuxt/image',
-    'shadcn-nuxt',
     '@nuxt/fonts',
-    '@nuxtjs/color-mode',
+    'shadcn-nuxt',
     '@stefanobartoletti/nuxt-social-share',
     'nuxt-disqus',
   ],

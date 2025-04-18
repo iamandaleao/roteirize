@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 const route = useRoute()
-const { seo } = useAppConfig()
 
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('page').path(route.path).first()
@@ -12,16 +11,18 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
+defineOgImageComponent('OgImage')
+
+if (page.value?.ogImage) {
+  defineOgImage(page.value?.ogImage) // <-- Nuxt OG Image
+}
+
 definePageMeta({
-  layout: 'page',
+  layout: 'blog',
 })
 
-useSeoMeta({
-  title: page.value.seo.title,
-  ogTitle: `${page.value.seo.title} - ${seo?.siteName}`,
-  description: page.value.seo.description,
-  ogDescription: page.value.seo.description,
-})
+useHead(page.value.head || {}) // <-- Nuxt Schema.org
+useSeoMeta(page.value.seo || {}) // <-- Nuxt Robots
 </script>
 
 <template>
