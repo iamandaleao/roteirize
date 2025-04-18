@@ -1,6 +1,11 @@
 <template>
   <main class="relative inset-0 isolate flex min-h-screen w-full items-center justify-center">
-    <img src="/assets/images/nao-encontrada.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover object-center">
+    <img
+      src="/assets/images/nao-encontrada.jpg"
+      alt="" class="absolute inset-0 -z-10 size-full object-cover object-center"
+      fetchpriority="high"
+      decoding="async"
+    >
     <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
       <p class="text-base/8 font-semibold text-white">
         404

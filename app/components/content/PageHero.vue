@@ -11,7 +11,13 @@ defineProps<{
 
 <template>
   <div class="relative isolate min-h-[400px] overflow-hidden bg-secondary pt-14 lg:min-h-[500px]">
-    <img :src="`/assets/images/${cover}`" :alt="title" class="absolute inset-0 -z-10 size-full object-cover opacity-40">
+    <img
+      :src="`/assets/images/${cover}`"
+      :alt="title"
+      class="absolute inset-0 -z-10 size-full object-cover opacity-40"
+      fetchpriority="high"
+      decoding="async"
+    >
     <div class="max-w-7xlpx-4 mx-auto md:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-20">
         <div class="text-center">

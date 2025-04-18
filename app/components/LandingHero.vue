@@ -5,7 +5,7 @@ import { ref } from 'vue'
 const heroIdx = ref(1)
 
 useIntervalFn(() => {
-  if (heroIdx.value < 3) {
+  if (heroIdx.value < 4) {
     heroIdx.value += 1
   }
   else {
