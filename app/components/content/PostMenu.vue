@@ -21,7 +21,7 @@ const items = [
   {
     name: 'Passagens',
     icon: 'ph:airplane',
-    href: 'passages',
+    href: 'passagens',
   },
   {
     name: 'Como chegar',
