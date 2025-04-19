@@ -31,8 +31,8 @@ Paris é famosa pelas suas lojas de luxo e marcas icônicas, mas também oferece
 
 Para quem quer acompanhar as últimas tendências, mas sem pagar preços altos, as grandes redes de fast fashion são uma excelente opção. As principais marcas incluem:
 
-- **Zara, H&M e Mango:** Essas lojas são bastante populares em Paris e oferecem roupas modernas e de boa qualidade a preços mais acessíveis. Com várias lojas espalhadas pela cidade, como na **Rue de Rivoli** e na **Avenue des Champs-Élysées**, essas marcas são perfeitas para quem quer renovar o guarda-roupa com itens de tendência.
-- **Uniqlo:** Conhecida por suas peças básicas e confortáveis, a Uniqlo oferece uma excelente relação custo-benefício. A loja na **Champs-Élysées** é uma das mais procuradas e tem opções para quem busca peças práticas e elegantes.
+- **Zara, H&M e Mango:** Essas lojas são bastante populares em Paris e oferecem roupas modernas e de boa qualidade a preços mais acessíveis. Com várias lojas espalhadas pela cidade, como na Rue de Rivoli e na Avenue des Champs-Élysées, essas marcas são perfeitas para quem quer renovar o guarda-roupa com itens de tendência.
+- **Uniqlo:** Conhecida por suas peças básicas e confortáveis, a Uniqlo oferece uma excelente relação custo-benefício. A loja na Champs-Élysées é uma das mais procuradas e tem opções para quem busca peças práticas e elegantes.
 
 ### 2. Marcas Francesas Acessíveis
 
@@ -46,7 +46,7 @@ Se você deseja levar algo com o toque de marcas francesas, há diversas lojas q
 Para quem adora garimpar, Paris tem ótimos mercados e brechós onde você pode encontrar peças únicas a preços muito mais baixos:
 
 - **Marché aux Puces de Saint-Ouen:** Um dos maiores mercados de pulgas do mundo, ideal para quem busca roupas vintage e artigos de segunda mão com preços reduzidos. O mercado oferece uma enorme variedade de itens, desde roupas antigas até móveis e objetos de decoração.
-- **Kilo Shop:** Em várias localizações de Paris, o **Kilo Shop** permite que você pague pelo peso das roupas. Quanto mais você comprar, mais barato fica. É uma excelente opção para quem quer adquirir peças de segunda mão por preços baixos.
+- **Kilo Shop:** Em várias localizações de Paris, o Kilo Shop permite que você pague pelo peso das roupas. Quanto mais você comprar, mais barato fica. É uma excelente opção para quem quer adquirir peças de segunda mão por preços baixos.
 
 ### 4. Outlet: Marcas de Luxo com Descontos
 
@@ -58,7 +58,7 @@ Se você tem interesse em marcas de luxo, mas não quer pagar o preço cheio, os
 
 Uma das melhores maneiras de economizar em Paris são as famosas liquidações:
 
-- **Saldos de Verão e Inverno:** Durante os períodos de liquidação, como as **soldes d’été** (em julho) e as **soldes d’hiver** (em janeiro), você encontra descontos de até 70% em várias lojas. As liquidações são uma excelente oportunidade para adquirir roupas de temporada por preços muito mais baixos.
+- **Saldos de Verão e Inverno:** Durante os períodos de liquidação, como as soldes d’été (em julho) e as soldes d’hiver (em janeiro), você encontra descontos de até 70% em várias lojas. As liquidações são uma excelente oportunidade para adquirir roupas de temporada por preços muito mais baixos.
 
 ### 6. Lojas de Produtos Locais e Artesanais
 

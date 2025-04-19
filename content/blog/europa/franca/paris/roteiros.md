@@ -2,7 +2,7 @@
 region: paris
 cover: paris.jpg
 date: "2025-02-18"
-description: "Descrição teste"
+description: "Praticidade Para Sua Viagem"
 published: true
 
 thumbnail: paris.jpg
