@@ -15,16 +15,17 @@ useIntervalFn(() => {
 </script>
 
 <template>
-  <div class="relative isolate min-h-[400px] overflow-hidden bg-secondary pt-14 lg:h-screen xl:h-auto">
+  <div class="relative isolate overflow-hidden bg-secondary pt-14">
     <video
       :key="`hero-${heroIdx}`"
+      preload="metadata"
       :src="`/assets/videos/hero${heroIdx}.mp4`"
       autoplay
       muted
       playsinline
       class="absolute inset-0 -z-10 size-full object-cover object-center opacity-40"
     />
-    <div class="max-w-7xlpx-4 mx-auto md:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-24">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <NuxtLink to="/roteiros" class="relative rounded-full px-3 py-1 text-sm text-secondary-foreground ring-1 ring-white/10 hover:ring-white/20">
@@ -32,7 +33,7 @@ useIntervalFn(() => {
           </NuxtLink>
         </div>
         <div class="text-center">
-          <h1 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-7xl">
+          <h1 class="text-balance text-4xl font-semibold tracking-tight text-white lg:text-5xl 2xl:text-7xl">
             Viaje Mais, Planeje Menos.
           </h1>
           <p class="mt-8 text-pretty text-lg font-medium text-secondary-foreground sm:text-xl/8">

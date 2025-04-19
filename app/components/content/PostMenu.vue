@@ -102,7 +102,7 @@ function isActive(path: string) {
 </script>
 
 <template>
-  <div class="w-full bg-secondary/40 p-4 text-white" :class="{ 'absolute bottom-0': !isOpen }">
+  <div class="w-full bg-secondary/40 p-4 text-white">
     <div class="hidden grid-cols-2 gap-4 lg:grid lg:grid-cols-5">
       <NuxtLink
         v-for="(item, index) in items"
