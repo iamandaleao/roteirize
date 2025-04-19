@@ -26,6 +26,7 @@ const { data: paginatedData } = await useAsyncData(`tag-${tag}`, async () => {
 })
 
 const posts = computed(() => paginatedData.value?.posts || [])
+const postsCount = computed(() => paginatedData.value?.count || 0)
 const totalPages = computed(() => paginatedData.value?.totalPages || 0)
 
 async function goToPage(newPage: number) {
@@ -43,7 +44,7 @@ useSeoMeta({
   <div>
     <div class="bg-secondary">
       <NavHeader />
-      <TagHero :tag />
+      <TagHero :tag :count="postsCount" />
     </div>
 
     <div class="mx-auto max-w-7xl py-20">

@@ -36,7 +36,7 @@ function isActive(path: string) {
 </script>
 
 <template>
-  <div class="w-full bg-secondary/40 p-4 text-white" :class="{ 'absolute bottom-0': !isOpen }">
+  <div class="w-full bg-secondary/40 p-4 text-white">
     <div
       class="mx-auto hidden gap-4 lg:grid"
       :class="{
