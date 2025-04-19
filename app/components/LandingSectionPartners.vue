@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { useElementVisibility } from '@vueuse/core'
-import { useTemplateRef } from 'vue'
 import { AnimatedLogoCloud } from '~/components/ui/logo-cloud'
 
-const target = useTemplateRef<HTMLDivElement>('target')
-const targetIsVisible = useElementVisibility(target)
 const sectionRef = ref(null)
 const sectionIsVisible = useElementVisibility(sectionRef)
 
@@ -65,15 +62,5 @@ const logos = [
     </div>
 
     <AnimatedLogoCloud :logos class="dark:bg-secondary" />
-
-    <div
-      class="relative flex size-full flex-col items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-60"
-    >
-      <ClientOnly>
-        <div ref="target">
-          <LazyGlobe v-if="targetIsVisible" />
-        </div>
-      </ClientOnly>
-    </div>
   </section>
 </template>

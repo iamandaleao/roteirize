@@ -40,7 +40,7 @@ const formattedDate = useDateFormat(props.date, 'DD/MM/YYYY', { locales: 'pt-BR'
       <article class="prose relative mx-auto max-w-prose dark:prose-invert prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
         <slot />
         <div class="mt-4 text-right text-sm text-muted-foreground">
-          <i>Postado por Amanda - <time :datetime="date">{{ formattedDate }}</time></i>
+          <i>Postado por Amanda Leão - <time :datetime="date">{{ formattedDate }}</time></i>
         </div>
       </article>
     </div>

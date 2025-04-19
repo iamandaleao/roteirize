@@ -33,7 +33,6 @@
     "@vueuse/core": "^12.8.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "cobe": "^0.6.3",
     "embla-carousel-vue": "^8.6.0",
     "eslint": "^9.25.0",
     "eslint-plugin-tailwindcss": "^3.18.0",
@@ -49,7 +48,6 @@
     "vaul-vue": "^0.4.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
-    "vue-use-spring": "^0.3.3",
     "wrangler": "^4.12.0"
   },
   "pnpm": {
