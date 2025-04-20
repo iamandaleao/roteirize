@@ -44,7 +44,7 @@ Se você gosta de explorar com mais calma e ainda aproveitar a vista da cidade, 
 
 ### Bicicletas (Velib’): Sustentável e Divertido
 
-Se você ama explorar ao ar livre, o sistema de bicicletas públicas **Velib’** é perfeito. Você pode pegar uma bicicleta em uma estação e devolver em outra, o que dá muita liberdade.
+Se você ama explorar ao ar livre, o sistema de bicicletas públicas Velib’ é perfeito. Você pode pegar uma bicicleta em uma estação e devolver em outra, o que dá muita liberdade.
 
 - **Planos para Turistas:** Há opções de aluguel por 1 dia ou 7 dias, ideais para quem está visitando.
 - **Dica Importante:** Planeje sua rota, pois alguns bairros, como Montmartre, têm ladeiras que podem ser desafiadoras.
@@ -63,9 +63,10 @@ Paris é feita para caminhar. Muitas atrações ficam próximas umas das outras,
 
 ### Minhas Dicas para Economizar no Transporte
 
-**Compre Bilhetes com Desconto:** O **Carnê de 10 Bilhetes** ou o **Paris Visite Pass** são excelentes para reduzir os custos em comparação ao bilhete unitário.
+**Compre Bilhetes com Desconto:** O Carnê de 10 Bilhetes ou o Paris Visite Pass são excelentes para reduzir os custos em comparação ao bilhete unitário.
 
 **Planeje Suas Rotas:** Antes de sair, confira as linhas de metrô e ônibus que vai usar. Isso ajuda a evitar confusões e economiza tempo.
 
 **Prefira Transporte Público:** Táxis e aplicativos de carona podem ser caros, além de enfrentar o trânsito. O metrô e os ônibus são mais rápidos e baratos.
+
 ::

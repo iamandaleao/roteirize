@@ -25,7 +25,11 @@ schemaOrg:
 ::
 
 ::post-body{:date="date"}
-Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz um planejamento ideal para explorar Paris em 1, 5 ou 10 dias, com sugestões de passeios, restaurantes e experiências imperdíveis.
+<h2 align="center">
+Viaje com planejamento e personalidade!
+</h2>
+
+Escolha entre roteiros prontos ou peça o seu roteiro personalizado, feito sob medida para o seu estilo, tempo e interesses. Cada detalhe é cuidado com carinho para sua experiência em Paris ser inesquecível.
 
   :::post-card-group
     ::::post-card
@@ -33,7 +37,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     thumbnail: "paris-roteiro-1-dia.jpg"
     title: "Paris: Roteiro de 1 dia"
     to: "/blog/europa/franca/paris/roteiros/1-dia"
-    description: "Descrição"
+    description: "Você tem pouco tempo? Veja o essencial para curtir Paris em 24h."
     tags: ["roteiros"]
     ---
     ::::
@@ -43,7 +47,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     thumbnail: "paris-roteiro-5-dias.jpg"
     title: "Paris: Roteiro de 5 dias"
     to: "/blog/europa/franca/paris/roteiros/5-dias"
-    description: "Descrição"
+    description: "Ideal para quem quer conhecer Paris com calma e profundidade."
     tags: ["roteiros"]
     ---
     ::::
@@ -53,7 +57,7 @@ Escolha um roteiro pronto e aproveite ao máximo sua viagem! Cada opção traz u
     thumbnail: "paris-roteiro-10-dias.jpg"
     title: "Paris: Roteiro de 10 dias"
     to: "/blog/europa/franca/paris/roteiros/10-dias"
-    description: "Descrição"
+    description: "Conheça Paris além do básico com esse roteiro completo."
     tags: ["roteiros"]
     ---
     ::::

@@ -1,5 +1,5 @@
 ---
-region: "paris" 
+region: "paris"
 cover: paris.jpg
 date: "2025-03-20" # Data de publicação do post
 description: "Chegando em Paris com praticidade e estilo!"
@@ -56,10 +56,12 @@ Viajar de trem é uma excelente alternativa para quem já está na Europa. Paris
 - Gare Montparnasse: Conecta Paris a várias cidades no oeste da França, como Rennes e Nantes.
 
 ### Como Chegar a Paris de Carro
-Embora seja possível chegar a Paris de carro, vale lembrar que a cidade tem trânsito intenso, especialmente nos horários de pico, e o custo do estacionamento pode ser elevado. 
+Embora seja possível chegar a Paris de carro, vale lembrar que a cidade tem trânsito intenso, especialmente nos horários de pico, e o custo do estacionamento pode ser elevado.
 
 Se você já estiver na Europa, a melhor opção é pegar as rodovias principais, como a A1 (da Inglaterra), A10 (da Espanha) e A6 (da Suíça e Itália). No entanto, se você não estiver familiarizado com o trânsito local, considere outras formas de transporte.
 
-Paris é uma cidade de fácil acesso e oferece uma grande variedade de opções de transporte, tornando sua chegada simples e confortável. Seja de avião, trem ou carro, há sempre uma alternativa que se encaixa no seu estilo de viagem. 
+Paris é uma cidade de fácil acesso e oferece uma grande variedade de opções de transporte, tornando sua chegada simples e confortável. Seja de avião, trem ou carro, há sempre uma alternativa que se encaixa no seu estilo de viagem.
 
 Agora, é só escolher o melhor caminho para começar sua aventura pela Cidade Luz!
+
+::
