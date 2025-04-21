@@ -29,7 +29,7 @@ const navigation: NavItem[] = [
   },
   {
     title: 'Dicas',
-    href: '/dicas',
+    href: '/blog/tag/dicas',
   },
   {
     title: 'Inspirações',

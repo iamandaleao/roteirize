@@ -1,17 +1,17 @@
 ---
-cover: "nao-encontrada.jpg"
-date: "2025-02-15"
-tags: ["passaporte"]
+cover: "capa-dicas-bg.jpg"  # imagem de capa
+date: "2025-02-15"  # Data de publicação do post
+tags: ["dicas"]
 description: "Dicas para o seu passaporte"
 published: true
-thumbnail: "nao-encontrada.jpg"
+thumbnail: "nao-encontrada.jpg"  #imagem pequena 
 title: "Passaporte"
 sitemap:
-  lastmod: 2025-02-18
+  lastmod: 2025-02-18 # Data da última modificação
 schemaOrg:
   - "@type": "BlogPosting"
     headline: "Passaporte"
-    datePublished: "2025-02-18"
+    datePublished: "2025-02-18" # Data de publicação para SEO estruturado
     author:
       type: "Person"
       name: "Amanda Leão"
