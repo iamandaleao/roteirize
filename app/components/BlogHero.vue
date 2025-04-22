@@ -5,7 +5,6 @@
       alt="Blog"
       class="absolute inset-0 -z-10 size-full object-cover object-center opacity-40"
       fetchpriority="high"
-      decoding="async"
     >
 
     <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
