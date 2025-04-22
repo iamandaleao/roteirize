@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '~/components/ui/card/i
 const activeHoverCard = ref(1)
 const sectionRef = ref(null)
 const isVisible = useElementVisibility(sectionRef)
+const hasAnimated = ref(false)
 
 const { pause, resume } = useIntervalFn(simulateHover, 4000)
 
@@ -17,6 +18,12 @@ function mouseEnterCard() {
   pause()
 }
 
+watch(isVisible, (newValue) => {
+  if (newValue && !hasAnimated.value) {
+    hasAnimated.value = true
+  }
+})
+
 onMounted(() => resume)
 </script>
 
@@ -24,7 +31,7 @@ onMounted(() => resume)
   <section
     ref="sectionRef"
     class="mx-auto max-w-7xl px-4 transition-all duration-1000 md:px-6 lg:px-8"
-    :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+    :class="hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
   >
     <div class="prose mx-auto dark:prose-invert">
       <h2 class="text-center text-2xl tracking-tight md:text-4xl">

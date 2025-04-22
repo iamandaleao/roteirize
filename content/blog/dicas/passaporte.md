@@ -4,7 +4,7 @@ date: "2025-02-15"  # Data de publicação do post
 tags: ["dicas"]
 description: "Dicas para o seu passaporte"
 published: true
-thumbnail: "nao-encontrada.jpg"  #imagem pequena 
+thumbnail: "nao-encontrada.jpg"  #imagem pequena
 title: "Passaporte"
 sitemap:
   lastmod: 2025-02-18 # Data da última modificação
@@ -28,9 +28,9 @@ schemaOrg:
 ## O que precisa saber para viajar para o exterior
 
 Se você está planejando sua primeira viagem internacional, pode ter dúvidas sobre documentação e imigração.
-- Como tirar o passaporte? 
-- Preciso de visto? 
-- O que acontece na chegada ao país? 
+- Como tirar o passaporte?
+- Preciso de visto?
+- O que acontece na chegada ao país?
 
 Essas perguntas são comuns, e minha missão é te ajudar a viajar sem estresse!
 
@@ -50,10 +50,10 @@ Passaporte é o documento essencial para viajar (exceto Mercosul, onde usa-se o 
 
 Nem todos os países exigem visto. Países como Estados Unidos, Canadá, Austrália e Japão exigem.
 
-### Países que NÃO exigem visto
+#### Países que NÃO exigem visto
 Vários destinos na Europa, América do Sul e Ásia permitem entrada com passaporte. Verifique as regras específicas.
 
-### Países que EXIGEM visto
+#### Países que EXIGEM visto
 O processo de solicitação inclui:
 
 - Preenchimento de formulário online.

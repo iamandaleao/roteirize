@@ -10,6 +10,7 @@ import { BentoGrid, BentoGridCard } from '~/components/ui/bento-grid'
 
 const sectionRef = ref(null)
 const isVisible = useElementVisibility(sectionRef)
+const hasAnimated = ref(false)
 
 type ContinentType = 'europe' | 'southamerica' | 'northamerica' | 'africa'
 
@@ -202,13 +203,19 @@ const posts = {
     },
   ],
 }
+
+watch(isVisible, (newValue) => {
+  if (newValue && !hasAnimated.value) {
+    hasAnimated.value = true
+  }
+})
 </script>
 
 <template>
   <div
     ref="sectionRef"
     class="mx-auto max-w-7xl space-y-6 px-4 transition-all duration-1000 md:px-6 lg:px-8"
-    :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+    :class="hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
   >
     <h2 class="text-center text-2xl tracking-tight md:text-4xl">
       Roteiros mais populares

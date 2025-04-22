@@ -35,7 +35,7 @@ Com o tempo, os romanos chegaram e tomaram conta da região, construindo as prim
 
 ### Paris: A Cidade Luz
 
-Você sabia que o apelido Cidade Luz não se refere apenas à iluminação noturna, mas também ao papel de Paris durante o Iluminismo no século XVIII? 
+Você sabia que o apelido Cidade Luz não se refere apenas à iluminação noturna, mas também ao papel de Paris durante o Iluminismo no século XVIII?
 
 Nessa época, a cidade se tornou um verdadeiro ponto de encontro para pensadores e filósofos como Voltaire, Rousseau e Diderot. Eles debatiam ideias sobre liberdade, ciência e justiça social, influenciando não só a França, mas o mundo inteiro.
 
@@ -44,12 +44,12 @@ Além disso, Paris foi uma das primeiras cidades europeias a instalar iluminaç�
 ### Revolução Francesa e a Cultura Moderna
 Se você gosta de história, vai se encantar ao saber que Paris foi palco de um dos eventos mais marcantes da história mundial: a Revolução Francesa, em 1789. A Tomada da Bastilha marcou o início de uma revolta popular contra a monarquia absolutista, dando início a uma nova era de liberdade, direitos civis e democracia.
 
-No século XIX, a cidade passou por uma grande transformação. Com a industrialização e as reformas urbanísticas conduzidas pelo Barão Haussmann, Paris ganhou avenidas largas, praças elegantes, parques e uma arquitetura imponente. 
+No século XIX, a cidade passou por uma grande transformação. Com a industrialização e as reformas urbanísticas conduzidas pelo Barão Haussmann, Paris ganhou avenidas largas, praças elegantes, parques e uma arquitetura imponente.
 
 E não foi só isso: Paris também se destacou como berço de movimentos artísticos como o Impressionismo, com nomes como Monet, Renoir e Degas eternizando a vida parisiense em suas obras.
 
 ### Uma Cidade Viva, Ontem e Hoje
-Paris conseguiu, como poucas cidades no mundo, manter sua liderança cultural ao longo dos séculos. Com tanta história, arte e inspiração por todos os lados, caminhar por suas ruas é como viajar no tempo e também sentir o pulso criativo do presente. 
+Paris conseguiu, como poucas cidades no mundo, manter sua liderança cultural ao longo dos séculos. Com tanta história, arte e inspiração por todos os lados, caminhar por suas ruas é como viajar no tempo e também sentir o pulso criativo do presente.
 
 Se tiver a chance de conhecer Paris, prepare-se: é o tipo de lugar que conquista o coração e nunca mais sai da memória.
 ::

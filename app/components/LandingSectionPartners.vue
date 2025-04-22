@@ -3,7 +3,8 @@ import { useElementVisibility } from '@vueuse/core'
 import { AnimatedLogoCloud } from '~/components/ui/logo-cloud'
 
 const sectionRef = ref(null)
-const sectionIsVisible = useElementVisibility(sectionRef)
+const isVisible = useElementVisibility(sectionRef)
+const hasAnimated = ref(false)
 
 const logos = [
   {
@@ -43,13 +44,19 @@ const logos = [
     path: '/assets/images/omeuchip.svg',
   },
 ]
+
+watch(isVisible, (newValue) => {
+  if (newValue && !hasAnimated.value) {
+    hasAnimated.value = true
+  }
+})
 </script>
 
 <template>
   <section
     ref="sectionRef"
     class="relative w-full transition-all duration-1000"
-    :class="sectionIsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+    :class="hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
   >
     <div class="prose mx-auto max-w-prose text-center dark:prose-invert">
       <h2 class="text-2xl tracking-tight md:text-4xl">

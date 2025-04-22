@@ -11,6 +11,9 @@ defineProps<PostCardProps>()
         <img
           :src="`/assets/images/${thumbnail}`"
           :alt="title"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
           class="aspect-video scale-110 object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125 lg:h-full lg:w-auto lg:rounded-l-lg lg:rounded-tr-none"
         >
       </NuxtLink>

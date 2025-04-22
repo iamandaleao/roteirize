@@ -8,7 +8,6 @@ defineOgImageComponent('Screenshot')
       src="/assets/images/nao-encontrada.jpg"
       alt="" class="absolute inset-0 -z-10 size-full object-cover object-center"
       fetchpriority="high"
-      decoding="async"
     >
     <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
       <p class="text-base/8 font-semibold text-white">

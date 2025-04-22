@@ -29,7 +29,7 @@ Escolher o lugar ideal para se hospedar em Paris pode fazer toda a diferença na
 
 ### Melhores Bairros para se Hospedar
 
-- <u>Marais:</u> 
+- <u>Marais:</u>
 Um bairro central, perfeito para quem ama cultura, história e moda. Além de ser próximo de várias atrações, oferece muitas opções de restaurantes e cafés charmosos.
 - <u>Saint-Germain-des-Prés:</u>
 Sofisticação e charme descrevem bem essa região. Aqui, você encontra cafés icônicos, como o Café de Flore, e fica a poucos passos do Jardim de Luxemburgo.

@@ -3,6 +3,7 @@ import { useElementVisibility } from '@vueuse/core'
 
 const sectionRef = ref(null)
 const isVisible = useElementVisibility(sectionRef)
+const hasAnimated = ref(false)
 
 const regions = [
   {
@@ -30,13 +31,19 @@ const regions = [
     map: 'africa.svg',
   },
 ]
+
+watch(isVisible, (newValue) => {
+  if (newValue && !hasAnimated.value) {
+    hasAnimated.value = true
+  }
+})
 </script>
 
 <template>
   <div
     ref="sectionRef"
     class="border-t bg-secondary text-center font-medium text-secondary-foreground transition-all duration-1000"
-    :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+    :class="hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
   >
     <div class="mx-auto max-w-7xl space-y-8 px-4 py-16 lg:px-8">
       <div class="prose mx-auto max-w-prose text-center dark:prose-invert">
