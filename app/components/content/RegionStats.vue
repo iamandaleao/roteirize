@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 
 const props = defineProps<{
-  region: string
+  region?: string
 }>()
 
 const regionDataCache = useState('region-data-cache', () => new Map())
