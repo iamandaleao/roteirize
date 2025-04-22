@@ -20,9 +20,9 @@ const pages = computed(() => {
 </script>
 
 <template>
-  <div class="w-full max-w-xs md:max-w-none">
-    <nav class="relative" aria-label="Breadcrumb">
-      <div class="overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+  <div class="relative rounded-full bg-secondary/60 px-3 py-1 text-sm/6 text-slate-300 ring-1 ring-white/20">
+    <div class="w-full max-w-xs md:max-w-none">
+      <nav class="relative overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" aria-label="Breadcrumb">
         <ol role="list" class="flex items-center space-x-3 pr-3">
           <li v-for="(page, idx) in pages" :key="page.name">
             <div class="flex items-center">
@@ -33,7 +33,7 @@ const pages = computed(() => {
             </div>
           </li>
         </ol>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
 </template>

@@ -3,10 +3,10 @@ export default function useHeroImage(tag: string) {
     return {
       roteiros: 'roteiros-hero-bg.jpg',
       destinos: 'destinos-hero-bg.jpg',
-      bagagem: 'dicas-hero-bg.jpg',
-      direitos: 'dicas-hero-bg.jpg',
+      bagagem: 'capa-dicas-bg.jpg',
+      direitos: 'capa-dicas-bg.jpg',
       dicas: 'capa-dicas-bg.jpg',
-      passaporte: 'dicas-hero-bg.jpg',
+      passaporte: 'capa-dicas-bg.jpg',
       historia: 'inspiracoes-hero-bg.jpg',
       cruzeiros: 'inspiracoes-hero-bg.jpg',
       natureza: 'inspiracoes-hero-bg.jpg',

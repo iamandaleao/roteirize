@@ -1,9 +1,15 @@
 <script setup lang="ts">
+const showWhatsApp = ref(false)
 const router = useRouter()
+
 router.afterEach(() => {
   setTimeout(() => {
     window.scrollTo(0, 0)
   }, 500)
+})
+
+onMounted(() => {
+  setTimeout(() => showWhatsApp.value = true, 2000)
 })
 
 defineOgImageComponent('BlogPostOgImage')
@@ -57,8 +63,13 @@ useSeoMeta({
     <NuxtLoadingIndicator />
     <NuxtRouteAnnouncer />
     <NuxtPage class="bg-background" vaul-drawer-wrapper />
-    <a href="https://api.whatsapp.com/send?phone=5547933814178" target="_blank" class="fixed bottom-2 right-4 flex size-12 items-center justify-center rounded-full bg-primary transition-all hover:scale-110">
-      <Icon name="ph:whatsapp-logo" class="text-white" size="32" />
-    </a>
+    <Transition
+      enter-active-class="transition-all ease-out"
+      enter-from-class="translate-y-full opacity-0"
+    >
+      <a v-if="showWhatsApp" href="https://api.whatsapp.com/send?phone=5547933814178" target="_blank" class="fixed bottom-2 right-4 flex size-12 animate-pulse items-center justify-center rounded-full bg-primary transition-all hover:scale-110">
+        <Icon name="ph:whatsapp-logo" class="text-white" size="36" />
+      </a>
+    </Transition>
   </NuxtLayout>
 </template>
