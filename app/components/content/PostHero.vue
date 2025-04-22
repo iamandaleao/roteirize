@@ -3,7 +3,7 @@ defineProps<{
   title: string
   description: string
   cover: string
-  region: string
+  region?: string
 }>()
 </script>
 
