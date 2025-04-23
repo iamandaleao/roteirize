@@ -56,9 +56,9 @@ const navigation = {
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
           <div class="space-y-2">
-            <NuxtLink to="/" class="-m-1.5 p-1.5">
+            <NuxtLink to="/">
               <span class="sr-only">Roteirize</span>
-              <Logo class="mx-auto h-16 text-primary xl:mx-0" />
+              <Logo class="mx-auto h-20 text-primary xl:mx-0 xl:-mt-2" />
             </NuxtLink>
             <p class="text-balance text-center text-sm/6  xl:text-left">
               Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
