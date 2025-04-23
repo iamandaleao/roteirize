@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { tags } from '~/composables/useTags'
+
 const route = useRoute()
 const pathSegments = route.path.split('/').filter(Boolean)
 
 const pages = computed(() => {
   return pathSegments.map((segment, index) => {
+    const isTag = index === 1 && segment in tags
     const href = `/${pathSegments.slice(0, index + 1).join('/')}`
     const name = segment
       .split('-')
@@ -12,7 +15,7 @@ const pages = computed(() => {
 
     return {
       name,
-      href,
+      href: isTag ? `/blog/tag/${segment}` : href,
       current: index === pathSegments.length - 1,
     }
   })
@@ -20,14 +23,14 @@ const pages = computed(() => {
 </script>
 
 <template>
-  <div class="relative rounded-full bg-secondary/60 px-3 py-1 text-sm/6 text-slate-300 ring-1 ring-white/20">
+  <div class="relative rounded-full bg-secondary/40 px-3 py-1 text-sm/6 text-slate-200 ring-1 ring-white/20">
     <div class="w-full max-w-xs md:max-w-none">
       <nav class="relative overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" aria-label="Breadcrumb">
         <ol role="list" class="flex items-center space-x-3 pr-3">
           <li v-for="(page, idx) in pages" :key="page.name">
             <div class="flex items-center">
               <Icon v-if="idx > 0" name="ph:caret-right" class="shrink-0 text-white" aria-hidden="true" />
-              <NuxtLink :to="page.href" class="whitespace-nowrap pl-3 text-sm font-medium text-slate-300 hover:text-white" :aria-current="page.current ? 'page' : undefined">
+              <NuxtLink :to="page.href" class="whitespace-nowrap pl-3 text-sm font-medium text-slate-200 hover:text-white" :aria-current="page.current ? 'page' : undefined">
                 {{ page.name }}
               </NuxtLink>
             </div>
