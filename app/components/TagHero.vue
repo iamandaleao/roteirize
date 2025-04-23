@@ -1,10 +1,15 @@
 <script setup lang="ts">
+import { tags } from '~/composables/useTags'
+
 const { tag } = defineProps<{
   tag: string
   count: number
 }>()
 
-const heroImage = useHeroImage(tag)
+const heroImage = useTagHeroImage(tag)
+
+// @ts-ignore
+const heading = computed(() => tags[tag] ?? 'Tag')
 </script>
 
 <template>
@@ -19,7 +24,7 @@ const heroImage = useHeroImage(tag)
       <div class="mx-auto max-w-2xl py-8 2xl:py-20">
         <div class="text-center">
           <h1 class="text-balance text-4xl font-semibold tracking-tight text-white lg:text-5xl 2xl:text-7xl">
-            Tag: {{ tag }}
+            {{ heading }}
           </h1>
           <p class="mx-auto mt-8 max-w-lg text-pretty text-lg font-medium text-slate-200 2xl:text-xl/8">
             {{ count }} {{ count === 1 ? 'postagem' : 'postagens' }}

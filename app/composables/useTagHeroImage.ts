@@ -1,4 +1,4 @@
-export default function useHeroImage(tag: string) {
+export default function useTagHeroImage(tag: string) {
   return computed(() => {
     return {
       roteiros: 'roteiros-hero-bg.jpg',

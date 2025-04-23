@@ -10,7 +10,7 @@ const { query, tag } = defineProps<{
 
 const router = useRouter()
 
-const heroImage = useHeroImage(tag ?? '')
+const heroImage = useTagHeroImage(tag ?? '')
 
 async function searchWithoutTag() {
   await router.push({
