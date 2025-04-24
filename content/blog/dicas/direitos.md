@@ -1,20 +1,12 @@
 ---
 cover: "capa-dicas-bg.jpg"  # imagem de capa
-date: "2025-04-21"  # Data de publicação do post
+date: 2025-04-21  # Data de publicação do post
 tags: ["dicas"]
 description: "Saiba o que fazer se seu voo der problema."
-published: true
 thumbnail: "nao-encontrada.jpg"  #imagem pequena
 title: "Voo cancelado"
 sitemap:
   lastmod: 2025-04-21  # Data da última modificação
-schemaOrg:
-  - "@type": "BlogPosting"
-    headline: "Voo cancelado"
-    datePublished: "2025-04-21"  # Data de publicação para SEO estruturado
-    author:
-      type: "Person"
-      name: "Amanda Leão"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

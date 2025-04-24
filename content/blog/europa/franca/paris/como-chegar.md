@@ -1,20 +1,12 @@
 ---
 region: "paris"
 cover: paris.jpg
-date: "2025-03-20" # Data de publicação do post
+date: 2025-03-20 # Data de publicação do post
 description: "Chegando em Paris com praticidade e estilo!"
-published: true
 thumbnail: paris.jpg
 title: "Paris: Como chegar"
 sitemap:
   lastmod: 2025-03-20 # Data da última modificação
-schemaOrg:
-  - "@type": "BlogPosting"
-    headline: "Europa"
-    datePublished: "2025-03-20" # Data de publicação para SEO estruturado
-    author:
-      type: "Person"
-      name: "Amanda Leão"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

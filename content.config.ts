@@ -10,6 +10,7 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string(),
         cover: z.string(),
+        date: z.date(),
         menu: z.array(z.object({
           name: z.string(),
           icon: z.string(),
@@ -26,7 +27,7 @@ export default defineContentConfig({
         region: z.string().optional(),
         cover: z.string(),
         thumbnail: z.string(),
-        date: z.date().or(z.string()),
+        date: z.date(),
         published: z.boolean(),
         tags: z.array(z.string()).optional(),
       }),

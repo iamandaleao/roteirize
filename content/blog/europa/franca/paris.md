@@ -1,21 +1,13 @@
 ---
 region: "paris"
 cover: paris.jpg
-date: "2025-02-18"
+date: 2025-02-18
 description: "A Cidade dos Sonhos e Descobertas"
-published: true
 tags: ["destinos"]
 thumbnail: paris.jpg
 title: "Paris"
 sitemap:
   lastmod: 2025-02-18
-schemaOrg:
-  - "@type": "BlogPosting"
-    headline: "Europa"
-    datePublished: "2025-02-18"
-    author:
-      type: "Person"
-      name: "Amanda Leão"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

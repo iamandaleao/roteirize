@@ -1,20 +1,12 @@
 ---
 region: "paris"
 cover: paris.jpg
-date: "2025-02-18"
+date: 2025-02-18
 description: "Como Se Locomover. Dicas Práticas e Econômicas"
-published: true
 thumbnail: paris.jpg
 title: "Paris: Transporte"
 sitemap:
   lastmod: 2025-02-18
-schemaOrg:
-  - "@type": "BlogPosting"
-    headline: "Europa"
-    datePublished: "2025-02-18"
-    author:
-      type: "Person"
-      name: "Amanda Leão"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

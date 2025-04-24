@@ -6,9 +6,12 @@ const postsPerPage = 6
 const tag = route.path.split('/')[3] ?? ''
 
 const { data: paginatedData } = await useAsyncData(`tag-${tag}`, async () => {
+  const today = new Date()
+  today.setHours(23, 59, 59, 999)
+
   const [posts, count] = await Promise.all([
     queryCollection('blog')
-      .where('published', '=', true)
+      .where('date', '<', today.toISOString().split('T')[0])
       .where('tags', 'LIKE', `%${tag}%`)
       .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)

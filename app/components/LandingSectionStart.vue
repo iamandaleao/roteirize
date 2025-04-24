@@ -13,9 +13,9 @@
 
       <div class="aspect-video overflow-hidden rounded-2xl xl:h-80">
         <video
-          key="section-1"
+          key="section-start"
           preload="metadata"
-          src="/assets/videos/section1.mp4"
+          src="/assets/videos/section-start.mp4"
           autoplay
           loop
           muted

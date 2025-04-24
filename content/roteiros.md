@@ -1,16 +1,10 @@
 ---
 title: "Roteiros"
 description: "Descrição"
+date: 2025-02-18
 cover: "roteiros-hero-bg.jpg"
 sitemap:
   lastmod: 2025-02-18
-schemaOrg:
-  - "@type": "WebPage"
-    headline: "Roteiros"
-    datePublished: "2025-02-18"
-    author:
-      type: "Person"
-      name: "Amanda Leão"
 ---
 
 ::page-hero{:title="title" :description="description" :cover="cover"}

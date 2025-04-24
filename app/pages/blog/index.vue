@@ -4,15 +4,18 @@ const router = useRouter()
 const page = ref(Number.parseInt(route.query.page as string) || 1)
 const postsPerPage = 6
 const { data: paginatedData } = await useAsyncData('blog', async () => {
+  const today = new Date()
+  today.setHours(23, 59, 59, 999)
+
   const [posts, count] = await Promise.all([
     queryCollection('blog')
-      .where('published', '=', true)
+      .where('date', '<', today.toISOString().split('T')[0])
       .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)
       .limit(postsPerPage)
       .all(),
     queryCollection('blog')
-      .where('published', '=', true)
+      .where('date', '<', today)
       .count(),
   ])
 
