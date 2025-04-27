@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.0",
-    "@iconify-json/lucide": "^1.2.37",
+    "@iconify-json/lucide": "^1.2.39",
     "@iconify-json/ph": "^1.2.2",
-    "@nuxt/content": "^3.4.0",
+    "@nuxt/content": "^3.5.0",
     "@nuxt/eslint": "1.1.0",
     "@nuxt/fonts": "0.10.3",
     "@nuxt/icon": "1.10.3",
@@ -34,7 +34,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-vue": "^8.6.0",
-    "eslint": "^9.25.0",
+    "eslint": "^9.25.1",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "lucide-vue-next": "^0.475.0",
     "nuxt": "^3.16.2",
@@ -48,7 +48,7 @@
     "vaul-vue": "^0.4.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
-    "wrangler": "^4.12.0"
+    "wrangler": "^4.13.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

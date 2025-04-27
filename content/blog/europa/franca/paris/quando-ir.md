@@ -1,20 +1,12 @@
 ---
 region: "paris"
 cover: paris.jpg
-date: "2025-03-20" # Data de publicação do post
+date: 2025-03-20 # Data de publicação do post
 description: "A melhor época para visitar a Cidade Luz"
-published: true
 thumbnail: paris.jpg
 title: "Paris: Quando ir"
 sitemap:
   lastmod: 2025-03-20 # Data da última modificação
-schemaOrg:
-  - "@type": "BlogPosting"
-    headline: "Europa"
-    datePublished: "2025-03-20" # Data de publicação para SEO estruturado
-    author:
-      type: "Person"
-      name: "Amanda Leão"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

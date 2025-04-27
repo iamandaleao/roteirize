@@ -1,21 +1,13 @@
 ---
 region: "paris"
 cover: paris.jpg
-date: "2025-04-20" # Data de publicação do post
+date: 2025-04-20 # Data de publicação do post
 description: "Um tour completo pela cidade luz"
-published: true
 tags: ["roteiros"]
 thumbnail: paris-roteiro-10-dias.jpg
 title: "Paris: Roteiro 10 dias"
 sitemap:
   lastmod: 2025-04-20 # Data da última modificação
-schemaOrg:
-  - "@type": "BlogPosting"
-    headline: "Europa"
-    datePublished: "2025-04-20" # Data de publicação para SEO estruturado
-    author:
-      type: "Person"
-      name: "Amanda Leão"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

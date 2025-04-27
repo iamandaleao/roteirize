@@ -49,6 +49,41 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
+  hooks: {
+    'content:file:afterParse': function ({ file, content }) {
+      const { title, date } = content
+
+      if (title && date) {
+        if (file.id.startsWith('blog')) {
+          content.schemaOrg = [
+            {
+              '@type': 'BlogPosting',
+              'headline': title,
+              'datePublished': date,
+              'author': {
+                type: 'Person',
+                name: 'Amanda Leão',
+              },
+            },
+          ]
+        }
+        else {
+          content.schemaOrg = [
+            {
+              '@type': 'WebPage',
+              'headline': title,
+              'datePublished': date,
+              'author': {
+                type: 'Person',
+                name: 'Amanda Leão',
+              },
+            },
+          ]
+        }
+      }
+    },
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/seo',

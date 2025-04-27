@@ -1,20 +1,12 @@
 ---
 cover: "capa-dicas-bg.jpg" # imagem de capa
-date: "2025-02-15" # Data de publicação do post
+date: 2025-02-15 # Data de publicação do post
 tags: ["dicas", "bagagem"]
 description: "O que não esquecer na bagagem"
-published: true
 thumbnail: "bagagem.png" #imagem pequena
 title: "Bagagem Essencial"
 sitemap:
   lastmod: 2025-02-18 # Data da última modificação
-schemaOrg:
-  - "@type": "BlogPosting"
-    headline: "Bagagem"
-    datePublished: "2025-02-18" # Data de publicação para SEO estruturado
-    author:
-      type: "Person"
-      name: "Amanda Leão"
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
