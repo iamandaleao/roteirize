@@ -2,7 +2,7 @@
 import { useDateFormat } from '@vueuse/core'
 
 const props = defineProps<{ date?: string }>()
-const formattedDate = useDateFormat(props.date, 'DD/MM/YYYY', { locales: 'pt-BR' })
+const formattedDate = useDateFormat(new Date(`${props.date}`).toLocaleString('en-US', { timeZone: 'UTC' }), 'DD/MM/YYYY', { locales: 'en-US' })
 </script>
 
 <template>
