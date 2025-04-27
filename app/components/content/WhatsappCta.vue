@@ -1,8 +1,10 @@
 <script setup lang="ts">
+const route = useRoute()
+const isHidden = computed(() => route.path === '/roteiros')
 </script>
 
 <template>
-  <div class="px-4">
+  <div class="px-4" :class="{ hidden: isHidden }">
     <div class="prose relative mx-auto max-w-prose border-t pt-14 underline-offset-4 dark:prose-invert prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
       <h2>
         ✨ Quer algo feito só pra você?

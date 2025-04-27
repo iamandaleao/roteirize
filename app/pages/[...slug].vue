@@ -12,7 +12,7 @@ if (!page.value) {
 }
 
 definePageMeta({
-  layout: 'blog',
+  layout: 'page',
 })
 
 useHead(page.value.head || {})
