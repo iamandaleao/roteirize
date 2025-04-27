@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import useToday from '~/composables/useToday'
+
 const route = useRoute()
 const router = useRouter()
 const page = ref(Number.parseInt(route.query.page as string) || 1)
@@ -6,19 +8,16 @@ const postsPerPage = 6
 const tag = route.path.split('/')[3] ?? ''
 
 const { data: paginatedData } = await useAsyncData(`tag-${tag}`, async () => {
-  const today = new Date()
-  today.setHours(23, 59, 59, 999)
-
   const [posts, count] = await Promise.all([
     queryCollection('blog')
-      .where('date', '<', today.toISOString().split('T')[0])
+      .where('date', '<', useToday())
       .where('tags', 'LIKE', `%${tag}%`)
       .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)
       .limit(postsPerPage)
       .all(),
     queryCollection('blog')
-      .where('published', '=', true)
+      .where('date', '<', useToday())
       .where('tags', 'LIKE', `%${tag}%`)
       .count(),
   ])

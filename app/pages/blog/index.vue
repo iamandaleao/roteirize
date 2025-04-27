@@ -1,21 +1,20 @@
 <script setup lang="ts">
+import useToday from '~/composables/useToday'
+
 const route = useRoute()
 const router = useRouter()
 const page = ref(Number.parseInt(route.query.page as string) || 1)
 const postsPerPage = 6
 const { data: paginatedData } = await useAsyncData('blog', async () => {
-  const today = new Date()
-  today.setHours(23, 59, 59, 999)
-
   const [posts, count] = await Promise.all([
     queryCollection('blog')
-      .where('date', '<', today.toISOString().split('T')[0])
+      .where('date', '<', useToday())
       .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)
       .limit(postsPerPage)
       .all(),
     queryCollection('blog')
-      .where('date', '<', today)
+      .where('date', '<', useToday())
       .count(),
   ])
 

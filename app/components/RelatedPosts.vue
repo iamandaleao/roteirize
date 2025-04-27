@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { PostCardProps } from '~~/types'
+import useToday from '~/composables/useToday'
 
 const props = defineProps<{
   currentTags: string[]
@@ -7,9 +8,12 @@ const props = defineProps<{
 
 const route = useRoute()
 
+const today = new Date()
+today.setHours(23, 59, 59, 999)
+
 const { data: relatedPosts } = await useAsyncData(`related-posts-${route.path}`, () =>
   queryCollection('blog')
-    .where('published', '=', true)
+    .where('date', '<', useToday())
     .where('path', '<>', route.path)
     .where('tags', 'LIKE', props.currentTags.map(tag => `%${tag}%`).join(' OR '))
     .order('date', 'DESC')
