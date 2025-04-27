@@ -2,6 +2,7 @@
 import type { PostCardProps } from '~~/types'
 import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { useElementVisibility } from '@vueuse/core'
+import useToday from '~/composables/useToday'
 
 const sectionRef = ref(null)
 const isVisible = useElementVisibility(sectionRef)
@@ -9,7 +10,7 @@ const hasAnimated = ref(false)
 
 const { data: lastPosts } = await useAsyncData('lastest-posts', () =>
   queryCollection('blog')
-    .where('published', '=', true)
+    .where('date', '<', useToday())
     .order('date', 'DESC')
     .limit(6)
     .all())

@@ -3,6 +3,7 @@ import type { PostCardProps } from '~~/types'
 import { ref } from 'vue'
 import Pagination from '~/components/Pagination.vue'
 import SearchHero from '~/components/SearchHero.vue'
+import useToday from '~/composables/useToday'
 
 const route = useRoute()
 const router = useRouter()
@@ -17,7 +18,7 @@ const totalPages = ref(0)
 const { data: blogData, pending } = await useAsyncData(`blog-search-${query.value}-${tag.value}`, () => {
   let query = queryCollectionSearchSections('blog', {
     extraFields: ['thumbnail', 'description', 'tags'],
-  }).where('published', '=', true)
+  }).where('date', '<', useToday())
 
   if (tag.value) {
     query = query.where('tags', 'LIKE', `%${tag.value}%`)
