@@ -1,9 +1,10 @@
 ---
 region: "paris"
-cover: paris.jpg
+cover: capa-ny-bg.jpg
 date: 2025-03-20 # Data de publicação do post
 description: "Descubra como voar para Paris gastando menos!"
-thumbnail: paris.jpg
+thumbnail: passagens-nyc.jpg
+tags: ["dicas"]
 title: "Paris: Passagens"
 sitemap:
   lastmod: 2025-03-20 # Data da última modificação
