@@ -2,7 +2,7 @@
 region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-30
-description: ""
+description: "Atividades para todos os estilos"
 tags: ["roteiros"]
 thumbnail: nao-encontrada.jpg
 title: "Nova York: O que fazer"

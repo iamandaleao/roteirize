@@ -70,8 +70,7 @@ Se você já estiver nos EUA, pode considerar:
 ### Chegar de carro? Até dá, mas...
 
 Se você estiver viajando de carro por estados vizinhos, dá sim pra chegar em Nova York dirigindo. Mas vale lembrar: **estacionar em Manhattan é caro e complicado**, então só recomendo essa opção se você estiver vindo por poucos dias ou for devolver o carro logo ao chegar.
-
----
+<br>
 
 Chegar a Nova York é simples, seja de avião, trem ou ônibus. Com tantas opções, é só escolher a que mais combina com o seu estilo de viagem — e se preparar para viver dias intensos nessa cidade cheia de energia. Depois que você chega… ah, aí é só curtir!
 
