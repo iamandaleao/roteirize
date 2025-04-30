@@ -2,7 +2,7 @@
 region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-27
-description: ""
+description: "Melhores bairros para se hospedar"
 tags: ["roteiros"]
 thumbnail: nao-encontrada.jpg
 title: "Nova York: onde ficar"

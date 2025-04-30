@@ -2,7 +2,7 @@
 region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-27
-description: ""
+description: "Voe para Nova York com facilidade"
 tags: ["roteiros"]
 thumbnail: nao-encontrada.jpg
 title: "Nova York: Passagens"
@@ -30,7 +30,6 @@ Hoje em dia, temos diversas opções de plataformas confiáveis para comprar pas
 - **Decolar**
 - **Viajanet**
 - **Submarino Viagens**
-- **123Milhas**
 - **MaxMilhas**
 - **Google Flights**
 - **Skyscanner**
