@@ -84,5 +84,5 @@ Fique atento ao tempo! O clima de Nova York pode ser imprevisível, então tenha
 Se possível, baixe um mapa offline da cidade para se orientar sem depender de internet.
 
 **E aí, gostou desse roteiro?** <br>
-Esperamos que tenha sido uma jornada inesquecível pela cidade que nunca para. Se você tiver mais tempo, Nova York sempre tem algo novo e excitante para oferecer. Boa viagem!
+Espero que tenha sido uma jornada inesquecível pela cidade que nunca para. Se você tiver mais tempo, Nova York sempre tem algo novo e excitante para oferecer. Boa viagem!
 ::
