@@ -5,7 +5,7 @@ date: 2025-05-01  # Data de publicação do post
 description: "Para aproveitar com calma e intensidade"
 tags: ["roteiros"]
 thumbnail: nyc-roteiro-1-dia.jpg
-title: "Nova York: Roteiro 1 dia"
+title: "Nova York: Roteiro 5 dia"
 sitemap:
   lastmod: 2025-05-01  # Data da última modificação
 ---
