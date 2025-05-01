@@ -58,6 +58,11 @@ No final do dia, volte para Manhattan e assista a um musical na **Broadway** –
 
 O último dia é para relaxar, se despedir com carinho e, claro, fazer aquelas compras de última hora. Passe pela Macy’s, dê uma volta na Sephora, garimpe na Century 21 e, se tiver tempo, explore uma livraria como a Strand ou um café tranquilo no Greenwich Village.
 
-Aproveite os momentos finais para caminhar sem pressa por algum lugar que tenha tocado o seu coração nos dias anteriores. Porque a melhor lembrança de Nova York é aquela que fica na alma – e que só você vai saber contar.
+---
+
+Aproveite os momentos finais para caminhar sem pressa por algum lugar que tenha tocado o seu coração nos dias anteriores. Porque a melhor lembrança de Nova York é aquela que fica na alma – e que só você vai saber contar. <br>
+Chegamos ao fim desse roteiro — e eu espero que cada dia tenha sido uma descoberta marcante nessa cidade tão cheia de vida. Nova York é assim: intensa, encantadora e inesgotável. Se tiver mais tempo por lá, aproveite sem pressa... sempre há algo novo para ver, sentir e viver.
+
+Boa viagem e até a próxima aventura com a Roteirize!
 
 ::

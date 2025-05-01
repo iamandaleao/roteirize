@@ -83,6 +83,11 @@ Fique atento ao tempo! O clima de Nova York pode ser imprevisível, então tenha
 
 Se possível, baixe um mapa offline da cidade para se orientar sem depender de internet.
 
-**E aí, gostou desse roteiro?** <br>
-Espero que tenha sido uma jornada inesquecível pela cidade que nunca para. Se você tiver mais tempo, Nova York sempre tem algo novo e excitante para oferecer. Boa viagem!
+---
+
+Mesmo em apenas um dia, espero que você tenha sentido um pouco da grandiosidade e do charme eterno de Nova York. Cada momento pode ser uma lembrança marcante quando a gente viaja com o coração aberto.
+
+Boa viagem — e que essa seja apenas a primeira de muitas paradas com a Roteirize!
+
+
 ::

@@ -84,6 +84,11 @@ No último dia, aproveite o Central Park mais uma vez, especialmente após uma n
 
 Antes de se despedir de Nova York, vá até Harlem, um bairro que representa a cultura negra da cidade. Visite o Apollo Theater, que já recebeu grandes nomes da música como Aretha Franklin e Michael Jackson. Se possível, assista a um culto gospel, uma experiência autêntica da cultura local.
 
-E assim termina nosso roteiro de 10 dias por Nova York! Com tantas opções de passeios e experiências, é impossível não se apaixonar pela cidade. Espero que esse roteiro tenha ajudado a planejar sua viagem e que você aproveite cada momento nessa cidade única!
+---
+
+Foram dez dias intensos, cheios de história, sabores, paisagens e emoções. Espero que esse roteiro tenha sido um companheiro fiel nessa imersão pela cidade que nunca dorme. Que cada passo tenha deixado memórias que você leve para sempre.
+
+Nos vemos na sua próxima aventura. A Roteirize estará aqui, pronta para caminhar ao seu lado mais uma vez.
+
 
 ::
