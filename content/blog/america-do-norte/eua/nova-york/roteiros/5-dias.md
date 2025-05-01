@@ -24,35 +24,35 @@ Viajar para Nova York é realizar um sonho. E mesmo que a cidade tenha infinitas
 
 ### Dia 1 – Manhattan Clássica
 
-Comece sua jornada no coração de Manhattan. Caminhe pela **Times Square** logo cedo para vê-la ainda acordando, sem multidões. Em seguida, siga para o **Rockefeller Center** e suba até o **Top of the Rock** para uma vista panorâmica da cidade com o Central Park ao fundo.
+Comece sua jornada no coração de Manhattan. Caminhe pela Times Square logo cedo para vê-la ainda acordando, sem multidões. Em seguida, siga para o Rockefeller Center e suba até o Top of the Rock para uma vista panorâmica da cidade com o Central Park ao fundo.
 
-Depois, vá andando até a **Quinta Avenida**. Aproveite para entrar na **St. Patrick's Cathedral**, admirar as vitrines das lojas icônicas e, claro, dar uma passada na **Biblioteca Pública de Nova York** e no **Bryant Park**, ali pertinho.
+Depois, vá andando até a Quinta Avenida. Aproveite para entrar na St. Patrick's Cathedral, admirar as vitrines das lojas icônicas e, claro, dar uma passada na Biblioteca Pública de Nova York e no Bryant Park, ali pertinho.
 
-No fim do dia, vá até o **Empire State Building** para ver o pôr do sol – é um clássico que nunca sai de moda.
+No fim do dia, vá até o Empire State Building para ver o pôr do sol – é um clássico que nunca sai de moda.
 
 ### Dia 2 – Central Park e Museus
 
-Esse é o dia para respirar arte, natureza e história. Comece pelo **Central Park** e explore o lado mais tradicional: a **Bethesda Terrace**, o **Strawberry Fields** e o **The Mall** são paradas obrigatórias.
+Esse é o dia para respirar arte, natureza e história. Comece pelo Central Park e explore o lado mais tradicional: a Bethesda Terrace, o Strawberry Fields e o The Mall são paradas obrigatórias.
 
-Depois, escolha entre dois museus incríveis: o **Metropolitan Museum of Art (Met)**, com sua vasta coleção que vai do Egito Antigo à arte europeia clássica, ou o **Museu de História Natural**, ideal para quem ama ciência e cultura.
+Depois, escolha entre dois museus incríveis: o Metropolitan Museum of Art (Met), com sua vasta coleção que vai do Egito Antigo à arte europeia clássica, ou o Museu de História Natural, ideal para quem ama ciência e cultura.
 
-À tarde, caminhe pelo **Upper West Side** e termine o dia em um restaurante tradicional da região. Um jantar no estilo novaiorquino, com calma e boa comida, vai fechar esse dia com chave de ouro.
+À tarde, caminhe pelo Upper West Side e termine o dia em um restaurante tradicional da região. Um jantar no estilo novaiorquino, com calma e boa comida, vai fechar esse dia com chave de ouro.
 
 ### Dia 3 – Downtown e Estátua da Liberdade
 
-Reserve o dia para o sul da ilha. Pegue o ferry e vá até a **Estátua da Liberdade** e a **Ilha Ellis** – lugares que respiram a história dos imigrantes que ajudaram a construir Nova York.
+Reserve o dia para o sul da ilha. Pegue o ferry e vá até a Estátua da Liberdade e a Ilha Ellis – lugares que respiram a história dos imigrantes que ajudaram a construir Nova York.
 
-Na volta, caminhe até o **Memorial do 11 de Setembro** e conheça o **One World Observatory**, que oferece outra vista espetacular da cidade.
+Na volta, caminhe até o Memorial do 11 de Setembro e conheça o One World Observatory, que oferece outra vista espetacular da cidade.
 
-Depois, passe pela **Wall Street**, veja o famoso **Touro de Bronze** e aproveite o fim de tarde caminhando pela **Ponte do Brooklyn**. Se conseguir, atravesse a ponte a pé e veja o sol se pôr sobre Manhattan.
+Depois, passe pela Wall Street, veja o famoso Touro de Bronze e aproveite o fim de tarde caminhando pela Ponte do Brooklyn. Se conseguir, atravesse a ponte a pé e veja o sol se pôr sobre Manhattan.
 
 ### Dia 4 – Brooklyn e charme local
 
-Hoje é dia de cruzar o rio e descobrir o lado mais acolhedor da cidade. Comece pelo **DUMBO**, tire a tradicional foto entre os galpões com a Manhattan Bridge ao fundo e passeie pelo **Brooklyn Bridge Park**.
+Hoje é dia de cruzar o rio e descobrir o lado mais acolhedor da cidade. Comece pelo DUMBO, tire a tradicional foto entre os galpões com a Manhattan Bridge ao fundo e passeie pelo Brooklyn Bridge Park.
 
-Depois, vá até o **Williamsburg**, bairro cheio de lojinhas independentes, cafés com cara de casa de vó e mercados vintage. Almoce por lá mesmo e aproveite para viver o dia como um nova-iorquino de verdade.
+Depois, vá até o Williamsburg, bairro cheio de lojinhas independentes, cafés com cara de casa de vó e mercados vintage. Almoce por lá mesmo e aproveite para viver o dia como um nova-iorquino de verdade.
 
-No final do dia, volte para Manhattan e assista a um musical na **Broadway** – uma experiência clássica que emociona em qualquer época do ano.
+No final do dia, volte para Manhattan e assista a um musical na Broadway – uma experiência clássica que emociona em qualquer época do ano.
 
 ### Dia 5 – Compras e despedidas
 
