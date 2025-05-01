@@ -3,7 +3,7 @@ region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-30
 description: "Um passeio pelos sabores da cidade"
-tags: ["roteiros"]
+tags: [""]
 thumbnail: nao-encontrada.jpg
 title: "Nova York: Gastronomia"
 sitemap:
@@ -56,3 +56,4 @@ Quer viver uma noite nova-iorquina como um verdadeiro local? Reserve uma mesa em
 <br>
 
 Nova York é um destino onde cada refeição pode ser uma descoberta. Com tradição, diversidade e um amor verdadeiro pela arte de comer, essa cidade oferece experiências que ficam na memória – e no coração. Bon appétit… ou melhor, enjoy your meal!
+::

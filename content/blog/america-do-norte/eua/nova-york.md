@@ -1,6 +1,6 @@
 ---
-region: "paris"
-cover: nao-encontrada.jpg
+region: "new-york"
+cover: capa-ny-bg.jpg
 date: 2025-04-30
 description: "Intensa, icônica, inesquecível"
 tags: ["destinos"]

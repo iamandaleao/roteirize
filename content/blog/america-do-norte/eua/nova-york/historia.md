@@ -3,7 +3,7 @@ region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-27  # Data de publicação do post
 description: "Uma Jornada Pela Grande Maçã"
-tags: ["roteiros"]
+tags: [""]
 thumbnail: historia-nyc.jpg
 title: "Nova York: História"
 sitemap:
