@@ -2,7 +2,7 @@
 region: new-york
 cover: capa-ny-bg.jpg
 date: 2025-05-01
-description: ""
+description: "Roteiros autênticos pela cidade"
 thumbnail: nao-encontrada.jpg
 title: "New York: Roteiros"
 sitemap:
@@ -17,10 +17,11 @@ sitemap:
 
 ::post-body{:date="date"}
 <h2 align="center">
-Viaje com planejamento e personalidade!
+Viaje com calma e descubra a alma de Nova York!
 </h2>
 
-Escolha entre roteiros prontos ou peça o seu roteiro personalizado, feito sob medida para o seu estilo, tempo e interesses. Cada detalhe é cuidado com carinho para sua experiência em Paris ser inesquecível.
+Aqui você encontra roteiros prontos ou pode pedir o seu roteiro personalizado, feito sob medida para o seu estilo, tempo e interesses. Cada trajeto é pensado com cuidado para que sua experiência em Nova York seja completa, autêntica e inesquecível — como a cidade merece.
+
 
   :::post-card-group
     ::::post-card
