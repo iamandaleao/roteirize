@@ -3,7 +3,7 @@ region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-27
 description: "Nova York sem perrengue"
-tags: ["roteiros","dicas"]
+tags: [""]
 thumbnail: nao-encontrada.jpg
 title: "Nova York: Transporte"
 sitemap:

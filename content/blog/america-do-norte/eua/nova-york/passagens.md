@@ -2,8 +2,8 @@
 region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-27
-description: "Voe para Nova York com facilidade"
-tags: ["roteiros"]
+description: "Voe com facilidade"
+tags: [""]
 thumbnail: nao-encontrada.jpg
 title: "Nova York: Passagens"
 sitemap:

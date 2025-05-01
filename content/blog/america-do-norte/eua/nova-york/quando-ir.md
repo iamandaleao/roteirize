@@ -3,7 +3,7 @@ region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-27
 description: "Melhor Época NYC"
-tags: ["roteiros"]
+tags: [""]
 thumbnail: quando-ir-nyc.jpg
 title: "Nova York: Quando ir"
 sitemap:

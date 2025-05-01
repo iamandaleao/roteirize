@@ -2,8 +2,8 @@
 region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-30
-description: "Chegue à Nova York sem complicação"
-tags: ["roteiros"]
+description: "Cheguando sem complicação"
+tags: [""]
 thumbnail: nao-encontrada.jpg
 title: "Nova York: Como chegar"
 sitemap:
