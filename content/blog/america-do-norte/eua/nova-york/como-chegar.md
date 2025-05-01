@@ -2,7 +2,7 @@
 region: "new-york"
 cover: capa-ny-bg.jpg
 date: 2025-04-30
-description: "Cheguando sem complicação"
+description: "Chegando sem complicação"
 tags: [""]
 thumbnail: nao-encontrada.jpg
 title: "Nova York: Como chegar"
