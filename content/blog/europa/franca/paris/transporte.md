@@ -2,7 +2,7 @@
 region: "paris"
 cover: paris.jpg
 date: 2025-02-18
-description: "Como Se Locomover. Dicas Práticas e Econômicas"
+description: "Praticidade e Economia"
 thumbnail: paris.jpg
 title: "Paris: Transporte"
 sitemap:

@@ -2,7 +2,7 @@
 region: "paris"
 cover: paris.jpg
 date: 2025-02-18
-description: "Como Aproveitar sem Gastar Muito"
+description: "Aproveitando sem Gastar Muito"
 thumbnail: paris.jpg
 title: "Paris: Compras"
 sitemap:

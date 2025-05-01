@@ -2,7 +2,7 @@
 region: "paris"
 cover: paris.jpg
 date: 2025-03-20 # Data de publicação do post
-description: "Chegando em Paris com praticidade e estilo!"
+description: "Chegando com praticidade e estilo!"
 thumbnail: paris.jpg
 title: "Paris: Como chegar"
 sitemap:

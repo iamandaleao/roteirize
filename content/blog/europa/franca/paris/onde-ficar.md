@@ -2,7 +2,7 @@
 region: "paris"
 cover: paris.jpg
 date: 2025-02-18
-description: "Principais Bairros para se Hospedar em Paris"
+description: "Principais Bairros para se Hospedar"
 thumbnail: paris.jpg
 title: "Paris: Onde Ficar"
 sitemap:
