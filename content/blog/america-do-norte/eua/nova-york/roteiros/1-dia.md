@@ -18,6 +18,7 @@ sitemap:
 
 ::post-body{:date="date"}
 
+## Roteiro de 1 Dia em Nova York
 Nova York, a cidade que nunca dorme, é o destino perfeito para quem busca uma mistura de história, cultura e, claro, muita energia. Se você tem apenas um dia para explorar essa metrópole incrível, aqui vai um roteiro especial, feito com carinho, para garantir que você aproveite cada segundo. Vamos embarcar nessa viagem pela cidade que conquista o coração de todos?
 
 ### Comece o dia com uma visita ao Central Park e seus arredores

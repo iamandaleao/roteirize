@@ -17,6 +17,7 @@ sitemap:
 ::
 
 ::post-body{:date="date"}
+
 ### Roteiro Personalizado para Paris
 
 Organizar uma viagem para Paris pode parecer um desafio, mas estou aqui para te ajudar a criar um roteiro que seja perfeito para você. Abaixo, compartilho um exemplo de como pode ser um roteiro para casais, mas que pode ser totalmente adaptado ao seu estilo e preferências de viagem. Paris é uma cidade mágica, e minha missão é garantir que você aproveite cada segundo da sua estadia.

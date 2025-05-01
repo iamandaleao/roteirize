@@ -25,30 +25,30 @@ Escolha entre roteiros prontos ou peça o seu roteiro personalizado, feito sob m
   :::post-card-group
     ::::post-card
     ---
-    thumbnail: "paris-roteiro-1-dia.jpg"
-    title: "Paris: Roteiro de 1 dia"
-    to: "/blog/europa/franca/paris/roteiros/1-dia"
-    description: "Você tem pouco tempo? Veja o essencial para curtir Paris em 24h."
+    thumbnail: "nyc-roteiro-1-dia.jpg"
+    title: "New York York: Roteiro 1 dia"
+    to: "/blog/america-do-norte/eua/nova-york/roteiros/1-dia"
+    description: "Um Dia Inesquecível."
     tags: ["roteiros"]
     ---
     ::::
 
     ::::post-card
     ---
-    thumbnail: "paris-roteiro-5-dias.jpg"
-    title: "Paris: Roteiro de 5 dias"
-    to: "/blog/europa/franca/paris/roteiros/5-dias"
-    description: "Ideal para quem quer conhecer Paris com calma e profundidade."
+    thumbnail: "nyc-roteiro-1-dia.jpg"
+    title: "New York: Roteiro de 5 dias"
+    to: "/blog/america-do-norte/eua/nova-york/roteiros/5-dias"
+    description: "Para viver Nova York com calma e intensidade."
     tags: ["roteiros"]
     ---
     ::::
 
     ::::post-card
     ---
-    thumbnail: "paris-roteiro-10-dias.jpg"
-    title: "Paris: Roteiro de 10 dias"
-    to: "/blog/europa/franca/paris/roteiros/10-dias"
-    description: "Conheça Paris além do básico com esse roteiro completo."
+    thumbnail: "nyc-roteiro-1-dia.jpg"
+    title: "New York: Roteiro de 10 dias"
+    to: "/blog/america-do-norte/eua/nova-york/roteiros/10-dias"
+    description: "Um passeio clássico pelos encantos de Nova York."
     tags: ["roteiros"]
     ---
     ::::
