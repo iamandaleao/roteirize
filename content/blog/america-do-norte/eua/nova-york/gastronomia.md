@@ -1,6 +1,6 @@
 ---
 region: "new-york"
-cover: capa-ny-bg.jpg
+cover: nyc/capa-hero-bg.jpg
 date: 2025-04-30
 description: "Um passeio pelos sabores da cidade"
 tags: [""]

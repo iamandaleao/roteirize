@@ -1,6 +1,6 @@
 ---
 region: "new-york"
-cover: capa-ny-bg.jpg
+cover: nyc/capa-hero-bg.jpg
 date: 2025-04-30
 description: "Atividades para todos os estilos"
 tags: [""]

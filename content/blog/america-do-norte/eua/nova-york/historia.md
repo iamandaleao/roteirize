@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: capa-ny-bg.jpg
+cover: nyc/capa-hero-bg.jpg
 date: 2025-04-27  # Data de publicação do post
 description: "Uma Jornada Pela Grande Maçã"
 tags: [""]
-thumbnail: historia-nyc.jpg
+thumbnail: nyc/historia.jpg
 title: "Nova York: História"
 sitemap:
   lastmod: 2025-04-27 # Data da última modificação

@@ -1,6 +1,6 @@
 ---
 region: "new-york"
-cover: capa-ny-bg.jpg
+cover: nyc/capa-hero-bg.jpg
 date: 2025-05-01  # Data de publicação do post
 description: "Para aproveitar com calma e intensidade"
 tags: ["roteiros"]
