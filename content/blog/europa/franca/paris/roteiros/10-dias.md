@@ -4,7 +4,7 @@ cover: paris.jpg
 date: 2025-04-20 # Data de publicação do post
 description: "Um tour completo pela cidade luz"
 tags: ["roteiros"]
-thumbnail: paris-roteiro-10-dias.jpg
+thumbnail: paris/paris-roteiro-10-dias.jpg
 title: "Paris: Roteiro 10 dias"
 sitemap:
   lastmod: 2025-04-20 # Data da última modificação

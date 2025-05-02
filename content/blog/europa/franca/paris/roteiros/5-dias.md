@@ -4,7 +4,7 @@ cover: paris.jpg
 date: 2025-02-18
 description: "Paris com mais profundidade"
 tags: ["roteiros"]
-thumbnail: paris-roteiro-5-dias.jpg
+thumbnail: paris/paris-roteiro-5-dias.jpg
 title: "Paris: Roteiro 5 dias"
 sitemap:
   lastmod: 2025-02-18

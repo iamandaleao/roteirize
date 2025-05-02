@@ -3,7 +3,7 @@ cover: "capa-dicas-bg.jpg" # imagem de capa
 date: 2025-02-15 # Data de publicação do post
 tags: ["dicas", "bagagem"]
 description: "O que não esquecer na bagagem"
-thumbnail: "bagagem.png" #imagem pequena
+thumbnail: "dicas/bagagem.png" #imagem pequena
 title: "Bagagem Essencial"
 sitemap:
   lastmod: 2025-02-18 # Data da última modificação
