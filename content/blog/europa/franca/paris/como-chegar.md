@@ -1,6 +1,6 @@
 ---
 region: "paris"
-cover: paris.jpg
+cover: paris/capa-hero-bg.jpg
 date: 2025-03-20 # Data de publicação do post
 description: "Chegando com praticidade e estilo!"
 thumbnail: paris.jpg

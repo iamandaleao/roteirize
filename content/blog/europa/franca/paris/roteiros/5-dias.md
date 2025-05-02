@@ -1,6 +1,6 @@
 ---
 region: "paris"
-cover: paris.jpg
+cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Paris com mais profundidade"
 tags: ["roteiros"]

@@ -1,6 +1,6 @@
 ---
 region: "paris"
-cover: paris.jpg
+cover: paris/capa-hero-bg.jpg
 date: 2025-04-20 # Data de publicação do post
 description: "Um tour completo pela cidade luz"
 tags: ["roteiros"]

@@ -1,6 +1,6 @@
 ---
 region: "paris"
-cover: paris.jpg
+cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Praticidade e Economia"
 thumbnail: paris.jpg

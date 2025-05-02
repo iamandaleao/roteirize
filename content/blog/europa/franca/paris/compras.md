@@ -1,6 +1,6 @@
 ---
 region: "paris"
-cover: paris.jpg
+cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Aproveitando sem Gastar Muito"
 thumbnail: paris.jpg
