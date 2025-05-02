@@ -4,7 +4,7 @@ cover: paris.jpg
 date: 2025-02-18
 description: "Paris rápida e inesquecível"
 tags: ["roteiros"]
-thumbnail: paris-roteiro-1-dia.jpg
+thumbnail: "paris/paris-roteiro-1-dia.jpg"
 title: "Paris: Roteiro 1 dia"
 sitemap:
   lastmod: 2025-02-18

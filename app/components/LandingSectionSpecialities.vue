@@ -8,27 +8,27 @@ const hasAnimated = ref(false)
 const regions = [
   {
     name: 'Brazil',
-    map: 'brazil.svg',
+    map: 'mapa/brazil.svg',
   },
   {
     name: 'Itália',
-    map: 'italy.svg',
+    map: 'mapa/italy.svg',
   },
   {
     name: 'França',
-    map: 'france.svg',
+    map: 'mapa/france.svg',
   },
   {
     name: 'EUA',
-    map: 'usa.svg',
+    map: 'mapa/usa.svg',
   },
   {
     name: 'Alemanha',
-    map: 'germany.svg',
+    map: 'mapa/germany.svg',
   },
   {
     name: 'África',
-    map: 'africa.svg',
+    map: 'mapa/africa.svg',
   },
 ]
 

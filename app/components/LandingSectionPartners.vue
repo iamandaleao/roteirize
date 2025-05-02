@@ -9,39 +9,44 @@ const hasAnimated = ref(false)
 const logos = [
   {
     name: 'Latam',
-    path: '/assets/images/latam.svg',
+    path: '/assets/images/parceiros/latam.svg',
   },
   {
     name: 'Rent Cars',
-    path: '/assets/images/rentcars.svg',
+    path: '/assets/images/parceiros/rentcars.svg',
   },
   {
     name: 'Unidas',
-    path: '/assets/images/unidas.svg',
+    path: '/assets/images/parceiros/unidas.svg',
   },
   {
     name: 'Seguros Promo',
-    path: '/assets/images/segurospromo.svg',
+    path: '/assets/images/parceiros/segurospromo.svg',
   },
   {
     name: 'Vai de Promo',
-    path: '/assets/images/vaidepromo.svg',
+    path: '/assets/images/parceiros/vaidepromo.svg',
   },
   {
     name: 'Tiqets',
-    path: '/assets/images/tiqets.svg',
+    path: '/assets/images/parceiros/tiqets.svg',
   },
   {
     name: 'Real Seguros',
-    path: '/assets/images/realseguros.svg',
+    path: '/assets/images/parceiros/realseguros.svg',
   },
   {
     name: 'Get Your Guide',
-    path: '/assets/images/getyourguide.svg',
+    path: '/assets/images/parceiros/getyourguide.svg',
   },
   {
     name: 'O meu chip',
-    path: '/assets/images/omeuchip.svg',
+    path: '/assets/images/parceiros/omeuchip.svg',
+  },
+
+  {
+    name: 'Booking',
+    path: '/assets/images/parceiros/booking.svg',
   },
 ]
 
