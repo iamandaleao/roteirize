@@ -15,7 +15,7 @@ const heading = computed(() => tags[tag] ?? 'Tag')
 <template>
   <div class="relative isolate min-h-[300px] overflow-hidden bg-secondary pt-14">
     <img
-      :src="`/assets/images/${heroImage}`"
+      :src="`/assets/images/hero/${heroImage}`"
       :alt="tag"
       class="absolute inset-0 -z-10 size-full object-cover object-center opacity-40"
       fetchpriority="high"

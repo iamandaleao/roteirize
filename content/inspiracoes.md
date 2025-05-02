@@ -2,7 +2,7 @@
 title: Inspirações
 description: "Descrição"
 date: 2025-02-18
-cover: inspiracoes-hero-bg.jpg
+cover: hero/inspiracoes-hero-bg.jpg
 sitemap:
   lastmod: 2025-02-18
 ---

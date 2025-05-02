@@ -1,7 +1,7 @@
 <template>
   <div class="relative isolate min-h-[300px] overflow-hidden bg-secondary pt-14">
     <img
-      src="/assets/images/blog-hero-bg.jpg"
+      src="/assets/images/hero/blog-hero-bg.jpg"
       alt="Blog"
       class="absolute inset-0 -z-10 size-full object-cover object-center opacity-40"
       fetchpriority="high"

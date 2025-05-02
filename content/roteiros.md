@@ -2,7 +2,7 @@
 title: "Roteiros"
 description: "Experiências únicas, planejadas para você."
 date: 2025-02-18
-cover: "roteiros-hero-bg.jpg"
+cover: "hero/roteiros-hero-bg.jpg"
 sitemap:
   lastmod: 2025-02-18
 ---

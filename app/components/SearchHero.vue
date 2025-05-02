@@ -25,7 +25,7 @@ async function searchWithoutTag() {
 <template>
   <div class="relative isolate min-h-[300px] overflow-hidden bg-secondary pt-14">
     <img
-      :src="`/assets/images/${heroImage}`"
+      :src="`/assets/images/hero/${heroImage}`"
       alt="Pesquisa"
       class="absolute inset-0 -z-10 size-full object-cover object-center opacity-10"
       fetchpriority="high"
