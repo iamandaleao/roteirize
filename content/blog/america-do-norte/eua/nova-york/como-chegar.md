@@ -3,8 +3,8 @@ region: "new-york"
 cover: nyc/capa-hero-bg.jpg
 date: 2025-04-30
 description: "Chegando sem complicação"
-tags: [""]
-thumbnail: nao-encontrada.jpg
+tags: ["desembarque"]
+thumbnail: nyc/como-chegar.jpg
 title: "Nova York: Como chegar"
 sitemap:
   lastmod: 2025-04-30

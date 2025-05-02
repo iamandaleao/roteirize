@@ -1,16 +1,5 @@
 export const tags = {
-  roteiros: 'Roteiros',
-  destinos: 'Destinos',
-  bagagem: 'Bagagem',
-  direitos: 'Direitos',
-  dicas: 'Dicas',
-  passaporte: 'Passaporte',
-  historia: 'História',
-  cruzeiros: 'Cruzieros',
-  natureza: 'Natureza',
-  jardins: 'Jardins',
-  praias: 'Praias',
-  parques: 'Parques',
-  romanticos: 'Românticos',
-  termais: 'Termais',
+  compras: 'Compras',
+  desembarque: 'Desembarque',
+  passagem: 'Passagem'
 }
