@@ -3,8 +3,8 @@ region: "new-york"
 cover: nyc/capa-hero-bg.jpg
 date: 2025-04-30
 description: "Um passeio pelos sabores da cidade"
-tags: [""]
-thumbnail: nao-encontrada.jpg
+tags: ["gastronomia"]
+thumbnail: nyc/gastronomia.jpeg
 title: "Nova York: Gastronomia"
 sitemap:
   lastmod: 2025-04-30

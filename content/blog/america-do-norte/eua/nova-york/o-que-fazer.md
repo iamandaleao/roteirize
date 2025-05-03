@@ -3,8 +3,8 @@ region: "new-york"
 cover: nyc/capa-hero-bg.jpg
 date: 2025-04-30
 description: "Atividades para todos os estilos"
-tags: [""]
-thumbnail: nao-encontrada.jpg
+tags: ["passeios"]
+thumbnail: nyc/o-que-fazer.jpg
 title: "Nova York: O que fazer"
 sitemap:
   lastmod: 2025-04-30
