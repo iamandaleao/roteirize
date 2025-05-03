@@ -1,6 +1,6 @@
 ---
 region: new-york
-cover: nyc/capa-ou-roteiro.jpg
+cover: nyc/capa-hero.jpg
 date: 2025-05-01
 description: "Roteiros autênticos pela cidade"
 tags: ["roteiros"]

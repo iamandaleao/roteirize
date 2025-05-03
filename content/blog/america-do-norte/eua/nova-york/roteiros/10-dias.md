@@ -4,7 +4,7 @@ cover: nyc/capa-hero-bg.jpg
 date: 2025-05-01  # Data de publicação do post
 description: "Um passeio clássico pelos encantos de Nova York."
 tags: ["roteiros"]
-thumbnail: nyc-roteiro-1-dia.jpg
+thumbnail: nyc/roteiro-10-dia.jpg
 title: "Nova York: Roteiro 10 dia"
 sitemap:
   lastmod: 2025-05-01  # Data da última modificação

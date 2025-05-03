@@ -4,7 +4,7 @@ cover: nyc/capa-hero-bg.jpg
 date: 2025-04-27  # Data de publicação do post
 description: "Um Dia Inesquecível"
 tags: ["roteiros"]
-thumbnail: nyc-roteiro-1-dia.jpg
+thumbnail: nyc/roteiro-1-dia.jpg
 title: "Nova York: Roteiro 1 dia"
 sitemap:
   lastmod: 2025-04-27  # Data da última modificação
