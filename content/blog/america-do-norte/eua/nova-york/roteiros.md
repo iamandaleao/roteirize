@@ -3,7 +3,8 @@ region: new-york
 cover: nyc/capa-ou-roteiro.jpg
 date: 2025-05-01
 description: "Roteiros autênticos pela cidade"
-thumbnail: nao-encontrada.jpg
+tags: ["roteiros"]
+thumbnail: nyc/roteiros.jpg
 title: "New York: Roteiros"
 sitemap:
   lastmod: 2025-05-01
