@@ -3,8 +3,8 @@ region: "new-york"
 cover: nyc/capa-hero-bg.jpg
 date: 2025-04-27
 description: "Nova York sem perrengue"
-tags: [""]
-thumbnail: nao-encontrada.jpg
+tags: ["transporte"]
+thumbnail: nyc/transporte.jpg
 title: "Nova York: Transporte"
 sitemap:
   lastmod: 2025-04-27

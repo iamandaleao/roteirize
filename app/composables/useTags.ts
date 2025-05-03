@@ -4,5 +4,8 @@ export const tags = {
   gastronomia: 'Gastronomia',
   historia: 'História',
   passeios: 'Passeios',
+  hospedagem: 'Hospedagem',
+  temporada: 'Temporada',
+  transporte: 'Transporte',
   passagem: 'Passagem'
 }

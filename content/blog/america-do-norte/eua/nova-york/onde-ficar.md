@@ -3,8 +3,8 @@ region: "new-york"
 cover: nyc/capa-hero-bg.jpg
 date: 2025-04-27
 description: "Melhores bairros para se hospedar"
-tags: [""]
-thumbnail: nao-encontrada.jpg
+tags: ["hospedagem"]
+thumbnail: nyc/hospedagem.jpg
 title: "Nova York: onde ficar"
 sitemap:
   lastmod: 2025-04-27

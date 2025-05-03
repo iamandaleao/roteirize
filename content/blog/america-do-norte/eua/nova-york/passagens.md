@@ -4,7 +4,7 @@ cover: nyc/capa-hero-bg.jpg
 date: 2025-04-27
 description: "Voe com facilidade"
 tags: ["passagem"]
-thumbnail: nao-encontrada.jpg
+thumbnail: nyc/passagem.jpg
 title: "Nova York: Passagens"
 sitemap:
   lastmod: 2025-04-27

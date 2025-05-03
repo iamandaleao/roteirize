@@ -1,6 +1,6 @@
 ---
 region: new-york
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-ou-roteiro.jpg
 date: 2025-05-01
 description: "Roteiros autênticos pela cidade"
 thumbnail: nao-encontrada.jpg
@@ -26,7 +26,7 @@ Aqui você encontra roteiros prontos ou pode pedir o seu roteiro personalizado, 
   :::post-card-group
     ::::post-card
     ---
-    thumbnail: "nyc-roteiro-1-dia.jpg"
+    thumbnail: "nyc/roteiro-1-dia.jpg"
     title: "New York York: Roteiro 1 dia"
     to: "/blog/america-do-norte/eua/nova-york/roteiros/1-dia"
     description: "Um Dia Inesquecível."
@@ -36,7 +36,7 @@ Aqui você encontra roteiros prontos ou pode pedir o seu roteiro personalizado, 
 
     ::::post-card
     ---
-    thumbnail: "nyc-roteiro-1-dia.jpg"
+    thumbnail: "nyc/roteiro-2-dia.jpg"
     title: "New York: Roteiro de 5 dias"
     to: "/blog/america-do-norte/eua/nova-york/roteiros/5-dias"
     description: "Para viver Nova York com calma e intensidade."
@@ -46,7 +46,7 @@ Aqui você encontra roteiros prontos ou pode pedir o seu roteiro personalizado, 
 
     ::::post-card
     ---
-    thumbnail: "nyc-roteiro-1-dia.jpg"
+    thumbnail: "nyc/roteiro-3-dia.jpg"
     title: "New York: Roteiro de 10 dias"
     to: "/blog/america-do-norte/eua/nova-york/roteiros/10-dias"
     description: "Um passeio clássico pelos encantos de Nova York."

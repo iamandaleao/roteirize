@@ -4,7 +4,7 @@ cover: nyc/capa-hero-bg.jpg
 date: 2025-04-30
 description: "Intensa, icônica, inesquecível"
 tags: ["destinos"]
-thumbnail: .jpg
+thumbnail: nyc/home.jpg
 title: "New York"
 sitemap:
   lastmod: 2025-04-30
