@@ -4,7 +4,7 @@ cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Aproveitando sem Gastar Muito"
 tags: ["compras"]
-thumbnail: paris.jpg
+thumbnail: paris/compras.jpg
 title: "Paris: Compras"
 sitemap:
   lastmod: 2025-02-18

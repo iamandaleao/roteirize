@@ -3,7 +3,8 @@ region: paris
 cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Praticidade Para Sua Viagem"
-thumbnail: paris.jpg
+tags: ["roteiros"]
+thumbnail: paris/roteiro-home.jpg
 title: "Paris: Roteiros"
 sitemap:
   lastmod: 2025-02-18
