@@ -3,7 +3,7 @@ region: "paris"
 cover: paris/capa-hero-bg.jpg
 date: 2025-03-20 # Data de publicação do post
 description: "Descubra como ir gastando menos!"
-thumbnail: passagens-nyc.jpg
+thumbnail: paris/passagens.jpg
 tags: ["dicas"]
 title: "Paris: Passagens"
 sitemap:

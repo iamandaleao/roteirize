@@ -3,7 +3,8 @@ region: "paris"
 cover: paris/capa-hero-bg.jpg
 date: 2025-03-20 # Data de publicação do post
 description: "Chegando com praticidade e estilo!"
-thumbnail: paris.jpg
+tags: ["chegada"]
+thumbnail: paris/como-chegar.jpg
 title: "Paris: Como chegar"
 sitemap:
   lastmod: 2025-03-20 # Data da última modificação

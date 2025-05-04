@@ -3,6 +3,7 @@ region: "paris"
 cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Aproveitando sem Gastar Muito"
+tags: ["compras"]
 thumbnail: paris.jpg
 title: "Paris: Compras"
 sitemap:

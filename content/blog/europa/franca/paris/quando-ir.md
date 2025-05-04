@@ -3,7 +3,8 @@ region: "paris"
 cover: paris/capa-hero-bg.jpg
 date: 2025-03-20 # Data de publicação do post
 description: "A melhor época para visitar a Cidade Luz"
-thumbnail: paris.jpg
+tags: ["temporada"]
+thumbnail: paris/quando-ir.jpg
 title: "Paris: Quando ir"
 sitemap:
   lastmod: 2025-03-20 # Data da última modificação
