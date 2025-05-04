@@ -1,13 +1,13 @@
 ---
 region: france
 cover: "nao-encontrada.jpg"
-date: 2025-02-23
+date: 2025-12-23
 description: "Descrição"
 tags: ["roteiros"]
 thumbnail: "nao-encontrada.jpg"
 title: "França: Roteiros"
 sitemap:
-  lastmod: 2025-02-18
+  lastmod: 2025-12-23
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}

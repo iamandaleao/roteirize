@@ -3,7 +3,8 @@ region: "paris"
 cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Principais Bairros para se Hospedar"
-thumbnail: paris.jpg
+tags: ["hospedagem"]
+thumbnail: paris/hospedagem.jpg
 title: "Paris: Onde Ficar"
 sitemap:
   lastmod: 2025-02-18

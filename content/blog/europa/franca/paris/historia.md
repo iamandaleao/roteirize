@@ -3,7 +3,8 @@ region: "paris"
 cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Das Origens Celtas ao Brilho da Cidade Luz"
-thumbnail: paris.jpg
+tags: ["historia"]
+thumbnail: paris/historia.jpg
 title: "Paris: História"
 sitemap:
   lastmod: 2025-02-18

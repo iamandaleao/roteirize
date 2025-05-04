@@ -9,7 +9,7 @@ sitemap:
   lastmod: 2025-02-18
 ---
 
-<!--escrever "regiao" abaixo no final quando tiver completo pra publicar os 11 post-->
+<!--escrever "region" abaixo no final quando tiver completo pra publicar os 11 post-->
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region=""}
 ::
