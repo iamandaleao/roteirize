@@ -8,5 +8,7 @@ export const tags = {
   temporada: 'Temporada',
   transporte: 'Transporte',
   roteiros: 'Roteiros',
+  dicas: 'Dicas',
+  destinos: 'Destinos',
   passagem: 'Passagem'
 }
