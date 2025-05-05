@@ -1,6 +1,6 @@
 ---
 region: new-york
-cover: nyc/capa-hero.jpg
+cover: nyc/capa-hero-bg.jpg
 date: 2025-05-01
 description: "Roteiros autênticos pela cidade"
 tags: ["roteiros"]
@@ -37,7 +37,7 @@ Aqui você encontra roteiros prontos ou pode pedir o seu roteiro personalizado, 
 
     ::::post-card
     ---
-    thumbnail: "nyc/roteiro-2-dia.jpg"
+    thumbnail: "nyc/roteiro-5-dias.jpg"
     title: "New York: Roteiro de 5 dias"
     to: "/blog/america-do-norte/eua/nova-york/roteiros/5-dias"
     description: "Para viver Nova York com calma e intensidade."
@@ -47,7 +47,7 @@ Aqui você encontra roteiros prontos ou pode pedir o seu roteiro personalizado, 
 
     ::::post-card
     ---
-    thumbnail: "nyc/roteiro-3-dia.jpg"
+    thumbnail: "nyc/roteiro-10-dias.jpg"
     title: "New York: Roteiro de 10 dias"
     to: "/blog/america-do-norte/eua/nova-york/roteiros/10-dias"
     description: "Um passeio clássico pelos encantos de Nova York."

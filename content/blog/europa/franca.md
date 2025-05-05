@@ -1,9 +1,11 @@
 ---
 region: "france"
-cover: "nao-encontrada.jpg"
+cover: "franca/franca-bg.jpg"
 date: 2025-03-23
+description: "ddd"
+tags: ["destinos"]
 published: true
-thumbnail: "nao-encontrada.jpg"
+thumbnail: "franca/franca.jpg"
 title: "França"
 sitemap:
   lastmod: 2025-02-18

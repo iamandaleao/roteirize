@@ -1,9 +1,10 @@
 ---
 region: "europe"
-cover: "nao-encontrada.jpg"
+cover: "europa/europa-bg.jpg"
 date: 2025-03-23
-description: "Descrição"
-thumbnail: "nao-encontrada.jpg"
+description: "aa"
+tags: ["destinos"]
+thumbnail: "europa/europa.png"
 title: "Europa"
 sitemap:
   lastmod: 2025-02-18

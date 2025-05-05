@@ -4,8 +4,8 @@ cover: nyc/capa-hero-bg.jpg
 date: 2025-05-01  # Data de publicação do post
 description: "Para aproveitar com calma e intensidade"
 tags: ["roteiros"]
-thumbnail: nyc/roteiro-5-dia.jpg
-title: "Nova York: Roteiro 5 dia"
+thumbnail: nyc/roteiro-5-dias.jpg
+title: "Nova York: Roteiro 5 dias"
 sitemap:
   lastmod: 2025-05-01  # Data da última modificação
 ---
