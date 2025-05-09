@@ -42,33 +42,59 @@ async function performSearch(searchQuery: string) {
   allPosts.value = []
 
   try {
-    // Normalize query and create word boundary regex patterns
     const normalizedTerms = searchQuery.toLowerCase()
       .normalize('NFD')
       .replace(/[\u0300-\u036F]/g, '') // Remove accents
       .split(/\s+/)
       .filter(term => term.length > 1)
       .flatMap((term) => {
-        // Add singular/plural variations
+        // Create variations including stem matches (for words like "passaport" to match "passaporte")
         const variations = [term]
+
+        // Handle singular/plural variations
         if (term.endsWith('s')) {
           variations.push(term.slice(0, -1))
         }
         else {
           variations.push(`${term}s`)
         }
+
+        // Add variation for words with 'e' endings (like passaporte/passaport)
+        if (term.endsWith('e')) {
+          variations.push(term.slice(0, -1))
+        }
+        else if (term.length > 4) {
+          variations.push(`${term}e`)
+        }
+
         return variations
       })
-      .map(term => new RegExp(`\\b${term}\\b`, 'i'))
+      .map((term) => {
+        // Use word boundaries for shorter terms to avoid over-matching
+        // (e.g., "roma" should not match "romance", "aromas", etc.)
+        if (term.length <= 4) {
+          return new RegExp(`\\b${term}\\b`, 'i')
+        }
+        // For longer terms, allow more flexible matching including partial matches
+        return new RegExp(term, 'i')
+      })
 
-    // Filter data
     const results = toValue(blogData.value).filter((item) => {
       const normalizedText = (`${item.title} ${item.content}`)
         .toLowerCase()
         .normalize('NFD')
         .replace(/[\u0300-\u036F]/g, '')
 
-      return normalizedTerms.some(regex => regex.test(normalizedText))
+      // For more precise matching, especially for short terms
+      const words = normalizedText.split(/\s+|[.,;:!?()[\]{}'"«»]/)
+
+      return normalizedTerms.some((regex) => {
+        const term = regex.toString().replace(/[\\^$.*+?()[\]{}|]/g, '').slice(2, -2)
+        if (term.length <= 4) {
+          return words.includes(term)
+        }
+        return regex.test(normalizedText)
+      })
     })
 
     // Process results
