@@ -92,5 +92,5 @@ Bagagem despachada:
 
 ### Conclusão
 
-Agora você sabe tudo sobre passaporte, visto e imigração. Com organização, sua entrada no país será tranquila, e a viagem será sem preocupações.
+Agora você sabe tudo sobre passaporte, visto e imigração. Com organização, sua entrada no país será tranquila, e a viagem será sem preocupações. 💚
 ::
