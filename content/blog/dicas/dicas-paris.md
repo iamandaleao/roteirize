@@ -3,7 +3,7 @@ cover: "capa-dicas-bg.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
 description: "Transforme sua viagem com estas dicas"
-thumbnail: "dicas/paris-dicas.jpg" #imagem pequena
+thumbnail: "dicas/dicas-paris.jpg" #imagem pequena
 title: "Paris: Dicas"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação
