@@ -3,7 +3,7 @@ cover: "capa-dicas-bg.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
 description: "Essencial antes de ir"
-thumbnail: "" #imagem pequena
+thumbnail: "dicas/dicas-uruguaiana.webp" #imagem pequena
 title: "Uruguaiana: Dicas"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação
