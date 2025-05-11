@@ -1,13 +1,13 @@
 ---
 title: Encontre o lugar ideal
-description: "Hospedagem com qualidade e confiança  "
+description: "Hospedagem com qualidade e confiança"
 date: 2025-05-11
-cover: 
+cover: /dicas/parceiros.jpg
 sitemap:
   lastmod: 2025-05-11
 schemaOrg:
   - "@type": "WebPage"
-    headline: "booking"
+    headline: "hospedagem"
     datePublished: "2025-05-11"
     author:
       type: "Person"

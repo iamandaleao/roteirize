@@ -2,7 +2,7 @@
 title: Seguros Viagens
 description: "Proteção em qualquer destino"
 date: 2025-05-11
-cover: 
+cover: /dicas/parceiros.jpg
 sitemap:
   lastmod: 2025-05-11
 schemaOrg:

@@ -2,7 +2,7 @@
 title: Ingressos e Passeios
 description: "Aproveite o melhor de cada destino com tranquilidade"
 date: 2025-05-11
-cover: 
+cover: /dicas/parceiros.jpg
 sitemap:
   lastmod: 2025-05-11
 schemaOrg:

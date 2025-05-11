@@ -2,7 +2,7 @@
 title: Passagens Aéreas
 description: "Viaje mais pagando menos"
 date: 2025-05-11
-cover: 
+cover: /dicas/parceiros.jpg
 sitemap:
   lastmod: 2025-05-11
 schemaOrg:
