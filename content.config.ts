@@ -4,7 +4,7 @@ import { asSeoCollection } from '@nuxtjs/seo/content'
 export default defineContentConfig({
   collections: {
     page: defineCollection(asSeoCollection({
-      source: '*.md',
+      source: '**/*.md',
       type: 'page',
       schema: z.object({
         title: z.string(),

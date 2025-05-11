@@ -6,14 +6,17 @@ const navigation = {
     { name: 'Colaborar', href: '/colaborar' },
   ],
   itineraries: [
-    { name: 'Roteiro Paris', href: '/blog/europa/franca/paris/roteiros' },
-    { name: 'Peça seu roteiro', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
+    { name: 'Econômico', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
+    { name: 'Família', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
+    { name: 'Romântico', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
+    { name: 'Premium', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
   ],
   discounts: [
-    { name: 'Chip Internacional', href: '#' },
-    { name: 'Hospedagem', href: '#' },
-    { name: 'Seguro Viagem', href: '#' },
-    { name: 'Passeios e Tours', href: '#' },
+    { name: 'Chip Internacional', href: '/parceiros/omeuchip' },
+    { name: 'Hospedagem', href: '/parceiros/hospedagem' },
+    { name: 'Seguro Viagem', href: '/parceiros/seguros' },
+    { name: 'Passeios & Tours', href: '/parceiros/passeios-e-tours' },
+    { name: 'Passagens & Transporte', href: '/parceiros/passagens-e-transporte' },
   ],
   social: [
     {
