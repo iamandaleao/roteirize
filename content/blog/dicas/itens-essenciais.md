@@ -3,7 +3,7 @@ cover: "capa-dicas-bg.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
 description: "O que não pode faltar na mala para NY"
-thumbnail: "" #imagem pequena
+thumbnail: "dicas/itens-essenciais.jpg" #imagem pequena
 title: "Itens essenciais: Nova York"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação

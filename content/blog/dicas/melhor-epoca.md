@@ -3,7 +3,7 @@ cover: "capa-dicas-bg.jpg"  # imagem de capa
 date: 2025-05-10  # Data de publicação do post
 tags: ["dicas"]
 description: "Melhor epoca "
-thumbnail: ""  #imagem pequena
+thumbnail: "dicas/melhor-epoca.jpg"  #imagem pequena
 title: "Melhor Epoca"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação
