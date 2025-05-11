@@ -3,7 +3,7 @@ cover: "capa-dicas-bg.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
 description: "Tudo sobre o Visto Americano"
-thumbnail: "" #imagem pequena
+thumbnail: "dicas/documentacao-eua.jpg" #imagem pequena
 title: "Documentação para os EUA"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação
