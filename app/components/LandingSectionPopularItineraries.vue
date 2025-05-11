@@ -20,58 +20,61 @@ const tabs = [
     label: 'Europa',
   },
   {
-    value: 'southamerica',
-    label: 'América do Sul',
-  },
-  {
     value: 'northamerica',
     label: 'América do Norte',
+  },
+  /*
+    {
+    value: 'southamerica',
+    label: 'América do Sul',
   },
   {
     value: 'africa',
     label: 'África',
   },
+  */
+
 ]
 
 const posts = {
   europe: [
     {
-      name: 'Paris',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Paris: Como Chegar',
+      description: 'Chegando com praticidade e estilo!',
+      href: '/blog/europa/franca/paris/como-chegar',
+      image: '/assets/images/paris/como-chegar.jpg',
       cta: 'Ler mais',
       class: 'lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3',
     },
     {
-      name: 'Paris',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Paris: Quando ir',
+      description: 'A melhor época para visitar a Cidade Luz',
+      href: '/blog/europa/franca/paris/quando-ir',
+      image: '/assets/images/paris/quando-ir.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3',
     },
     {
-      name: 'Paris',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Paris: Gastronomia',
+      description: 'Um Banquete para os Sentidos',
+      href: '/blog/europa/franca/paris/gastronomia',
+      image: '/assets/images/paris/gastronomia.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
     },
     {
-      name: 'Paris',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Paris: Compras',
+      description: 'Aproveitando sem Gastar Muito',
+      href: '/blog/europa/franca/paris/compras',
+      image: '/assets/images/paris/compras.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2',
     },
     {
-      name: 'Paris',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Paris: Onde Ficar',
+      description: 'Principais Bairros para se Hospedar',
+      href: '/blog/europa/franca/paris/onde-ficar',
+      image: '/assets/images/paris/hospedagem.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4',
     },
@@ -222,7 +225,7 @@ watch(isVisible, (newValue) => {
     </h2>
 
     <Tabs default-value="europe">
-      <TabsList class="grid w-full grid-cols-1 gap-2 bg-accent md:grid-cols-4">
+      <TabsList class="grid w-full grid-cols-1 gap-2 bg-accent md:grid-cols-2">
         <TabsTrigger
           v-for="tab in tabs"
           :key="`trigger-${tab.value}`"
