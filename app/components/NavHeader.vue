@@ -31,10 +31,12 @@ const navigation: NavItem[] = [
     title: 'Dicas',
     href: '/blog/tag/dicas',
   },
+  /*
   {
     title: 'Inspirações',
     href: '/inspiracoes',
   },
+  */
 ]
 
 const isDrawerOpen = ref(false)
