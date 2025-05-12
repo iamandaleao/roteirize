@@ -17,7 +17,7 @@ sitemap:
 
 ::post-body{:date="date"}
 
-## Dicas para Aproveitar Melhor Sua Visita a Uruguaiana
+## Dicas para Aproveitar Melhor Sua Visita
 Se você está planejando conhecer Uruguaiana, está no lugar certo! Preparamos um guia com dicas práticas e culturais para você aproveitar ao máximo essa cidade encantadora na fronteira com a Argentina. Descubra experiências autênticas, sabores locais e curiosidades que vão tornar sua viagem ainda mais especial.
 
 ### Fique atento à fronteira!
