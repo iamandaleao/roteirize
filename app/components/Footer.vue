@@ -3,7 +3,6 @@ const navigation = {
   pages: [
     { name: 'Home', href: '/' },
     { name: 'Sobre', href: '/sobre' },
-    { name: 'Colaborar', href: '/colaborar' },
   ],
   itineraries: [
     { name: 'Econômico', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
