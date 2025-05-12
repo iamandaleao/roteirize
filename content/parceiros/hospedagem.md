@@ -30,7 +30,7 @@ Nada como viajar com tudo organizado — e escolher onde se hospedar faz toda a 
 ✔ Plataforma segura, prática e em português
 
 🛎️ **Apoie o trabalho da Roteirize reservando pelo nosso link parceiro:**  
-👉 [Clique aqui para reservar sua hospedagem com a Roteirize na Booking](https://tidd.ly/3CiSyfw)
+👉 [Clique aqui para reservar sua hospedagem com a Roteirize na Booking](https://tidd.ly/3CiSyfw){:target="_blank"}
 
 💡 *Dica da Roteirize:* quanto antes você reservar, melhores os preços e as opções! E com a flexibilidade da Booking, você pode ajustar seus planos se precisar.
 
@@ -48,7 +48,7 @@ Se você também precisa de um lugar para ficar, a Vai de Promo oferece hotéis 
 - Filtro por preço, localização e nota dos hóspedes  
 - Sistema seguro e fácil de reservar
 
-👉 [Reserve hotéis com a Vai de Promo](https://www.vaidepromo.com.br/hoteis/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&pcrtt=site/blog,hotel)
+👉 [Reserve hotéis com a Vai de Promo](https://www.vaidepromo.com.br/hoteis/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&pcrtt=site/blog,hotel){:target="_blank"}
 
 ---
 

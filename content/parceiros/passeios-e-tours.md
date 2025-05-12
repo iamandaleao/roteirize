@@ -29,7 +29,7 @@ Quer garantir seus passeios e ingressos com antecedência, evitar filas e curtir
 ✔ Cancelar gratuitamente em milhares de atividades  
 ✔ Usar tudo em português e com suporte confiável
 
-👉 [Reserve seus passeios com a Roteirize pela GetYourGuide](https://gyg.me/EfjT6FAO)
+👉 [Reserve seus passeios com a Roteirize pela GetYourGuide](https://gyg.me/EfjT6FAO){:target="_blank"}
 
 ---
 
@@ -44,7 +44,7 @@ A **Tiqets** é a escolha ideal para quem quer praticidade na hora de visitar mu
 ✔ Confirmação instantânea e cancelamento gratuito em muitos casos  
 ✔ Um jeito simples e seguro de planejar seus dias de viagem
 
-👉 [Garanta seus ingressos com a Roteirize pela Tiqets](https://www.tiqets.com/fr/)
+👉 [Garanta seus ingressos com a Roteirize pela Tiqets](https://www.tiqets.com/fr/){:target="_blank"}
 
 ---
 

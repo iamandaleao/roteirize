@@ -32,7 +32,7 @@ Pensando nisso, fechamos uma parceria incrível com o **O Meu Chip**, especialis
 🎁 **Vantagem exclusiva para quem viaja com a Roteirize:**  
 Use o cupom `ROTEIRIZE25` no site e receba **25% de desconto** na sua compra!  
 É só acessar pelo link:  
-👉 [Clique aqui e compre com a Roteirize](https://omeuchip.com/?ref=roteirize)
+👉 [Clique aqui e compre com a Roteirize](https://omeuchip.com/?ref=roteirize){:target="_blank"}
 
 
 ## 💚 Dica da Roteirize

@@ -29,7 +29,7 @@ A Seguros Promo é ideal para quem busca economia sem abrir mão de segurança.
 - Cobertura para imprevistos médicos, bagagem e muito mais  
 - Cancelamento gratuito disponível em diversos planos
 
-👉 [Contrate com desconto pela Seguros Promo](https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&cupom=ROTEIRIZE15)
+👉 [Contrate com desconto pela Seguros Promo](https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&cupom=ROTEIRIZE15){:target="_blank"}
 
 ---
 
@@ -44,7 +44,7 @@ A Real Seguros é uma opção sólida e prática para quem quer contratar com se
 - Suporte de qualidade em casos de emergência  
 - Coberturas amplas e confiáveis
 
-👉 [Contrate pela Real Seguros](https://www.seguroviagem.srv.br/?ag=roteirize)
+👉 [Contrate pela Real Seguros](https://www.seguroviagem.srv.br/?ag=roteirize){:target="_blank"}
 
 ---
 

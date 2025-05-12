@@ -29,7 +29,7 @@ Na Roteirize, gosto de indicar ferramentas que realmente ajudam na hora de viaja
 - Parcelamento disponível  
 - Interface fácil e intuitiva
 
-👉 [Encontre passagens aéreas na Vai de Promo](https://www.vaidepromo.com.br/passagens-aereas/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&pcrtt=site/blog)
+👉 [Encontre passagens aéreas na Vai de Promo](https://www.vaidepromo.com.br/passagens-aereas/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&pcrtt=site/blog){:target="_blank"}
 
 ---
 
@@ -43,7 +43,7 @@ A Latam é uma das maiores companhias aéreas da América Latina e é ideal para
 - Programas de milhagem e vantagens para fidelidade  
 - Opções de tarifa flexíveis para diferentes perfis de viajantes
 
-👉 [Veja voos com a Latam Airlines](https://tidd.ly/40IhoPe)
+👉 [Veja voos com a Latam Airlines](https://tidd.ly/40IhoPe){:target="_blank"}
 
 ---
 
@@ -62,7 +62,7 @@ A Unidas é uma das locadoras mais tradicionais do Brasil. Com agências em todo
 - Diversas categorias de veículos  
 - Atendimento confiável e suporte em todo o Brasil
 
-👉 [Alugue seu carro com a Unidas](https://tidd.ly/4g9gEqT)
+👉 [Alugue seu carro com a Unidas](https://tidd.ly/4g9gEqT){:target="_blank"}
 
 ---
 
@@ -77,7 +77,7 @@ A Rentcars é um comparador que facilita sua vida na hora de encontrar o melhor 
 - Cancelamento gratuito em muitos casos  
 - Atendimento em português
 
-👉 [Compare preços na Rentcars](https://tidd.ly/4jpDs8M)
+👉 [Compare preços na Rentcars](https://tidd.ly/4jpDs8M){:target="_blank"}
 
 ---
 
