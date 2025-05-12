@@ -1,5 +1,5 @@
 ---
-cover: "capa-dicas-bg.jpg"  # imagem de capa
+cover: "hero/capa-dicas-hero-bg.jpg"  # imagem de capa
 date: 2025-04-21  # Data de publicação do post
 tags: ["dicas"]
 description: "Saiba o que fazer se seu voo der problema."

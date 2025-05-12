@@ -1,10 +1,10 @@
 ---
-cover: "capa-dicas-bg.jpg"  # imagem de capa
+cover: "hero/capa-dicas-hero-bg.jpg"  # imagem de capa
 date: 2025-05-10  # Data de publicação do post
 tags: ["dicas"]
-description: "Melhor epoca "
+description: "Melhor período da viagem"
 thumbnail: "dicas/melhor-epoca.jpg"  #imagem pequena
-title: "Melhor Epoca"
+title: "Melhor Época"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação
 ---

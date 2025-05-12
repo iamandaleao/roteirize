@@ -1,8 +1,8 @@
 ---
-cover: "capa-dicas-bg.jpg" # imagem de capa
+cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
-description: ""
+description: "Exclusividade e bem-estar"
 thumbnail: "dicas/hospedagem-ideal.jpg" #imagem pequena
 title: "Hospedagem Ideal"
 sitemap:

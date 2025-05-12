@@ -3,6 +3,7 @@ region: "paris"
 cover: paris/capa-hero-bg.jpg
 date: 2025-02-18
 description: "Praticidade e Economia"
+tags: ["transporte"]
 thumbnail: paris/transporte.jpg
 title: "Paris: Transporte"
 sitemap:
