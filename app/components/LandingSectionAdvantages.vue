@@ -49,8 +49,8 @@ onMounted(() => resume)
         @mouseleave="resume"
       >
         <CardHeader>
-          <CardTitle class="flex items-end gap-4">
-            <div class="animate-bounce text-4xl">
+          <CardTitle class="flex items-center gap-4">
+            <div class="text-4xl">
               💳
             </div>
             <h4 class="text-xl font-semibold">
@@ -71,8 +71,8 @@ onMounted(() => resume)
         @mouseleave="resume"
       >
         <CardHeader>
-          <CardTitle class="flex items-end gap-4">
-            <div class="animate-bounce text-4xl">
+          <CardTitle class="flex items-center gap-4">
+            <div class="text-4xl">
               💬
             </div>
             <h4 class="text-xl font-semibold">
@@ -93,8 +93,8 @@ onMounted(() => resume)
         @mouseleave="resume"
       >
         <CardHeader>
-          <CardTitle class="flex items-end gap-4">
-            <div class="animate-bounce text-4xl">
+          <CardTitle class="flex items-center gap-4">
+            <div class="text-4xl">
               🎒
             </div>
             <h4 class="text-xl font-semibold">
