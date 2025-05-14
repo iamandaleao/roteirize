@@ -15,9 +15,6 @@ const { page } = useBlogPage()
         :key="`related-posts-${route.path}`"
         :current-tags="page.tags"
       />
-      <div class="flex justify-center px-4">
-        <DisqusComments :identifier="route.fullPath" />
-      </div>
     </div>
     <Footer />
   </div>

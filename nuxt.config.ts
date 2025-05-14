@@ -25,10 +25,6 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  disqus: {
-    shortname: 'roteirizeoficial',
-  },
-
   eslint: {
     config: {
       standalone: false,
