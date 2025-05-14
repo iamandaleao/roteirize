@@ -89,11 +89,17 @@ async function performSearch(searchQuery: string) {
       const words = normalizedText.split(/\s+|[.,;:!?()[\]{}'"«»]/)
 
       return normalizedTerms.some((regex) => {
-        const term = regex.toString().replace(/[\\^$.*+?()[\]{}|]/g, '').slice(2, -2)
+        // Extract the search term more accurately from the regex
+        const regexStr = regex.toString();
+        // Remove the /\b and \b/i parts for words with boundaries
+        const term = regexStr.includes('\\b') 
+          ? regexStr.replace(/^\/\\b|\\b\/i$/g, '') 
+          : regexStr.replace(/^\/|\/i$/g, '');
+          
         if (term.length <= 4) {
-          return words.includes(term)
+          return words.some(word => word === term);
         }
-        return regex.test(normalizedText)
+        return regex.test(normalizedText);
       })
     })
 
