@@ -1,8 +1,8 @@
 ---
 region: "brasil"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: brasil/brasil-bg.jpg
 date: 2025-06-04
-description: "I"
+description: "Brasil autêntico e cheio de alma"
 tags: ["destinos"]
 published: true
 thumbnail: brasil/brasil.jpg
@@ -21,16 +21,16 @@ sitemap:
 
 ::post-body{:date="date"}
 
-## Uruguaiana: Tradição na Fronteira
+## Brasil: Um País de Emoções
 
-Uruguaiana não é apenas uma cidade — é um pedaço vivo da história gaúcha, um ponto de encontro de culturas, um lugar onde a tradição pulsa em cada detalhe. Situada às margens do Rio Uruguai, bem na fronteira com a Argentina, essa cidade guarda a alma do Rio Grande do Sul em sua forma mais autêntica.
+O Brasil não é só um destino — é uma experiência viva, intensa, repleta de cores, sabores, sons e histórias que tocam a alma. De norte a sul, nosso país guarda paisagens que tiram o fôlego, tradições que emocionam e um povo que acolhe com o coração aberto. Viajar pelo Brasil é reencontrar nossas raízes e se surpreender com a diversidade que existe em cada canto.
 
-Aqui, o tempo anda devagar, respeitando os rituais antigos: o chimarrão passado de mão em mão, a roda de conversa na praça, o churrasco no fim de semana, a música nativista que embala as tardes. Cada canto de Uruguaiana tem uma história pra contar — e viver essa cidade é se conectar com o que há de mais genuíno no sul do Brasil.
+Na Roteirize Viagens, você encontra roteiros prontos para explorar o melhor do Brasil — do sertão às praias paradisíacas, das montanhas às grandes cidades. E se você quer algo mais pessoal, do jeitinho que você sonhou, é só me chamar!  
+Crio roteiros personalizados, pensados com cuidado e respeito pela sua forma de viajar: seja para se encantar com a natureza, se apaixonar pela cultura local, provar os sabores típicos de cada região, ou viver momentos únicos em destinos que carregam nossa história.
 
-Na Roteirize Viagens, você encontra roteiros prontos para conhecer os encantos de Uruguaiana — desde os pontos históricos e culturais até passeios pela natureza e experiências gastronômicas com aquele sabor de fronteira. E se quiser algo especial, feito sob medida para o seu estilo de viagem, é só falar comigo!  
-Crio roteiros personalizados com todo carinho, respeitando seu ritmo e o que você quer viver: seja explorar a cultura gaúcha, aproveitar a calmaria da cidade, fazer compras nos free shops ou descobrir os lugares mais acolhedores que só quem conhece bem a cidade pode indicar.
+Viajar pelo Brasil é sentir o vento nas dunas do Nordeste, caminhar entre casarões coloniais em cidades históricas, saborear um peixe à beira-rio na Amazônia, ouvir o som do violão em uma roda de samba no Rio, mergulhar em águas cristalinas no Cerrado, ou simplesmente se deixar levar pelo tempo tranquilo do interior.
 
-Viajar para Uruguaiana é se permitir um reencontro com as origens, com o simples e o verdadeiro: caminhar pela orla do Rio Uruguai, admirar a imponência da Ponte Internacional, visitar a Igreja de Sant’Ana, se perder entre os sabores do Mercado Público, ou simplesmente apreciar um pôr do sol como só essa terra sabe oferecer.
+Aqui, cada viagem é um mergulho no que temos de mais bonito: a nossa essência. E eu estou aqui pra ajudar você a viver o Brasil do seu jeito, com alma, com emoção e com tudo que ele tem de mais verdadeiro.  
+Quer um roteiro só seu? Me chama, vai ser uma alegria montar algo especial pra você! 💚
 
-Aqui, cada viagem é uma memória construída com calma — e eu estou aqui pra te ajudar a viver Uruguaiana do seu jeito. Quer um roteiro só seu? Me chama, vai ser um prazer montar algo especial pra você! 💚
 ::
