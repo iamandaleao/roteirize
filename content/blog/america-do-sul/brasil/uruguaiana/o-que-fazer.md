@@ -4,7 +4,7 @@ cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-04
 description: "f"
 tags: ["passeios"]
-thumbnail: uruguaiana/oque-fazer.jpg
+thumbnail: uruguaiana/o-que-fazer.jpg
 title: "Uruguaiana: O que fazer"
 sitemap:
   lastmod: 2025-06-04
