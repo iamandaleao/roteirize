@@ -2,7 +2,7 @@
 const navigation = {
   pages: [
     { name: 'Home', href: '/' },
-    { name: 'Sobre', href: '/sobre' },
+    { name: 'Sobre', href: '/sobre-mim' },
   ],
   itineraries: [
     { name: 'Econômico', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
