@@ -4,7 +4,7 @@ cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-04
 description: "T"
 tags: ["transporte"]
-thumbnail: uruguaiana/como-chegar.jpg
+thumbnail: uruguaiana/transporte.jpg
 title: "Uruguaiana: Transporte"
 sitemap:
   lastmod: 2025-06-04
