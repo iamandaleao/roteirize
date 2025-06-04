@@ -2,7 +2,7 @@
 region: "Uruguaiana"
 cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-04
-description: "C"
+description: "Rota para sua viagem"
 tags: ["desembarque"]
 thumbnail: uruguaiana/como-chegar.jpg
 title: "Uruguaiana: Como chegar"
