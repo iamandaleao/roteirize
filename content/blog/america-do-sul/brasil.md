@@ -31,6 +31,7 @@ Crio roteiros personalizados, pensados com cuidado e respeito pela sua forma de 
 Viajar pelo Brasil é sentir o vento nas dunas do Nordeste, caminhar entre casarões coloniais em cidades históricas, saborear um peixe à beira-rio na Amazônia, ouvir o som do violão em uma roda de samba no Rio, mergulhar em águas cristalinas no Cerrado, ou simplesmente se deixar levar pelo tempo tranquilo do interior.
 
 Aqui, cada viagem é um mergulho no que temos de mais bonito: a nossa essência. E eu estou aqui pra ajudar você a viver o Brasil do seu jeito, com alma, com emoção e com tudo que ele tem de mais verdadeiro.  
-Quer um roteiro só seu? Me chama, vai ser uma alegria montar algo especial pra você! 💚
+Quer um roteiro só seu? 
+Me chama, vai ser uma alegria montar algo especial pra você! 💚
 
 ::
