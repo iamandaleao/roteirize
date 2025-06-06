@@ -2,7 +2,7 @@
 region: "Uruguaiana"
 cover: capa-hero-bg.jpg
 date: 2025-06-06  # Data de publicação do post
-description: "Um Dia"
+description: "Tradição, história e sabores em cada passo."
 tags: ["roteiros"]
 thumbnail: /roteiro-1-dia.jpg
 title: "Uruguaiana: Roteiro 1 dia"
