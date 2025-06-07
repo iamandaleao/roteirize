@@ -4,7 +4,7 @@ cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06
 description: "História viva na fronteira gaúcha"
 tags: ["historia"]
-thumbnail: uruguaiana/onde-ficar.jpg
+thumbnail: brasil/historia.jpg
 title: "Uruguaiana: História"
 sitemap:
   lastmod: 2025-06-06

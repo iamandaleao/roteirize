@@ -4,7 +4,7 @@ cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06
 description: "Melhor época para conhecer Uruguaiana"
 tags: ["temporada"]
-thumbnail: /quando-ir.jpg
+thumbnail: brasil/quando-ir.jpg
 title: "Uruguaiana: Quando ir"
 sitemap:
   lastmod: 2025-06-06

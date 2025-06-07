@@ -40,7 +40,7 @@ Agora, fique à vontade para explorar os roteiros prontos que preparei logo abai
 
     ::::post-card
     ---
-    thumbnail: ""
+    thumbnail: "brasil/roteiro-5-dias.jpg"
     title: "Uruguaiana: Roteiro de 5 dias"
     to: "/blog/america-do-sul/brasil/uruguaiana/roteiros/5-dias"
     description: "Tradição, história e sabores em cada passo."
