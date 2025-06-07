@@ -25,7 +25,17 @@ Cada roteiro personalizado é pensado com carinho e atenção aos detalhes: incl
 
 Agora, fique à vontade para explorar os roteiros prontos que preparei logo abaixo. Eles são a porta de entrada perfeita para você começar a descobrir cada cantinho especial desta cidade tão rica em cultura e história.
 
+    ::::post-card
+    ---
+    thumbnail: "brasil/roteiro-5-dias.jpg"
+    title: "Uruguaiana: Roteiro de 5 dias"
+    to: "/blog/america-do-sul/brasil/uruguaiana/roteiros/5-dias"
+    description: "Tradição, história e sabores em cada passo."
+    tags: ["roteiros"]
+    ---
+    ::::
 
+<!--
 
   :::post-card-group
     ::::post-card
@@ -34,16 +44,6 @@ Agora, fique à vontade para explorar os roteiros prontos que preparei logo abai
     title: "Uruguaiana: Roteiro de 1 dia"
     to: "/blog/america-do-sul/brasil/uruguaiana/roteiros/1-dia"
     description: "Descubra o melhor em poucas horas."
-    tags: ["roteiros"]
-    ---
-    ::::
-
-    ::::post-card
-    ---
-    thumbnail: "brasil/roteiro-5-dias.jpg"
-    title: "Uruguaiana: Roteiro de 5 dias"
-    to: "/blog/america-do-sul/brasil/uruguaiana/roteiros/5-dias"
-    description: "Tradição, história e sabores em cada passo."
     tags: ["roteiros"]
     ---
     ::::
