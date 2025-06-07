@@ -4,7 +4,7 @@ cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06
 description: "Moda com alma gaúcha."
 tags: ["compras"]
-thumbnail: uruguaiana/onde-ficar.jpg
+thumbnail: brasil/compras.jpg
 title: "Uruguaiana: Compras"
 sitemap:
   lastmod: 2025-06-06

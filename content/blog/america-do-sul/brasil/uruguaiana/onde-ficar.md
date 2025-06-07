@@ -4,7 +4,7 @@ cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06
 description: "Conforto e descanso garantidos "
 tags: ["hospedagem"]
-thumbnail: uruguaiana/onde-ficar.jpg
+thumbnail: brasil/hospedagem.jpg
 title: "Uruguaiana: Onde ficar"
 sitemap:
   lastmod: 2025-06-06

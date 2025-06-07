@@ -4,7 +4,7 @@ cover: /capa-hero-bg.jpg
 date: 2025-06-06
 description: " "
 tags: ["roteiros"]
-thumbnail:
+thumbnail: brasil/roteiros.jpg
 title: "Uruguaiana: Roteiros"
 sitemap:
   lastmod: 2025-06-06
