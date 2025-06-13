@@ -22,17 +22,23 @@ menu:
 ::page-body
 
 ## Monte seu Roteiro Perfeito Aqui!
-Quer viajar do seu jeito, sem perder tempo quebrando a cabeça com pesquisa? <br>
+Quer viajar do seu jeito, sem perder tempo quebrando a cabeça com pesquisa? 
+
 
 Aqui você pede um roteiro totalmente personalizado, feito só pra você — com seu estilo, seu orçamento e seus sonhos.
 
-É simples assim: <br>
+É simples assim: 
+
+
 Você me conta onde quer ir, quantos dias tem, o que ama fazer — e eu transformo tudo num roteiro redondinho, pronto pra você viver a viagem que sempre sonhou.
 
-💡 Quer econômico, moderado ou luxuoso? <br>
+💡 Quer econômico, moderado ou luxuoso? 
+
+
 Tem pacote sob medida pra cada tipo de viajante, sempre pensando no que realmente importa: sua experiência.
 
-É só clicar no link abaixo e pedir agora seu roteiro personalizado pelo WhatsApp. Vamos conversar e deixar tudo pronto — do jeito que você merece! <br>
+É só clicar no link abaixo e pedir agora seu roteiro personalizado pelo WhatsApp. Vamos conversar e deixar tudo pronto — do jeito que você merece! 
+
 
 ::button-cta{:text="Roteiro sob medida" :href="https://api.whatsapp.com/send?phone=5547933814178"}
 ::
