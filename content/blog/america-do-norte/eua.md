@@ -1,13 +1,13 @@
 ---
 region: "usa"
 cover: "eua/eua-bg-cp.jpg"
-date: 2025-06-10
+date: 2025-06-13
 description: "História, diversidade e inovação"
 tags: ["destinos"]
 thumbnail: "eua/eua-bg.jpg"
 title: "Estados Unidos da América"
 sitemap:
-  lastmod: 2025-06-10
+  lastmod: 2025-06-13
 ---
 
 <!--abaixo em region="" só acrescentar dentro das aspas region se eu quiser que apareça todas as 11 publicações-->
