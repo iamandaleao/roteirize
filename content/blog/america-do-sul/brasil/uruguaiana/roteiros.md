@@ -2,7 +2,7 @@
 region: Uruguaiana
 cover: /capa-hero-bg.jpg
 date: 2025-06-06
-description: " "
+description: "Descubra o charme de Uruguaiana"
 tags: ["roteiros"]
 thumbnail: brasil/roteiros.jpg
 title: "Uruguaiana: Roteiros"
