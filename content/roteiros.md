@@ -34,6 +34,6 @@ Tem pacote sob medida pra cada tipo de viajante, sempre pensando no que realment
 
 É só clicar no link abaixo e pedir agora seu roteiro personalizado pelo WhatsApp. Vamos conversar e deixar tudo pronto — do jeito que você merece! <br>
 
-::button-cta{:text="test" :href="https://api.whatsapp.com/send?phone=5547933814178"}
+::button-cta{:text="Roteiro sob medida" :href="https://api.whatsapp.com/send?phone=5547933814178"}
 ::
 ::
