@@ -33,9 +33,7 @@ Você me conta onde quer ir, quantos dias tem, o que ama fazer — e eu transfor
 Tem pacote sob medida pra cada tipo de viajante, sempre pensando no que realmente importa: sua experiência.
 
 É só clicar no link abaixo e pedir agora seu roteiro personalizado pelo WhatsApp. Vamos conversar e deixar tudo pronto — do jeito que você merece! <br>
-<p align="center"> <a href="https://api.whatsapp.com/send?phone=5547933814178&text=Oi%2C%20encontrei%20suas%20informa%C3%A7%C3%B5es%20do%20WhatsApp%20no%20seu%20site">
-Pedir meu roteiro agora
-</a>
-</p>
 
+::button-cta{:text="test" :href="https://api.whatsapp.com/send?phone=5547933814178"}
+::
 ::
