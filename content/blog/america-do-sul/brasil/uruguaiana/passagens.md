@@ -1,10 +1,10 @@
 ---
-region: "Uruguaiana"
+region: "uruguaiana"
 cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-13
 description: "Seu próximo destino começa aqui"
 tags: ["Passagens"]
-thumbnail: brasil/passagens.jpg
+thumbnail: uruguaiana/passagens.jpg
 title: "Uruguaiana: Passagens"
 sitemap:
   lastmod: 2025-06-13

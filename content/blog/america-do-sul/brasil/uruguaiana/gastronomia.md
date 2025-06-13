@@ -1,10 +1,10 @@
 ---
-region: "Uruguaiana"
+region: "uruguaiana"
 cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06
 description: "Sabores autênticos da fronteira"
 tags: ["Gastronomia"]
-thumbnail: brasil/gastronomia.jpg
+thumbnail: uruguaiana/gastronomia.jpg
 title: "Uruguaiana: Gastronomia"
 sitemap:
   lastmod: 2025-06-06

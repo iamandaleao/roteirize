@@ -1,10 +1,10 @@
 ---
-region: "Uruguaiana"
+region: "uruguaiana"
 cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06
 description: "Melhor época para conhecer Uruguaiana"
 tags: ["temporada"]
-thumbnail: brasil/quando-ir.jpg
+thumbnail: uruguaiana/quando-ir.jpg
 title: "Uruguaiana: Quando ir"
 sitemap:
   lastmod: 2025-06-06

@@ -4,7 +4,7 @@ cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06
 description: "Descubra o charme de Uruguaiana"
 tags: ["roteiros"]
-thumbnail: brasil/roteiros.jpg
+thumbnail: uruguaiana/roteiros.jpg
 title: "Uruguaiana: Roteiros"
 sitemap:
   lastmod: 2025-06-06

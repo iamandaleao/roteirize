@@ -1,10 +1,10 @@
 ---
-region: "Uruguaiana"
+region: "uruguaiana"
 cover: capa-hero-bg.jpg
 date: 2025-06-06  # Data de publicação do post
 description: "Tradição, história e sabores em cada passo."
 tags: ["roteiros"]
-thumbnail: brasil/roteiro-5-dias.jpg
+thumbnail: uruguaiana/roteiro-5-dias.jpg
 title: "Uruguaiana: Roteiro 5 dias"
 sitemap:
   lastmod: 2025-06-06  # Data da última modificação
