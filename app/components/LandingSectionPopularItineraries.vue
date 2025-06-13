@@ -23,11 +23,12 @@ const tabs = [
     value: 'northamerica',
     label: 'América do Norte',
   },
-  /*
     {
     value: 'southamerica',
     label: 'América do Sul',
   },
+
+  /*
   {
     value: 'africa',
     label: 'África',
@@ -81,42 +82,42 @@ const posts = {
   ],
   southamerica: [
     {
-      name: 'Belo Horizonte',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Uruguaiana: Gastronomia',
+      description: 'Sabores autênticos da fronteira',
+      href: '/blog/america-do-sul/brasil/uruguaiana',
+      image: '/assets/images/uruguaiana/gastronomia.jpg',
       cta: 'Ler mais',
       class: 'lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3',
     },
     {
-      name: 'Formiga',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Uruguaiana: Onde Ficar',
+      description: 'Conforto e descanso garantidos',
+      href: '/blog/america-do-sul/brasil/uruguaiana',
+      image: '/assets/images/uruguaiana/hospedagem.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3',
     },
     {
-      name: 'Ouro Preto',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Uruguaiana: História',
+      description: 'História viva na fronteira gaúcha',
+      href: '/blog/america-do-sul/brasil/uruguaiana',
+      image: '/assets/images/uruguaiana/historia.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
     },
     {
-      name: 'São Tomé das Letras',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Uruguaiana: Passagens',
+      description: 'Seu próximo destino começa aqui.',
+      href: '/blog/america-do-sul/brasil/uruguaiana',
+      image: '/assets/images/uruguaiana/passagens.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2',
     },
     {
-      name: 'Capitólio',
-      description: 'A Cidade dos Sonhos e Descobertas',
-      href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      name: 'Uruguaiana: Compras',
+      description: 'Moda com alma gaúcha.',
+      href: '/blog/america-do-sul/brasil/uruguaiana',
+      image: '/assets/images/uruguaiana/compras.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4',
     },
@@ -225,7 +226,7 @@ watch(isVisible, (newValue) => {
     </h2>
 
     <Tabs default-value="europe">
-      <TabsList class="grid w-full grid-cols-1 gap-2 bg-accent md:grid-cols-2">
+      <TabsList class="grid w-full grid-cols-1 gap-2 bg-accent md:grid-cols-3">
         <TabsTrigger
           v-for="tab in tabs"
           :key="`trigger-${tab.value}`"
