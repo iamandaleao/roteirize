@@ -10,7 +10,7 @@ sitemap:
   lastmod: 2025-05-10
 ---
 
-<!--escrever "region" abaixo no final quando tiver completo pra publicar os 11 post-->
+<!--abaixo em region="" só acrescentar dentro das aspas region se eu quiser que apareça todas as 11 publicações-->
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region=""}
 ::
