@@ -1,5 +1,5 @@
 ---
-region: "eua"
+region: "usa"
 cover: "eua/eua-bg-cp.jpg"
 date: 2025-06-10
 description: "História, diversidade e inovação"
