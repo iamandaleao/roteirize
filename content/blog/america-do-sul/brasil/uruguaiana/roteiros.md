@@ -1,5 +1,5 @@
 ---
-region: Uruguaiana
+region: uruguaiana
 cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06
 description: "Descubra o charme de Uruguaiana"
