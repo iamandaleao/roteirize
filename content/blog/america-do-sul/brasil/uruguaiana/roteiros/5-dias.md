@@ -1,6 +1,6 @@
 ---
 region: "uruguaiana"
-cover: capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.jpg
 date: 2025-06-06  # Data de publicação do post
 description: "Tradição, história e sabores em cada passo."
 tags: ["roteiros"]
