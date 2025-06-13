@@ -84,7 +84,7 @@ const posts = {
     {
       name: 'Uruguaiana: Gastronomia',
       description: 'Sabores autênticos da fronteira',
-      href: '/blog/america-do-sul/brasil/uruguaiana',
+      href: '/blog/america-do-sul/brasil/uruguaiana/gastronomia',
       image: '/assets/images/uruguaiana/gastronomia.jpg',
       cta: 'Ler mais',
       class: 'lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3',
@@ -92,7 +92,7 @@ const posts = {
     {
       name: 'Uruguaiana: Onde Ficar',
       description: 'Conforto e descanso garantidos',
-      href: '/blog/america-do-sul/brasil/uruguaiana',
+      href: '/blog/america-do-sul/brasil/uruguaiana/onde-ficar',
       image: '/assets/images/uruguaiana/hospedagem.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3',
@@ -100,7 +100,7 @@ const posts = {
     {
       name: 'Uruguaiana: História',
       description: 'História viva na fronteira gaúcha',
-      href: '/blog/america-do-sul/brasil/uruguaiana',
+      href: '/blog/america-do-sul/brasil/uruguaiana/historia',
       image: '/assets/images/uruguaiana/historia.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
@@ -108,7 +108,7 @@ const posts = {
     {
       name: 'Uruguaiana: Passagens',
       description: 'Seu próximo destino começa aqui.',
-      href: '/blog/america-do-sul/brasil/uruguaiana',
+      href: '/blog/america-do-sul/brasil/uruguaiana/passagens',
       image: '/assets/images/uruguaiana/passagens.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2',
@@ -116,7 +116,7 @@ const posts = {
     {
       name: 'Uruguaiana: Compras',
       description: 'Moda com alma gaúcha.',
-      href: '/blog/america-do-sul/brasil/uruguaiana',
+      href: '/blog/america-do-sul/brasil/uruguaiana/compras',
       image: '/assets/images/uruguaiana/compras.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4',
