@@ -1,10 +1,10 @@
 ---
 region: "eua"
-cover: "eua/eua-bg.jpg"
+cover: "eua/eua-bg-cp.jpg"
 date: 2025-06-10
-description: ""
+description: "História, diversidade e inovação"
 tags: ["destinos"]
-thumbnail: "eua/eua.png"
+thumbnail: "eua/eua-bg.jpg"
 title: "Estados Unidos da América"
 sitemap:
   lastmod: 2025-06-10
