@@ -4,7 +4,7 @@ cover: "europa/europa-bg.jpg"
 date: 2025-05-10
 description: "Encantos em cada destino"
 tags: ["destinos"]
-thumbnail: "europa/europa.png"
+thumbnail: "europa/europa.jpg"
 title: "Europa"
 sitemap:
   lastmod: 2025-05-10
