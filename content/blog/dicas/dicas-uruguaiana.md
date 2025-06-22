@@ -6,7 +6,7 @@ description: "Dicas rápidas antes de ir"
 thumbnail: "dicas/dicas-uruguaiana.webp" #imagem pequena
 title: "Viajando para Uruguaiana/RS"
 sitemap:
-  lastmod: 2025-05-10 # Data da última modificação
+  lastmod: 2025-06-22 # Data da última modificação
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
