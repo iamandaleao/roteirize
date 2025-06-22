@@ -17,7 +17,7 @@ sitemap:
 
 ::post-body{:date="date"}
 
-## Uma parada saborosa em Barra Velha 
+## Uma parada saborosa em Barra Velha/SC 
 
 Hoje quero te levar comigo para conhecer um cantinho especial em Barra Velha: a **Pizzaria Quintal 606**. Fui mais cedo para aproveitar o ambiente com tranquilidade e mostrar cada detalhe com carinho. Fiz vídeos, tirei fotos, e tudo isso já está publicado lá no nosso Instagram e também no YouTube – se ainda não viu, fica o convite!
 
