@@ -12,7 +12,6 @@ onMounted(() => {
   setTimeout(() => showWhatsApp.value = true, 2000)
   const script = document.createElement('script')
   script.setAttribute('src', 'https://www.instagram.com/embed.js')
-  script.setAttribute('async', '')
   document.body.appendChild(script)
 })
 
