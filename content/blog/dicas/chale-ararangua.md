@@ -1,9 +1,9 @@
 ---
-cover: "dicas/large.jpg"              # imagem de capa
+cover: "dicas/ararangua-cover.jpg"              # imagem de capa
 date: 2025-06-22           # Data de publicação do post
 tags: ["dicas"]
 description: "Natureza, conforto e romance."
-thumbnail: "dicas/peq-lagoa.jpg"          #imagem pequena
+thumbnail: "dicas/ararangua-thum.jpg"          #imagem pequena
 title: "Paraíso Secreto em Araranguá"
 sitemap:
   lastmod: 2025-06-22      # Data da última modificação
