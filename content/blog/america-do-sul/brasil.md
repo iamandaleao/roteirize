@@ -2,7 +2,7 @@
 region: "brasil"
 cover: brasil/brasil-bg.jpg
 date: 2025-06-04
-description: "Brasil autêntico e cheio de alma"
+description: "Brasil autêntico e cheio de alma."
 tags: ["destinos"]
 published: true
 thumbnail: brasil/brasil.jpg

@@ -2,7 +2,7 @@
 region: "france"
 cover: "franca/franca-bg.jpg"
 date: 2025-05-10
-description: "Beleza que atravessa séculos"
+description: "Beleza que atravessa séculos."
 tags: ["destinos"]
 published: true
 thumbnail: "franca/franca.jpg"

@@ -2,7 +2,7 @@
 cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
-description: "Transforme sua viagem com estas dicas"
+description: "Transforme sua viagem com estas dicas."
 thumbnail: "dicas/dicas-paris.jpg" #imagem pequena
 title: "Paris: Dicas"
 sitemap:

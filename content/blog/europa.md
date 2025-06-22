@@ -2,7 +2,7 @@
 region: "europe"
 cover: "europa/europa-bg.jpg"
 date: 2025-05-10
-description: "Encantos em cada destino"
+description: "Encantos em cada destino."
 tags: ["destinos"]
 thumbnail: "europa/europa.jpg"
 title: "Europa"

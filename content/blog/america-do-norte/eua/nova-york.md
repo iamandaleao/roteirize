@@ -2,7 +2,7 @@
 region: "new-york"
 cover: nyc/capa-hero-bg.jpg
 date: 2025-04-30
-description: "Intensa, icônica, inesquecível"
+description: "Intensa, icônica, inesquecível."
 tags: ["destinos"]
 thumbnail: nyc/home.jpg
 title: "New York"

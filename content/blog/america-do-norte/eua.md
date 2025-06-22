@@ -2,7 +2,7 @@
 region: "usa"
 cover: "eua/eua-bg-cp.jpg"
 date: 2025-06-13
-description: "História, diversidade e inovação"
+description: "História, diversidade e inovação."
 tags: ["destinos"]
 thumbnail: "eua/eua-bg.jpg"
 title: "Estados Unidos da América"
