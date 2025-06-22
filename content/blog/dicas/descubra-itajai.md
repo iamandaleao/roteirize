@@ -1,9 +1,9 @@
 ---
-cover: "dicas/itajai-cap.jpg"       # imagem de capa
+cover: "dicas/itajai-cover.jpg"       # imagem de capa
 date: 2025-06-22                           # Data de publicação do post
 tags: ["dicas"]
 description: "Dicas com sabor e memória"
-thumbnail: "dicas/itajai-peq.jpg"            #imagem pequena
+thumbnail: "dicas/itajai-thum.jpg"            #imagem pequena
 title: "Descubra Itajaí Comigo"
 sitemap:
   lastmod: 2025-06-22                    # Data da última modificação
