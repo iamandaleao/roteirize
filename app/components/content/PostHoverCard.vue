@@ -22,7 +22,7 @@ defineProps<PostCardProps>()
           <div
             class="absolute bottom-0 flex h-12 w-full items-center justify-center bg-secondary/80 font-medium text-white"
           >
-            <h4>{{ title }}</h4>
+            <h4 class="truncate px-4">{{ title }}</h4>
           </div>
         </div>
       </NuxtLink>
