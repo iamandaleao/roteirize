@@ -1,9 +1,9 @@
 ---
-cover: "dicas/capa-quintal606.jpg" # imagem de capa
+cover: "dicas/quintal606-cover.jpg" # imagem de capa
 date: 2025-06-21             # Data de publicação do post
 tags: ["dicas"]
 description: "Vista, sabor e aconchego"
-thumbnail: "dicas/quintal606-peq.jpg" #imagem pequena
+thumbnail: "dicas/quintal606-thum.jpg" #imagem pequena
 title: "Descubra a pizzaria queridinha de Barra Velha"
 sitemap:
   lastmod: 2025-06-22 # Data da última modificação
