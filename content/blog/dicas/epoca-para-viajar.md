@@ -3,7 +3,7 @@ cover: "hero/capa-dicas-hero-bg.jpg"  # imagem de capa
 date: 2025-05-10  # Data de publicação do post
 tags: ["dicas"]
 description: "Melhores meses para viajar pelo Brasil e pelo mundo"
-thumbnail: "dicas/melhor-epoca.jpg"  #imagem pequena
+thumbnail: "dicas/melhor-epoca-thum.jpg"  #imagem pequena
 title: "Viaje no momento certo"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação

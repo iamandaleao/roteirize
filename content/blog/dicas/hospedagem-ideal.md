@@ -3,7 +3,7 @@ cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
 description: "Exclusividade e bem-estar"
-thumbnail: "dicas/hospedagem-ideal.jpg" #imagem pequena
+thumbnail: "dicas/hospedagem-ideal-thum.jpg" #imagem pequena
 title: "Hospedagem Ideal"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação

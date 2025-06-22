@@ -3,7 +3,7 @@ cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
 description: "Viagem ao Menor Preço"
-thumbnail: "dicas/passagens-aereas.jpg" #imagem pequena
+thumbnail: "dicas/passagens-aereas-thum.jpg" #imagem pequena
 title: "Passagens Aéreas"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação

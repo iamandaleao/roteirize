@@ -3,7 +3,7 @@ cover: "hero/capa-dicas-hero-bg.jpg"  # imagem de capa
 date: 2025-02-15  # Data de publicação do post
 tags: ["dicas"]
 description: "Dicas para o seu passaporte"
-thumbnail: "dicas/passaport.png"  #imagem pequena
+thumbnail: "dicas/passaporte-thum.png"  #imagem pequena
 title: "Passaporte"
 sitemap:
   lastmod: 2025-02-18 # Data da última modificação
