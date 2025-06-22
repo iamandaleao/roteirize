@@ -1,9 +1,9 @@
 ---
-cover: "dicas/urug-capa.jpg" # imagem de capa
+cover: "dicas/uruguaiana-cover.jpg" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
-description: "Dicas rápidas antes de ir"
-thumbnail: "dicas/dicas-uruguaiana.webp" #imagem pequena
+description: "Dicas rápidas antes de ir."
+thumbnail: "dicas/uruguaiana-thum.webp" #imagem pequena
 title: "Viajando para Uruguaiana/RS"
 sitemap:
   lastmod: 2025-06-22 # Data da última modificação
