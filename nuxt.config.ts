@@ -17,6 +17,8 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
+  css: ['~/assets/css/app.css'],
+
   content: {
     experimental: {
       nativeSqlite: true,
@@ -95,6 +97,16 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
   ],
 
+  nitro: {
+    compressPublicAssets: {
+      gzip: true,
+      brotli: true,
+    },
+    experimental: {
+      openAPI: true,
+    },
+  },
+
   schemaOrg: {
     identity: defineOrganization({
       name: 'Roteirize',
@@ -151,5 +163,30 @@ export default defineNuxtConfig({
 
   socialShare: {
     baseUrl: 'https://roteirize.com.br',
+  },
+
+  tailwindcss: {
+    cssPath: '~/app/assets/css/app.css',
+    config: {},
+    viewer: false,
+    exposeConfig: false,
+  },
+
+  vite: {
+    define: {
+      __VUE_OPTIONS_API__: false,
+    },
+    optimizeDeps: {
+      include: [
+        'vaul-vue',
+        'reka-ui',
+        'clsx',
+        'tailwind-merge',
+        '@vueuse/core',
+        'embla-carousel-vue',
+        'lucide-vue-next',
+        'class-variance-authority',
+      ],
+    },
   },
 })
