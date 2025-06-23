@@ -20,7 +20,7 @@ defineProps<{
           <PostBreadcrumb />
         </div>
         <div class="text-center">
-          <h1 class="text-balance text-4xl font-semibold tracking-tight text-white lg:text-5xl 2xl:text-7xl">
+          <h1 class="text-balance text-4xl font-semibold tracking-tight text-white lg:text-5xl">
             {{ title }}
           </h1>
           <p class="mx-auto mt-8 max-w-lg text-pretty text-lg font-medium text-slate-200 sm:text-xl/8">

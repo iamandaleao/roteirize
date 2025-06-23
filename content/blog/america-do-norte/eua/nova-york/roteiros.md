@@ -23,7 +23,6 @@ Viaje com calma e descubra a alma de Nova York!
 
 Aqui você encontra roteiros prontos ou pode pedir o seu roteiro personalizado, feito sob medida para o seu estilo, tempo e interesses. Cada trajeto é pensado com cuidado para que sua experiência em Nova York seja completa, autêntica e inesquecível — como a cidade merece.
 
-
   :::post-card-group
     ::::post-card
     ---

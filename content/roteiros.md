@@ -30,9 +30,9 @@ Aqui eu cuido de cada detalhe do seu roteiro — com calma, carinho e o olhar at
 ### Como funciona?
 
 Você me conta:
-- Quantos dias tem disponíveis;  
-- Quais destinos quer visitar;  
-- Com quem vai viajar (sozinho, em casal, em família…);  
+- Quantos dias tem disponíveis;
+- Quais destinos quer visitar;
+- Com quem vai viajar (sozinho, em casal, em família…);
 - E o que não pode faltar na sua viagem.
 
 Com base nisso, eu monto um roteiro completo e personalizado, feito sob medida. Pesquiso tudo pra você: desde passeios, transporte, restaurantes, hospedagens, ingressos e experiências — e envio tudo com os links certinhos, prontos para você mesmo fazer os pagamentos com total segurança.

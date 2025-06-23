@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { PostCardProps } from '~~/types'
-import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { useElementVisibility } from '@vueuse/core'
+import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import useToday from '~/composables/useToday'
 
 const sectionRef = ref(null)

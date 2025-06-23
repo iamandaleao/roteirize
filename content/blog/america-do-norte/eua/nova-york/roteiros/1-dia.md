@@ -89,5 +89,4 @@ Mesmo em apenas um dia, espero que você tenha sentido um pouco da grandiosidade
 
 Boa viagem — e que essa seja apenas a primeira de muitas paradas com a Roteirize!
 
-
 ::

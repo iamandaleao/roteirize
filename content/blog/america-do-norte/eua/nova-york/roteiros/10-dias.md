@@ -90,5 +90,4 @@ Foram dez dias intensos, cheios de história, sabores, paisagens e emoções. Es
 
 Nos vemos na sua próxima aventura. A Roteirize estará aqui, pronta para caminhar ao seu lado mais uma vez.
 
-
 ::

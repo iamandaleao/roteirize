@@ -17,7 +17,7 @@ sitemap:
 
 ::post-body{:date="date"}
 
-## O que Levar na Mala para Nova York 
+## O que Levar na Mala para Nova York
 
 Arrumar a mala é uma mistura de ansiedade e empolgação, né? Ainda mais quando o destino é Nova York, uma cidade cheia de vida e possibilidades. Pensando nisso, preparei um guia para te ajudar a organizar tudo o que você realmente vai precisar por lá — sem exageros e sem esquecer o essencial!
 
@@ -51,6 +51,6 @@ O clima de Nova York varia bastante durante o ano, então sua mala precisa estar
 ### 💚 Dica Extra!
 Sempre deixe um espacinho na mala para as compras — Nova York tem de tudo e é quase impossível resistir à tentação de trazer uma lembrança (ou várias!). E não se esqueça de verificar as regras de bagagem da sua companhia aérea para evitar surpresas na volta.
 
-Se quiser uma checklist prontinha para imprimir ou salvar no celular, comenta aqui que eu preparo com o maior prazer! 
+Se quiser uma checklist prontinha para imprimir ou salvar no celular, comenta aqui que eu preparo com o maior prazer!
 
 ::

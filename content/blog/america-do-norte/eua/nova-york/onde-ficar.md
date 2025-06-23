@@ -24,39 +24,39 @@ Se tem uma coisa que faz toda a diferença em uma viagem pra Nova York, é escol
 
 ## Entendendo os principais bairros
 
-### Manhattan  
-O coração da cidade. Se você quer acordar perto do Central Park, caminhar até a Times Square ou fazer compras na 5ª Avenida, esse é o lugar. É a região mais prática, com tudo por perto: metrô, restaurantes, lojas e atrações turísticas.  
+### Manhattan
+O coração da cidade. Se você quer acordar perto do Central Park, caminhar até a Times Square ou fazer compras na 5ª Avenida, esse é o lugar. É a região mais prática, com tudo por perto: metrô, restaurantes, lojas e atrações turísticas.
 Só prepare o bolso, porque a localização privilegiada pesa no orçamento.
 
-### Brooklyn  
-Descolado, artístico e cheio de personalidade. O Brooklyn é ideal pra quem curte uma vibe jovem, com cafés charmosos, arte de rua e feirinhas locais.  
+### Brooklyn
+Descolado, artístico e cheio de personalidade. O Brooklyn é ideal pra quem curte uma vibe jovem, com cafés charmosos, arte de rua e feirinhas locais.
 E o melhor: dá pra ir rapidinho de metrô pra Manhattan, com hospedagens mais em conta.
 
-### Queens  
-Mais tranquilo e residencial, é ótimo pra quem viaja em família ou vai passar mais tempo. Os preços são mais acessíveis e o bairro tem fácil acesso ao metrô e aos aeroportos.  
+### Queens
+Mais tranquilo e residencial, é ótimo pra quem viaja em família ou vai passar mais tempo. Os preços são mais acessíveis e o bairro tem fácil acesso ao metrô e aos aeroportos.
 Se o objetivo é economizar, pode apostar aqui sem medo.
 
 ## Outras regiões que merecem sua atenção
 
-- **Harlem**: Culturalmente riquíssimo e com preços mais amigáveis. Tem se desenvolvido bastante nos últimos anos.  
-- **Upper West Side / Upper East Side**: Bairros tradicionais, familiares e com aquele charme clássico nova-iorquino.  
+- **Harlem**: Culturalmente riquíssimo e com preços mais amigáveis. Tem se desenvolvido bastante nos últimos anos.
+- **Upper West Side / Upper East Side**: Bairros tradicionais, familiares e com aquele charme clássico nova-iorquino.
 - **Long Island City (em Queens)**: Hotéis modernos, boa estrutura e uma vista maravilhosa de Manhattan.
 
 ## Dicas especiais pra acertar na hospedagem
 
-### Midtown Manhattan  
+### Midtown Manhattan
 A região mais procurada pelos turistas — e não é à toa. Fica perto do Central Park, Broadway, Times Square e museus incríveis. Ideal pra quem vai pela primeira vez ou tem poucos dias na cidade.
 
-### Hell’s Kitchen  
+### Hell’s Kitchen
 Perfeita pra quem quer estar perto do burburinho, mas com uma pegada mais autêntica. Cheia de bares e restaurantes, tem um clima descontraído e multicultural.
 
-### Chelsea  
+### Chelsea
 Jovem e moderna, cheia de galerias de arte, o famoso High Line Park e restaurantes excelentes. Uma boa pedida pra quem gosta de experiências mais cult do que turísticas.
 
-### SoHo  
+### SoHo
 Charme, arte e boas compras. É tranquilo pra caminhar e ainda fica perto de bairros como Chinatown e Tribeca. Tem boutiques estilosas, galerias e um ambiente super agradável.
 
-### Meatpacking District  
+### Meatpacking District
 Sofisticado e badalado. Ideal pra quem curte vida noturna, bons restaurantes e lojas estilosas. Tem acesso fácil ao metrô e está colado em Chelsea e no Village.
 
 ## Dica de ouro da Roteirize

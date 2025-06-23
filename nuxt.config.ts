@@ -93,6 +93,7 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@stefanobartoletti/nuxt-social-share',
     'nuxt-disqus',
+    '@nuxt/scripts',
   ],
 
   schemaOrg: {

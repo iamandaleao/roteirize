@@ -5,8 +5,8 @@ export default defineContentConfig({
   collections: {
     blog: defineCollection(
       asSeoCollection({
-        source: "blog/**/*.md",
-        type: "page",
+        source: 'blog/**/*.md',
+        type: 'page',
         schema: z.object({
           title: z.string(),
           description: z.string(),
@@ -17,12 +17,12 @@ export default defineContentConfig({
           published: z.boolean(),
           tags: z.array(z.string()).optional(),
         }),
-      })
+      }),
     ),
     page: defineCollection(
       asSeoCollection({
-        source: "**/*.md",
-        type: "page",
+        source: '**/*.md',
+        type: 'page',
         schema: z.object({
           title: z.string(),
           description: z.string(),
@@ -34,11 +34,11 @@ export default defineContentConfig({
                 name: z.string(),
                 icon: z.string(),
                 href: z.string(),
-              })
+              }),
             )
             .optional(),
         }),
-      })
+      }),
     ),
   },
 })

@@ -10,9 +10,6 @@ router.afterEach(() => {
 
 onMounted(() => {
   setTimeout(() => showWhatsApp.value = true, 2000)
-  const script = document.createElement('script')
-  script.setAttribute('src', 'https://www.instagram.com/embed.js')
-  document.body.appendChild(script)
 })
 
 defineOgImageComponent('BlogPostOgImage')
@@ -35,7 +32,6 @@ useHead({
       content: 'width=device-width, initial-scale=1, maximum-scale=1',
     },
   ],
-  
   link: [
     {
       rel: 'shortcut icon',

@@ -22,7 +22,7 @@ Se você está planejando uma viagem para Paris, uma das primeiras etapas é gar
 
 ### ✈️ Como economizar na passagem para Paris
 
-Antes de tudo, dá uma olhada no Vai de Promo — você pode encontrar passagens aéreas com ótimos descontos e ofertas exclusivas.  
+Antes de tudo, dá uma olhada no Vai de Promo — você pode encontrar passagens aéreas com ótimos descontos e ofertas exclusivas.
 👉 Acesse aqui: [Confira as promoções no Vai de Promo](https://www.vaidepromo.com.br/passagens-aereas/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&pcrtt=site/blog){:target="_blank"}
 
 Quer realizar o sonho de conhecer Paris sem gastar além da conta? Anota essas dicas rápidas e eficazes para pagar menos na passagem:
@@ -39,7 +39,7 @@ Quer realizar o sonho de conhecer Paris sem gastar além da conta? Anota essas d
 
 No Brasil, os principais voos diretos para Paris (CDG) saem de:
 
-- São Paulo (GRU)  
+- São Paulo (GRU)
 - Rio de Janeiro (GIG)
 
 As companhias que operam essas rotas são: Air France, Azul e [LATAM Airlines – veja as ofertas de voos](https://tidd.ly/40IhoPe){:target="_blank"}.

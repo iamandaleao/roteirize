@@ -29,36 +29,36 @@ Planejar uma viagem internacional é um processo que começa muito antes de arru
 Uma semana antes da viagem, comecei a organizar a casa e a arrumar a mochila. Sim, uma mochila só pra cada um — isso mesmo que você leu! Duas mochilas, quatro países e temperaturas completamente diferentes. Foi desafiador, mas deu certo!
 
 **O que levei na mochila:**
-- 2 biquínis  
-- 1 calça jeans  
-- 1 legging  
-- 4 blusas  
+- 2 biquínis
+- 1 calça jeans
+- 1 legging
+- 4 blusas
 - 1 casaco
-- 5 roupas íntimas  
-- 3 meias  
-- 1 chinelo  
-- 1 tênis  
+- 5 roupas íntimas
+- 3 meias
+- 1 chinelo
+- 1 tênis
 
 **Itens de higiene:**
-- Sabonete  
-- 2 frascos de shampoo (levei 2, mas um já teria sido suficiente)  
-- 1 frasco de enxaguante bucal  
-- Gillette  
-- Escova de dente pequena  
-- Creme dental  
+- Sabonete
+- 2 frascos de shampoo (levei 2, mas um já teria sido suficiente)
+- 1 frasco de enxaguante bucal
+- Gillette
+- Escova de dente pequena
+- Creme dental
 
 **Outros itens importantes:**
 - Tripé
-- Alguns remédios (levei demais, mas é melhor prevenir)  
+- Alguns remédios (levei demais, mas é melhor prevenir)
 
 **O que eu deixaria de levar:**
-- 1 frasco de shampoo extra  
-- Alguns remédios que não foram usados  
+- 1 frasco de shampoo extra
+- Alguns remédios que não foram usados
 
 **O que senti falta e acabamos comprando lá:**
-- Alicate de unha  
-- Capa de chuva  
-- Uma blusa de frio a mais (principalmente por causa do frio da Suíça)  
+- Alicate de unha
+- Capa de chuva
+- Uma blusa de frio a mais (principalmente por causa do frio da Suíça)
 
 Dica extra: aproveitamos os cobertores que ganhamos no voo da LATAM — foram super úteis e nos aqueceram bastante durante a viagem para suiça.
 
@@ -85,6 +85,5 @@ Estávamos bem cansados (tínhamos acordado cedo), então decidimos não andar m
 Essa foi a nossa preparação e partida rumo ao velho continente. No próximo capítulo, conto como foi a chegada na França: imigração, primeiras impressões, transporte, alimentação e todas as emoções do nosso primeiro contato com a Europa.
 
 Nos acompanhe — e se quiser planejar sua viagem com tranquilidade, já sabe: é aqui na Roteirize que compartilho tudo com carinho e sinceridade.
-
 
 ::

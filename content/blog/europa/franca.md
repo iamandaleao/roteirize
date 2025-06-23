@@ -27,5 +27,4 @@ Falar da França é como abrir um livro antigo, repleto de histórias que atrave
 
 Mais do que um destino turístico, a França é uma experiência cultural profunda. É um convite a viver com mais calma, a admirar o que é belo, a compreender o valor das raízes. Se você procura encanto, tradição e um senso genuíno de identidade, a França recebe você de braços abertos, como faz há gerações.
 
-
 ::

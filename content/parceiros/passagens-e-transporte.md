@@ -18,63 +18,63 @@ schemaOrg:
 
 ::page-body
 
-## Vai de Promo + Roteirize  
+## Vai de Promo + Roteirize
 Preços acessíveis com praticidade
 
 Na Roteirize, gosto de indicar ferramentas que realmente ajudam na hora de viajar — e a Vai de Promo é uma delas. A plataforma reúne ofertas de diversas companhias aéreas e facilita sua busca pelas passagens com melhor custo-benefício.
 
-**O que você encontra por lá:**  
-- Comparação de preços em tempo real  
-- Promoções de várias companhias aéreas  
-- Parcelamento disponível  
+**O que você encontra por lá:**
+- Comparação de preços em tempo real
+- Promoções de várias companhias aéreas
+- Parcelamento disponível
 - Interface fácil e intuitiva
 
 👉 [Encontre passagens aéreas na Vai de Promo](https://www.vaidepromo.com.br/passagens-aereas/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&pcrtt=site/blog){:target="_blank"}
 
 ---
 
-## Latam + Roteirize  
+## Latam + Roteirize
 Qualidade e confiança em voos nacionais e internacionais
 
 A Latam é uma das maiores companhias aéreas da América Latina e é ideal para quem busca voos confiáveis e bem estruturados.
 
-**Destaques da companhia:**  
-- Voos para diversos destinos no Brasil e no mundo  
-- Programas de milhagem e vantagens para fidelidade  
+**Destaques da companhia:**
+- Voos para diversos destinos no Brasil e no mundo
+- Programas de milhagem e vantagens para fidelidade
 - Opções de tarifa flexíveis para diferentes perfis de viajantes
 
 👉 [Veja voos com a Latam Airlines](https://tidd.ly/40IhoPe){:target="_blank"}
 
 ---
 
-## 🚗 Aluguel de Carro  
+## 🚗 Aluguel de Carro
 Liberdade para explorar cada destino
 
 ---
 
-## Unidas + Roteirize  
+## Unidas + Roteirize
 Alugue com segurança e ampla cobertura nacional
 
 A Unidas é uma das locadoras mais tradicionais do Brasil. Com agências em todo o país, ela é perfeita para quem deseja dirigir com tranquilidade por onde for.
 
-**Por que alugar com a Unidas:**  
-- Frota nova e bem conservada  
-- Diversas categorias de veículos  
+**Por que alugar com a Unidas:**
+- Frota nova e bem conservada
+- Diversas categorias de veículos
 - Atendimento confiável e suporte em todo o Brasil
 
 👉 [Alugue seu carro com a Unidas](https://tidd.ly/4g9gEqT){:target="_blank"}
 
 ---
 
-## Rentcars + Roteirize  
+## Rentcars + Roteirize
 Compare antes de reservar
 
 A Rentcars é um comparador que facilita sua vida na hora de encontrar o melhor aluguel de carro, seja no Brasil ou no exterior.
 
-**Vantagens de usar a plataforma:**  
-- Compara preços de diversas locadoras em um só lugar  
-- Pagamento online com possibilidade de parcelamento  
-- Cancelamento gratuito em muitos casos  
+**Vantagens de usar a plataforma:**
+- Compara preços de diversas locadoras em um só lugar
+- Pagamento online com possibilidade de parcelamento
+- Cancelamento gratuito em muitos casos
 - Atendimento em português
 
 👉 [Compare preços na Rentcars](https://tidd.ly/4jpDs8M){:target="_blank"}

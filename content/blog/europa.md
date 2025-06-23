@@ -28,5 +28,4 @@ Cada região tem sua identidade própria, seus sabores únicos, seus costumes he
 
 A Europa não é apenas um destino; é um mergulho na essência do mundo ocidental. É onde tradição e beleza caminham lado a lado, e onde cada passo revela um pouco mais sobre quem somos e de onde viemos.
 
-
 ::

@@ -10,5 +10,5 @@ export const tags = {
   roteiros: 'Roteiros',
   dicas: 'Dicas',
   destinos: 'Destinos',
-  passagem: 'Passagem'
+  passagem: 'Passagem',
 }

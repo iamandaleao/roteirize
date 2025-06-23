@@ -18,30 +18,30 @@ schemaOrg:
 
 ::page-body
 
-## GetYourGuide + Roteirize  
+## GetYourGuide + Roteirize
 Experiências incríveis pelo mundo
 
 Quer garantir seus passeios e ingressos com antecedência, evitar filas e curtir o melhor de cada destino com tranquilidade? A **GetYourGuide** é nossa parceira perfeita para isso!
 
-🌍 Com ela, você pode:  
-✔ Reservar tours guiados, ingressos para atrações e passeios exclusivos  
-✔ Evitar filas e garantir sua entrada com antecedência  
-✔ Cancelar gratuitamente em milhares de atividades  
+🌍 Com ela, você pode:
+✔ Reservar tours guiados, ingressos para atrações e passeios exclusivos
+✔ Evitar filas e garantir sua entrada com antecedência
+✔ Cancelar gratuitamente em milhares de atividades
 ✔ Usar tudo em português e com suporte confiável
 
 👉 [Reserve seus passeios com a Roteirize pela GetYourGuide](https://gyg.me/EfjT6FAO){:target="_blank"}
 
 ---
 
-## Tiqets + Roteirize  
+## Tiqets + Roteirize
 Seus ingressos nas mãos antes mesmo de viajar
 
 A **Tiqets** é a escolha ideal para quem quer praticidade na hora de visitar museus, monumentos e atrações famosas em todo o mundo — tudo digital e sem complicações.
 
-🏛️ Com a Tiqets você tem:  
-✔ Ingressos digitais direto no celular  
-✔ Entrada rápida e sem filas  
-✔ Confirmação instantânea e cancelamento gratuito em muitos casos  
+🏛️ Com a Tiqets você tem:
+✔ Ingressos digitais direto no celular
+✔ Entrada rápida e sem filas
+✔ Confirmação instantânea e cancelamento gratuito em muitos casos
 ✔ Um jeito simples e seguro de planejar seus dias de viagem
 
 👉 [Garanta seus ingressos com a Roteirize pela Tiqets](https://www.tiqets.com/fr/){:target="_blank"}

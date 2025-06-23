@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import { useElementVisibility } from '@vueuse/core'
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
 } from '@/components/ui/tabs'
-import { useElementVisibility } from '@vueuse/core'
 import { BentoGrid, BentoGridCard } from '~/components/ui/bento-grid'
 
 const sectionRef = ref(null)
@@ -23,7 +23,7 @@ const tabs = [
     value: 'northamerica',
     label: 'América do Norte',
   },
-    {
+  {
     value: 'southamerica',
     label: 'América do Sul',
   },
@@ -143,7 +143,7 @@ const posts = {
       name: 'Nova York: Onde ficar',
       description: 'Melhores bairros para se hospedar',
       href: '/blog/america-do-norte/eua/nova-york/onde-ficar',
-      image: '/assets/images/nyc/hospedagem.jpg', 
+      image: '/assets/images/nyc/hospedagem.jpg',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
     },

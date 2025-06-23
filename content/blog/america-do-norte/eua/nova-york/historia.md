@@ -64,7 +64,7 @@ O final do século XX foi marcado por novos desafios, como o declínio de alguma
 
 Em 2001, Nova York sofreu um dos ataques mais devastadores da história dos Estados Unidos: os atentados de 11 de setembro. O World Trade Center, um dos símbolos mais reconhecidos da cidade, foi destruído. A tragédia teve um impacto profundo, mas também gerou um espírito de resiliência e união entre os nova-iorquinos. O Ground Zero foi transformado no Memorial e Museu do 11 de Setembro, um local de reflexão e memória.
 
-## Nova York 
+## Nova York
 
 Hoje, Nova York é uma das cidades mais dinâmicas e diversas do mundo. Ela é um centro global de finanças, mídia, arte e cultura. Seus cinco bairros — Manhattan, Brooklyn, Queens, Bronx e Staten Island — oferecem uma mistura única de culturas, com dezenas de idiomas falados e uma rica história imigrante.
 

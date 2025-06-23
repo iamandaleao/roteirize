@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import type { COBEOptions } from 'cobe'
-import { cn } from '@/lib/utils'
 import createGlobe from 'cobe'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { useSpring } from 'vue-use-spring'
+import { cn } from '@/lib/utils'
 
 interface GlobeProps {
   class?: string

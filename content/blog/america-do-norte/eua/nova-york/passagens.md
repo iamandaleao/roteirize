@@ -112,7 +112,7 @@ Comprar com milhas pode ser uma ótima forma de economizar. Se você tem pontos 
 
 Nova York é um destino que vale cada centavo — e se você planejar com carinho, pode encontrar ótimas oportunidades para comprar sua passagem com segurança e economia. Use comparadores, ative alertas, seja flexível com datas e, acima de tudo, compre com confiança.
 
-Se precisar de ajuda para montar seu roteiro, estou aqui pra isso também 
+Se precisar de ajuda para montar seu roteiro, estou aqui pra isso também
 
 Boa viagem e até logo em Nova York!
 ::

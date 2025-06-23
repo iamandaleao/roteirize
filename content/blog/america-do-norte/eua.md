@@ -32,5 +32,4 @@ A história americana é marcada por desafios e conquistas — desde a luta pela
 
 Visitar os Estados Unidos é mergulhar em uma experiência única, descobrindo as raízes de um sonho que inspira milhões ao redor do mundo e vivendo de perto a força de um país que valoriza a liberdade, a diversidade e a inovação.
 
-
 ::

@@ -30,13 +30,13 @@ Se você quer conforto e praticidade, Uruguaiana tem boas opções de hotéis e 
 
 Aqui estão algumas opções que recomendo:
 
-- 🏨 **Hotel Central Uruguaiana**  
+- 🏨 **Hotel Central Uruguaiana**
   Um dos mais conhecidos e bem localizados da cidade. Já me hospedei lá e adorei a praticidade de estar perto do centro, com fácil acesso a lojas, restaurantes e atrações. O café da manhã é delicioso, e os quartos são confortáveis e bem equipados.
 
-- 🌿 **Pousada Aconchego**  
+- 🌿 **Pousada Aconchego**
   Se você prefere um ambiente mais acolhedor, essa pousada é ideal. Com quartos charmosos e atendimento atencioso, a sensação é de estar em casa. Perfeita para casais e famílias que buscam tranquilidade e conforto.
 
-- 💰 **Hotel Econômico Uruguaiana**  
+- 💰 **Hotel Econômico Uruguaiana**
   Para quem quer economizar sem abrir mão do conforto, essa é uma ótima escolha. Os quartos são simples, mas têm tudo que você precisa para uma estadia prática. Fica em uma região de fácil acesso à rodoviária.
 
 **Dica:** Se quiser saber mais sobre esses hotéis ou precisar de ajuda para escolher o que mais combina com seu estilo, estou aqui para te ajudar!

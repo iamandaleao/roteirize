@@ -42,6 +42,4 @@ Leve em consideração seu estilo de viagem na hora de escolher onde se hospedar
 ## Conclusão
 Seguindo essas dicas, você vai conseguir escolher a hospedagem ideal para sua viagem, tornando sua experiência mais agradável e sem surpresas. Lembre-se de que a hospedagem é parte fundamental da sua viagem, então faça essa escolha com cuidado. Boa viagem e aproveite cada momento! 💚
 
-
-
 ::

@@ -40,7 +40,7 @@ Essa é uma dica prática, mas muito importante. As tomadas em Paris são difere
 
 Ah, a gastronomia de Paris! Não tem como visitar a cidade sem experimentar algumas delícias. Eu sempre começo o dia com um croissant fresquinho, e um macaron de sobremesa nunca pode faltar. E, claro, o queijo francês e o vinho são imperdíveis! Paris é uma verdadeira festa para os sentidos, e você merece se deliciar com a culinária local.
 
-✨ Agora que você já sabe essas dicas essenciais, aproveite cada momento em Paris com mais tranquilidade e prazer. Pequenos cuidados fazem toda a diferença na viagem! Bon voyage! 
+✨ Agora que você já sabe essas dicas essenciais, aproveite cada momento em Paris com mais tranquilidade e prazer. Pequenos cuidados fazem toda a diferença na viagem! Bon voyage!
 
 Se você curtiu essas dicas, continue acompanhando a Roteirize para mais conteúdos que vão transformar a sua experiência de viagem!
 

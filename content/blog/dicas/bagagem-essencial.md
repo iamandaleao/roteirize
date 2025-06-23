@@ -49,12 +49,11 @@ Regras de segurança não perdoam, hein! 😉 Certifique-se de que todos os líq
 
 ---
 
-### 💚 Dica Extra 
+### 💚 Dica Extra
 Sua bagagem de mão deve ficar com você o tempo todo, então pense bem no que realmente vai precisar durante o voo. Evite carregar itens desnecessários para facilitar o seu conforto e tornar a experiência mais leve e tranquila.
 
 Com essa checklist, sua viagem será muito mais organizada e sem estresse!
 
 Agora, me conta: qual item você **nunca** esquece na sua bagagem de mão? Adoraria saber as suas dicas também para tornar a viagem ainda mais prática e prazerosa!
-
 
 ::

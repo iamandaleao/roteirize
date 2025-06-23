@@ -53,11 +53,11 @@ Você pode solicitar reembolso em casos de:
 ### 5. Alteração pela companhia
 Se a empresa alterar o horário do voo com menos de 72 horas de antecedência, você tem direito a:
 
-- Reembolso integral  
-- Reacomodação em outro voo  
-- Execução do serviço por outro meio de transporte  
+- Reembolso integral
+- Reacomodação em outro voo
+- Execução do serviço por outro meio de transporte
 
-### Conclusão  
+### Conclusão
 Viajar de avião deve ser uma experiência tranquila — e conhecer seus direitos é o primeiro passo para garantir isso. Sempre que enfrentar um problema, não hesite em exigir o que é seu por direito. E se for necessário, registre uma reclamação nos canais da ANAC ou no Procon.
 
 Na dúvida, volte neste guia sempre que precisar. Informação é seu melhor aliado na hora de voar com segurança, confiança e tranquilidade. 💚

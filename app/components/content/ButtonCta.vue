@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import RainbowButton from "../ui/rainbow-button/RainbowButton.vue"
+import RainbowButton from '../ui/rainbow-button/RainbowButton.vue'
 
 defineProps<{
   text: string
