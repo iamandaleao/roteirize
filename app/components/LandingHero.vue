@@ -33,7 +33,7 @@ useIntervalFn(() => {
           </NuxtLink>
         </div>
         <div class="text-center">
-          <h1 class="text-balance text-4xl font-semibold tracking-tight text-white lg:text-5xl 2xl:text-7xl">
+          <h1 class="text-balance text-4xl font-semibold tracking-tight text-white lg:text-5xl">
             Viaje Mais, Planeje Menos.
           </h1>
           <p class="mt-8 text-pretty text-lg font-medium text-secondary-foreground sm:text-xl/8">

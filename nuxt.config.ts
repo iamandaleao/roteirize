@@ -92,7 +92,6 @@ export default defineNuxtConfig({
     '@nuxthub/core',
     'shadcn-nuxt',
     '@stefanobartoletti/nuxt-social-share',
-    'nuxt-disqus',
     '@nuxt/scripts',
   ],
 
