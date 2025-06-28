@@ -63,6 +63,6 @@ E assim terminamos nosso primeiro dia de viagem pela Europa — da chegada em Pa
 
 **Espero que esse relato tenha te ajudado!** Tenho muitas dicas que normalmente as pessoas só compartilham depois de cobrar por isso. Se você sonha em conhecer esse pedaço lindo do mundo, vem comigo! Posso te ajudar a organizar tudo direitinho pra que sua única preocupação seja aproveitar cada momento. Te garanto que não vai se decepcionar.
 
-Abaixo deixo alguns registros dessa viagem. Espero que goste e, se puder, nos siga nas redes sociais<a href="https://roteirize.com.br" target="_blank"><strong>Instagram</strong></a> — sua colaboração faz toda a diferença e me incentiva a continuar produzindo conteúdos úteis, sinceros e cheios de carinho.
+Abaixo deixo alguns registros dessa viagem. Espero que goste e, se puder, nos siga nas redes sociais — sua colaboração faz toda a diferença e me incentiva a continuar produzindo conteúdos úteis, sinceros e cheios de carinho.
 
 **Fiquem com Deus e até o próximo capítulo!** 💚
