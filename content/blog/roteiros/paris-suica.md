@@ -6,7 +6,7 @@ description: "Imigração, passeios e deslocamento"
 tags: ["roteiros"]
 published: true
 thumbnail: "viagem-europa/paris-thum.jpg"
-title: "Da Europa à Suiça"
+title: "Da França à Suiça"
 sitemap:
   lastmod: 2025-06-28
 ---
