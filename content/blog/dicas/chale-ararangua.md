@@ -1,12 +1,12 @@
 ---
 cover: "dicas/ararangua-cover.jpg"              # imagem de capa
-date: 2025-06-22           # Data de publicação do post
+date: 2025-03-01           # Data de publicação do post
 tags: ["dicas"]
 description: "Natureza, conforto e romance."
 thumbnail: "dicas/ararangua-thum.jpg"          #imagem pequena
 title: "Paraíso Secreto em Araranguá"
 sitemap:
-  lastmod: 2025-06-22      # Data da última modificação
+  lastmod: 2025-06-28      # Data da última modificação
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
@@ -19,15 +19,13 @@ sitemap:
 
 ## Um Paraíso Romântico em Meio à Natureza
 
-Se você está buscando um destino perfeito para a sua lua de mel, já adianto: a experiência que tivemos na **Lagoa da Serra**, em **Araranguá/SC**, foi simplesmente inesquecível!
-
-Ficamos hospedados no **Chalé Imperial** por quatro dias, e cada detalhe superou nossas expectativas.
+Se você está buscando um destino perfeito para a sua lua de mel, já adianto: a experiência que tivemos na <a href="https://www.chalelagoadaserra.com/" target="_blank"><strong>Lagoa da Serra</strong></a>, em *Araranguá/SC*, foi simplesmente inesquecível! Ficamos hospedados no <a href="https://www.chalelagoadaserra.com/chales/chal%C3%A9-imperial " target="_blank"><strong>Chalé Imperial</strong></a> por quatro dias, e cada detalhe superou nossas expectativas.
 
 O local é encantador, cercado por árvores e com uma vista incrível para a lagoa bem em frente ao chalé. Para quem ama contato com a natureza e um ambiente privativo, é um verdadeiro paraíso. Além disso, um grande diferencial é que eles são *pet friendly* – nosso dog ficou super à vontade e se divertiu tanto quanto a gente!
 
-### O Chalé Imperial: Luxo, Conforto e Exclusividade
+### Chalé Imperial: Luxo, Conforto e Exclusividade
 
-O **Chalé Imperial**, onde nos hospedamos, é perfeito para casais que buscam uma experiência exclusiva. Ele conta com:
+O *Chalé Imperial*, onde nos hospedamos, é perfeito para casais que buscam uma experiência exclusiva. Ele conta com:
 
 - Piscina com vista para a lagoa
 - Banheira de hidromassagem na suíte
@@ -88,14 +86,10 @@ Alguns registros merecem mais do que palavras — e é por isso que preparei ess
 ::embed-instagram{link="https://www.instagram.com/p/DGpxqruu7t7/"}
 ::
 
-### Não conseguiu visualizar as fotos?
-
-Se as imagens não aparecerem no seu navegador, é só clicar <a href="https://www.instagram.com/p/DGpxqruu7t7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">aqui para ver diretamente no Instagram</a> — por lá, você encontra essas e muitas outras fotos que vão te inspirar a planejar a próxima aventura com ainda mais carinho.
-
 ### Pronto para escrever a sua história?
 
 Viajar é abrir um novo capítulo na nossa vida — é sair da rotina, viver momentos únicos e colecionar memórias que ficam pra sempre. Espero que essas fotos despertem em você aquela vontade gostosa de explorar o mundo no seu tempo, com o seu jeito e do seu jeito.
 
-Quando chegar a hora de transformar esse desejo em realidade, pode me chamar. Vai ser um prazer planejar tudo com você, como se fosse para mim. <a href="https://api.whatsapp.com/send?phone=5547933814178" target="_blank" rel="noopener noreferrer">Fale comigo no WhatsApp</a> e vamos começar o seu roteiro.
+Quando chegar a hora de transformar esse desejo em realidade, pode me chamar. Vai ser um prazer planejar tudo com você, como se fosse para mim. Fale comigo no <a href="https://api.whatsapp.com/send?phone=5547933814178" target="_blank" rel="noopener noreferrer">WhatsApp</a> e vamos começar o seu roteiro.
 
 ::
