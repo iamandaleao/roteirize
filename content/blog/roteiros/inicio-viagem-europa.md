@@ -1,11 +1,11 @@
 ---
 region: ""
-cover: "floripa-parte.jpg"
+cover: "viagem-europa/floripa-cover.jpg"
 date: 2025-06-12
 description: "Dos sonhos ao embarque"
 tags: ["roteiros"]
 published: true
-thumbnail: "floripa-parte.jpg"
+thumbnail: "viagem-europa/floripa-thum.jpg"
 title: "Do Brasil à Europa"
 sitemap:
   lastmod: 2025-06-12
@@ -58,9 +58,8 @@ Uma semana antes da viagem, comecei a organizar a casa e a arrumar a mochila. Si
 **O que senti falta e acabamos comprando lá:**
 - Alicate de unha
 - Capa de chuva
-- Uma blusa de frio a mais (principalmente por causa do frio da Suíça)
 
-Dica extra: aproveitamos os cobertores que ganhamos no voo da LATAM — foram super úteis e nos aqueceram bastante durante a viagem para suiça.
+Poderíamos ter levado mais uma blusa de frio (principalmente por causa do clima na Suíça), mas os cobertores que ganhamos no voo da LATAM nos ajudaram bastante — foram super úteis e nos aqueceram durante a viagem.
 
 ### O deslocamento até São Paulo
 
