@@ -20,7 +20,8 @@ sitemap:
 ::
 
 ::post-body{:date="date"}
-## Capítulo 1 – A partida: da saída de casa até a chegada na França
+
+## Capítulo 1 – A partida: dos preparativos até o embarque no Brasil
 
 Planejar uma viagem internacional é um processo que começa muito antes de arrumar as malas. No nosso caso, o sonho da Europa começou a tomar forma sete meses antes do embarque. França, Suíça, Itália e a belíssima ilha de Sardenha foram os destinos escolhidos com muito carinho — e com muita pesquisa também! Eu queria chegar tranquila, sem surpresas, então procurei tudo: o que levar, documentos obrigatórios, como me locomover, o que visitar, onde comer… tudo mesmo.
 
@@ -84,5 +85,7 @@ Estávamos bem cansados (tínhamos acordado cedo), então decidimos não andar m
 Essa foi a nossa preparação e partida rumo ao velho continente. No próximo capítulo, conto como foi a chegada na França: imigração, primeiras impressões, transporte, alimentação e todas as emoções do nosso primeiro contato com a Europa.
 
 Nos acompanhe — e se quiser planejar sua viagem com tranquilidade, já sabe: é aqui na Roteirize que compartilho tudo com carinho e sinceridade.
+
+[➔ Clique aqui para continuar lendo o Capítulo 2 – Chegada à França](https://roteirize.com.br/blog/roteiros/paris-suica)
 
 ::
