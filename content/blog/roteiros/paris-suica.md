@@ -1,11 +1,11 @@
 ---
 region: ""
-cover: ".jpg"
+cover: "viagem-europa/paris-cover.jpg"
 date: 2025-06-28
-description: "Dos"
+description: "Imigração, passeios e deslocamento"
 tags: ["roteiros"]
 published: true
-thumbnail: "thum.jpg"
+thumbnail: "viagem-europa/paris-thum.jpg"
 title: "Da Europa à Suiça"
 sitemap:
   lastmod: 2025-06-28
