@@ -1,6 +1,6 @@
 ---
 cover: "dicas/itajai-cover.jpg"       # imagem de capa
-date: 2025-06-22                           # Data de publicação do post
+date: 2025-03-01                          # Data de publicação do post
 tags: ["dicas"]
 description: "Dicas com sabor e memória"
 thumbnail: "dicas/itajai-thum.jpg"            #imagem pequena

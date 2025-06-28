@@ -1,6 +1,6 @@
 ---
 cover: "dicas/candeias-cover.png"              # imagem de capa
-date: 2025-06-22           # Data de publicação do post
+date: 2025-02-18           # Data de publicação do post
 tags: ["dicas"]
 description: "Conforto e lazer em Piçarras"
 thumbnail: "dicas/candeias-thum.jpg"          #imagem pequena

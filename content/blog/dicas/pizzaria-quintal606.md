@@ -1,6 +1,6 @@
 ---
 cover: "dicas/quintal606-cover.jpg" # imagem de capa
-date: 2025-06-21             # Data de publicação do post
+date: 2025-02-02             # Data de publicação do post
 tags: ["dicas"]
 description: "Vista, sabor e aconchego"
 thumbnail: "dicas/quintal606-thum.jpg" #imagem pequena
