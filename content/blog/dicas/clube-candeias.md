@@ -6,7 +6,7 @@ description: "Conforto e lazer em Piçarras"
 thumbnail: "dicas/candeias-thum.jpg"          #imagem pequena
 title: "Descanso à Beira-Mar"
 sitemap:
-  lastmod: 2025-06-22      # Data da última modificação
+  lastmod: 2025-06-28      # Data da última modificação
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
@@ -19,7 +19,7 @@ sitemap:
 
 ## Um Lugar Completo para Relaxar e Aproveitar!
 
-Sempre fui acostumada a planejar minhas viagens com bastante cuidado, então quando ganhei duas noites no [Candeias Residencial Piçarras](https://g.co/kgs/xBUWhWm){:target="_blank"} fiquei surpresa! Nunca tinha ganhado algo assim antes, e confesso que no início fiquei um pouco desconfiada. Mas tudo foi resolvido quando recebi uma ligação com uma chamada de vídeo explicando os detalhes. Para garantir, entrei em contato diretamente com o hotel e, para minha felicidade, estava tudo certo!
+Sempre fui acostumada a planejar minhas viagens com bastante cuidado, então quando ganhei duas noites no [Candeias Residencial Piçarras](https://www.clubecandeias.com/unidades/candeias-residencial-picarras){:target="_blank"} fiquei surpresa! Nunca tinha ganhado algo assim antes, e confesso que no início fiquei um pouco desconfiada. Mas tudo foi resolvido quando recebi uma ligação com uma chamada de vídeo explicando os detalhes. Para garantir, entrei em contato diretamente com o hotel e, para minha felicidade, estava tudo certo!
 
 ### Primeiras Impressões e Localização
 
@@ -43,11 +43,11 @@ O Candeias Residencial Piçarras faz parte da rede Clube Candeias, que tem unida
 
 Ah, e o hotel é **pet friendly**, então se você tem um bichinho de estimação, pode levá-lo para curtir a viagem com você!
 
-Ficou curioso para ver um pouquinho de como foi essa experiência? Gravei alguns momentos por lá e compartilhei no Instagram para você sentir um gostinho do que é se hospedar no Candeias Residencial Piçarras. Dá o play no vídeo abaixo:
+Ficou curioso para ter um gostinho de como foi essa experiência? Gravei alguns momentos durante a hospedagem no [Candeias Residencial Piçarras](https://www.clubecandeias.com/unidades/candeias-residencial-picarras){:target="_blank"} e publiquei um vídeo que mostra cada detalhe com carinho. 
 
-Se o vídeo não carregar por aqui, é só [clicar neste link](https://www.instagram.com/reel/DGPFVF8t5_g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==){:target="_blank"} para assistir diretamente no Instagram.
+Aqui no post, compartilho apenas foto, mas se quiser ver o vídeo completo, é só escolher onde assistir: Escolha entre o [Instagram](https://www.instagram.com/p/DGPFVF8t5_g/){:target="_blank"} ou [YouTube](https://www.youtube.com/shorts/wq9PGznmnO8){:target="_blank"}. Os dois vídeos são iguais, então você pode ver na plataforma que preferir.
 
-::embed-instagram{link="https://www.instagram.com/p/DGPFVF8t5_g/"}
+::embed-instagram{link="https://www.instagram.com/p/DGWuv4IOf96/"}
 ::
 
 Espero que esse conteúdo tenha te ajudado a visualizar melhor como é se hospedar nesse cantinho especial em Balneário Piçarras. Com estrutura completa, localização prática e o carinho de uma rede que valoriza o bem-estar dos hóspedes, o Candeias Residencial Piçarras é aquele tipo de lugar que dá vontade de voltar.
