@@ -167,7 +167,7 @@
 
 .botao-animado {
   background: #003366;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   padding: 12px 10px;
   font-size: 15px;
