@@ -7,7 +7,7 @@ tags: ["hospedagem"]
 thumbnail: nyc/hospedagem.jpg
 title: "Nova York: onde ficar"
 sitemap:
-  lastmod: 2025-04-27
+  lastmod: 2025-07-06
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
@@ -41,6 +41,67 @@ Se o objetivo é economizar, pode apostar aqui sem medo.
 - **Harlem**: Culturalmente riquíssimo e com preços mais amigáveis. Tem se desenvolvido bastante nos últimos anos.
 - **Upper West Side / Upper East Side**: Bairros tradicionais, familiares e com aquele charme clássico nova-iorquino.
 - **Long Island City (em Queens)**: Hotéis modernos, boa estrutura e uma vista maravilhosa de Manhattan.
+
+<style>
+  .bloco-estilo {
+    background: #f0f4f8;
+    border-left: 6px solid #003366;
+    padding: 20px 24px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #002244;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .bloco-estilo p {
+    font-size: 15px;
+    margin: 12px 0 0;
+  }
+
+  .bloco-estilo p:first-child {
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .botao-animado {
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .botao-animado:hover {
+    transform: scale(1.05);
+    background-color: #002244;
+  }
+
+  .bloco-estilo .botao-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+
+<div class="bloco-estilo">
+  <p> Encontre a hospedagem perfeita para sua viagem </p>
+  <p>
+    Reserve com praticidade e segurança através da Booking.com, parceira da Roteirize. <br>
+    São milhares de opções com cancelamento gratuito, avaliações reais e preços para todos os estilos de viajante — tudo em português e com total confiança.
+  </p>
+  <div class="botao-container">
+    <a href="https://tidd.ly/3CiSyfw" target="_blank" class="botao-animado">
+      Buscar hospedagens agora
+    </a>
+  </div>
+</div>
+
 
 ## Dicas especiais pra acertar na hospedagem
 
