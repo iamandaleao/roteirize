@@ -84,7 +84,8 @@
   .collapsible-content[data-state="closed"] {
     animation: slideUp 300ms ease-out;
   }
-img.wp-smiley, img.emoji {
+  img.wp-smiley,
+  img.emoji {
     display: inline !important;
     border: none !important;
     box-shadow: none !important;
@@ -94,7 +95,7 @@ img.wp-smiley, img.emoji {
     vertical-align: -0.1em !important;
     background: none !important;
     padding: 0 !important;
-}
+  }
   @keyframes slideDown {
     from {
       height: 0;
@@ -112,4 +113,76 @@ img.wp-smiley, img.emoji {
       height: 0;
     }
   }
+}
+
+.bloco-link-integrado {
+  background: #f0f4f8;
+  border-left: 6px solid #003366;
+  padding: 16px 20px;
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #002244;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 24px auto;
+}
+
+.bloco-link-integrado a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #003366;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.bloco-link-integrado a:hover {
+  color: #002244;
+  border-color: #002244;
+  text-decoration: none;
+}
+
+.bloco-estilo {
+  background: #f0f4f8;
+  border-left: 6px solid #003366;
+  padding: 20px 24px;
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #002244;
+  max-width: 600px;
+  margin: auto;
+}
+
+.bloco-estilo p {
+  font-size: 15px;
+  margin: 12px 0 0;
+}
+
+.bloco-estilo p:first-child {
+  margin-top: 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.botao-animado {
+  background: #003366;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.botao-animado:hover {
+  transform: scale(1.05);
+  background-color: #002244;
+}
+
+.bloco-estilo .botao-container {
+  text-align: center;
+  margin-top: 20px;
 }
