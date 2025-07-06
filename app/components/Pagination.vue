@@ -11,6 +11,29 @@ const emit = defineEmits<{
 function goToPage(page: number) {
   emit('pageChange', page)
 }
+
+function getVisiblePages(current: number, total: number): (number | string)[] {
+  const pages: (number | string)[] = []
+
+  if (total <= 7) {
+    for (let i = 1; i <= total; i++) pages.push(i)
+  } else {
+    pages.push(1)
+
+    if (current > 4) pages.push('...')
+
+    const start = Math.max(2, current - 1)
+    const end = Math.min(total - 1, current + 1)
+
+    for (let i = start; i <= end; i++) pages.push(i)
+
+    if (current < total - 3) pages.push('...')
+
+    pages.push(total)
+  }
+
+  return pages
+}
 </script>
 
 <template>
@@ -27,18 +50,25 @@ function goToPage(page: number) {
 
     <div class="flex gap-1">
       <button
-        v-for="pageNum in totalPages"
-        :key="pageNum"
-        :title="`Página ${pageNum}`"
-        :aria-label="`Página ${pageNum}`"
+        v-for="page in getVisiblePages(currentPage, totalPages)"
+        :key="page + ''"
+        v-if="page !== '...'"
+        :title="`Página ${page}`"
+        :aria-label="`Página ${page}`"
         class="aspect-square rounded-md border border-border px-4 py-2"
         :class="[
-          currentPage === pageNum ? 'bg-primary text-white' : ' hover:bg-muted',
+          currentPage === page ? 'bg-primary text-white' : ' hover:bg-muted',
         ]"
-        @click="goToPage(pageNum)"
+        @click="goToPage(page as number)"
       >
-        {{ pageNum }}
+        {{ page }}
       </button>
+      <span
+        v-else
+        class="aspect-square px-2 py-2 text-muted-foreground select-none"
+      >
+        ...
+      </span>
     </div>
 
     <button
