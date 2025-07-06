@@ -25,7 +25,7 @@ defineProps<PostCardProps>()
         </h4>
       </NuxtLink>
 
-      <p class="line-clamp-3 text-sm">
+      <p class="line-clamp-1 text-sm">
         {{ description }}
       </p>
 
