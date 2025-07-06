@@ -30,22 +30,118 @@ Mesmo com uma tabela de conversão em mãos, cada marca pode ter suas particular
 Nos Estados Unidos, os calçados são divididos por público: **infantil**, **feminino** e **masculino**. Veja abaixo a correspondência com a numeração brasileira:
 
 #### Calçados infantis
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>7½</th>
+        <th>8½</th>
+        <th>9</th>
+        <th>10</th>
+        <th>11</th>
+        <th>11½</th>
+        <th>12½</th>
+        <th>13</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-| EUA    | 4   | 5   | 6   | 7   | 7½  | 8½  | 9   | 10  | 11  | 11½ | 12½ | 13  |
-| ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Brasil | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29  | 30  |
 
-#### Calçados femininos
+<h4>Calçados femininos</h4>
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>5</th>
+        <th>5½</th>
+        <th>6</th>
+        <th>7</th>
+        <th>7½</th>
+        <th>8½</th>
+        <th>9</th>
+        <th>10</th>
+        <th>10½</th>
+        <th>11½</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil</td>
+        <td>33</td>
+        <td>34</td>
+        <td>35</td>
+        <td>36</td>
+        <td>37</td>
+        <td>38</td>
+        <td>39</td>
+        <td>40</td>
+        <td>41</td>
+        <td>42</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-| EUA    | 5   | 5½  | 6   | 7   | 7½  | 8½  | 9   | 10  | 10½ | 11½ |
-| ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Brasil | 33  | 34  | 35  | 36  | 37  | 38  | 39  | 40  | 41  | 42  |
+<h4>Calçados masculinos</h4>
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>7</th>
+        <th>7½</th>
+        <th>8</th>
+        <th>8½</th>
+        <th>9½</th>
+        <th>10½</th>
+        <th>11</th>
+        <th>12</th>
+        <th>12½</th>
+        <th>13½</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil</td>
+        <td>37</td>
+        <td>38</td>
+        <td>39</td>
+        <td>40</td>
+        <td>41</td>
+        <td>42</td>
+        <td>43</td>
+        <td>44</td>
+        <td>45</td>
+        <td>46</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-#### Calçados masculinos
-
-| EUA    | 7   | 7½  | 8   | 8½  | 9½  | 10½ | 11  | 12  | 12½ | 13½ |
-| ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Brasil | 37  | 38  | 39  | 40  | 41  | 42  | 43  | 44  | 45  | 46  |
 
 <style>
   .bloco-estilo {
@@ -117,44 +213,199 @@ Nos Estados Unidos, os calçados são divididos por público: **infantil**, **fe
 As roupas também seguem um padrão diferente. E mais: os tamanhos variam entre bebês, crianças, homens e mulheres. Para te ajudar, preparamos as tabelas completas:
 
 #### Roupas de bebê
-
-| EUA         | 3M    | 6M    | 9M    | 12M   | 18M   | 24M   |
-| ----------- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Brasil (cm) | 55–61 | 61–67 | 67–72 | 72–78 | 78–83 | 83–86 |
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>3M</th>
+        <th>6M</th>
+        <th>9M</th>
+        <th>12M</th>
+        <th>18M</th>
+        <th>24M</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil (cm)</td>
+        <td>55–61</td>
+        <td>61–67</td>
+        <td>67–72</td>
+        <td>72–78</td>
+        <td>78–83</td>
+        <td>83–86</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 #### Roupas infantis
-
-| EUA    | 2–3 | 4–5 | 6–6x | 7–8 | 10  | 12  | 14  | 16  |
-| ------ | --- | --- | ---- | --- | --- | --- | --- | --- |
-| Brasil | 2   | 4   | 6    | 8   | 10  | 12  | 14  | 16+ |
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>2–3</th>
+        <th>4–5</th>
+        <th>6–6x</th>
+        <th>7–8</th>
+        <th>10</th>
+        <th>12</th>
+        <th>14</th>
+        <th>16</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>10</td>
+        <td>12</td>
+        <td>14</td>
+        <td>16+</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 #### Roupas femininas
+<p><strong>Vestidos, saias, casacos e calças</strong></p>
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>0</th>
+        <th>2</th>
+        <th>4</th>
+        <th>6</th>
+        <th>8</th>
+        <th>10</th>
+        <th>12</th>
+        <th>14</th>
+        <th>16</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil</td>
+        <td>34</td>
+        <td>36</td>
+        <td>38</td>
+        <td>40</td>
+        <td>42</td>
+        <td>44</td>
+        <td>46</td>
+        <td>48</td>
+        <td>50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-**Vestidos, saias, casacos e calças**
+<p><strong>Blusas femininas</strong></p>
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>2</th>
+        <th>4</th>
+        <th>6</th>
+        <th>8</th>
+        <th>10</th>
+        <th>12</th>
+        <th>14</th>
+        <th>16</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil</td>
+        <td>36</td>
+        <td>38</td>
+        <td>40</td>
+        <td>42</td>
+        <td>44</td>
+        <td>46</td>
+        <td>48</td>
+        <td>50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-| EUA    | 0   | 2   | 4   | 6   | 8   | 10  | 12  | 14  | 16  |
-| ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Brasil | 34  | 36  | 38  | 40  | 42  | 44  | 46  | 48  | 50  |
-
-**Blusas femininas**
-
-| EUA    | 2   | 4   | 6   | 8   | 10  | 12  | 14  | 16  |
-| ------ | --- | --- | --- | --- | --- | --- | --- | --- |
-| Brasil | 36  | 38  | 40  | 42  | 44  | 46  | 48  | 50  |
 
 #### Roupas masculinas
+<p><strong>Camisas</strong></p>
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>14</th>
+        <th>15</th>
+        <th>15½</th>
+        <th>16</th>
+        <th>16½</th>
+        <th>17</th>
+        <th>17½</th>
+        <th>18</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil</td>
+        <td>35</td>
+        <td>37</td>
+        <td>39</td>
+        <td>40</td>
+        <td>41</td>
+        <td>42</td>
+        <td>43</td>
+        <td>44</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-**Camisas**
 
-| EUA    | 14  | 15  | 15½ | 16  | 16½ | 17  | 17½ | 18  |
-| ------ | --- | --- | --- | --- | --- | --- | --- | --- |
-| Brasil | 35  | 37  | 39  | 40  | 41  | 42  | 43  | 44  |
+<p><strong>Calças</strong></p>
+<div style="overflow-x: auto;">
+  <table style="white-space: nowrap;">
+    <thead>
+      <tr>
+        <th>EUA</th>
+        <th>28</th>
+        <th>30</th>
+        <th>32</th>
+        <th>34</th>
+        <th>36</th>
+        <th>38</th>
+        <th>40</th>
+        <th>42</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brasil</td>
+        <td>38</td>
+        <td>40</td>
+        <td>42</td>
+        <td>44</td>
+        <td>46</td>
+        <td>48</td>
+        <td>50</td>
+        <td>52</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-**Calças**
-
-| EUA    | 28  | 30  | 32  | 34  | 36  | 38  | 40  | 42  |
-| ------ | --- | --- | --- | --- | --- | --- | --- | --- |
-| Brasil | 38  | 40  | 42  | 44  | 46  | 48  | 50  | 52  |
 
 ### Dicas úteis para acertar nas compras
 
