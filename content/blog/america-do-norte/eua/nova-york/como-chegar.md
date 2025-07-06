@@ -7,7 +7,7 @@ tags: ["desembarque"]
 thumbnail: nyc/como-chegar.jpg
 title: "Nova York: Como chegar"
 sitemap:
-  lastmod: 2025-04-30
+  lastmod: 2025-07-06
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
@@ -32,6 +32,68 @@ A maneira mais comum (e prática) de chegar a Nova York é de avião. A cidade �
 
 Eu cheguei pelo JFK e achei super organizado, com sinalização boa e várias opções de transporte até o centro da cidade.
 
+
+<style>
+  .bloco-estilo {
+    background: #f0f4f8;
+    border-left: 6px solid #003366;
+    padding: 20px 24px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #002244;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .bloco-estilo p {
+    font-size: 15px;
+    margin: 12px 0 0;
+  }
+
+  .bloco-estilo p:first-child {
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .botao-animado {
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .botao-animado:hover {
+    transform: scale(1.05);
+    background-color: #002244;
+  }
+
+  .bloco-estilo .botao-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+
+<div class="bloco-estilo">
+  <p> Internet desde o desembarque</p>
+  <p>
+    Já pensou em sair do avião com internet funcionando? <br>
+    Com um chip internacional, isso é possível. Você se conecta assim que chegar e usa seu celular sem sustos, com dados ilimitados em mais de 200 países. <br>
+    Use o cupom <strong style="color: #131414;">ROTEIRIZE25</strong> no site e ganhe 25% de desconto na sua compra!
+  </p>
+  <div class="botao-container">
+    <a href="https://omeuchip.com/?ref=roteirize" target="_blank" class="botao-animado">
+      Adquira seu chip aqui
+    </a>
+  </div>
+</div>
+
 ### Voos diretos do Brasil para Nova York
 
 Hoje em dia, várias companhias oferecem voos diretos das principais capitais brasileiras para Nova York:
@@ -50,6 +112,66 @@ Assim que você aterrissar, o próximo passo é chegar até o centro de Nova Yor
 - **AirTrain + metrô**: opção econômica. O AirTrain te leva até a estação Jamaica, onde você pega a linha E do metrô direto pra Manhattan.
 - **Táxi**: tem tarifa fixa para Manhattan (por volta de US$ 70 com pedágio e gorjeta).
 - **Uber/Lyft**: variam de preço conforme horário e trânsito, mas funcionam bem.
+
+<style>
+  .bloco-estilo {
+    background: #f0f4f8;
+    border-left: 6px solid #003366;
+    padding: 20px 24px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #002244;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .bloco-estilo p {
+    font-size: 15px;
+    margin: 12px 0 0;
+  }
+
+  .bloco-estilo p:first-child {
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .botao-animado {
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .botao-animado:hover {
+    transform: scale(1.05);
+    background-color: #002244;
+  }
+
+  .bloco-estilo .botao-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+
+<div class="bloco-estilo">
+  <p> Alugue seu carro com economia </p>
+  <p>
+    Utilize a RentCars e encontre o melhor preço comparando mais de 100 locadoras de uma só vez. <br>
+    Pague em real, em até 12x sem juros, com isenção de IOF e atendimento em português!
+  </p>
+  <div class="botao-container">
+    <a href="https://tidd.ly/4jpDs8M" target="_blank" class="botao-animado">
+      Clique aqui e confira
+    </a>
+  </div>
+</div>
 
 #### De Newark:
 - **AirTrain + NJ Transit**: sai do aeroporto e vai até Penn Station, no coração de Manhattan.
