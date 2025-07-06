@@ -9,35 +9,44 @@ const emit = defineEmits<{
 }>()
 
 function goToPage(page: number) {
-  emit('pageChange', page)
+  emit("pageChange", page)
 }
 
 function getVisiblePages(current: number, total: number): (number | string)[] {
   const pages: (number | string)[] = []
 
-  if (total <= 7) {
+  if (total <= 4) {
     for (let i = 1; i <= total; i++) pages.push(i)
   } else {
-    pages.push(1)
-
-    if (current > 4) pages.push('...')
-
-    const start = Math.max(2, current - 1)
-    const end = Math.min(total - 1, current + 1)
-
-    for (let i = start; i <= end; i++) pages.push(i)
-
-    if (current < total - 3) pages.push('...')
-
-    pages.push(total)
+    if (current <= 2) {
+      pages.push(1, 2, 3, "...", total)
+    } else if (current >= total - 1) {
+      pages.push(1, "...", total - 2, total - 1, total)
+    } else {
+      pages.push(1, "...", current, "...", total)
+    }
   }
 
-  return pages
+  // Remove duplicados e limita a 4 páginas numéricas (reticências não contam)
+  const filtered = []
+  let count = 0
+  for (const p of pages) {
+    if (p === "...") {
+      filtered.push(p)
+    } else if (count < 4) {
+      filtered.push(p)
+      count++
+    }
+  }
+  return filtered
 }
 </script>
 
 <template>
-  <div v-if="totalPages > 1" class="mt-10 flex items-center justify-center gap-2">
+  <div
+    v-if="totalPages > 1"
+    class="mt-10 flex items-center justify-center gap-2"
+  >
     <button
       :disabled="currentPage === 1"
       class="aspect-square rounded-md border border-border px-4 py-2 hover:bg-muted disabled:opacity-50"
@@ -49,26 +58,29 @@ function getVisiblePages(current: number, total: number): (number | string)[] {
     </button>
 
     <div class="flex gap-1">
-      <button
+      <template
         v-for="page in getVisiblePages(currentPage, totalPages)"
         :key="page + ''"
-        v-if="page !== '...'"
-        :title="`Página ${page}`"
-        :aria-label="`Página ${page}`"
-        class="aspect-square rounded-md border border-border px-4 py-2"
-        :class="[
-          currentPage === page ? 'bg-primary text-white' : ' hover:bg-muted',
-        ]"
-        @click="goToPage(page as number)"
       >
-        {{ page }}
-      </button>
-      <span
-        v-else
-        class="aspect-square px-2 py-2 text-muted-foreground select-none"
-      >
-        ...
-      </span>
+        <button
+          v-if="page !== '...'"
+          :title="`Página ${page}`"
+          :aria-label="`Página ${page}`"
+          class="aspect-square rounded-md border border-border px-4 py-2"
+          :class="[
+            currentPage === page ? 'bg-primary text-white' : ' hover:bg-muted',
+          ]"
+          @click="goToPage(page as number)"
+        >
+          {{ page }}
+        </button>
+        <span
+          v-else
+          class="aspect-square px-2 py-2 text-muted-foreground select-none"
+        >
+          ...
+        </span>
+      </template>
     </div>
 
     <button
