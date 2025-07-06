@@ -7,7 +7,7 @@ tags: ["passeios"]
 thumbnail: nyc/o-que-fazer.jpg
 title: "Nova York: O que fazer"
 sitemap:
-  lastmod: 2025-04-30
+  lastmod: 2025-07-06
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
@@ -30,39 +30,10 @@ Nova York, uma metrópole cheia de energia, história e cultura, é um destino q
 
 **Times Square**: O coração pulsante de Nova York. À noite, as luzes de néon e os painéis gigantescos criam uma atmosfera única e eletrizante. Não importa a hora do dia, sempre há algo acontecendo em Times Square, tornando esse um local que deve ser visto para ser verdadeiramente apreciado.
 
-<style>
-  .bloco-link-integrado {
-    background: #f0f4f8;
-    border-left: 6px solid #003366;
-    padding: 16px 20px;
-    border-radius: 6px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: #002244;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 24px auto;
-  }
-
-  .bloco-link-integrado a {
-    color: #003366;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid #003366;
-    transition: color 0.2s ease, border-color 0.2s ease;
-  }
-
-  .bloco-link-integrado a:hover {
-    color: #002244;
-    border-color: #002244;
-  }
-</style>
-
 <div class="bloco-link-integrado">
   Para garantir ingressos antecipados para atrações em Nova York, confira as opções na 
   <a href="https://www.tiqets.com/fr/" target="_blank">Tiqets</a>.
 </div>
-
 
 **Empire State Building**: Com sua vista panorâmica de 360 graus, o Empire State é uma das vistas mais impressionantes da cidade. Visite o topo para contemplar a grandiosidade de Manhattan, especialmente à noite, quando a cidade se ilumina em toda a sua magnitude.
 
@@ -75,33 +46,6 @@ Nova York, uma metrópole cheia de energia, história e cultura, é um destino q
 **SoHo**: Um bairro cheio de charme e história, SoHo é conhecido por suas galerias de arte, lojas de designer e cafés descolados. Ideal para quem busca explorar a arte e a moda local.
 
 **Greenwich Village**: Um dos bairros mais icônicos, repleto de história, cultura e vida noturna. Perfeito para passeios tranquilos, restaurantes acolhedores e um pouco de música ao vivo.
-<style>
-  .bloco-link-integrado {
-    background: #f0f4f8;
-    border-left: 6px solid #003366;
-    padding: 16px 20px;
-    border-radius: 6px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: #002244;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 24px auto;
-  }
-
-  .bloco-link-integrado a {
-    color: #003366;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid #003366;
-    transition: color 0.2s ease, border-color 0.2s ease;
-  }
-
-  .bloco-link-integrado a:hover {
-    color: #002244;
-    border-color: #002244;
-  }
-</style>
 
 <div class="bloco-link-integrado">
   Que tal reservar sua hospedagem em Nova York com segurança e praticidade? Veja opções no 
@@ -118,39 +62,10 @@ Nova York, uma metrópole cheia de energia, história e cultura, é um destino q
 
 **Verão (junho a setembro)**: A cidade se enche de vida com festivais, feiras de rua e eventos ao ar livre. Aproveite para fazer um passeio de barco pelo rio Hudson ou visitar as praias de Coney Island. À noite, as luzes de Manhattan brilham mais intensamente do que nunca.
 
-<style>
-  .bloco-link-integrado {
-    background: #f0f4f8;
-    border-left: 6px solid #003366;
-    padding: 16px 20px;
-    border-radius: 6px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: #002244;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 24px auto;
-  }
-
-  .bloco-link-integrado a {
-    color: #003366;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid #003366;
-    transition: color 0.2s ease, border-color 0.2s ease;
-  }
-
-  .bloco-link-integrado a:hover {
-    color: #002244;
-    border-color: #002244;
-  }
-</style>
-
 <div class="bloco-link-integrado">
   Quer aproveitar ao máximo cada estação em Nova York? Garanta seus ingressos com antecedência e evite filas nas principais atrações pela 
   <a href="https://www.awin1.com/cread.php?awinmid=7437&awinaffid=1799116&ued=https%3A%2F%2Fwww.tiqets.com%2Fpt%2Fatracoes-nova-york-c260932%2F" target="_blank" rel="sponsored">Tiqets</a>.
 </div>
-
 
 **Outono (setembro a dezembro)**: O outono é uma das melhores épocas para visitar a cidade, com temperaturas mais amenas e uma explosão de cores nas árvores de Central Park. É uma época ideal para explorar museus e parques, além de se perder nas ruas de bairros como o Greenwich Village, que se torna ainda mais encantador.
 

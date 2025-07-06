@@ -142,54 +142,6 @@ Nos Estados Unidos, os calçados são divididos por público: **infantil**, **fe
   </table>
 </div>
 
-
-<style>
-  .bloco-estilo {
-    background: #f0f4f8;
-    border-left: 6px solid #003366;
-    padding: 20px 24px;
-    border-radius: 6px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #002244;
-    max-width: 600px;
-    margin: auto;
-  }
-
-  .bloco-estilo p {
-    font-size: 15px;
-    margin: 12px 0 0;
-  }
-
-  .bloco-estilo p:first-child {
-    margin-top: 0;
-    font-size: 17px;
-    font-weight: bold;
-  }
-
-  .botao-animado {
-    background: #003366;
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 10px;
-    font-size: 15px;
-    border-radius: 6px;
-    font-weight: bold;
-    display: inline-block;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-  }
-
-  .botao-animado:hover {
-    transform: scale(1.05);
-    background-color: #002244;
-  }
-
-  .bloco-estilo .botao-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-</style>
-
 <div class="bloco-estilo">
   <p>Vai para os Estados Unidos? Não embarque sem um bom seguro viagem</p>
   <p>
@@ -416,53 +368,6 @@ As roupas também seguem um padrão diferente. E mais: os tamanhos variam entre 
 - As medidas nos EUA são em **polegadas**. Para converter, lembre-se: **1 polegada = 2,54 cm**.
 
 - Aplicativos de conversão de medidas podem ser grandes aliados na hora das compras.
-
-<style>
-  .bloco-estilo {
-    background: #f0f4f8;
-    border-left: 6px solid #003366;
-    padding: 20px 24px;
-    border-radius: 6px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #002244;
-    max-width: 600px;
-    margin: auto;
-  }
-
-  .bloco-estilo p {
-    font-size: 15px;
-    margin: 12px 0 0;
-  }
-
-  .bloco-estilo p:first-child {
-    margin-top: 0;
-    font-size: 17px;
-    font-weight: bold;
-  }
-
-  .botao-animado {
-    background: #003366;
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 10px;
-    font-size: 15px;
-    border-radius: 6px;
-    font-weight: bold;
-    display: inline-block;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-  }
-
-  .botao-animado:hover {
-    transform: scale(1.05);
-    background-color: #002244;
-  }
-
-  .bloco-estilo .botao-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-</style>
 
 <div class="bloco-estilo">
   <p> Internet desde o desembarque</p>
