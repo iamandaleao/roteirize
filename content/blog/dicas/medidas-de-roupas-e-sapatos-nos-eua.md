@@ -6,7 +6,7 @@ description: "Tudo o que você precisa saber antes de comprar"
 thumbnail: "dicas/medidas-de-roupas-eua-thum.jpg" #imagem pequena
 title: "Tamanhos de roupas e sapatos nos EUA"
 sitemap:
-  lastmod: 2025-07-01 # Data da última modificação
+  lastmod: 2025-07-06 # Data da última modificação
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
@@ -31,37 +31,82 @@ Nos Estados Unidos, os calçados são divididos por público: **infantil**, **fe
 
 #### Calçados infantis
 
-| EUA     | 4 | 5 | 6 | 7 | 7½ | 8½ | 9 | 10 | 11 | 11½ | 12½ | 13 |
-|---------|---|---|---|---|----|----|---|----|----|-----|-----|----|
-| Brasil  |19 |20 |21 |22 | 23 | 24 |25 | 26 | 27 |  28 |  29 | 30 |
+| EUA    | 4   | 5   | 6   | 7   | 7½  | 8½  | 9   | 10  | 11  | 11½ | 12½ | 13  |
+| ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brasil | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29  | 30  |
 
 #### Calçados femininos
 
-| EUA     | 5 | 5½ | 6 | 7 | 7½ | 8½ | 9 | 10 | 10½ | 11½ |
-|---------|---|----|---|---|----|----|---|----|-----|-----|
-| Brasil  |33 | 34 |35 |36 | 37 | 38 |39 | 40 |  41 |  42  |
+| EUA    | 5   | 5½  | 6   | 7   | 7½  | 8½  | 9   | 10  | 10½ | 11½ |
+| ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brasil | 33  | 34  | 35  | 36  | 37  | 38  | 39  | 40  | 41  | 42  |
 
 #### Calçados masculinos
 
-| EUA     | 7 | 7½ | 8 | 8½ | 9½ | 10½ | 11 | 12 | 12½ | 13½ |
-|---------|---|----|---|----|----|-----|----|----|-----|-----|
-| Brasil  |37 | 38 |39 | 40 | 41 |  42 | 43 | 44 |  45 |  46  |
+| EUA    | 7   | 7½  | 8   | 8½  | 9½  | 10½ | 11  | 12  | 12½ | 13½ |
+| ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brasil | 37  | 38  | 39  | 40  | 41  | 42  | 43  | 44  | 45  | 46  |
 
-<div style="background-color: #f0f4f8; border-left: 6px solid #003366; padding: 20px 24px; border-radius: 6px; font-family: Georgia, serif; line-height: 1.6; color: #002244; max-width: 600px; margin: auto;">
-  <p style="margin: 0; font-size: 17px; font-weight: bold;">
-    ✈️ Vai para os Estados Unidos? Não embarque sem um bom seguro viagem
-  </p>
-  <p style="margin-top: 12px; font-size: 15px;">
+<style>
+  .bloco-estilo {
+    background: #f0f4f8;
+    border-left: 6px solid #003366;
+    padding: 20px 24px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #002244;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .bloco-estilo p {
+    font-size: 15px;
+    margin: 12px 0 0;
+  }
+
+  .bloco-estilo p:first-child {
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .botao-animado {
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .botao-animado:hover {
+    transform: scale(1.05);
+    background-color: #002244;
+  }
+
+  .bloco-estilo .botao-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+
+<div class="bloco-estilo">
+  <p>Vai para os Estados Unidos? Não embarque sem um bom seguro viagem</p>
+  <p>
     A saúde nos EUA é 100% particular e qualquer atendimento simples pode gerar uma conta absurda. Para evitar surpresas, o ideal é contratar seu seguro com antecedência — e com desconto.
   </p>
-  <p style="font-size: 15px;">
-    Na hora de escolher, busque uma cobertura completa e confiável. Com o link abaixo, <strong style="color:rgb(19, 20, 20);">você acessa as melhores opções do mercado</strong>, com pagamento em até 12x ou com desconto à vista no pix.
+  <p>
+    Na hora de escolher, busque uma cobertura completa e confiável. Com o link abaixo, <strong style="color: rgb(19, 20, 20);">você acessa as melhores opções do mercado</strong>, com pagamento em até 12x ou com desconto à vista no pix.
   </p>
-  <p style="font-size: 15px;">
+  <p>
     Aproveite e <strong style="color: #003366;">garanta até 20% de desconto</strong> para viajar com segurança e tranquilidade:
   </p>
-  <div style="text-align: center; margin-top: 20px;">
-    <a href="https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&cupom=ROTEIRIZE15" target="_blank" style="background-color: #003366; color: #fff; text-decoration: none; padding: 12px 24px; font-size: 15px; border-radius: 4px; font-weight: bold; display: inline-block;">
+  <div class="botao-container">
+    <a href="https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&cupom=ROTEIRIZE15" target="_blank" class="botao-animado">
       Fazer cotação do seguro
     </a>
   </div>
@@ -73,43 +118,43 @@ As roupas também seguem um padrão diferente. E mais: os tamanhos variam entre 
 
 #### Roupas de bebê
 
-| EUA         | 3M | 6M | 9M | 12M | 18M | 24M |
-|-------------|----|----|----|-----|-----|-----|
-| Brasil (cm) |55–61|61–67|67–72|72–78|78–83|83–86|
+| EUA         | 3M    | 6M    | 9M    | 12M   | 18M   | 24M   |
+| ----------- | ----- | ----- | ----- | ----- | ----- | ----- |
+| Brasil (cm) | 55–61 | 61–67 | 67–72 | 72–78 | 78–83 | 83–86 |
 
 #### Roupas infantis
 
-| EUA     | 2–3 | 4–5 | 6–6x | 7–8 | 10 | 12 | 14 | 16 |
-|---------|-----|-----|------|-----|----|----|----|----|
-| Brasil  | 2   | 4   | 6    | 8   | 10 | 12 | 14 | 16+|
+| EUA    | 2–3 | 4–5 | 6–6x | 7–8 | 10  | 12  | 14  | 16  |
+| ------ | --- | --- | ---- | --- | --- | --- | --- | --- |
+| Brasil | 2   | 4   | 6    | 8   | 10  | 12  | 14  | 16+ |
 
 #### Roupas femininas
 
 **Vestidos, saias, casacos e calças**
 
-| EUA     | 0 | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
-|---------|---|---|---|---|---|----|----|----|----|
-| Brasil  |34 |36 |38 |40 |42 | 44 | 46 | 48 | 50 |
+| EUA    | 0   | 2   | 4   | 6   | 8   | 10  | 12  | 14  | 16  |
+| ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brasil | 34  | 36  | 38  | 40  | 42  | 44  | 46  | 48  | 50  |
 
 **Blusas femininas**
 
-| EUA     | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
-|---------|---|---|---|---|----|----|----|----|
-| Brasil  |36 |38 |40 |42 | 44 | 46 | 48 | 50 |
+| EUA    | 2   | 4   | 6   | 8   | 10  | 12  | 14  | 16  |
+| ------ | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brasil | 36  | 38  | 40  | 42  | 44  | 46  | 48  | 50  |
 
 #### Roupas masculinas
 
 **Camisas**
 
-| EUA     | 14 | 15 | 15½ | 16 | 16½ | 17 | 17½ | 18 |
-|---------|----|----|-----|----|-----|----|-----|----|
-| Brasil  | 35 | 37 |  39 | 40 |  41 | 42 |  43 | 44 |
+| EUA    | 14  | 15  | 15½ | 16  | 16½ | 17  | 17½ | 18  |
+| ------ | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brasil | 35  | 37  | 39  | 40  | 41  | 42  | 43  | 44  |
 
 **Calças**
 
-| EUA     | 28 | 30 | 32 | 34 | 36 | 38 | 40 | 42 |
-|---------|-----|-----|-----|-----|-----|-----|-----|-----|
-| Brasil  | 38  | 40  | 42  | 44  | 46  | 48  | 50  | 52  |
+| EUA    | 28  | 30  | 32  | 34  | 36  | 38  | 40  | 42  |
+| ------ | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brasil | 38  | 40  | 42  | 44  | 46  | 48  | 50  | 52  |
 
 ### Dicas úteis para acertar nas compras
 
@@ -121,27 +166,67 @@ As roupas também seguem um padrão diferente. E mais: os tamanhos variam entre 
 
 - Aplicativos de conversão de medidas podem ser grandes aliados na hora das compras.
 
+<style>
+  .bloco-estilo {
+    background: #f0f4f8;
+    border-left: 6px solid #003366;
+    padding: 20px 24px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #002244;
+    max-width: 600px;
+    margin: auto;
+  }
 
-<div style="background-color: #f0f4f8; border-left: 6px solid #003366; padding: 20px 24px; border-radius: 6px; font-family: Georgia, serif; line-height: 1.6; color: #002244; max-width: 600px; margin: auto;">
-  <p style="margin: 0; font-size: 17px; font-weight: bold;">
-    🌐 Internet desde o desembarque
+  .bloco-estilo p {
+    font-size: 15px;
+    margin: 12px 0 0;
+  }
+
+  .bloco-estilo p:first-child {
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .botao-animado {
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .botao-animado:hover {
+    transform: scale(1.05);
+    background-color: #002244;
+  }
+
+  .bloco-estilo .botao-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+
+<div class="bloco-estilo">
+  <p> Internet desde o desembarque</p>
+  <p>
+    Já pensou em sair do avião com internet funcionando? <br>
+    Com um chip internacional, isso é possível. Você se conecta assim que chegar e usa seu celular sem sustos, com dados ilimitados em mais de 200 países. <br>
+    Use o cupom <strong style="color: #131414;">ROTEIRIZE25</strong> no site e ganhe 25% de desconto na sua compra!
   </p>
-  <p style="margin-top: 12px; font-size: 15px;">
-    Já pensou em sair do avião com internet funcionando? Com um chip internacional, isso é possível. Você se conecta assim que chegar e usa seu celular sem sustos, com <strong style="color:rgb(19, 20, 20);">dados ilimitados em mais de 200 países</strong>.
-  </p>
-  <div style="text-align: center; margin-top: 20px;">
-    <a href="https://omeuchip.com/?ref=roteirize" target="_blank" style="background-color: #003366; color: #fff; text-decoration: none; padding: 12px 24px; font-size: 15px; border-radius: 4px; font-weight: bold; display: inline-block;">
+  <div class="botao-container">
+    <a href="https://omeuchip.com/?ref=roteirize" target="_blank" class="botao-animado">
       Adquira seu chip aqui
     </a>
   </div>
 </div>
 
-### Outros conteúdos que podem te interessar:
-
-- [Roteiro completo de 7 dias em Nova York e arredores](#)  
-- [Como comprar no Free Shop sem erro](#)  
-- [Qual o tipo de tomada nos EUA?](#)
-
 Agora é só fazer a mala (de preferência com espaço sobrando) e se preparar pra aproveitar os preços incríveis! Ah, e só pra lembrar: o limite de compras para trazer ao Brasil sem impostos é de **US$ 500 por pessoa**, hein?
 
-Boa viagem e boas compras! 
+Boa viagem e boas compras! 💚
