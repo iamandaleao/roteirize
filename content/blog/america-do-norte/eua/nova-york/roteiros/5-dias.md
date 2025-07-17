@@ -81,6 +81,11 @@ O último dia é para relaxar, se despedir com carinho e, claro, fazer aquelas c
 
 Aproveite os momentos finais para caminhar sem pressa por algum lugar que tenha tocado o seu coração nos dias anteriores. Porque a melhor lembrança de Nova York é aquela que fica na alma – e que só você vai saber contar.
 
+<div class="bloco-link-integrado">
+  Garanta seu seguro viagem para os EUA com a <a href="https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&cupom=ROTEIRIZE15" target="_blank" rel="sponsored">Seguros Promo</a>.<br>
+  Use o cupom <strong>ROTEIRIZE15</strong> e ganhe desconto exclusivo.
+</div>
+
 Chegamos ao fim desse roteiro — e eu espero que cada dia tenha sido uma descoberta marcante nessa cidade tão cheia de vida. Nova York é assim: intensa, encantadora e inesgotável. Se tiver mais tempo por lá, aproveite sem pressa... sempre há algo novo para ver, sentir e viver.
 
 **Boa viagem e até a próxima aventura com a Roteirize! 💚**
