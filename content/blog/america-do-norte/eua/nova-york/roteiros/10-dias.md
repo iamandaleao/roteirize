@@ -113,8 +113,6 @@ E para viajar tranquilo, é essencial contar com um seguro viagem confiável e q
   Use o cupom <strong>ROTEIRIZE15</strong> e ganhe desconto exclusivo.
 </div>
 
----
-
 Foram dez dias intensos, cheios de história, sabores, paisagens e emoções. Espero que esse roteiro tenha sido um companheiro fiel nessa imersão pela cidade que nunca dorme. Que cada passo tenha deixado memórias que você leve para sempre.
 
 Nos vemos na sua próxima aventura. A Roteirize estará aqui, pronta para caminhar ao seu lado mais uma vez.
