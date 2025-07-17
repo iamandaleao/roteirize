@@ -7,7 +7,7 @@ tags: ["roteiros"]
 thumbnail: nyc/roteiro-1-dia.jpg
 title: "Nova York: Roteiro 1 dia"
 sitemap:
-  lastmod: 2025-07-06  # Data da última modificação
+  lastmod: 2025-07-17  # Data da última modificação
 ---
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region="region"}
@@ -74,12 +74,12 @@ Agora que a tarde está chegando ao fim, é hora de fazer um passeio que vai te 
 
 **Dica:** Ao chegar do outro lado da ponte, em Brooklyn, vale a pena dar uma volta pelo DUMBO, um bairro charmoso e com várias opções de cafés e lojinhas.
 
-### Jantar com vista para o skyline de Manhattan
+### Jantar com vista para o skyline de Manhattan  
 Noite: Horário: 19h30 - 21h00
 
 Para finalizar o seu dia em grande estilo, nada melhor do que um jantar com uma vista espetacular de Nova York. Escolha um restaurante em Brooklyn, como o The River Café, onde você pode desfrutar de uma refeição deliciosa com o skyline de Manhattan iluminado ao fundo.
 
-### Finalizando o dia em Times Square
+### Finalizando o dia em Times Square  
 Após o jantar: Horário: 21h30 - 22h00
 
 Para dar aquele toque final ao seu dia em Nova York, que tal retornar à Times Square para ver a cidade brilhar à noite? As luzes, a energia e a vibração do lugar são ainda mais intensas quando a noite cai.
@@ -91,9 +91,13 @@ Para dar aquele toque final ao seu dia em Nova York, que tal retornar à Times S
 - Fique atento ao tempo! O clima de Nova York pode ser imprevisível, então tenha um guarda-chuva à mão.  
 - Se possível, baixe um mapa offline da cidade para se orientar sem depender de internet.
 
+<div class="bloco-link-integrado">
+  Para viajar com mais segurança e tranquilidade, garanta seu seguro viagem para os EUA com a <a href="https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&cupom=ROTEIRIZE15" target="_blank" rel="sponsored">Seguros Promo</a>.<br>
+  Use o cupom <strong>ROTEIRIZE15</strong> e ganhe desconto exclusivo.
+</div>
+
 Mesmo em apenas um dia, espero que você tenha sentido um pouco da grandiosidade e do charme eterno de Nova York. Cada momento pode ser uma lembrança marcante quando a gente viaja com o coração aberto.
 
 **Boa viagem — e que essa seja apenas a primeira de muitas paradas com a Roteirize! 💚**
-
 
 ::
