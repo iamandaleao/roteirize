@@ -29,7 +29,7 @@ Chegando em Nova York, o primeiro destino será a icônica Times Square. A regi�
 Se ainda não garantiu sua passagem, é bom aproveitar as promoções de companhias aéreas que oferecem voos diretos e confortáveis para Nova York. Isso facilita muito sua chegada.
 
 <div class="bloco-link-integrado">
-  Vai voar para Nova York? Confira as ofertas da <a href="https://www.latam.com/" target="_blank" rel="sponsored">Latam</a> e garanta sua passagem com conforto e segurança.
+  Vai voar para Nova York? Confira as ofertas da <a href="https://tidd.ly/40IhoPe" target="_blank" rel="sponsored">Latam</a> e garanta sua passagem com conforto e segurança.
 </div>
 
 À noite, que tal assistir a um espetáculo da Broadway? Escolha um show que combine com seu tempo e interesses para aproveitar essa experiência inesquecível.
@@ -59,7 +59,7 @@ Reserve o dia para o Metropolitan Museum of Art, um dos maiores e mais completos
 Para não perder tempo nas filas, recomendo comprar seus ingressos online, garantindo praticidade e segurança na entrada.
 
 <div class="bloco-link-integrado">
-  Visitar museus fica muito mais fácil com ingressos digitais da <a href="https://www.tiqets.com/" target="_blank" rel="sponsored">Tiqets</a>. Reserve online e evite filas.
+  Visitar museus fica muito mais fácil com ingressos digitais da <a href="https://www.tiqets.com/fr/" target="_blank" rel="sponsored">Tiqets</a>. Reserve online e evite filas.
 </div>
 
 Depois, caminhe pelo elegante Upper East Side, com suas mansões e charme único.
@@ -79,7 +79,7 @@ Mais tarde, passeie por Soho, bairro cheio de vida, arte e lojas descoladas.
 Para facilitar sua comunicação, mesmo longe do Brasil, é fundamental ter um chip internacional confiável.
 
 <div class="bloco-link-integrado">
-  Para se manter conectado durante toda a viagem, compre seu chip internacional com a <a href="https://www.omeuchip.com/" target="_blank" rel="sponsored">O Meu Chip</a>.
+  Para se manter conectado durante toda a viagem, compre seu chip internacional com a <a href="https://omeuchip.com/?ref=roteirize" target="_blank" rel="sponsored">O Meu Chip</a>.
 </div>
 
 ### Dia 8: Chinatown e MoMA
@@ -97,7 +97,7 @@ Depois, explore Williamsburg, bairro que respira criatividade e estilo alternati
 Se quiser mais liberdade para explorar a região, alugar um carro pode ser a melhor escolha.
 
 <div class="bloco-link-integrado">
-  Precisa de um carro para explorar melhor os arredores? Confira as opções na <a href="https://www.rentcars.com/" target="_blank" rel="sponsored">Rentcars</a> e alugue com praticidade.
+  Precisa de um carro para explorar melhor os arredores? Confira as opções na <a href="https://tidd.ly/4jpDs8M" target="_blank" rel="sponsored">Rentcars</a> e alugue com praticidade.
 </div>
 
 ### Dia 10: Central Park e Harlem
