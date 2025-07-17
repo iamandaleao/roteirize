@@ -22,13 +22,6 @@ sitemap:
 
 Viajar para Nova York é realizar um sonho. E mesmo que a cidade tenha infinitas possibilidades, com um bom roteiro de 5 dias você consegue sentir sua essência, conhecer seus pontos mais clássicos e ainda guardar momentos únicos.
 
-<div class="bloco-link-integrado">
-  Garanta seu seguro viagem para os EUA com a <a href="https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&cupom=ROTEIRIZE15" target="_blank" rel="sponsored">Seguros Promo</a>.<br>
-  Use o cupom <strong>ROTEIRIZE15</strong> e ganhe desconto exclusivo.
-</div>
-
-Como viajar para os Estados Unidos exige seguro viagem, vale garantir o seu com antecedência.
-
 Prepare o calçado mais confortável, abra espaço na memória do celular e venha comigo nessa viagem pelos cinco dias mais inesquecíveis da sua vida.
 
 ## Dia 1 – Manhattan Clássica
@@ -80,6 +73,7 @@ No final do dia, volte para Manhattan e assista a um musical na Broadway – uma
 O último dia é para relaxar, se despedir com carinho e, claro, fazer aquelas compras de última hora. Passe pela Macy’s, dê uma volta na Sephora, garimpe na Century 21 e, se tiver tempo, explore uma livraria como a Strand ou um café tranquilo no Greenwich Village.
 
 Aproveite os momentos finais para caminhar sem pressa por algum lugar que tenha tocado o seu coração nos dias anteriores. Porque a melhor lembrança de Nova York é aquela que fica na alma – e que só você vai saber contar.
+Como viajar para os Estados Unidos exige seguro viagem, vale garantir o seu com antecedência.
 
 <div class="bloco-link-integrado">
   Garanta seu seguro viagem para os EUA com a <a href="https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&cupom=ROTEIRIZE15" target="_blank" rel="sponsored">Seguros Promo</a>.<br>
