@@ -23,7 +23,7 @@ sitemap:
 
 [🔙 Voltar ao Capítulo 2](/blog/roteiros/paris-suica)
 
-## Viagem de trem rumo aos Alpes suíços
+## Capítulo 3 – Viagem de trem rumo aos Alpes suíços
 
 Entre trilhas, chuva, hospitalidade e paisagens de tirar o fôlego: nossa passagem por Lauterbrunnen e Interlaken foi breve, mas cheia de descobertas.
 
