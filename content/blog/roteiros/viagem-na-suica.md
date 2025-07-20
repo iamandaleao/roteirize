@@ -20,7 +20,8 @@ sitemap:
 ::
 
 ::post-body{:date="date"}
-## V iagem de trem rumo aos Alpes suíços
+
+## Viagem de trem rumo aos Alpes suíços
 
 Entre trilhas, chuva, hospitalidade e paisagens de tirar o fôlego: nossa passagem por Lauterbrunnen e Interlaken foi breve, mas cheia de descobertas.
 
