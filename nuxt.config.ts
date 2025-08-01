@@ -157,8 +157,8 @@ export default defineNuxtConfig({
   "/blog/uruguaiana-roteiro-5-dias/": { redirect: { to: "/blog/america-do-sul/brasil/uruguaiana/roteiros/5-dias", statusCode: 301 } },
   "/blog/uruguaiana-dicas/": { redirect: { to: "/blog/tag/dicas", statusCode: 301 } },
   "/blog/paris-transporte/": { redirect: { to: "/blog/europa/franca/paris/transporte", statusCode: 301 } },
-  "": { redirect: { to: "", statusCode: 301 } },
-  "": { redirect: { to: "", statusCode: 301 } },
+  "/blog/get-your-guide/": { redirect: { to: "/parceiros/passeios-e-tours", statusCode: 301 } },
+  
 
 
 
