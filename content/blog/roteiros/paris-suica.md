@@ -8,7 +8,7 @@ published: true
 thumbnail: "viagem-europa/paris-thum.jpg"
 title: "Da França à Suiça"
 sitemap:
-  lastmod: 2025-06-28
+  lastmod: 2025-08-01
 ---
 
 <!--escrever "region" abaixo no final quando tiver completo pra publicar os 11 post-->
@@ -63,12 +63,14 @@ E assim terminamos nosso primeiro dia de viagem pela Europa — da chegada em Pa
 
 **Espero que esse relato tenha te ajudado!** Tenho muitas dicas que normalmente as pessoas só compartilham depois de cobrar por isso. Se você sonha em conhecer esse pedaço lindo do mundo, vem comigo! Posso te ajudar a organizar tudo direitinho pra que sua única preocupação seja aproveitar cada momento. Te garanto que não vai se decepcionar.
 
-Abaixo deixo alguns registros dessa viagem. Espero que goste e, se puder, nos siga nas redes sociais — sua colaboração faz toda a diferença e me incentiva a continuar produzindo conteúdos úteis, sinceros e cheios de carinho.💚
+Abaixo deixo alguns registros dessa viagem. Espero que goste e, se puder, nos siga nas redes sociais [@roteirizeoficial](https://www.instagram.com/roteirizeoficial/) — sua colaboração faz toda a diferença e me incentiva a continuar produzindo conteúdos úteis, sinceros e cheios de carinho. 💚  
 
 ::embed-instagram{link="https://www.instagram.com/reel/DL2q2nUu6yH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="}
 ::
 
-[🔙 Ir para o Capítulo 3](/blog/roteiros/viagem-na-suica)
+Quer continuar acompanhando essa jornada? É só clicar abaixo para seguir para o próximo capítulo:
+
+[➡️ Ir para o Capítulo 3](/blog/roteiros/viagem-na-suica)
 
 ::
 
