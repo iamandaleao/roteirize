@@ -70,7 +70,7 @@ Abaixo deixo alguns registros dessa viagem. Espero que goste e, se puder, nos si
 
 Quer continuar acompanhando essa jornada? É só clicar abaixo para seguir para o próximo capítulo:
 
-[➡️ Ir para o Capítulo 3](/blog/roteiros/viagem-na-suica)
+[➔ Ir para o Capítulo 3](/blog/roteiros/viagem-na-suica)
 
 ::
 
