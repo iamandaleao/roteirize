@@ -165,6 +165,16 @@ export default defineNuxtConfig({
   "/colaborar/": { redirect: { to: "/sobre-mim", statusCode: 301 } },
   "/blog/uruguaiana-transporte/": { redirect: { to: "/blog/america-do-sul/brasil/uruguaiana/transporte", statusCode: 301 } },
   "/blog/paris-pontos-turisticos/": { redirect: { to: "/blog/tag/destinos", statusCode: 301 } },
+  "/blog/category/internacionais/page/5/": { redirect: { to: "/blog/tag/destinos", statusCode: 301 } },
+  "/blog/blog/dicas/melhor-epoca": { redirect: { to: "/blog/dicas/epoca-para-viajar", statusCode: 301 } },
+  "/blog/quando-ir-a-paris/": { redirect: { to: "/blog/europa/franca/paris/quando-ir", statusCode: 301 } },
+  "/blog/candeias-picarras": { redirect: { to: "/blog/dicas/clube-candeias", statusCode: 301 } },
+ "/blog/category/internacionais/page/2/": { redirect: { to: "/blog/tag/destinos", statusCode: 301 } },
+ "/blog/page/2/": { redirect: { to: "/", statusCode: 301 } },
+ "/blog/category/brasil/": { redirect: { to: "/blog/america-do-sul/brasil", statusCode: 301 } },
+ "/blog/dicas-experiencias-culturais-paris/": { redirect: { to: "/blog/europa/franca/paris/o-que-fazer", statusCode: 301 } },
+ "/blog/gastronomia-em-paris/": { redirect: { to: "/blog/europa/franca/paris/gastronomia", statusCode: 301 } },
+
   },
   
 
