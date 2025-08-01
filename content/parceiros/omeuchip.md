@@ -24,14 +24,16 @@ Viajar é se desconectar da rotina — mas não da internet, né? 😄
 Pensando nisso, fechamos uma parceria incrível com o **O Meu Chip**, especialista em chips internacionais que garantem conexão de qualidade em mais de 200 destinos ao redor do mundo.
 
  **Por que escolher O Meu Chip?**
-✔ Internet rápida e estável no exterior
-✔ Suporte em português antes, durante e depois da viagem
-✔ Chip entregue no Brasil, pronto para usar
+
+✔ Internet rápida e estável no exterior<br>
+✔ Suporte em português antes, durante e depois da viagem<br>
+✔ Chip entregue no Brasil, pronto para usar<br>
 ✔ Sem surpresas na fatura e sem depender de Wi-Fi público
 
 🎁 **Vantagem exclusiva para quem viaja com a Roteirize:**
 Use o cupom `ROTEIRIZE25` no site e receba **25% de desconto** na sua compra!
 É só acessar pelo link:
+
 👉 [Clique aqui e compre com a Roteirize](https://omeuchip.com/?ref=roteirize){:target="_blank"}
 
 ## 💚 Dica da Roteirize
