@@ -74,9 +74,7 @@ Ainda em Florianópolis, recebemos uma mensagem por e-mail e WhatsApp informando
 
 Chegando em Guarulhos, tivemos a confirmação do atraso do voo. A companhia aérea (LATAM) disponibilizou vouchers de alimentação, que podiam ser usados apenas em alguns restaurantes do aeroporto — o que dificultou um pouco, já que tivemos que andar bastante procurando onde era aceito.
 
-No fim, conseguimos usar todo o valor e ainda compramos bastante comida pra não "deixar o crédito lá", como dizem. Ficamos cerca de **3 horas aguardando**, o que deixou tudo ainda mais ansioso, especialmente porque esperávamos pegar o voo durante o dia pra ver a vista do avião. Mas embarcamos à noite e a paisagem não apareceu como esperávamos.
-
-Mesmo assim, estávamos felizes — afinal, essa era a nossa **primeira vez saindo do Brasil**, e o coração já estava batendo forte!
+No fim, conseguimos usar todo o valor e ainda compramos bastante comida pra não "deixar o crédito lá", como dizem. Ficamos cerca de 3 horas aguardando, o que deixou tudo ainda mais ansioso, especialmente porque esperávamos pegar o voo durante o dia pra ver a vista do avião. Mas embarcamos à noite e a paisagem não apareceu como esperávamos.
 
 Estávamos bem cansados (tínhamos acordado cedo), então decidimos não andar muito pelo aeroporto. Ficamos por lá, sentados, conversando, gravando vídeos e registrando tudo com bom humor enquanto esperávamos o embarque. Foi um começo cheio de expectativa, frio na barriga e aquela alegria de quem sabe que está prestes a viver algo que vai marcar a vida.
 
@@ -85,6 +83,13 @@ Estávamos bem cansados (tínhamos acordado cedo), então decidimos não andar m
 Essa foi a nossa preparação e partida rumo ao velho continente. No próximo capítulo, conto como foi a chegada na França: imigração, primeiras impressões, transporte, alimentação e todas as emoções do nosso primeiro contato com a Europa.
 
 Nos acompanhe — e se quiser planejar sua viagem com tranquilidade, já sabe: é aqui na Roteirize que compartilho tudo com carinho e sinceridade.
+
+Nossos primeiros passos rumo ao sonho! Um vídeo curtinho direto do aeroporto de Florianópolis até o embarque — simples, mas cheio de emoção.
+
+::embed-instagram{link="https://www.instagram.com/reel/DLdG_iluBEZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="}
+::
+
+Tem muito mais fotos e vídeos dessa viagem lá no Instagram da [@roteirizeoficial](https://www.instagram.com/roteirizeoficial/) — te espero por lá!
 
 [➔ Clique aqui para continuar lendo o Capítulo 2 – Chegada à França](https://roteirize.com.br/blog/roteiros/paris-suica)
 
