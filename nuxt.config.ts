@@ -1,23 +1,23 @@
-import { defineOrganization } from 'nuxt-schema-org/schema'
-import { defineNuxtConfig } from 'nuxt/config'
+import { defineOrganization } from "nuxt-schema-org/schema"
+import { defineNuxtConfig } from "nuxt/config"
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   colorMode: {
-    preference: 'system',
-    fallback: 'light',
-    hid: 'nuxt-color-mode-script',
-    globalName: '__NUXT_COLOR_MODE__',
-    componentName: 'ThemeToggle',
-    classPrefix: '',
-    classSuffix: '',
-    storage: 'localStorage',
-    storageKey: 'nuxt-color-mode',
+    preference: "system",
+    fallback: "light",
+    hid: "nuxt-color-mode-script",
+    globalName: "__NUXT_COLOR_MODE__",
+    componentName: "ThemeToggle",
+    classPrefix: "",
+    classSuffix: "",
+    storage: "localStorage",
+    storageKey: "nuxt-color-mode",
   },
 
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: "2024-11-01",
 
-  css: ['~/assets/css/app.css'],
+  css: ["~/assets/css/app.css"],
 
   content: {
     experimental: {
@@ -48,32 +48,31 @@ export default defineNuxtConfig({
   },
 
   hooks: {
-    'content:file:afterParse': function ({ file, content }) {
+    "content:file:afterParse": function ({ file, content }) {
       const { title, date } = content
 
       if (title && date) {
-        if (file.id.startsWith('blog')) {
+        if (file.id.startsWith("blog")) {
           content.schemaOrg = [
             {
-              '@type': 'BlogPosting',
-              'headline': title,
-              'datePublished': date,
-              'author': {
-                type: 'Person',
-                name: 'Amanda Leão',
+              "@type": "BlogPosting",
+              headline: title,
+              datePublished: date,
+              author: {
+                type: "Person",
+                name: "Amanda Leão",
               },
             },
           ]
-        }
-        else {
+        } else {
           content.schemaOrg = [
             {
-              '@type': 'WebPage',
-              'headline': title,
-              'datePublished': date,
-              'author': {
-                type: 'Person',
-                name: 'Amanda Leão',
+              "@type": "WebPage",
+              headline: title,
+              datePublished: date,
+              author: {
+                type: "Person",
+                name: "Amanda Leão",
               },
             },
           ]
@@ -83,18 +82,18 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/seo',
-    '@nuxtjs/color-mode',
-    '@nuxt/content',
-    '@nuxt/eslint',
-    '@nuxt/icon',
-    '@nuxt/image',
-    '@nuxt/fonts',
-    '@nuxthub/core',
-    'shadcn-nuxt',
-    '@stefanobartoletti/nuxt-social-share',
-    '@nuxt/scripts',
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/seo",
+    "@nuxtjs/color-mode",
+    "@nuxt/content",
+    "@nuxt/eslint",
+    "@nuxt/icon",
+    "@nuxt/image",
+    "@nuxt/fonts",
+    "@nuxthub/core",
+    "shadcn-nuxt",
+    "@stefanobartoletti/nuxt-social-share",
+    "@nuxt/scripts",
   ],
 
   nitro: {
@@ -107,66 +106,83 @@ export default defineNuxtConfig({
     },
   },
 
+
+  routeRules: {
+  "/blog/dicas/pizzaria-barra-velha-quintal606": { redirect: { to: "/blog/dicas/pizzaria-quintal606", statusCode: 301 } },
+  "/blog/blog/dicas/medidas-de-roupas-e-sapatos-nos-eua": { redirect: { to: "/blog/dicas/medidas-de-roupas-e-sapatos-nos-eua", statusCode: 301 } },
+  "/blog/dicas/melhor-epoca": { redirect: { to: "/", statusCode: 301 } },
+  "/blog/lauterbrunnen-historia/": { redirect: { to: "/blog/roteiros/viagem-na-suica", statusCode: 301 } },
+  "/blog/dicas/dicas-uruguaiana": { redirect: { to: "/blog/dicas/descubra-uruguaiana", statusCode: 301 } },
+  "/blog/dicas/itens-essenciais": { redirect: { to: "/blog/dicas/fazendo-a-mala", statusCode: 301 } },
+  "/blog/arte-e-cultura/": { redirect: { to: "/blog/america-do-sul/brasil/uruguaiana/gastronomia", statusCode: 301 } },
+  "/blog/category/parcerias/": { redirect: { to: "/parceiros/hospedagem", statusCode: 301 } },
+
+  },
+  
+  
+
+
+
   schemaOrg: {
     identity: defineOrganization({
-      name: 'Roteirize',
-      alternateName: 'Roteirize Viagens',
-      description: 'Eu cuido dos detalhes, você aproveita a jornada.',
-      url: 'https://roteirize.com.br',
-      logo: '/assets/images/logo.svg',
+      name: "Roteirize",
+      alternateName: "Roteirize Viagens",
+      description: "Eu cuido dos detalhes, você aproveita a jornada.",
+      url: "https://roteirize.com.br",
+      logo: "/assets/images/logo.svg",
 
       address: {
-        '@type': 'PostalAddress',
-        'streetAddress': 'Rua Dom Duarte, 363, casa 02',
-        'addressLocality': 'Quinta dos Açorianos',
-        'addressRegion': 'SC',
-        'postalCode': '88390000',
-        'addressCountry': 'BR',
+        "@type": "PostalAddress",
+        streetAddress: "Rua Dom Duarte, 363, casa 02",
+        addressLocality: "Quinta dos Açorianos",
+        addressRegion: "SC",
+        postalCode: "88390000",
+        addressCountry: "BR",
       },
 
-      email: 'admroteirize@gmail.com',
-      telephone: '+5547933814178',
+      email: "admroteirize@gmail.com",
+      telephone: "+5547933814178",
       contactPoint: {
-        '@type': 'ContactPoint',
-        'telephone': '+5547933814178',
-        'email': 'admroteirize@gmail.com',
+        "@type": "ContactPoint",
+        telephone: "+5547933814178",
+        email: "admroteirize@gmail.com",
       },
 
-      foundingDate: '2024-11-01',
+      foundingDate: "2024-11-01",
       numberOfEmployees: {
-        '@type': 'QuantitativeValue',
-        'minValue': 1,
-        'maxValue': 1,
+        "@type": "QuantitativeValue",
+        minValue: 1,
+        maxValue: 1,
       },
 
       sameAs: [
-        'https://www.instagram.com/roteirizeoficial',
-        'https://www.facebook.com/roteirizeoficial',
-        'https://www.youtube.com/@roteirizeoficial',
-        'https://www.tiktok.com/@roteirizeoficial',
-        'https://api.whatsapp.com/send?phone=5547933814178',
+        "https://www.instagram.com/roteirizeoficial",
+        "https://www.facebook.com/roteirizeoficial",
+        "https://www.youtube.com/@roteirizeoficial",
+        "https://www.tiktok.com/@roteirizeoficial",
+        "https://api.whatsapp.com/send?phone=5547933814178",
       ],
     }),
   },
 
   site: {
-    url: 'https://roteirize.com.br',
-    name: 'Roteirize',
-    description: 'Eu cuido dos detalhes, você aproveita a jornada.',
-    defaultLocale: 'pt-BR',
+    url: "https://roteirize.com.br",
+    name: "Roteirize",
+    description: "Eu cuido dos detalhes, você aproveita a jornada.",
+    defaultLocale: "pt-BR",
   },
 
   shadcn: {
-    prefix: '',
-    componentDir: './app/components/ui',
+    prefix: "",
+    componentDir: "./app/components/ui",
   },
 
   socialShare: {
-    baseUrl: 'https://roteirize.com.br',
+    baseUrl: "https://roteirize.com.br",
   },
 
   tailwindcss: {
-    cssPath: '~/app/assets/css/app.css',
+    cssPath: "~/app/assets/css/app.css",
     config: {},
     viewer: false,
     exposeConfig: false,
@@ -178,14 +194,14 @@ export default defineNuxtConfig({
     },
     optimizeDeps: {
       include: [
-        'vaul-vue',
-        'reka-ui',
-        'clsx',
-        'tailwind-merge',
-        '@vueuse/core',
-        'embla-carousel-vue',
-        'lucide-vue-next',
-        'class-variance-authority',
+        "vaul-vue",
+        "reka-ui",
+        "clsx",
+        "tailwind-merge",
+        "@vueuse/core",
+        "embla-carousel-vue",
+        "lucide-vue-next",
+        "class-variance-authority",
       ],
     },
   },
