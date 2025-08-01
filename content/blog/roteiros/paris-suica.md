@@ -65,7 +65,7 @@ E assim terminamos nosso primeiro dia de viagem pela Europa — da chegada em Pa
 
 Abaixo deixo alguns registros dessa viagem. Espero que goste e, se puder, nos siga nas redes sociais — sua colaboração faz toda a diferença e me incentiva a continuar produzindo conteúdos úteis, sinceros e cheios de carinho.💚
 
-::embed-instagram{link="https://www.instagram.com/p/DLdG_iluBEZ/"}
+::embed-instagram{link="https://www.instagram.com/reel/DL2q2nUu6yH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="}
 
 [🔙 Ir para o Capítulo 3](/blog/roteiros/viagem-na-suica)
 
