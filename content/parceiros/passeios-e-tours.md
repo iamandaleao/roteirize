@@ -33,7 +33,7 @@ A **Tiqets** é a escolha ideal para quem quer praticidade na hora de visitar mu
 
 ## 💚 Dica da Roteirize
 
-Comprando seus ingressos com antecedência, você economiza tempo, evita filas e ainda garante tranquilidade para curtir a viagem. Ah, e usando nossos links parceiros, você apoia nosso trabalho — sem pagar nada a mais por isso.
+Comprando seus ingressos com antecedência, você economiza tempo, evita filas e ainda garante tranquilidade para curtir a viagem. Ah, e usando nossos links parceiros, você apoia o meu trabalho — sem pagar nada a mais por isso.
 
 Viajar bem também é planejar com carinho. Boa aventura e aproveite cada passeio!
 
