@@ -158,15 +158,15 @@ export default defineNuxtConfig({
   "/blog/uruguaiana-dicas/": { redirect: { to: "/blog/tag/dicas", statusCode: 301 } },
   "/blog/paris-transporte/": { redirect: { to: "/blog/europa/franca/paris/transporte", statusCode: 301 } },
   "/blog/get-your-guide/": { redirect: { to: "/parceiros/passeios-e-tours", statusCode: 301 } },
-  
-
-
-
+  "/blog/uruguaiana-historia/": { redirect: { to: "/blog/america-do-sul/brasil/uruguaiana/historia", statusCode: 301 } },
+  "/sobre": { redirect: { to: "/sobre-mim", statusCode: 301 } },
+  "/blog/passaporte-visto-e-imigracao/": { redirect: { to: "/blog/dicas/sobre-passaporte", statusCode: 301 } },
+  "/blog/category/minhas-experiencias/": { redirect: { to: "/blog/dicas/chale-ararangua", statusCode: 301 } },
+  "/colaborar/": { redirect: { to: "/sobre-mim", statusCode: 301 } },
+  "/blog/uruguaiana-transporte/": { redirect: { to: "/blog/america-do-sul/brasil/uruguaiana/transporte", statusCode: 301 } },
+  "/blog/paris-pontos-turisticos/": { redirect: { to: "/blog/tag/destinos", statusCode: 301 } },
   },
   
-  
-
-
 
   schemaOrg: {
     identity: defineOrganization({
