@@ -116,7 +116,16 @@ export default defineNuxtConfig({
   "/blog/dicas/itens-essenciais": { redirect: { to: "/blog/dicas/fazendo-a-mala", statusCode: 301 } },
   "/blog/arte-e-cultura/": { redirect: { to: "/blog/america-do-sul/brasil/uruguaiana/gastronomia", statusCode: 301 } },
   "/blog/category/parcerias/": { redirect: { to: "/parceiros/hospedagem", statusCode: 301 } },
-
+  "/blog/candeias-picarras/": { redirect: { to: "/blog/dicas/clube-candeias", statusCode: 301 } },
+  "/blog/fazendo-as-malas-ny/?share=x&nb=1": { redirect: { to: "/blog/dicas/bagagem-essencial", statusCode: 301 } },
+  "/blog/category/minhas-experiencies/": { redirect: { to: "/blog/dicas/descubra-itajai", statusCode: 301 } },
+  "/blog/paris-turismo/": { redirect: { to: "/blog/dicas/visto-americano", statusCode: 301 } },
+  "/blog/roteiro-economico/?share=linkedin&nb=1": { redirect: { to: "https://api.whatsapp.com/send?phone=5547933814178", statusCode: 301 } },
+  "/blog/passagens-baratas/?share=telegram&nb=1": { redirect: { to: "/blog/dicas/passagens-aereas", statusCode: 301 } },
+  "/blog/fazendo-as-malas-ny/?share=telegram&nb=1": { redirect: { to: "/blog/dicas/fazendo-a-mala", statusCode: 301 } },
+  "/blog/dicas-para-aproveitar-ao-maximo-sua-viagem-a-paris/": { redirect: { to: "/blog/dicas/descubra-paris", statusCode: 301 } },
+  "/blog/seguros-promo/?share=jetpack-whatsapp&nb=1": { redirect: { to: "/parceiros/seguros", statusCode: 301 } },
+  "/blog/dicas/camboriu": { redirect: { to: "/blog/dicas/chale-camboriu", statusCode: 301 } },
   },
   
   
