@@ -174,6 +174,7 @@ export default defineNuxtConfig({
  "/blog/category/brasil/": { redirect: { to: "/blog/america-do-sul/brasil", statusCode: 301 } },
  "/blog/dicas-experiencias-culturais-paris/": { redirect: { to: "/blog/europa/franca/paris/o-que-fazer", statusCode: 301 } },
  "/blog/gastronomia-em-paris/": { redirect: { to: "/blog/europa/franca/paris/gastronomia", statusCode: 301 } },
+ "/blog/experiencia-lagoa-da-serra/": { redirect: { to: "/blog/dicas/chale-ararangua", statusCode: 301 } },
 
   },
   
