@@ -126,6 +126,12 @@ export default defineNuxtConfig({
   "/blog/dicas-para-aproveitar-ao-maximo-sua-viagem-a-paris/": { redirect: { to: "/blog/dicas/descubra-paris", statusCode: 301 } },
   "/blog/seguros-promo/?share=jetpack-whatsapp&nb=1": { redirect: { to: "/parceiros/seguros", statusCode: 301 } },
   "/blog/dicas/camboriu": { redirect: { to: "/blog/dicas/chale-camboriu", statusCode: 301 } },
+  "/blog/passagens-baratas/?share=linkedin&nb=1": { redirect: { to: "/blog/america-do-sul", statusCode: 301 } },
+  "/blog/unidas-aluguel-de-carros/": { redirect: { to: "/parceiros/passeios-e-tours", statusCode: 301 } },
+  "/blog/paris-gastronomia/": { redirect: { to: "/blog/europa/franca/paris/gastronomia", statusCode: 301 } },
+  "/peca-seu-roteiro/": { redirect: { to: "/roteiros", statusCode: 301 } },
+  "/blog/uruguaiana-gastronomia/?share=twitter&nb=1": { redirect: { to: "/blog/america-do-sul/brasil/uruguaiana/gastronomia", statusCode: 301 } },
+
   },
   
   
