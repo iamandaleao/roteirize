@@ -2,7 +2,7 @@
 
 ## Setup
 
-Make sure to install dependencies:
+Make sure to install dependencies
 
 ```bash
 pnpm i
