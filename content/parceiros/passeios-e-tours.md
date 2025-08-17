@@ -23,11 +23,11 @@ Seus ingressos nas mãos antes mesmo de viajar
 
 A **Tiqets** é a escolha ideal para quem quer praticidade na hora de visitar museus, monumentos e atrações famosas em todo o mundo — tudo digital e sem complicações.
 
-🏛️ Com a Tiqets você tem:
-✔ Ingressos digitais direto no celular
-✔ Entrada rápida e sem filas
-✔ Confirmação instantânea e cancelamento gratuito em muitos casos
-✔ Um jeito simples e seguro de planejar seus dias de viagem
+🏛️ Com a Tiqets você tem:<br>
+✔ Ingressos digitais direto no celular<br>
+✔ Entrada rápida e sem filas<br>
+✔ Confirmação instantânea e cancelamento gratuito em muitos casos<br>
+✔ Um jeito simples e seguro de planejar seus dias de viagem<br>
 
 👉 [Garanta seus ingressos com a Roteirize pela Tiqets](https://www.tiqets.com/fr/){:target="_blank"}
 
