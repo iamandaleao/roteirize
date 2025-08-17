@@ -1,11 +1,11 @@
 ---
 region: ""
-cover: "viagem-europa/suic.jpg"
+cover: "viagem-europa/lauterbrunnen.jpg"
 date: 2025-07-20
 description: "Paisagens e momentos marcantes na Suíça."
 tags: ["roteiros"]
 published: true
-thumbnail: "viagem-europa/suic.jpg"
+thumbnail: "viagem-europa/lauterbrunnen.jpg"
 title: "Lauterbrunnen e Interlaken"
 sitemap:
   lastmod: 2025-08-16
@@ -68,4 +68,6 @@ Aliás, o café da manhã do Chalet Rosa foi uma das coisas que mais gostamos. M
 Mesmo com a chuva, foi uma experiência linda. Se tivéssemos mais tempo, certamente exploraríamos ainda mais a região. Mas, como o plano era passar apenas dois dias na Suíça, não conseguimos fazer tudo o que queríamos. Ainda assim, vivemos momentos inesquecíveis em **Lauterbrunnen** e **Interlaken**.
 
 Agora te convido a seguir comigo para os próximos capítulos, saindo da Suíça e seguindo rumo à **Itália**. Em breve conto tudo sobre nossa passagem por Bellagio, Milão, Roma e as praias inesquecíveis da Sardenha — onde ficamos em Alghero e Cagliari.
+
+[➔ Ir para o Capítulo 4](/blog/roteiros/suica-italia-bellagio)
 ::
