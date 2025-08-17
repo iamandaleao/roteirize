@@ -8,10 +8,8 @@ published: true
 thumbnail: "viagem-europa/lauterbrunnen.jpg"
 title: "Lauterbrunnen e Interlaken"
 sitemap:
-  lastmod: 2025-08-16
+  lastmod: 2025-08-17
 ---
-
-<!--escrever "region" abaixo no final quando tiver completo pra publicar os 11 post-->
 
 ::post-hero{:title="title" :description="description" :cover="cover" :region=""}
 ::
