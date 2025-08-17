@@ -8,7 +8,7 @@ published: true
 thumbnail: "viagem-europa/suic.jpg"
 title: "Lauterbrunnen e Interlaken"
 sitemap:
-  lastmod: 2025-07-20
+  lastmod: 2025-08-16
 ---
 
 <!--escrever "region" abaixo no final quando tiver completo pra publicar os 11 post-->
@@ -61,7 +61,7 @@ Aproveitei a conversa e também perguntei sobre o toalheiro térmico, porque eu 
 
 No dia seguinte, como combinado, o café da manhã estava nos esperando. Tudo muito bem arrumado, numa sacolinha preparada com cuidado. Ela havia perguntado na véspera o que gostaríamos de levar — e, como tudo o que foi combinado, estava ali, exatamente como pedimos. Foi uma surpresa muito boa!
 
-Agradeço de coração pela atenção, carinho e gentileza com que fomos recebidos. Esses gestos fazem toda a diferença numa viagem — e é por isso que faço questão de recomendar o **Chalet Rosa** com tanto entusiasmo.
+Agradeço de coração pela atenção, carinho e gentileza com que fomos recebidos. Esses gestos fazem toda a diferença numa viagem — e é por isso que faço questão de recomendar o [Chalet Rosa no Booking](https://tidd.ly/3CiSyfw) com tanto entusiasmo.
 
 Aliás, o café da manhã do Chalet Rosa foi uma das coisas que mais gostamos. Muito bem preparado, com várias opções saudáveis: iogurtes, frutas, cereais... tudo fresquinho e saboroso. E o quarto? Super aconchegante. Não sentimos aquele frio intenso que imaginávamos da Suíça — pelo contrário, estava tudo muito bem aquecido e acolhedor.
 
