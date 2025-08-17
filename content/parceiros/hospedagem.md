@@ -4,7 +4,7 @@ description: "Hospedagem com qualidade e confiança"
 date: 2025-05-11
 cover: /dicas/parceiros.jpg
 sitemap:
-  lastmod: 2025-05-11
+  lastmod: 2025-08-16
 schemaOrg:
   - "@type": "WebPage"
     headline: "hospedagem"
