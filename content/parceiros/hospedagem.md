@@ -21,19 +21,16 @@ schemaOrg:
 ## Booking.com + Roteirize
 A hospedagem ideal para o seu roteiro!
 
-Nada como viajar com tudo organizado — e escolher onde se hospedar faz toda a diferença na experiência. Pensando nisso, a Roteirize é parceira oficial da **Booking**, uma das maiores plataformas do mundo para reservas de hospedagens confiáveis e com excelente custo-benefício.
+Nada como viajar com tudo organizado — e escolher onde se hospedar faz toda a diferença na experiência. Pensando nisso, a Roteirize é parceira oficial do **Booking**, uma das maiores plataformas do mundo para reservas de hospedagens confiáveis e com excelente custo-benefício.
 
-**Por que reservar pela Booking com a Roteirize?**<br>
+**Por que reservar pelo Booking com a Roteirize?**<br>
 
 ✔ Acomodações em todos os estilos e faixas de preço<br>
 ✔ Cancelamento gratuito em milhares de opções<br>
 ✔ Avaliações reais de outros viajantes<br>
 ✔ Plataforma segura, prática e em português<br>
 
-Apoie o trabalho da Roteirize reservando por esse [link parceiro](https://tidd.ly/3CiSyfw){:target="_blank"}
-clique para reservar sua hospedagem com a Roteirize na Booking.
-
-💡 Quanto antes você reservar, melhores os preços e as opções! E com a flexibilidade da Booking, você pode ajustar seus planos se precisar.
+Apoie o trabalho da Roteirize reservando por esse [link parceiro.](https://tidd.ly/3CiSyfw){:target="_blank"} Quanto antes você reservar, melhores os preços e as opções! E com a flexibilidade do Booking, você pode ajustar seus planos se precisar.
 
 ## Vai de Promo (Hotéis) + Roteirize
 Hospedagem com bom preço e confiança
