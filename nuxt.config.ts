@@ -94,7 +94,12 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@stefanobartoletti/nuxt-social-share',
     '@nuxt/scripts',
+    'nuxt-gtag',
   ],
+
+  gtag: {
+    id: 'G-J9DZFJTJ6P',
+  },
 
   nitro: {
     compressPublicAssets: {
