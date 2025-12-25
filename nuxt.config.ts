@@ -98,7 +98,7 @@ export default defineNuxtConfig({
   ],
 
   gtag: {
-    id: 'G-J9DZFJTJ6P',
+    id: 'G-4P0916JT9C',
   },
 
   nitro: {
