@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode',
   },
 
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: '2025-01-15',
 
   css: ['~/assets/css/app.css'],
 
@@ -91,7 +91,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/fonts',
-    '@nuxthub/core',
     'shadcn-nuxt',
     '@stefanobartoletti/nuxt-social-share',
     '@nuxt/scripts',
