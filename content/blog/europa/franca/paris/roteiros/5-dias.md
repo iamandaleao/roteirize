@@ -1,10 +1,10 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-02-18
 description: "Paris com mais profundidade"
 tags: ["roteiros"]
-thumbnail: paris/paris-roteiro-5-dias.jpg
+thumbnail: paris/paris-roteiro-5-dias.webp
 title: "Paris: Roteiro 5 dias"
 sitemap:
   lastmod: 2025-02-18

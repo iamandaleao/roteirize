@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
   <div class="flex justify-center">
-    <NuxtLink :to="href" target="_blank">
+    <NuxtLink :to="href" target="_blank" rel="noopener noreferrer">
       <RainbowButton>
         {{ text }}
       </RainbowButton>

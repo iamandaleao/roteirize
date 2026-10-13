@@ -10,6 +10,7 @@ const tag = route.path.split('/')[3] ?? ''
 const { data: paginatedData } = await useAsyncData(`tag-${tag}`, async () => {
   const [posts, count] = await Promise.all([
     queryCollection('blog')
+      .where('published', '=', true)
       .where('date', '<', useToday())
       .where('tags', 'LIKE', `%${tag}%`)
       .order('date', 'DESC')
@@ -17,6 +18,7 @@ const { data: paginatedData } = await useAsyncData(`tag-${tag}`, async () => {
       .limit(postsPerPage)
       .all(),
     queryCollection('blog')
+      .where('published', '=', true)
       .where('date', '<', useToday())
       .where('tags', 'LIKE', `%${tag}%`)
       .count(),
@@ -36,9 +38,12 @@ async function goToPage(newPage: number) {
   await router.push({ query: { page: newPage === 1 ? undefined : newPage } })
 }
 
+const tagTitle = computed(() => tags[tag] ?? 'Viagem')
+
 useSeoMeta({
-  title: 'Blog',
-  description: 'Eu cuido dos detalhes, você aproveita a jornada.',
+  title: () => `${tagTitle.value}: dicas e roteiros de viagem`,
+  description: () => `Confira artigos de ${tagTitle.value.toLocaleLowerCase()} com dicas de viagem, destinos e planejamento no blog da Roteirize.`,
+  ogType: 'website',
 })
 </script>
 

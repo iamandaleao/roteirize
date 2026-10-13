@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-04
 description: "Tradição, cultura e belas paisagens"
 tags: ["passeios"]
-thumbnail: uruguaiana/o-que-fazer.jpg
+thumbnail: uruguaiana/o-que-fazer.webp
 title: "Uruguaiana: O que fazer"
 sitemap:
   lastmod: 2025-06-04

@@ -1,9 +1,9 @@
 ---
-cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
+cover: "hero/capa-dicas-hero-bg.webp" # imagem de capa
 date: 2024-12-03 # Data de publicação do post
 tags: ["dicas"]
 description: "Chalé, Piscina e Muito Verde."
-thumbnail: "dicas/camboriu-thum.jpg" #imagem pequena
+thumbnail: "dicas/camboriu-thum.webp" #imagem pequena
 title: "Fim de Semana em Camboriú"
 sitemap:
   lastmod: 2025-06-28 # Data da última modificação
@@ -17,7 +17,6 @@ sitemap:
 
 ::post-body{:date="date"}
 
-
 Sabe aquela vontade de fugir da correria da cidade e se conectar com o verde? Pois é, foi exatamente isso que me motivou a planejar um final de semana em Camboriú, SC. Escolhi um lugar que unisse um visual encantador com valores acessíveis e, claro, um toque de conforto. Foi assim que, no dia 27/02/2023, embarquei nessa aventura super especial.
 
 Como lá não oferecia café da manhã incluso, resolvi me organizar antes da viagem. Encontrei pelo Facebook algumas pessoas que vendiam marmitas congeladas e levei o suficiente para o almoço e jantar. Para o café da manhã, preparei sanduíches, e é claro que o chimarrão também veio na bagagem – afinal, não pode faltar, né?
@@ -28,14 +27,6 @@ A piscina foi um dos nossos cantinhos preferidos, e o melhor de tudo: parecia se
 
 Ah, mas é claro que nem tudo são flores! Os mosquitos resolveram dar as caras, então, fica aqui minha dica: não esqueça o repelente! Apesar disso, o passeio foi perfeito para recarregar as energias e sair do ritmo acelerado da cidade.
 
-
-
 Esse lugar é um verdadeiro refúgio, e eu recomendo de olhos fechados para quem busca tranquilidade e contato com a natureza. A vista da piscina era simplesmente surreal de tão linda! E, apesar de amar tirar fotos, confesso que dessa vez preferi aproveitar o momento. Claro que não resisti e registrei algumas imagens, que vou compartilhar logo abaixo para você ter uma ideia do quanto foi especial.
 
-Ah, e se quiser ver mais sobre essa experiência, gravei um vídeo para mostrar um pouco desse paraíso. [Clique aqui para assistir!](https://www.youtube.com/shorts/v0tFMXYzh2k){:target="_blank"}  
-
 Se você também está precisando de um tempo para relaxar e se reconectar, esse destino é uma ótima pedida. 💚
-
-
-::embed-instagram{link="https://www.instagram.com/p/DF86Ke2O2BT/?img_index=12"}
-::

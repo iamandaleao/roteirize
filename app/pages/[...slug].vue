@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const route = useRoute()
+const { pathForLocale } = useLocale()
 
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('page').path(route.path).first()
@@ -16,7 +17,20 @@ definePageMeta({
 })
 
 useHead(page.value.head || {})
-useSeoMeta(page.value.seo || {})
+useHead({
+  link: [
+    { rel: 'canonical', href: `https://roteirize.com.br${route.path}` },
+    { rel: 'alternate', hreflang: 'pt-BR', href: `https://roteirize.com.br${route.path}` },
+    ...(pathForLocale(route.path, 'en') !== '/en'
+      ? [{ rel: 'alternate', hreflang: 'en', href: `https://roteirize.com.br${pathForLocale(route.path, 'en')}` }]
+      : []),
+  ],
+})
+useSeoMeta({
+  ...page.value.seo,
+  ogImage: page.value.cover ? `https://roteirize.com.br/assets/images/${page.value.cover}` : undefined,
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>

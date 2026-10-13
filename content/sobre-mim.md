@@ -2,7 +2,7 @@
 title: Sobre
 description: "Com carinho e dedicação, estou aqui para tornar a sua viagem mais especial"
 date: 2025-02-18
-cover: sobre.jpeg
+cover: sobre.webp
 sitemap:
   lastmod: 2025-02-18
 schemaOrg:

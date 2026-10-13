@@ -43,7 +43,7 @@ const posts = {
       name: 'Paris: Como Chegar',
       description: 'Chegando com praticidade e estilo!',
       href: '/blog/europa/franca/paris/como-chegar',
-      image: '/assets/images/paris/como-chegar.jpg',
+      image: '/assets/images/paris/como-chegar.webp',
       cta: 'Ler mais',
       class: 'lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3',
     },
@@ -51,7 +51,7 @@ const posts = {
       name: 'Paris: Quando ir',
       description: 'A melhor época para visitar a Cidade Luz',
       href: '/blog/europa/franca/paris/quando-ir',
-      image: '/assets/images/paris/quando-ir.jpg',
+      image: '/assets/images/paris/quando-ir.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3',
     },
@@ -59,7 +59,7 @@ const posts = {
       name: 'Paris: Gastronomia',
       description: 'Um Banquete para os Sentidos',
       href: '/blog/europa/franca/paris/gastronomia',
-      image: '/assets/images/paris/gastronomia.jpg',
+      image: '/assets/images/paris/gastronomia.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
     },
@@ -67,7 +67,7 @@ const posts = {
       name: 'Paris: Compras',
       description: 'Aproveitando sem Gastar Muito',
       href: '/blog/europa/franca/paris/compras',
-      image: '/assets/images/paris/compras.jpg',
+      image: '/assets/images/paris/compras.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2',
     },
@@ -75,7 +75,7 @@ const posts = {
       name: 'Paris: Onde Ficar',
       description: 'Principais Bairros para se Hospedar',
       href: '/blog/europa/franca/paris/onde-ficar',
-      image: '/assets/images/paris/hospedagem.jpg',
+      image: '/assets/images/paris/hospedagem.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4',
     },
@@ -85,7 +85,7 @@ const posts = {
       name: 'Uruguaiana: Gastronomia',
       description: 'Sabores autênticos da fronteira',
       href: '/blog/america-do-sul/brasil/uruguaiana/gastronomia',
-      image: '/assets/images/uruguaiana/gastronomia.jpg',
+      image: '/assets/images/uruguaiana/gastronomia.webp',
       cta: 'Ler mais',
       class: 'lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3',
     },
@@ -93,7 +93,7 @@ const posts = {
       name: 'Uruguaiana: Onde Ficar',
       description: 'Conforto e descanso garantidos',
       href: '/blog/america-do-sul/brasil/uruguaiana/onde-ficar',
-      image: '/assets/images/uruguaiana/hospedagem.jpg',
+      image: '/assets/images/uruguaiana/hospedagem.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3',
     },
@@ -101,7 +101,7 @@ const posts = {
       name: 'Uruguaiana: História',
       description: 'História viva na fronteira gaúcha',
       href: '/blog/america-do-sul/brasil/uruguaiana/historia',
-      image: '/assets/images/uruguaiana/historia.jpg',
+      image: '/assets/images/uruguaiana/historia.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
     },
@@ -109,7 +109,7 @@ const posts = {
       name: 'Uruguaiana: Passagens',
       description: 'Seu próximo destino começa aqui.',
       href: '/blog/america-do-sul/brasil/uruguaiana/passagens',
-      image: '/assets/images/uruguaiana/passagens.jpg',
+      image: '/assets/images/uruguaiana/passagens.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2',
     },
@@ -117,7 +117,7 @@ const posts = {
       name: 'Uruguaiana: Compras',
       description: 'Moda com alma gaúcha.',
       href: '/blog/america-do-sul/brasil/uruguaiana/compras',
-      image: '/assets/images/uruguaiana/compras.jpg',
+      image: '/assets/images/uruguaiana/compras.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4',
     },
@@ -127,7 +127,7 @@ const posts = {
       name: 'Nova York: O que fazer',
       description: 'Atividades para todos os estilos',
       href: '/blog/america-do-norte/eua/nova-york/o-que-fazer',
-      image: '/assets/images/nyc/o-que-fazer.jpg',
+      image: '/assets/images/nyc/o-que-fazer.webp',
       cta: 'Ler mais',
       class: 'lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3',
     },
@@ -135,7 +135,7 @@ const posts = {
       name: 'New York',
       description: 'Intensa, icônica, inesquecível',
       href: '/blog/america-do-norte/eua/nova-york',
-      image: '/assets/images/nyc/home.jpg',
+      image: '/assets/images/nyc/home.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3',
     },
@@ -143,7 +143,7 @@ const posts = {
       name: 'Nova York: Onde ficar',
       description: 'Melhores bairros para se hospedar',
       href: '/blog/america-do-norte/eua/nova-york/onde-ficar',
-      image: '/assets/images/nyc/hospedagem.jpg',
+      image: '/assets/images/nyc/hospedagem.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
     },
@@ -151,7 +151,7 @@ const posts = {
       name: 'Nova York: Quando ir',
       description: 'Melhor Época NYC',
       href: '/blog/america-do-norte/eua/nova-york/quando-ir',
-      image: '/assets/images/nyc/quando-ir.jpg',
+      image: '/assets/images/nyc/quando-ir.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2',
     },
@@ -159,7 +159,7 @@ const posts = {
       name: 'Nova York: Passagens',
       description: 'Voe com facilidade',
       href: '/blog/america-do-norte/eua/nova-york/passagens',
-      image: '/assets/images/nyc/passagem.jpg',
+      image: '/assets/images/nyc/passagem.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4',
     },
@@ -169,7 +169,7 @@ const posts = {
       name: 'Paris',
       description: 'A Cidade dos Sonhos e Descobertas',
       href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      image: '/assets/images/paris/paris-home.webp',
       cta: 'Ler mais',
       class: 'lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3',
     },
@@ -177,7 +177,7 @@ const posts = {
       name: 'Paris',
       description: 'A Cidade dos Sonhos e Descobertas',
       href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      image: '/assets/images/paris/paris-home.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3',
     },
@@ -185,7 +185,7 @@ const posts = {
       name: 'Paris',
       description: 'A Cidade dos Sonhos e Descobertas',
       href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      image: '/assets/images/paris/paris-home.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4',
     },
@@ -193,7 +193,7 @@ const posts = {
       name: 'Paris',
       description: 'A Cidade dos Sonhos e Descobertas',
       href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      image: '/assets/images/paris/paris-home.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2',
     },
@@ -201,7 +201,7 @@ const posts = {
       name: 'Paris',
       description: 'A Cidade dos Sonhos e Descobertas',
       href: '/blog/europa/franca/paris',
-      image: '/assets/images/paris/paris-home.jpg',
+      image: '/assets/images/paris/paris-home.webp',
       cta: 'Ler mais',
       class: 'lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4',
     },
@@ -245,9 +245,16 @@ watch(isVisible, (newValue) => {
             :class="feature.class"
           >
             <template v-if="feature.image" #background>
-              <div
-                class="absolute right-0 top-0 size-full bg-cover bg-center opacity-40 transition ease-in-out group-hover:opacity-20"
-                :style="`background-image: url('${feature.image}')`"
+              <NuxtImg
+                :src="feature.image"
+                :srcset="useResponsiveImage(feature.image)"
+                :alt="''"
+                width="1280"
+                height="720"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                loading="lazy"
+                decoding="async"
+                class="absolute right-0 top-0 size-full object-cover object-center opacity-40 transition ease-in-out group-hover:opacity-20"
               />
             </template>
           </BentoGridCard>

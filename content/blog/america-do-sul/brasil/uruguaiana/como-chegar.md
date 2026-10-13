@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-04
 description: "Rota para sua viagem"
 tags: ["desembarque"]
-thumbnail: uruguaiana/como-chegar.jpg
+thumbnail: uruguaiana/como-chegar.webp
 title: "Uruguaiana: Como chegar"
 sitemap:
   lastmod: 2025-06-04

@@ -1,9 +1,9 @@
 ---
-cover: "hero/capa-dicas-hero-bg.jpg"  # imagem de capa
+cover: "hero/capa-dicas-hero-bg.webp"  # imagem de capa
 date: 2025-04-21  # Data de publicação do post
 tags: ["dicas"]
 description: "Saiba o que fazer se seu voo der problema."
-thumbnail: "dicas/voo-cancelado-thum.png"  #imagem pequena
+thumbnail: "dicas/voo-cancelado-thum.webp"  #imagem pequena
 title: "Voo cancelado"
 sitemap:
   lastmod: 2025-04-21  # Data da última modificação

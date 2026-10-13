@@ -1,10 +1,10 @@
 ---
 region: paris
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-02-18
 description: "Praticidade Para Sua Viagem"
 tags: ["roteiros"]
-thumbnail: paris/roteiro-home.jpg
+thumbnail: paris/roteiro-home.webp
 title: "Paris: Roteiros"
 sitemap:
   lastmod: 2025-02-18
@@ -26,7 +26,7 @@ Escolha entre roteiros prontos ou peça o seu roteiro personalizado, feito sob m
   :::post-card-group
     ::::post-card
     ---
-    thumbnail: "paris/paris-roteiro-1-dia.jpg"
+    thumbnail: "paris/paris-roteiro-1-dia.webp"
     title: "Paris: Roteiro de 1 dia"
     to: "/blog/europa/franca/paris/roteiros/1-dia"
     description: "Você tem pouco tempo? Veja o essencial para curtir Paris em 24h."
@@ -36,7 +36,7 @@ Escolha entre roteiros prontos ou peça o seu roteiro personalizado, feito sob m
 
     ::::post-card
     ---
-    thumbnail: "paris/paris-roteiro-5-dias.jpg"
+    thumbnail: "paris/paris-roteiro-5-dias.webp"
     title: "Paris: Roteiro de 5 dias"
     to: "/blog/europa/franca/paris/roteiros/5-dias"
     description: "Ideal para quem quer conhecer Paris com calma e profundidade."
@@ -46,7 +46,7 @@ Escolha entre roteiros prontos ou peça o seu roteiro personalizado, feito sob m
 
     ::::post-card
     ---
-    thumbnail: "paris/paris-roteiro-10-dias.jpg"
+    thumbnail: "paris/paris-roteiro-10-dias.webp"
     title: "Paris: Roteiro de 10 dias"
     to: "/blog/europa/franca/paris/roteiros/10-dias"
     description: "Conheça Paris além do básico com esse roteiro completo."

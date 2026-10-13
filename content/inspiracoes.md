@@ -1,8 +1,8 @@
 ---
 title: Inspirações
-description: "Descrição"
+description: "Inspire-se com roteiros, dicas práticas e guias de destinos para planejar viagens pelo Brasil e pelo mundo."
 date: 2025-02-18
-cover: hero/inspiracoes-hero-bg.jpg
+cover: hero/inspiracoes-hero-bg.webp
 sitemap:
   lastmod: 2025-02-18
 ---
@@ -10,33 +10,25 @@ sitemap:
 ::page-hero{:title="title" :description="description" :cover="cover"}
 ---
 menu:
-  - name: "História"
+  - name: "Destinos"
     icon: "ph:globe-hemisphere-east"
+    href: "/blog/tag/destinos"
+  - name: "Roteiros"
+    icon: "ph:map-trifold"
+    href: "/blog/tag/roteiros"
+  - name: "Dicas de viagem"
+    icon: "ph:lightbulb"
+    href: "/blog/tag/dicas"
+  - name: "História"
+    icon: "ph:book-open-text"
     href: "/blog/tag/historia"
-  - name: "Natureza"
-    icon: "ph:tree"
-    href: "/blog/tag/natureza"
-  - name: "Praias"
-    icon: "ph:island"
-    href: "/blog/tag/praias"
-  - name: "Românticos"
-    icon: "ph:heart"
-    href: "/blog/tag/romanticos"
-  - name: "Cruzeiros"
-    icon: "ph:boat"
-    href: "/blog/tag/cruzeiros"
-  - name: "Jardins"
-    icon: "ph:flower-tulip"
-    href: "/blog/tag/jardins"
-  - name: "Parques"
-    icon: "ph:person-simple-swim"
-    href: "/blog/tag/parques"
-  - name: "Águas termais"
-    icon: "ph:thermometer-hot"
-    href: "/blog/tag/termais"
 ---
 ::
 
 ::page-body
-texto aqui
+## Ideias para planejar sua próxima viagem
+
+Cada viagem começa com uma vontade de conhecer algo novo. Reunimos [guias de destinos](/blog/tag/destinos), [roteiros de viagem](/blog/tag/roteiros) e [dicas práticas](/blog/tag/dicas) para ajudar você a escolher o que combina com seu tempo e seu estilo.
+
+Se já tem um lugar em mente, explore nossos guias de [Nova York](/blog/america-do-norte/eua/nova-york), [Paris](/blog/europa/franca/paris) e [Uruguaiana](/blog/america-do-sul/brasil/uruguaiana).
 ::

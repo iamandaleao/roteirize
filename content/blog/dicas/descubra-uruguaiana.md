@@ -1,5 +1,5 @@
 ---
-cover: "dicas/uruguaiana-cover.jpg" # imagem de capa
+cover: "dicas/uruguaiana-cover.webp" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
 description: "Dicas rápidas antes de ir."

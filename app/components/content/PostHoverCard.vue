@@ -11,14 +11,18 @@ defineProps<PostCardProps>()
     >
       <NuxtLink :to>
         <div class="relative size-full">
-          <img
+          <NuxtImg
             :src="`/assets/images/${thumbnail}`"
+            :srcset="useResponsiveImage(`/assets/images/${thumbnail}`)"
             :alt="title"
+            width="720"
+            height="960"
+            sizes="xs:100vw sm:50vw md:33vw lg:25vw"
             loading="lazy"
             decoding="async"
             fetchpriority="low"
             class="aspect-[9/12] size-full scale-110 object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125"
-          >
+          />
           <div
             class="absolute bottom-0 flex h-12 w-full items-center justify-center bg-secondary/80 font-medium text-white"
           >

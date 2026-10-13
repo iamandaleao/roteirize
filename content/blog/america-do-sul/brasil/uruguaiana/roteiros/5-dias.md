@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-06  # Data de publicação do post
 description: "Tradição, história e sabores em cada passo."
 tags: ["roteiros"]
-thumbnail: uruguaiana/roteiro-5-dias.jpg
+thumbnail: uruguaiana/roteiro-5-dias.webp
 title: "Uruguaiana: Roteiro 5 dias"
 sitemap:
   lastmod: 2025-06-06  # Data da última modificação
@@ -60,7 +60,7 @@ Almoço: Para um almoço delicioso, vá ao [Restaurante e Churrascaria Conesul 1
 
 Tarde: Continue explorando as lojas locais e os arredores da Ponte Internacional. Aproveite para relaxar após as compras.
 
-Janta: Encerrando o dia, experimente os pratos do [Buteko Jê](https://www.instagram.com/butekoje/) - Especialidade Peixes e Pratos. Recomendo especialmente o peixe com molho de mostarda, uma opção incrível!
+Janta: Encerrando o dia, experimente os pratos do Buteko Jê - Especialidade Peixes e Pratos. Recomendo especialmente o peixe com molho de mostarda, uma opção incrível!
 
 ### Dia 4: A Natureza e o Rio Uruguai
 
@@ -68,7 +68,7 @@ Café da manhã: Comece no [Quiero Café](https://quierocafe.com.br/), um lugar 
 
 Passeios: Explore a beleza do Rio Uruguai com um passeio de barco e, em seguida, visite o Parque Natural Municipal, que oferece trilhas e áreas para caminhadas em meio à fauna e flora locais.
 
-Almoço: Para o almoço, experimente as delícias do   [Dona Justa](https://www.instagram.com/dona_justa/) um restaurante com pratos variados, incluindo massas, em um ambiente agradável. Horário: das 8h às 21h, todos os dias.
+Almoço: Para o almoço, experimente as delícias do Dona Justa, um restaurante com pratos variados, incluindo massas, em um ambiente agradável. Horário: das 8h às 21h, todos os dias.
 
 Tarde: Aproveite para visitar o Aeroclube de Uruguaiana, onde você pode passar o tempo de forma divertida e relaxante. Lá, você encontra um quiosque perfeito para assar uma carne e relaxar à beira da piscina. Além disso, há um kart onde você pode se divertir em uma pista ao lado de sua cabana. É um ótimo lugar para passar a tarde, e tenho certeza de que vocês vão amar!
 
@@ -80,9 +80,9 @@ Café da manhã: Encante-se com o [Mais 1 Café](https://mais1cafe.com.br/unidad
 
 Passeios: No último dia, dê uma volta pelo centro para garantir aquele souvenir especial. Depois, visite a Zona de Fronteira e passe pela Ponte Internacional, que conecta Uruguaiana à cidade argentina de Paso de los Libres.
 
-Almoço: Uma excelente escolha para encerrar com chave de ouro é o [Can Broa Express](https://www.instagram.com/canbroa.express/) onde você encontra pratos completos, saladas e lanches deliciosos. O espaço é perfeito para famílias, com área infantil. Horário: das 11h30 às 14h e das 18h30 às 22h30 (domingo fechado).
+Almoço: Uma excelente escolha para encerrar com chave de ouro é o Can Broa Express, onde você encontra pratos completos, saladas e lanches deliciosos. O espaço é perfeito para famílias, com área infantil. Horário: das 11h30 às 14h e das 18h30 às 22h30 (domingo fechado).
 
-Janta: Termine a viagem em grande estilo no [Marcelo’s Cia do Lanche](https://www.instagram.com/marcelos_lanches/) famoso pelas pizzas com bordas vulcânicas, torres de batatas e uma feijoada incrível aos sábados. O ambiente é acolhedor e ideal para levar a família. Horário: das 18h30 à meia-noite.
+Janta: Termine a viagem em grande estilo no Marcelo’s Cia do Lanche, famoso pelas pizzas com bordas vulcânicas, torres de batatas e uma feijoada incrível aos sábados. O ambiente é acolhedor e ideal para levar a família. Horário: das 18h30 à meia-noite.
 
 ### Encantos que Ficam Mesmo Depois da Partida
 

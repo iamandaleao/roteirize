@@ -1,9 +1,9 @@
 ---
-cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
+cover: "hero/capa-dicas-hero-bg.webp" # imagem de capa
 date: 2024-12-03 # Data de publicação do post
 tags: ["dicas"]
 description: "Dicas, aventuras e tudo que vivi por lá."
-thumbnail: "dicas/beto-thum.jpg" #imagem pequena
+thumbnail: "dicas/beto-thum.webp" #imagem pequena
 title: "Aniversário no Beto Carrero World"
 sitemap:
   lastmod: 2025-06-28 # Data da última modificação
@@ -31,9 +31,6 @@ Um dos brinquedos que mais marcou minha visita foi um daqueles radicais que te g
 
 Além disso, o Beto Carrero World tem áreas temáticas incríveis, como a Aventura Radical, cheia de montanhas-russas, e o Madagascar, que é perfeito para quem vai com crianças ou quer algo mais leve. As apresentações ao vivo também são um show à parte – são bem produzidas e trazem momentos mágicos que encantam pessoas de todas as idades.
 
-Se quiser sentir um pouco da energia que vivi por lá, compartilhei alguns vídeos curtos dessa experiência no meu canal do YouTube. [Assista aos vídeos aqui](https://youtube.com/shorts/eDmB7Vuxhvo?si=BM7atrhzCw5kZFfJ){:target="_blank"} 💚
-
-
 ### Comida e Conveniência
 
 No meio do dia, aproveitamos para comer um pastel delicioso que encontramos lá. É bom lembrar que o parque tem várias opções de alimentação, mas os preços podem ser um pouco altos, então se programe para isso. Outra dica importante é levar água e snacks para não gastar tanto e garantir energia para explorar tudo.
@@ -44,7 +41,7 @@ Visitar o Beto Carrero World foi realmente uma experiência única e inesquecív
 
 Apesar de ter adorado a experiência, confesso que não penso em voltar, a menos que um dia nosso futuro filho queira ir. Mas guardo com carinho as memórias desse dia tão especial e recomendo a visita para quem ainda não conhece.
 
-Ah, e mais uma coisa: o parque sempre está renovando suas atrações e trazendo novidades, então fique de olho no site oficial ou nas redes sociais para conferir o que há de novo antes de planejar sua visita. Tenho certeza de que você não vai se arrepender!
+Ah, e mais uma coisa: o parque sempre está renovando suas atrações e trazendo novidades, então fique de olho no site oficial para conferir o que há de novo antes de planejar sua visita. Tenho certeza de que você não vai se arrepender!
 
 E para encerrar esse dia tão especial, deixo aqui algumas fotos que traduzem melhor do que mil palavras tudo o que vivi por lá. Cada canto do Beto Carrero World tem seu encanto, sua dose de emoção e aquele clima mágico que faz a gente voltar a ser criança, nem que seja por um instante.
 
@@ -52,6 +49,4 @@ Se esse relato despertou em você a vontade de embarcar nessa aventura, saiba qu
 
 Agora, aproveite essas imagens e se imagine vivendo cada momento também. Quem sabe o próximo aniversário inesquecível não é o seu?
 
-::embed-instagram{link="https://www.instagram.com/p/DFTd_1sRv-p/?utm_source=ig_embed&amp;utm_campaign=loading"}
-::
 ::

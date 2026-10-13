@@ -1,10 +1,10 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-02-18
 description: "Aproveitando sem Gastar Muito"
 tags: ["compras"]
-thumbnail: paris/compras.jpg
+thumbnail: paris/compras.webp
 title: "Paris: Compras"
 sitemap:
   lastmod: 2025-02-18

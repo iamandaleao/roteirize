@@ -1,9 +1,9 @@
 ---
-cover: "dicas/ararangua-cover.jpg"              # imagem de capa
+cover: "dicas/ararangua-cover.webp"              # imagem de capa
 date: 2025-03-01           # Data de publicação do post
 tags: ["dicas"]
 description: "Natureza, conforto e romance."
-thumbnail: "dicas/ararangua-thum.jpg"          #imagem pequena
+thumbnail: "dicas/ararangua-thum.webp"          #imagem pequena
 title: "Paraíso Secreto em Araranguá"
 sitemap:
   lastmod: 2025-06-28      # Data da última modificação
@@ -81,15 +81,12 @@ Durante a estadia, você também pode solicitar refeições no próprio chalé, 
 
 Se você sonha com uma **lua de mel inesquecível**, cercada pela natureza e com todo o **conforto, exclusividade e romantismo** que esse momento especial merece, a Lagoa da Serra é o destino certo!
 
-Alguns registros merecem mais do que palavras — e é por isso que preparei essa seleção de fotos pra você sentir um pouco do que é viver essa experiência. Abaixo, você pode ver diretamente do nosso Instagram cenas que encantam, emocionam e inspiram.
-
-::embed-instagram{link="https://www.instagram.com/p/DGpxqruu7t7/"}
-::
+Alguns registros merecem mais do que palavras — e é por isso que preparei essa seleção de fotos pra você sentir um pouco do que é viver essa experiência. Abaixo, você pode ver cenas que encantam, emocionam e inspiram.
 
 ### Pronto para escrever a sua história?
 
 Viajar é abrir um novo capítulo na nossa vida — é sair da rotina, viver momentos únicos e colecionar memórias que ficam pra sempre. Espero que essas fotos despertem em você aquela vontade gostosa de explorar o mundo no seu tempo, com o seu jeito e do seu jeito.
 
-Quando chegar a hora de transformar esse desejo em realidade, pode me chamar. Vai ser um prazer planejar tudo com você, como se fosse para mim. Fale comigo no <a href="https://api.whatsapp.com/send?phone=5547933814178" target="_blank" rel="noopener noreferrer">WhatsApp</a> e vamos começar o seu roteiro.
+Quando chegar a hora de transformar esse desejo em realidade, pode me chamar. Vai ser um prazer planejar tudo com você, como se fosse para mim. Fale comigo no <a href="https://wa.me/5547991611628" target="_blank" rel="noopener noreferrer">WhatsApp</a> e vamos começar o seu roteiro.
 
 ::

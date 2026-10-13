@@ -20,6 +20,10 @@ const props = defineProps<AnimateLogoCloudProps>()
           :key="key"
           :src="logo.path"
           :alt="logo.name"
+          width="112"
+          height="28"
+          loading="lazy"
+          decoding="async"
           class="h-7 w-12 px-2 brightness-0 dark:invert"
         >
       </div>

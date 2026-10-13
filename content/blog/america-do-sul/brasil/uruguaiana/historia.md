@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-06
 description: "História viva na fronteira gaúcha"
 tags: ["historia"]
-thumbnail: uruguaiana/historia.jpg
+thumbnail: uruguaiana/historia.webp
 title: "Uruguaiana: História"
 sitemap:
   lastmod: 2025-06-06

@@ -1,10 +1,10 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-02-18
 description: "Paris rápida e inesquecível"
 tags: ["roteiros"]
-thumbnail: "paris/paris-roteiro-1-dia.jpg"
+thumbnail: "paris/paris-roteiro-1-dia.webp"
 title: "Paris: Roteiro 1 dia"
 sitemap:
   lastmod: 2025-02-18

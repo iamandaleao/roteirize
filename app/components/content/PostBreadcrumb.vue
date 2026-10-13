@@ -2,20 +2,34 @@
 import { tags } from '~/composables/useTags'
 
 const route = useRoute()
+const { isEnglish } = useLocale()
 const pathSegments = route.path.split('/').filter(Boolean)
+const englishNames: Record<string, string> = {
+  'en': 'Home',
+  'blog': 'Blog',
+  'tips': 'Travel tips',
+  'destinations': 'Destinations',
+  'north-america': 'North America',
+  'south-america': 'South America',
+  'itineraries': 'Itineraries',
+}
 
 const pages = computed(() => {
   return pathSegments.map((segment, index) => {
-    const isTag = index === 1 && segment in tags
+    const isTag = isEnglish.value
+      ? index === 2 && segment in englishNames
+      : index === 1 && segment in tags
     const href = `/${pathSegments.slice(0, index + 1).join('/')}`
-    const name = segment
-      .split('-')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ')
+    const name = isEnglish.value && englishNames[segment]
+      ? englishNames[segment]
+      : segment
+          .split('-')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ')
 
     return {
       name,
-      href: isTag ? `/blog/tag/${segment}` : href,
+      href: isTag ? (isEnglish.value ? '/en/blog' : `/blog/tag/${segment}`) : href,
       current: index === pathSegments.length - 1,
     }
   })

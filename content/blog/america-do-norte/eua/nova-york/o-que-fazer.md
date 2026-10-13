@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-30
 description: "Atividades para todos os estilos"
 tags: ["passeios"]
-thumbnail: nyc/o-que-fazer.jpg
+thumbnail: nyc/o-que-fazer.webp
 title: "Nova York: O que fazer"
 sitemap:
   lastmod: 2025-07-06
@@ -31,7 +31,7 @@ Nova York, uma metrópole cheia de energia, história e cultura, é um destino q
 **Times Square**: O coração pulsante de Nova York. À noite, as luzes de néon e os painéis gigantescos criam uma atmosfera única e eletrizante. Não importa a hora do dia, sempre há algo acontecendo em Times Square, tornando esse um local que deve ser visto para ser verdadeiramente apreciado.
 
 <div class="bloco-link-integrado">
-  Para garantir ingressos antecipados para atrações em Nova York, confira as opções na 
+  Para garantir ingressos antecipados para atrações em Nova York, confira as opções na
   <a href="https://www.tiqets.com/fr/" target="_blank">Tiqets</a>.
 </div>
 
@@ -48,7 +48,7 @@ Nova York, uma metrópole cheia de energia, história e cultura, é um destino q
 **Greenwich Village**: Um dos bairros mais icônicos, repleto de história, cultura e vida noturna. Perfeito para passeios tranquilos, restaurantes acolhedores e um pouco de música ao vivo.
 
 <div class="bloco-link-integrado">
-  Que tal reservar sua hospedagem em Nova York com segurança e praticidade? Veja opções no 
+  Que tal reservar sua hospedagem em Nova York com segurança e praticidade? Veja opções no
   <a href="https://www.awin1.com/cread.php?awinmid=18120&awinaffid=1799116&ued=https%3A%2F%2Fwww.booking.com%2Fsearchresults.pt-br.html%3Flabel%3Daffnetawin-index_pub-1799116_site-_pname-PF%2B-%2BRoteirize_plc-_ts-Pagina%2Bprincipal%2Bdo%2Bbooking_clkid-18120_1751834270_37f56f7a69061b051b12d02e73c2eb5c%26aid%3D1784973%26ss%3DNova%2BIorque%252C%2BNova%2BIorque%252C%2BEstados%2BUnidos%2Bda%2BAm%25C3%25A9rica%26ssne%3DParis%26ssne_untouched%3DParis%26lang%3Dpt-br%26sb%3D1%26src_elem%3Dsb%26sr_view%3Dgrid%26dest_id%3D20088325%26dest_type%3Dcity%26place_id%3Dcity%252F20088325%26ac_position%3D0%26ac_click_type%3Db%26ac_langcode%3Dpt%26ac_suggestion_list_length%3D5%26search_selected%3Dtrue%26search_pageview_id%3Df8b091197b6808c0%26checkin%3D2025-12-05%26checkout%3D2025-12-06%26ltfd%3D5%253A1%253A12-2025%253A1%253A%26group_adults%3D2%26no_rooms%3D1%26group_children%3D0%26sb_travel_purpose%3Dleisure%26order%3Dprice" target="_blank" rel="sponsored">Booking.com</a>.
 </div>
 
@@ -63,7 +63,7 @@ Nova York, uma metrópole cheia de energia, história e cultura, é um destino q
 **Verão (junho a setembro)**: A cidade se enche de vida com festivais, feiras de rua e eventos ao ar livre. Aproveite para fazer um passeio de barco pelo rio Hudson ou visitar as praias de Coney Island. À noite, as luzes de Manhattan brilham mais intensamente do que nunca.
 
 <div class="bloco-link-integrado">
-  Quer aproveitar ao máximo cada estação em Nova York? Garanta seus ingressos com antecedência e evite filas nas principais atrações pela 
+  Quer aproveitar ao máximo cada estação em Nova York? Garanta seus ingressos com antecedência e evite filas nas principais atrações pela
   <a href="https://www.awin1.com/cread.php?awinmid=7437&awinaffid=1799116&ued=https%3A%2F%2Fwww.tiqets.com%2Fpt%2Fatracoes-nova-york-c260932%2F" target="_blank" rel="sponsored">Tiqets</a>.
 </div>
 
@@ -72,6 +72,5 @@ Nova York, uma metrópole cheia de energia, história e cultura, é um destino q
 **Inverno (dezembro a março)**: A temporada de festas transforma Nova York em um lugar mágico. As vitrines de Natal, a árvore de Rockefeller Center e a patinação no gelo são apenas algumas das tradições de inverno que tornam a cidade encantadora. Se você ama o clima frio, aproveite para explorar as atrações internas, como o MET, a Biblioteca Pública de Nova York e os teatros da Broadway.
 
 Com tantas opções incríveis, Nova York oferece uma experiência única a cada temporada, encantando todos que a visitam. Se você ainda não conhece essa cidade vibrante, está na hora de começar a planejar sua próxima aventura!
-
 
 ::

@@ -1,10 +1,10 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-02-18
 description: "A Cidade dos Sonhos e Descobertas"
 tags: ["destinos"]
-thumbnail: paris/paris-home.jpg
+thumbnail: paris/paris-home.webp
 title: "Paris"
 sitemap:
   lastmod: 2025-02-18

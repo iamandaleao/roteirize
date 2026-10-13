@@ -1,10 +1,10 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-03-20 # Data de publicação do post
 description: "Chegando com praticidade e estilo!"
 tags: ["desembarque"]
-thumbnail: paris/como-chegar.jpg
+thumbnail: paris/como-chegar.webp
 title: "Paris: Como chegar"
 sitemap:
   lastmod: 2025-03-20 # Data da última modificação

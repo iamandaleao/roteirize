@@ -1,9 +1,9 @@
 ---
-cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
+cover: "hero/capa-dicas-hero-bg.webp" # imagem de capa
 date: 2025-02-15 # Data de publicação do post
 tags: ["dicas", "bagagem"]
 description: "O que não esquecer na bagagem"
-thumbnail: "dicas/bagagem-thum.png" #imagem pequena
+thumbnail: "dicas/bagagem-thum.webp" #imagem pequena
 title: "Bagagem Essencial"
 sitemap:
   lastmod: 2025-02-18 # Data da última modificação

@@ -1,55 +1,58 @@
 <script setup lang="ts">
-const navigation = {
-  pages: [
-    { name: 'Home', href: '/' },
-    { name: 'Sobre', href: '/sobre-mim' },
-  ],
-  itineraries: [
-    { name: 'Econômico', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
-    { name: 'Família', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
-    { name: 'Romântico', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
-    { name: 'Premium', href: 'https://api.whatsapp.com/send?phone=5547933814178' },
-  ],
-  discounts: [
-    { name: 'Chip Internacional', href: '/parceiros/omeuchip' },
-    { name: 'Hospedagem', href: '/parceiros/hospedagem' },
-    { name: 'Seguro Viagem', href: '/parceiros/seguros' },
-    { name: 'Passeios & Tours', href: '/parceiros/passeios-e-tours' },
-    { name: 'Passagens & Transporte', href: '/parceiros/passagens-e-transporte' },
-  ],
-  social: [
-    {
-      name: 'Facebook',
-      href: 'https://www.facebook.com/roteirizeoficial',
-      icon: 'ph:facebook-logo',
-    },
-    {
-      name: 'Instagram',
-      href: 'https://www.instagram.com/roteirizeoficial',
-      icon: 'ph:instagram-logo',
-    },
-    {
-      name: 'YouTube',
-      href: 'https://www.youtube.com/@roteirizeoficial',
-      icon: 'ph:youtube-logo',
-    },
-    {
-      name: 'TikTok',
-      href: 'https://www.tiktok.com/@roteirizeoficial',
-      icon: 'ph:tiktok-logo',
-    },
-    {
-      name: 'Email',
-      href: 'mailto:admroteirize@gmail.com',
-      icon: 'ph:envelope',
-    },
-    {
-      name: 'WhatsApp',
-      href: 'https://api.whatsapp.com/send?phone=5547933814178&text=Oi%2C%20encontrei%20suas%20informa%C3%A7%C3%B5es%20do%20WhatsApp%20no%20seu%20site',
-      icon: 'ph:whatsapp-logo',
-    },
-  ],
-}
+const { isEnglish } = useLocale()
+const navigation = computed(() => isEnglish.value
+  ? {
+      pages: [
+        { name: 'Home', href: '/en' },
+        { name: 'About', href: '/en/about' },
+      ],
+      itineraries: [
+        { name: 'Budget', href: 'https://wa.me/5547991611628' },
+        { name: 'Family', href: 'https://wa.me/5547991611628' },
+        { name: 'Romantic', href: 'https://wa.me/5547991611628' },
+        { name: 'Premium', href: 'https://wa.me/5547991611628' },
+      ],
+      discounts: [
+        { name: 'International SIM', href: '/en/partners/international-sim' },
+      ],
+      social: [
+        { name: 'Facebook', href: 'https://www.facebook.com/roteirizeoficial', icon: 'ph:facebook-logo' },
+        { name: 'Email', href: 'mailto:admroteirize@gmail.com', icon: 'ph:envelope' },
+        { name: 'WhatsApp', href: 'https://wa.me/5547991611628', icon: 'ph:whatsapp-logo' },
+      ],
+    }
+  : {
+      pages: [
+        { name: 'Home', href: '/' },
+        { name: 'Sobre', href: '/sobre-mim' },
+      ],
+      itineraries: [
+        { name: 'Econômico', href: 'https://wa.me/5547991611628' },
+        { name: 'Família', href: 'https://wa.me/5547991611628' },
+        { name: 'Romântico', href: 'https://wa.me/5547991611628' },
+        { name: 'Premium', href: 'https://wa.me/5547991611628' },
+      ],
+      discounts: [
+        { name: 'Chip Internacional', href: '/parceiros/omeuchip' },
+      ],
+      social: [
+        {
+          name: 'Facebook',
+          href: 'https://www.facebook.com/roteirizeoficial',
+          icon: 'ph:facebook-logo',
+        },
+        {
+          name: 'Email',
+          href: 'mailto:admroteirize@gmail.com',
+          icon: 'ph:envelope',
+        },
+        {
+          name: 'WhatsApp',
+          href: 'https://wa.me/5547991611628',
+          icon: 'ph:whatsapp-logo',
+        },
+      ],
+    })
 </script>
 
 <template>
@@ -58,12 +61,12 @@ const navigation = {
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-6 xl:flex-col xl:items-center xl:justify-center">
           <div class="space-y-2">
-            <NuxtLink to="/">
+            <NuxtLink :to="isEnglish ? '/en' : '/'">
               <span class="sr-only">Roteirize</span>
               <Logo class="mx-auto h-20 text-primary xl:mx-0 xl:-mt-2" />
             </NuxtLink>
             <p class="text-balance text-center text-sm/6  xl:text-left">
-              Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.
+              {{ isEnglish ? 'Turning destinations into unforgettable experiences. Plan your trip with personalized itineraries and practical travel tips.' : 'Transformando destinos em experiências inesquecíveis. Planeje sua viagem com roteiros personalizados e dicas exclusivas.' }}
             </p>
           </div>
           <div class="flex items-center justify-center gap-x-6 xl:justify-start">
@@ -73,6 +76,7 @@ const navigation = {
               :title="item.name"
               :href="item.href"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span class="sr-only">{{ item.name }}</span>
               <Icon :name="item.icon" aria-hidden="true" />
@@ -83,7 +87,7 @@ const navigation = {
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h4 class="text-sm/6 font-semibold ">
-                Links úteis
+                {{ isEnglish ? 'Useful links' : 'Links úteis' }}
               </h4>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.pages" :key="item.name" class="transition-all hover:scale-105 hover:font-medium">
@@ -95,7 +99,7 @@ const navigation = {
             </div>
             <div class="mt-10 md:mt-0">
               <h4 class="text-sm/6 font-semibold">
-                Roteiros de Viagem
+                {{ isEnglish ? 'Travel itineraries' : 'Roteiros de Viagem' }}
               </h4>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.itineraries" :key="item.name" class="transition-all hover:scale-105 hover:font-medium">
@@ -109,7 +113,7 @@ const navigation = {
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h4 class="text-sm/6 font-semibold">
-                Descontos
+                {{ isEnglish ? 'Offers' : 'Descontos' }}
               </h4>
               <ul role="list" class="mt-6 grid gap-y-4">
                 <li v-for="item in navigation.discounts" :key="item.name" class="transition-all hover:scale-105 hover:font-medium">
@@ -125,6 +129,9 @@ const navigation = {
       <div class="mt-16 border-t border-slate-900/10 pt-8 sm:mt-20 lg:mt-24">
         <p class="text-sm/6 text-slate-400">
           &copy; 2024 - {{ new Date().getFullYear() }} Roteirize.
+        </p>
+        <p class="mt-2 w-full text-center text-xs text-slate-400">
+          {{ isEnglish ? 'Made by' : 'Feito por' }} <a href="https://github.com/ibrunotome" target="_blank" rel="noopener noreferrer" class="underline-offset-4 hover:underline">Bruno</a> {{ isEnglish ? 'and' : 'e' }} <a href="https://github.com/iamandaleao" target="_blank" rel="noopener noreferrer" class="underline-offset-4 hover:underline">Amanda</a>
         </p>
       </div>
     </div>

@@ -13,6 +13,7 @@ const { items } = defineProps<{
 const route = useRoute()
 
 const isOpen = ref(false)
+const { isEnglish } = useLocale()
 
 const mobileMenuItems = computed(() => {
   const activeItem = items.find(item => isActive(item.href))
@@ -76,7 +77,7 @@ function isActive(path: string) {
           <CollapsibleTrigger as-child>
             <div class="flex cursor-pointer items-center justify-center space-x-2 rounded-sm border border-white px-4 py-2 text-center font-medium transition-all duration-300 hover:bg-black/50 hover:text-white">
               <Icon name="ph:caret-up-down" class="size-4" />
-              <span>Ver mais</span>
+              <span>{{ isEnglish ? 'More' : 'Ver mais' }}</span>
             </div>
           </CollapsibleTrigger>
         </template>

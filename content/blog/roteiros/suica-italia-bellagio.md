@@ -1,11 +1,11 @@
 ---
 region: ""
-cover: "viagem-europa/bellagio-lago-de-como.jpg"
+cover: "viagem-europa/bellagio-lago-de-como.webp"
 date: 2025-08-17
 description: "Ruas charmosas, promenade e vistas incríveis do lago em um dia inesquecível."
 tags: ["roteiros"]
 published: true
-thumbnail: "viagem-europa/bellagio-lago-de-como.jpg"
+thumbnail: "viagem-europa/bellagio-lago-de-como.webp"
 title: "Bellagio no Lago de Como"
 sitemap:
   lastmod: 2025-08-17

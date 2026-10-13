@@ -2,7 +2,7 @@
 title: "Roteiros"
 description: "Experiências únicas, planejadas para você."
 date: 2025-02-18
-cover: "hero/roteiros-hero-bg.jpg"
+cover: "hero/roteiros-hero-bg.webp"
 sitemap:
   lastmod: 2025-06-22
 ---
@@ -52,6 +52,6 @@ Desde viagens econômicas e cheias de descobertas, até experiências luxuosas c
 ### Vamos montar seu roteiro?
 Clique no botão abaixo para falar comigo direto no WhatsApp. Seu roteiro ideal começa aqui — feito com atenção, cuidado e aquele toque especial de quem ama planejar e valoriza as experiências simples e inesquecíveis da vida.
 
-::button-cta{:text="Roteiro sob medida" :href="https://api.whatsapp.com/send?phone=5547933814178"}
+::button-cta{:text="Roteiro sob medida" :href="https://wa.me/5547991611628"}
 ::
 ::

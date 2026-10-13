@@ -1,9 +1,9 @@
 ---
-cover: "dicas/candeias-cover.png"              # imagem de capa
+cover: "dicas/candeias-cover.webp"              # imagem de capa
 date: 2025-02-18           # Data de publicação do post
 tags: ["dicas"]
 description: "Conforto e lazer em Piçarras"
-thumbnail: "dicas/candeias-thum.jpg"          #imagem pequena
+thumbnail: "dicas/candeias-thum.webp"          #imagem pequena
 title: "Descanso à Beira-Mar"
 sitemap:
   lastmod: 2025-06-28      # Data da última modificação
@@ -43,12 +43,9 @@ O Candeias Residencial Piçarras faz parte da rede Clube Candeias, que tem unida
 
 Ah, e o hotel é **pet friendly**, então se você tem um bichinho de estimação, pode levá-lo para curtir a viagem com você!
 
-Ficou curioso para ter um gostinho de como foi essa experiência? Gravei alguns momentos durante a hospedagem no [Candeias Residencial Piçarras](https://www.clubecandeias.com/unidades/candeias-residencial-picarras){:target="_blank"} e publiquei um vídeo que mostra cada detalhe com carinho. 
+Ficou curioso para ter um gostinho de como foi essa experiência? Gravei alguns momentos durante a hospedagem no [Candeias Residencial Piçarras](https://www.clubecandeias.com/unidades/candeias-residencial-picarras){:target="_blank"} e publiquei um vídeo que mostra cada detalhe com carinho.
 
-Aqui no post, compartilho apenas foto, mas se quiser ver o vídeo completo, é só escolher onde assistir: Escolha entre o [Instagram](https://www.instagram.com/p/DGPFVF8t5_g/){:target="_blank"} ou [YouTube](https://www.youtube.com/shorts/wq9PGznmnO8){:target="_blank"}. Os dois vídeos são iguais, então você pode ver na plataforma que preferir.
-
-::embed-instagram{link="https://www.instagram.com/p/DGWuv4IOf96/"}
-::
+Aqui no post, compartilho algumas fotos dessa experiência.
 
 Espero que esse conteúdo tenha te ajudado a visualizar melhor como é se hospedar nesse cantinho especial em Balneário Piçarras. Com estrutura completa, localização prática e o carinho de uma rede que valoriza o bem-estar dos hóspedes, o Candeias Residencial Piçarras é aquele tipo de lugar que dá vontade de voltar.
 

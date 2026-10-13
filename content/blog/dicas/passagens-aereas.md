@@ -1,10 +1,10 @@
 ---
-cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
+cover: "hero/capa-dicas-hero-bg.webp" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
-description: "Viagem ao Menor Preço"
-thumbnail: "dicas/passagens-aereas-thum.jpg" #imagem pequena
-title: "Passagens Aéreas"
+description: "Veja dicas para pesquisar passagens aéreas, comparar opções e planejar a compra da sua viagem."
+thumbnail: "dicas/passagens-aereas-thum.webp" #imagem pequena
+title: "Passagens aéreas: dicas para economizar na viagem"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação
 ---

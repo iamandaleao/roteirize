@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-05-01
 description: "Onde cada sacola carrega um pedaço da cidade"
 tags: ["compras"]
-thumbnail: nyc/compras.jpg
+thumbnail: nyc/compras.webp
 title: "Nova York: Compras"
 sitemap:
   lastmod: 2025-05-01

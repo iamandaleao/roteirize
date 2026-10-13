@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-06
 description: "Melhor época para conhecer Uruguaiana"
 tags: ["temporada"]
-thumbnail: uruguaiana/quando-ir.jpg
+thumbnail: uruguaiana/quando-ir.webp
 title: "Uruguaiana: Quando ir"
 sitemap:
   lastmod: 2025-06-06
@@ -23,7 +23,7 @@ sitemap:
 Se você está planejando uma viagem para Uruguaiana, é importante saber que cada estação do ano oferece uma experiência única, e escolher o momento certo pode fazer toda a diferença para aproveitar ao máximo tudo o que essa cidade tradicional do Rio Grande do Sul tem a oferecer.
 
 ### Verão (dezembro a fevereiro)
-O verão em Uruguaiana é quente e seco, com temperaturas que frequentemente ultrapassam os 30 °C, às vezes chegando a picos acima de 35 °C. Se você gosta de calor e dias longos, essa é uma ótima época para desfrutar dos espaços ao ar livre, como os parques e as margens do rio Uruguai. É também o período em que a cidade costuma receber mais visitantes, especialmente em eventos culturais e festas locais. No entanto, o clima pode ser bastante abafado, então vale a pena se preparar com roupas leves e hidratação constante.
+O verão em Uruguaiana é quente e seco, com temperaturas que frequentemente ultrapassam os 30 °C, às vezes chegando a picos acima de 35 °C. Se você gosta de calor e dias longos, essa é uma ótima época para desfrutar dos espaços ao ar livre, como os parques e as margens do rio Uruguai. É também o período em que a cidade costuma receber mais visitantes, especialmente em eventos culturais e festas locais. No entanto, o clima pode ser bastante abafado, então vale a pena se preparar com roupas leves e hidratação constante.
 
 ### Outono (março a maio)
 O outono é, sem dúvida, uma das melhores épocas para visitar Uruguaiana. As temperaturas começam a cair e o clima fica mais ameno e confortável, ideal para passeios tranquilos e para explorar a cidade sem o desconforto do calor intenso. Além disso, a paisagem ganha tons dourados e avermelhados, dando um charme especial à região. É o momento perfeito para quem valoriza um ambiente mais calmo, longe das multidões.

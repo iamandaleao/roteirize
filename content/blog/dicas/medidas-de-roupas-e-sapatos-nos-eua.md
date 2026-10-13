@@ -1,9 +1,9 @@
 ---
-cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
+cover: "hero/capa-dicas-hero-bg.webp" # imagem de capa
 date: 2025-07-01 # Data de publicação do post
 tags: ["dicas", "compras"]
 description: "Tudo o que você precisa saber antes de comprar"
-thumbnail: "dicas/medidas-de-roupas-eua-thum.jpg" #imagem pequena
+thumbnail: "dicas/medidas-de-roupas-eua-thum.webp" #imagem pequena
 title: "Tamanhos de roupas e sapatos nos EUA"
 sitemap:
   lastmod: 2025-07-06 # Data da última modificação
@@ -68,7 +68,6 @@ Nos Estados Unidos, os calçados são divididos por público: **infantil**, **fe
     </tbody>
   </table>
 </div>
-
 
 <h4>Calçados femininos</h4>
 <div style="overflow-x: auto;">
@@ -291,7 +290,6 @@ As roupas também seguem um padrão diferente. E mais: os tamanhos variam entre 
   </table>
 </div>
 
-
 #### Roupas masculinas
 <p><strong>Camisas</strong></p>
 <div style="overflow-x: auto;">
@@ -325,7 +323,6 @@ As roupas também seguem um padrão diferente. E mais: os tamanhos variam entre 
   </table>
 </div>
 
-
 <p><strong>Calças</strong></p>
 <div style="overflow-x: auto;">
   <table style="white-space: nowrap;">
@@ -357,7 +354,6 @@ As roupas também seguem um padrão diferente. E mais: os tamanhos variam entre 
     </tbody>
   </table>
 </div>
-
 
 ### Dicas úteis para acertar nas compras
 

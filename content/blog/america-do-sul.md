@@ -1,10 +1,10 @@
 ---
 region: "america-do-sul"
-cover: "america-sul/peru-large.jpg"
+cover: "america-sul/peru-large.webp"
 date: 2025-06-22
 description: "Tradição, natureza e identidade viva."
 tags: ["destinos"]
-thumbnail: "america-sul/peru-peq.jpg"
+thumbnail: "america-sul/peru-peq.webp"
 title: "América do Sul"
 sitemap:
   lastmod: 2025-06-22

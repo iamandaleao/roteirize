@@ -1,10 +1,10 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-02-18
 description: "Um Banquete para os Sentidos"
 tags: ["gastronomia"]
-thumbnail: paris/gastronomia.jpg
+thumbnail: paris/gastronomia.webp
 title: "Paris: Gastronomia"
 sitemap:
   lastmod: 2025-02-18

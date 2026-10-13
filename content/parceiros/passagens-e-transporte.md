@@ -1,8 +1,8 @@
 ---
-title: Passagens Aéreas
+title: "Passagens aéreas: compare opções para viajar"
 description: "Viaje mais pagando menos"
 date: 2025-05-11
-cover: /dicas/parceiros.jpg
+cover: dicas/parceiros.webp
 sitemap:
   lastmod: 2025-05-11
 schemaOrg:

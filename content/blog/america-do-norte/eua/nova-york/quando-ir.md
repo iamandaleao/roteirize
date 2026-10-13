@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-27
 description: "Melhor Época NYC"
 tags: ["temporada"]
-thumbnail: nyc/quando-ir.jpg
+thumbnail: nyc/quando-ir.webp
 title: "Nova York: Quando ir"
 sitemap:
   lastmod: 2025-04-27

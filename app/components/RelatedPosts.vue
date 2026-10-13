@@ -13,6 +13,7 @@ today.setHours(23, 59, 59, 999)
 
 const { data: relatedPosts } = await useAsyncData(`related-posts-${route.path}`, () =>
   queryCollection('blog')
+    .where('published', '=', true)
     .where('date', '<', useToday())
     .where('path', '<>', route.path)
     .where('tags', 'LIKE', props.currentTags.map(tag => `%${tag}%`).join(' OR '))

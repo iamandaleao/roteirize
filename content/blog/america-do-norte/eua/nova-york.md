@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-30
 description: "Intensa, icônica, inesquecível."
 tags: ["destinos"]
-thumbnail: nyc/home.jpg
+thumbnail: nyc/home.webp
 title: "New York"
 sitemap:
   lastmod: 2025-04-30

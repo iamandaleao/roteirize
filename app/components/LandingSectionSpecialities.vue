@@ -54,7 +54,7 @@ watch(isVisible, (newValue) => {
 
       <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
         <div v-for="region in regions" :key="region.name" class="flex flex-col items-center justify-center space-y-2 transition-all lg:hover:scale-125">
-          <img :src="`/assets/images/${region.map}`" class="h-24" :alt="region.name">
+          <img :src="`/assets/images/${region.map}`" width="96" height="96" loading="lazy" decoding="async" class="h-24" :alt="region.name">
           <h4 class="font-medium">
             {{ region.name }}
           </h4>

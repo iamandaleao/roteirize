@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-05-01  # Data de publicação do post
 description: "Para aproveitar com calma e intensidade"
 tags: ["roteiros"]
-thumbnail: nyc/roteiro-5-dias.jpg
+thumbnail: nyc/roteiro-5-dias.webp
 title: "Nova York: Roteiro 5 dias"
 sitemap:
   lastmod: 2025-07-06  # Data da última modificação
@@ -36,7 +36,6 @@ No fim do dia, vá até o Empire State Building para ver o pôr do sol – é um
   Se estiver buscando hospedagem bem localizada para aproveitar tudo isso a pé, vale a pena conferir as opções disponíveis no <a href="https://www.awin1.com/cread.php?awinmid=18120&awinaffid=1799116&ued=https%3A%2F%2Fwww.booking.com%2Fsearchresults.pt-br.html%3Fss%3DNova%2BYorque" target="_blank" rel="sponsored">Booking.com</a>.
 </div>
 
-
 ## Dia 2 – Central Park e Museus
 
 Esse é o dia para respirar arte, natureza e história. Comece pelo Central Park e explore o lado mais tradicional: a Bethesda Terrace, o Strawberry Fields e o The Mall são paradas obrigatórias.
@@ -66,7 +65,6 @@ No final do dia, volte para Manhattan e assista a um musical na Broadway – uma
 </div>
 
 À tarde, caminhe pelo Upper West Side e termine o dia em um restaurante tradicional da região. Um jantar no estilo novaiorquino, com calma e boa comida, vai fechar esse dia com chave de ouro.
-
 
 ## Dia 5 – Compras e despedidas
 

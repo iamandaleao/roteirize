@@ -1,9 +1,9 @@
 ---
-cover: "dicas/itajai-cover.jpg"       # imagem de capa
+cover: "dicas/itajai-cover.webp"       # imagem de capa
 date: 2025-03-01                          # Data de publicação do post
 tags: ["dicas"]
 description: "Dicas com sabor e memória"
-thumbnail: "dicas/itajai-thum.jpg"            #imagem pequena
+thumbnail: "dicas/itajai-thum.webp"            #imagem pequena
 title: "Descubra Itajaí Comigo"
 sitemap:
   lastmod: 2025-06-22                    # Data da última modificação
@@ -72,7 +72,7 @@ Para facilitar a sua visita, deixei abaixo os links dos lugares que mencionei aq
 
 Espero que essas dicas te ajudem a viver momentos tão especiais quanto os que eu vivi em Itajaí. Cada lugar tem sua história, seu sabor e seu jeitinho único — e eu ficaria feliz em saber que, de alguma forma, essas lembranças agora também fazem parte da sua jornada.
 
-Se quiser ajuda para montar um roteiro personalizado e aproveitar ao máximo sua visita, é só me chamar no <a href=" https://api.whatsapp.com/send?phone=5547933814178" target="_blank">WhatsApp</a>
+Se quiser ajuda para montar um roteiro personalizado e aproveitar ao máximo sua visita, é só me chamar no <a href="https://wa.me/5547991611628" target="_blank">WhatsApp</a>
 
 Vai ser um prazer te ajudar a planejar dias inesquecíveis nessa cidade que tanto marcou a minha vida.
 

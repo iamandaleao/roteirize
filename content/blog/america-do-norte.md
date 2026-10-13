@@ -1,10 +1,10 @@
 ---
 region: "america-do-norte"
-cover: "america-norte/canada-large.jpg"
+cover: "america-norte/canada-large.webp"
 date: 2025-06-22
 description: "História, cultura e modernidade unidas."
 tags: ["destinos"]
-thumbnail: "america-norte/canada-peq.jpg"
+thumbnail: "america-norte/canada-peq.webp"
 title: "América do Norte"
 sitemap:
   lastmod: 2025-06-22

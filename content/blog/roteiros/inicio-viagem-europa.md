@@ -1,11 +1,11 @@
 ---
 region: ""
-cover: "viagem-europa/floripa-cover.jpg"
+cover: "viagem-europa/floripa-cover.webp"
 date: 2025-06-12
 description: "Dos sonhos ao embarque"
 tags: ["roteiros"]
 published: true
-thumbnail: "viagem-europa/floripa-thum.jpg"
+thumbnail: "viagem-europa/floripa-thum.webp"
 title: "Do Brasil à Europa"
 sitemap:
   lastmod: 2025-08-01
@@ -85,10 +85,6 @@ Essa foi a nossa preparação e partida rumo ao velho continente. No próximo ca
 Nos acompanhe — e se quiser planejar sua viagem com tranquilidade, já sabe: é aqui na Roteirize que compartilho tudo com carinho e sinceridade.
 
 Nossos primeiros passos rumo ao sonho! Um vídeo curtinho direto do aeroporto de Florianópolis até o embarque — simples, mas cheio de emoção.
-Tem muito mais fotos e vídeos dessa viagem lá no Instagram da [@roteirizeoficial](https://www.instagram.com/roteirizeoficial/) — te espero por lá!
-
-::embed-instagram{link="https://www.instagram.com/reel/DLdG_iluBEZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="}
-::
 
 Quer continuar acompanhando essa jornada? É só clicar abaixo para seguir para o próximo capítulo:
 

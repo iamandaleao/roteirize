@@ -1,11 +1,11 @@
 ---
 region: ""
-cover: "viagem-europa/lauterbrunnen.jpg"
+cover: "viagem-europa/lauterbrunnen.webp"
 date: 2025-07-20
 description: "Paisagens e momentos marcantes na Suíça."
 tags: ["roteiros"]
 published: true
-thumbnail: "viagem-europa/lauterbrunnen.jpg"
+thumbnail: "viagem-europa/lauterbrunnen.webp"
 title: "Lauterbrunnen e Interlaken"
 sitemap:
   lastmod: 2025-08-17

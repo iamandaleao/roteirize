@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-06
 description: "Conforto e descanso garantidos "
 tags: ["hospedagem"]
-thumbnail: uruguaiana/hospedagem.jpg
+thumbnail: uruguaiana/hospedagem.webp
 title: "Uruguaiana: Onde ficar"
 sitemap:
   lastmod: 2025-06-06

@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-30
 description: "Chegando sem complicação"
 tags: ["desembarque"]
-thumbnail: nyc/como-chegar.jpg
+thumbnail: nyc/como-chegar.webp
 title: "Nova York: Como chegar"
 sitemap:
   lastmod: 2025-07-06
@@ -31,7 +31,6 @@ A maneira mais comum (e prática) de chegar a Nova York é de avião. A cidade �
 - **LaGuardia Airport (LGA)**: geralmente usado para voos domésticos, mas também é uma opção se você estiver chegando de outra cidade dos EUA.
 
 Eu cheguei pelo JFK e achei super organizado, com sinalização boa e várias opções de transporte até o centro da cidade.
-
 
 <style>
   .bloco-estilo {

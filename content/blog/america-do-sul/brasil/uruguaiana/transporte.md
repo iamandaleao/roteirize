@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-04
 description: "Opções para se locomover"
 tags: ["transporte"]
-thumbnail: uruguaiana/transporte.jpg
+thumbnail: uruguaiana/transporte.webp
 title: "Uruguaiana: Transporte"
 sitemap:
   lastmod: 2025-06-04

@@ -1,9 +1,9 @@
 ---
-cover: "dicas/quintal606-cover.jpg" # imagem de capa
+cover: "dicas/quintal606-cover.webp" # imagem de capa
 date: 2025-02-02             # Data de publicação do post
 tags: ["dicas"]
 description: "Vista, sabor e aconchego"
-thumbnail: "dicas/quintal606-thum.jpg" #imagem pequena
+thumbnail: "dicas/quintal606-thum.webp" #imagem pequena
 title: "Descubra a pizzaria queridinha de Barra Velha"
 sitemap:
   lastmod: 2025-06-28 # Data da última modificação
@@ -19,11 +19,11 @@ sitemap:
 
 ## Uma pizarria saborosa em Barra Velha/SC
 
-Hoje quero te levar comigo para conhecer um cantinho especial em Barra Velha – um lugar que já tive o prazer de visitar várias vezes e que sempre me conquista pelo sabor, pelo ambiente e pelo carinho no atendimento: a maravilhosa <a href="https://www.instagram.com/quintal606pizzaria/" target="_blank" rel="noopener noreferrer">Pizzaria Quintal 606</a>. 
+Hoje quero te levar comigo para conhecer um cantinho especial em Barra Velha – um lugar que já tive o prazer de visitar várias vezes e que sempre me conquista pelo sabor, pelo ambiente e pelo carinho no atendimento: a maravilhosa Pizzaria Quintal 606.
 
 Se você ama aquele clima aconchegante, pizza artesanal feita com capricho e um espaço cheio de charme, tenho certeza de que vai se encantar tanto quanto eu!
 
-Dessa vez, fui mais cedo justamente para aproveitar o ambiente com tranquilidade e mostrar tudo com carinho. Fiz vídeos, tirei fotos, e já está tudo publicado lá no nosso Instagram e também no YouTube – se ainda não viu, fica o convite!
+Dessa vez, fui mais cedo justamente para aproveitar o ambiente com tranquilidade e mostrar tudo com carinho. Fiz vídeos e tirei fotos para registrar essa experiência.
 
 Quando cheguei, o pessoal ainda estava organizando o espaço, limpando as mesas e deixando tudo impecável. Enquanto isso, fiquei do outro lado da rua admirando a vista encantadora da lagoa, que já é por si só um convite pra desacelerar.
 
@@ -37,17 +37,11 @@ Essa pizzaria tão especial fica na <a href="https://g.co/kgs/zM9fFhY" target="_
 
 Quem sabe esse lugar gostoso não entra no seu próximo roteiro por Barra Velha?
 
-Você pode assistir ao vídeo completo no <a href="https://youtube.com/shorts/i_L8dAfCCRc?si=zPO7Y23A8XJiR20h" target="_blank" rel="noopener noreferrer">YouTube,</a> para conferir, onde mostro todos os detalhes dessa experiência — perfeito para quem gosta de conhecer cada cantinho antes de decidir visitar.
-
-Logo abaixo, as fotos tiradas durante a visita aparecem automaticamente aqui no site, mostrando o lugar exatamente como ele é — sem filtros, do jeitinho que a gente viu. Se por acaso as imagens não carregarem no seu navegador, você pode ver no <a href="https://www.instagram.com/p/DFlUYV3N-eJ/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer">Instagram</a>
-acessando a publicação original.
-
-::embed-instagram{link="https://www.instagram.com/p/DFlUYV3N-eJ/"}
-::
+Logo abaixo, as fotos tiradas durante a visita aparecem aqui no site, mostrando o lugar exatamente como ele é — sem filtros, do jeitinho que a gente viu.
 
 Essas foram algumas imagens reais da experiência por lá — registradas com carinho pra te mostrar o lugar como ele realmente é. Espero que tenham te ajudado a sentir um pouquinho do clima do local!
 
-Se você gosta de explorar destinos com mais segurança e inspiração, continue acompanhando a Roteirize aqui no site e também nas redes sociais. Sempre compartilho dicas verdadeiras, experiências autênticas e aquele olhar que valoriza o que há de mais tradicional e especial em cada lugar.
+Se você gosta de explorar destinos com mais segurança e inspiração, continue acompanhando a Roteirize aqui no site. Sempre compartilho dicas verdadeiras, experiências autênticas e aquele olhar que valoriza o que há de mais tradicional e especial em cada lugar.
 
 Ah! E não esquece de seguir e compartilhar essa maravilhosa dica — aqui você encontra sugestões que só a Roteirize traz com esse cuidado todo.
 

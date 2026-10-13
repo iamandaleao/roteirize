@@ -2,7 +2,7 @@
 title: Encontre o lugar ideal
 description: "Hospedagem com qualidade e confiança"
 date: 2025-05-11
-cover: /dicas/parceiros.jpg
+cover: dicas/parceiros.webp
 sitemap:
   lastmod: 2025-08-16
 schemaOrg:
@@ -55,10 +55,10 @@ Uma ajudinha para você decidir com mais facilidade:
 
 ## 💚 Escolha Inteligente com a Roteirize
 
-Para quem valoriza conforto e praticidade, o Booking oferece inúmeras opções de hospedagem com cancelamento grátis e avaliações reais.  
-Já para quem busca economia nas passagens aéreas, o Vai de Promo é uma ótima alternativa com preços competitivos e promoções exclusivas.  
+Para quem valoriza conforto e praticidade, o Booking oferece inúmeras opções de hospedagem com cancelamento grátis e avaliações reais.
+Já para quem busca economia nas passagens aéreas, o Vai de Promo é uma ótima alternativa com preços competitivos e promoções exclusivas.
 
-💡 Ao reservar pelos nossos links, você não gasta nada a mais e ainda fortalece o trabalho da Roteirize. 
+💡 Ao reservar pelos nossos links, você não gasta nada a mais e ainda fortalece o trabalho da Roteirize.
 
 Boa viagem e que cada detalhe da sua experiência seja inesquecível!
 

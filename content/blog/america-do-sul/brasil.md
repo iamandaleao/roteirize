@@ -1,11 +1,11 @@
 ---
 region: "brasil"
-cover: brasil/brasil-bg.jpg
+cover: brasil/brasil-bg.webp
 date: 2025-06-04
 description: "Brasil autêntico e cheio de alma."
 tags: ["destinos"]
 published: true
-thumbnail: brasil/brasil.jpg
+thumbnail: brasil/brasil.webp
 title: "Brasil"
 sitemap:
   lastmod: 2025-06-04

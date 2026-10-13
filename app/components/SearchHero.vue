@@ -24,12 +24,17 @@ async function searchWithoutTag() {
 
 <template>
   <div class="relative isolate min-h-[300px] overflow-hidden bg-secondary pt-14">
-    <img
+    <NuxtImg
       :src="`/assets/images/hero/${heroImage}`"
+      :srcset="useResponsiveImage(`/assets/images/hero/${heroImage}`)"
       alt="Pesquisa"
+      width="1920"
+      height="1080"
+      sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
       class="absolute inset-0 -z-10 size-full object-cover object-center opacity-10"
+      loading="eager"
       fetchpriority="high"
-    >
+    />
     <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-8 2xl:py-20">
         <div class="text-center">

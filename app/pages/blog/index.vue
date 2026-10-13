@@ -5,15 +5,24 @@ const route = useRoute()
 const router = useRouter()
 const page = ref(Number.parseInt(route.query.page as string) || 1)
 const postsPerPage = 6
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://roteirize.com.br/blog' },
+    { rel: 'alternate', hreflang: 'pt-BR', href: 'https://roteirize.com.br/blog' },
+    { rel: 'alternate', hreflang: 'en', href: 'https://roteirize.com.br/en/blog' },
+  ],
+})
 const { data: paginatedData } = await useAsyncData('blog', async () => {
   const [posts, count] = await Promise.all([
     queryCollection('blog')
+      .where('published', '=', true)
       .where('date', '<', useToday())
       .order('date', 'DESC')
       .skip((page.value - 1) * postsPerPage)
       .limit(postsPerPage)
       .all(),
     queryCollection('blog')
+      .where('published', '=', true)
       .where('date', '<', useToday())
       .count(),
   ])
@@ -32,8 +41,9 @@ async function goToPage(newPage: number) {
 }
 
 useSeoMeta({
-  title: 'Blog',
-  description: 'Eu cuido dos detalhes, você aproveita a jornada.',
+  title: 'Blog de viagem: dicas, destinos e roteiros',
+  description: 'Dicas de viagem, roteiros, destinos e planejamento para viajar pelo Brasil e pelo mundo.',
+  ogType: 'website',
 })
 </script>
 

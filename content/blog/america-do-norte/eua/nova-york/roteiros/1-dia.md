@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-27  # Data de publicação do post
 description: "Um Dia Inesquecível"
 tags: ["roteiros"]
-thumbnail: nyc/roteiro-1-dia.jpg
+thumbnail: nyc/roteiro-1-dia.webp
 title: "Nova York: Roteiro 1 dia"
 sitemap:
   lastmod: 2025-07-17  # Data da última modificação
@@ -59,7 +59,7 @@ Tarde: Horário: 15h00 - 17h00
 Para os amantes da arte, o MoMA é uma parada essencial. Obras de Van Gogh, Warhol, Picasso e outros mestres estão bem pertinho de você.
 
 <div class="bloco-link-integrado">
-  Para visitar o <b>MoMA</b> com mais tranquilidade, compre seu ingresso antecipado pela 
+  Para visitar o <b>MoMA</b> com mais tranquilidade, compre seu ingresso antecipado pela
   <a href="https://www.awin1.com/cread.php?awinmid=7437&awinaffid=1799116&ued=https%3A%2F%2Fwww.tiqets.com%2Fpt%2Fatracoes-nova-york-c260932%2Fbilhetes-para-museu-de-arte-moderna-moma-bilhete-de-entrada-p974081%2F%3Futm_source%3Dgoogle%26utm_medium%3Dcpc_dsa%26utm_campaign%3D21084219102%26utm_content%3D166589271344%26gad_source%3D1%26gad_campaignid%3D21084219102%26gbraid%3D0AAAAADevz7WI6iIS5BZyWiqUQsvuMp36_%26gclid%3DCj0KCQjwvajDBhCNARIsAEE29WrProhm957zSg_oG1mVbPAK3t7IRNtfHCzurIG1j1uXjTlreuGQ1zMaAm1cEALw_wcB" target="_blank" rel="sponsored">Tiqets</a>
 </div>
 
@@ -74,21 +74,21 @@ Agora que a tarde está chegando ao fim, é hora de fazer um passeio que vai te 
 
 **Dica:** Ao chegar do outro lado da ponte, em Brooklyn, vale a pena dar uma volta pelo DUMBO, um bairro charmoso e com várias opções de cafés e lojinhas.
 
-### Jantar com vista para o skyline de Manhattan  
+### Jantar com vista para o skyline de Manhattan
 Noite: Horário: 19h30 - 21h00
 
 Para finalizar o seu dia em grande estilo, nada melhor do que um jantar com uma vista espetacular de Nova York. Escolha um restaurante em Brooklyn, como o The River Café, onde você pode desfrutar de uma refeição deliciosa com o skyline de Manhattan iluminado ao fundo.
 
-### Finalizando o dia em Times Square  
+### Finalizando o dia em Times Square
 Após o jantar: Horário: 21h30 - 22h00
 
 Para dar aquele toque final ao seu dia em Nova York, que tal retornar à Times Square para ver a cidade brilhar à noite? As luzes, a energia e a vibração do lugar são ainda mais intensas quando a noite cai.
 
 ### Dicas finais para aproveitar ao máximo seu dia em Nova York:
 
-- Use roupas confortáveis para caminhar bastante.  
-- Compre ingressos para atrações como o Empire State Building e o MoMA com antecedência para evitar filas.  
-- Fique atento ao tempo! O clima de Nova York pode ser imprevisível, então tenha um guarda-chuva à mão.  
+- Use roupas confortáveis para caminhar bastante.
+- Compre ingressos para atrações como o Empire State Building e o MoMA com antecedência para evitar filas.
+- Fique atento ao tempo! O clima de Nova York pode ser imprevisível, então tenha um guarda-chuva à mão.
 - Se possível, baixe um mapa offline da cidade para se orientar sem depender de internet.
 
 <div class="bloco-link-integrado">

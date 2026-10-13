@@ -1,10 +1,10 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-03-20 # Data de publicação do post
 description: "Descubra as melhores atrações da cidade"
 tags: ["atividades"]
-thumbnail: paris/oque-fazer.jpg
+thumbnail: paris/oque-fazer.webp
 title: "Paris: O que fazer"
 sitemap:
   lastmod: 2025-03-20 # Data da última modificação

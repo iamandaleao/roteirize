@@ -1,10 +1,10 @@
 ---
 region: uruguaiana
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-06
 description: "Descubra o charme de Uruguaiana"
 tags: ["roteiros"]
-thumbnail: uruguaiana/roteiros.jpg
+thumbnail: uruguaiana/roteiros.webp
 title: "Uruguaiana: Roteiros"
 sitemap:
   lastmod: 2025-06-06
@@ -29,7 +29,7 @@ Se preferir algo feito sob medida para o seu estilo, tempo e interesses, também
 :::post-card-group
 ::::post-card
 ---
-thumbnail: "uruguaiana/roteiro-5-dias.jpg"
+thumbnail: "uruguaiana/roteiro-5-dias.webp"
 title: "Uruguaiana: Roteiro de 5 dias"
 to: "/blog/america-do-sul/brasil/uruguaiana/roteiros/5-dias"
 description: "Tradição, história e sabores em cada passo."

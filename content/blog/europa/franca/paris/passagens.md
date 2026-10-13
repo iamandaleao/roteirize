@@ -1,9 +1,9 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-03-20 # Data de publicação do post
 description: "Descubra como ir gastando menos!"
-thumbnail: paris/passagens.jpg
+thumbnail: paris/passagens.webp
 tags: ["dicas"]
 title: "Paris: Passagens"
 sitemap:
@@ -23,7 +23,7 @@ Se você está planejando uma viagem para Paris, uma das primeiras etapas é gar
 ### ✈️ Como economizar na passagem para Paris
 
 Antes de tudo, dá uma olhada no Vai de Promo — você pode encontrar passagens aéreas com ótimos descontos e ofertas exclusivas.
-👉 Acesse aqui: [Confira as promoções no Vai de Promo](https://www.vaidepromo.com.br/passagens-aereas/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&pcrtt=site/blog){:target="_blank"}
+👉 Acesse aqui: [Confira as promoções no Vai de Promo](https://www.vaidepromo.com.br/passagens-aereas/?utm_medium=afiliado&pcrid=11825&utm_source=site-blog&pcrtt=site/blog){:target="_blank"}
 
 Quer realizar o sonho de conhecer Paris sem gastar além da conta? Anota essas dicas rápidas e eficazes para pagar menos na passagem:
 

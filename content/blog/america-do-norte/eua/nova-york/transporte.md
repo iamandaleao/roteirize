@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-27
 description: "Nova York sem perrengue"
 tags: ["transporte"]
-thumbnail: nyc/transporte.jpg
+thumbnail: nyc/transporte.webp
 title: "Nova York: Transporte"
 sitemap:
   lastmod: 2025-04-27

@@ -1,9 +1,9 @@
 ---
-cover: "hero/capa-dicas-hero-bg.jpg" # imagem de capa
+cover: "hero/capa-dicas-hero-bg.webp" # imagem de capa
 date: 2025-05-10 # Data de publicação do post
 tags: ["dicas"]
 description: "O que não pode faltar na mala para NY"
-thumbnail: "dicas/itens-essenciais-thum.jpg" #imagem pequena
+thumbnail: "dicas/itens-essenciais-thum.webp" #imagem pequena
 title: "Nova York: Itens essenciais"
 sitemap:
   lastmod: 2025-05-10 # Data da última modificação

@@ -9,36 +9,30 @@ const emit = defineEmits<{
 }>()
 
 function goToPage(page: number) {
-  emit("pageChange", page)
+  emit('pageChange', page)
 }
 
 function getVisiblePages(current: number, total: number): (number | string)[] {
   const pages: (number | string)[] = []
 
   if (total <= 4) {
-    for (let i = 1; i <= total; i++) pages.push(i)
-  } else {
+    for (let page = 1; page <= total; page++) {
+      pages.push(page)
+    }
+  }
+  else {
     if (current <= 2) {
-      pages.push(1, 2, 3, "...", total)
-    } else if (current >= total - 1) {
-      pages.push(1, "...", total - 2, total - 1, total)
-    } else {
-      pages.push(1, "...", current, "...", total)
+      pages.push(1, 2, 3, '...', total)
+    }
+    else if (current >= total - 1) {
+      pages.push(1, '...', total - 2, total - 1, total)
+    }
+    else {
+      pages.push(1, '...', current, '...', total)
     }
   }
 
-  // Remove duplicados e limita a 4 páginas numéricas (reticências não contam)
-  const filtered = []
-  let count = 0
-  for (const p of pages) {
-    if (p === "...") {
-      filtered.push(p)
-    } else if (count < 4) {
-      filtered.push(p)
-      count++
-    }
-  }
-  return filtered
+  return pages
 }
 </script>
 
@@ -60,12 +54,13 @@ function getVisiblePages(current: number, total: number): (number | string)[] {
     <div class="flex gap-1">
       <template
         v-for="page in getVisiblePages(currentPage, totalPages)"
-        :key="page + ''"
+        :key="`${page}`"
       >
         <button
           v-if="page !== '...'"
           :title="`Página ${page}`"
           :aria-label="`Página ${page}`"
+          :aria-current="currentPage === page ? 'page' : undefined"
           class="aspect-square rounded-md border border-border px-4 py-2"
           :class="[
             currentPage === page ? 'bg-primary text-white' : ' hover:bg-muted',
@@ -76,7 +71,8 @@ function getVisiblePages(current: number, total: number): (number | string)[] {
         </button>
         <span
           v-else
-          class="aspect-square px-2 py-2 text-muted-foreground select-none"
+          class="aspect-square select-none p-2 text-muted-foreground"
+          aria-hidden="true"
         >
           ...
         </span>

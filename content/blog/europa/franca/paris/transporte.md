@@ -1,10 +1,10 @@
 ---
 region: "paris"
-cover: paris/capa-hero-bg.jpg
+cover: paris/capa-hero-bg.webp
 date: 2025-02-18
 description: "Praticidade e Economia"
 tags: ["transporte"]
-thumbnail: paris/transporte.jpg
+thumbnail: paris/transporte.webp
 title: "Paris: Transporte"
 sitemap:
   lastmod: 2025-02-18

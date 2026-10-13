@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-06
 description: "Moda com alma gaúcha."
 tags: ["compras"]
-thumbnail: uruguaiana/compras.jpg
+thumbnail: uruguaiana/compras.webp
 title: "Uruguaiana: Compras"
 sitemap:
   lastmod: 2025-06-06

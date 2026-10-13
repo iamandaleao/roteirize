@@ -2,6 +2,7 @@
 import { useDateFormat } from '@vueuse/core'
 
 const props = defineProps<{ date?: string }>()
+const { isEnglish } = useLocale()
 const formattedDate = useDateFormat(new Date(`${props.date}`).toLocaleString('en-US', { timeZone: 'UTC' }), 'DD/MM/YYYY', { locales: 'en-US' })
 </script>
 
@@ -40,7 +41,7 @@ const formattedDate = useDateFormat(new Date(`${props.date}`).toLocaleString('en
       <article class="prose relative mx-auto max-w-prose dark:prose-invert prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
         <slot />
         <div class="mt-4 text-right text-sm text-muted-foreground">
-          <i>Postado por Amanda Leão - <time :datetime="date">{{ formattedDate }}</time></i>
+          <i>{{ isEnglish ? 'Posted by' : 'Postado por' }} Amanda Leão - <time :datetime="date">{{ formattedDate }}</time></i>
         </div>
       </article>
     </div>

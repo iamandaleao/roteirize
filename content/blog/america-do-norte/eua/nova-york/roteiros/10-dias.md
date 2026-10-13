@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-05-01  # Data de publicação do post
 description: "Um passeio clássico pelos encantos de Nova York."
 tags: ["roteiros"]
-thumbnail: nyc/roteiro-10-dias.jpg
+thumbnail: nyc/roteiro-10-dias.webp
 title: "Nova York: Roteiro 10 dias"
 sitemap:
   lastmod: 2025-07-16  # Data da última modificação

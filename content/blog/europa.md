@@ -1,10 +1,10 @@
 ---
 region: "europe"
-cover: "europa/europa-bg.jpg"
+cover: "europa/europa-bg.webp"
 date: 2025-05-10
 description: "Encantos em cada destino."
 tags: ["destinos"]
-thumbnail: "europa/europa.jpg"
+thumbnail: "europa/europa.webp"
 title: "Europa"
 sitemap:
   lastmod: 2025-05-10

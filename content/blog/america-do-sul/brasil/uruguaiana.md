@@ -1,10 +1,10 @@
 ---
 region: "uruguaiana"
-cover: uruguaiana/capa-hero-bg.jpg
+cover: uruguaiana/capa-hero-bg.webp
 date: 2025-06-13
 description: "Fronteira gaúcha com alma histórica."
 tags: ["destinos"]
-thumbnail: uruguaiana/capa-hero-bg.jpg
+thumbnail: uruguaiana/capa-hero-bg.webp
 title: "Uruguaiana"
 sitemap:
   lastmod: 2025-06-13

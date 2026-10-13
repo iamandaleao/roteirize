@@ -160,8 +160,11 @@ onMounted(async () => {
 })
 
 useSeoMeta({
-  title: computed(() => `Resultados "${query.value}"`),
-  description: 'Eu cuido dos detalhes, você aproveita a jornada.',
+  title: computed(() => query.value ? `Resultados para "${query.value}"` : 'Buscar artigos de viagem'),
+  description: computed(() => query.value
+    ? `Artigos e dicas de viagem relacionados à busca por ${query.value}.`
+    : 'Pesquise dicas de viagem, destinos e roteiros no blog da Roteirize.'),
+  robots: 'noindex, follow',
 })
 </script>
 

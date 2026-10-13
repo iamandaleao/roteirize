@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-30
 description: "Um passeio pelos sabores da cidade"
 tags: ["gastronomia"]
-thumbnail: nyc/gastronomia.jpeg
+thumbnail: nyc/gastronomia.webp
 title: "Nova York: Gastronomia"
 sitemap:
   lastmod: 2025-04-30

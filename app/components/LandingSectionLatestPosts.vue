@@ -7,9 +7,11 @@ import useToday from '~/composables/useToday'
 const sectionRef = ref(null)
 const isVisible = useElementVisibility(sectionRef)
 const hasAnimated = ref(false)
+const { isEnglish } = useLocale()
 
 const { data: lastPosts } = await useAsyncData('lastest-posts', () =>
   queryCollection('blog')
+    .where('published', '=', true)
     .where('date', '<', useToday())
     .order('date', 'DESC')
     .limit(6)
@@ -41,7 +43,7 @@ watch(isVisible, (newValue) => {
     :class="hasAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
   >
     <h2 class="text-center text-2xl tracking-tight md:text-4xl">
-      Últimas postagens
+      {{ isEnglish ? 'Latest posts' : 'Últimas postagens' }}
     </h2>
     <Carousel class="relative w-full">
       <CarouselContent>

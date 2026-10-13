@@ -20,6 +20,11 @@ export default defineNuxtConfig({
   css: ['~/assets/css/app.css'],
 
   content: {
+    build: {
+      markdown: {
+        contentHeading: true,
+      },
+    },
     experimental: {
       nativeSqlite: true,
     },
@@ -52,16 +57,46 @@ export default defineNuxtConfig({
       const { title, date } = content
 
       if (title && date) {
-        if (file.id.startsWith('blog')) {
+        const contentPath = file.id.replace(/^(?:blog|english)\//, '').replace(/\.md$/, '')
+        const englishBlogPost = contentPath.startsWith('en/blog/')
+        const blogPost = contentPath.startsWith('blog/') || englishBlogPost
+
+        if (blogPost) {
+          const path = `/${contentPath}`
+          const url = `https://roteirize.com.br${path}`
+          const cover = content.cover ? `https://roteirize.com.br/assets/images/${content.cover}` : undefined
+          const blogBasePath = englishBlogPost ? '/en/blog' : '/blog'
+          const segments = path.replace(/^\/(?:en\/)?blog\/?/, '').split('/')
+
           content.schemaOrg = [
             {
               '@type': 'BlogPosting',
               'headline': title,
-              'datePublished': date,
+              'description': content.description,
+              'inLanguage': englishBlogPost ? 'en' : 'pt-BR',
+              'datePublished': new Date(date).toISOString(),
+              'dateModified': content.sitemap?.lastmod || new Date(date).toISOString(),
+              'image': cover,
+              'mainEntityOfPage': url,
+              'url': url,
               'author': {
-                type: 'Person',
-                name: 'Amanda Leão',
+                '@type': 'Person',
+                'name': 'Amanda Leão',
               },
+            },
+            {
+              '@type': 'BreadcrumbList',
+              'itemListElement': [
+                { '@type': 'ListItem', 'position': 1, 'name': 'Blog', 'item': `https://roteirize.com.br${blogBasePath}` },
+                ...segments.map((segment, index) => ({
+                  '@type': 'ListItem',
+                  'position': index + 2,
+                  'name': index === segments.length - 1
+                    ? title
+                    : segment.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+                  'item': `https://roteirize.com.br${blogBasePath}/${segments.slice(0, index + 1).join('/')}`,
+                })),
+              ],
             },
           ]
         }
@@ -97,6 +132,10 @@ export default defineNuxtConfig({
     'nuxt-gtag',
   ],
 
+  image: {
+    provider: 'none',
+  },
+
   gtag: {
     id: 'G-4P0916JT9C',
   },
@@ -112,6 +151,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/blog/dicas/labor-day-desconto-chip-internacional': { robots: false },
+    '/en/blog/tips/labor-day-international-sim-discount': { robots: false },
     '/blog/dicas/pizzaria-barra-velha-quintal606': { redirect: { to: '/blog/dicas/pizzaria-quintal606', statusCode: 301 } },
     '/blog/blog/dicas/medidas-de-roupas-e-sapatos-nos-eua': { redirect: { to: '/blog/dicas/medidas-de-roupas-e-sapatos-nos-eua', statusCode: 301 } },
     '/blog/dicas/melhor-epoca': { redirect: { to: '/', statusCode: 301 } },
@@ -124,7 +165,7 @@ export default defineNuxtConfig({
     '/blog/fazendo-as-malas-ny/?share=x&nb=1': { redirect: { to: '/blog/dicas/bagagem-essencial', statusCode: 301 } },
     '/blog/category/minhas-experiencies/': { redirect: { to: '/blog/dicas/descubra-itajai', statusCode: 301 } },
     '/blog/paris-turismo/': { redirect: { to: '/blog/dicas/visto-americano', statusCode: 301 } },
-    '/blog/roteiro-economico/?share=linkedin&nb=1': { redirect: { to: 'https://api.whatsapp.com/send?phone=5547933814178', statusCode: 301 } },
+    '/blog/roteiro-economico/?share=linkedin&nb=1': { redirect: { to: 'https://wa.me/5547991611628', statusCode: 301 } },
     '/blog/passagens-baratas/?share=telegram&nb=1': { redirect: { to: '/blog/dicas/passagens-aereas', statusCode: 301 } },
     '/blog/fazendo-as-malas-ny/?share=telegram&nb=1': { redirect: { to: '/blog/dicas/fazendo-a-mala', statusCode: 301 } },
     '/blog/dicas-para-aproveitar-ao-maximo-sua-viagem-a-paris/': { redirect: { to: '/blog/dicas/descubra-paris', statusCode: 301 } },
@@ -138,7 +179,7 @@ export default defineNuxtConfig({
     '/blog/roteiro-romantico-para-casais': { redirect: { to: '/blog/tag/roteiros', statusCode: 301 } },
     '/blog/uruguaiana-turismo/?share=jetpack-whatsapp&nb=1': { redirect: { to: '/blog/america-do-sul/brasil/uruguaiana', statusCode: 301 } },
     '/blog/aluguel-de-carro-n-y-vale-a-pena-ou-nao/?share=x&nb=1': { redirect: { to: '/parceiros/passeios-e-tours', statusCode: 301 } },
-    '/blog/roteiro-premium/': { redirect: { to: 'https://api.whatsapp.com/send?phone=5547933814178', statusCode: 301 } },
+    '/blog/roteiro-premium/': { redirect: { to: 'https://wa.me/5547991611628', statusCode: 301 } },
     '/blog/apoie-a-roteirize/': { redirect: { to: '/sobre-mim', statusCode: 301 } },
     '/blog/experiencia-barra-velha-sc/': { redirect: { to: '/blog/dicas/pizzaria-quintal606', statusCode: 301 } },
     '/blog/lauterbrunnen-historia': { redirect: { to: '/blog/roteiros/viagem-na-suica', statusCode: 301 } },
@@ -200,10 +241,10 @@ export default defineNuxtConfig({
       },
 
       email: 'admroteirize@gmail.com',
-      telephone: '+5547933814178',
+      telephone: '+5547991611628',
       contactPoint: {
         '@type': 'ContactPoint',
-        'telephone': '+5547933814178',
+        'telephone': '+5547991611628',
         'email': 'admroteirize@gmail.com',
       },
 
@@ -215,11 +256,7 @@ export default defineNuxtConfig({
       },
 
       sameAs: [
-        'https://www.instagram.com/roteirizeoficial',
         'https://www.facebook.com/roteirizeoficial',
-        'https://www.youtube.com/@roteirizeoficial',
-        'https://www.tiktok.com/@roteirizeoficial',
-        'https://api.whatsapp.com/send?phone=5547933814178',
       ],
     }),
   },

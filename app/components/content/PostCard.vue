@@ -2,20 +2,25 @@
 import type { PostCardProps } from '~~/types'
 
 defineProps<PostCardProps>()
+const { isEnglish } = useLocale()
 </script>
 
 <template>
   <div class="block rounded-lg border shadow-md lg:flex lg:flex-row">
     <div class="aspect-video shrink-0 overflow-hidden rounded-t-lg lg:aspect-auto lg:h-36 lg:w-auto lg:rounded-l-lg lg:rounded-tr-none">
       <NuxtLink :to>
-        <img
+        <NuxtImg
           :src="`/assets/images/${thumbnail}`"
+          :srcset="useResponsiveImage(`/assets/images/${thumbnail}`)"
           :alt="title"
+          width="640"
+          height="360"
+          sizes="xs:100vw sm:50vw md:50vw lg:50vw"
           loading="lazy"
           decoding="async"
           fetchpriority="low"
           class="aspect-video scale-110 object-cover object-center transition-all duration-300 hover:-rotate-3 hover:scale-125 lg:h-full lg:w-auto lg:rounded-l-lg lg:rounded-tr-none"
-        >
+        />
       </NuxtLink>
     </div>
     <div class="relative flex h-32 w-full flex-col gap-2 p-4">
@@ -40,7 +45,7 @@ defineProps<PostCardProps>()
             &nbsp;
           </div>
           <NuxtLink :to class="text-primary underline-offset-4 hover:underline">
-            Ler mais
+            {{ isEnglish ? 'Read more' : 'Ler mais' }}
           </NuxtLink>
         </div>
       </div>

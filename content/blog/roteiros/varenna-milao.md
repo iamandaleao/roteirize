@@ -1,11 +1,11 @@
 ---
 region: ""
-cover: "viagem-europa/milao-parco-biblioteca-degli-alberi.jpg"
+cover: "viagem-europa/milao-parco-biblioteca-degli-alberi.webp"
 date: 2026-01-07
 description: "Entre prédios modernos, ruas movimentadas e pontos históricos, conhecemos uma Milão real, viva e cheia de contrastes."
 tags: ["roteiros"]
 published: true
-thumbnail: "viagem-europa/milao-parco-biblioteca-degli-alberi.jpg"
+thumbnail: "viagem-europa/milao-parco-biblioteca-degli-alberi.webp"
 title: "Milão além do óbvio"
 sitemap:
   lastmod: 2026-01-07

@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-27
 description: "Melhores bairros para se hospedar"
 tags: ["hospedagem"]
-thumbnail: nyc/hospedagem.jpg
+thumbnail: nyc/hospedagem.webp
 title: "Nova York: onde ficar"
 sitemap:
   lastmod: 2025-07-06
@@ -54,7 +54,6 @@ Se o objetivo é economizar, pode apostar aqui sem medo.
     </a>
   </div>
 </div>
-
 
 ## Dicas especiais pra acertar na hospedagem
 

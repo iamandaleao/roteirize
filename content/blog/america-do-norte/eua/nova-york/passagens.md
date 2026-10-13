@@ -1,10 +1,10 @@
 ---
 region: "new-york"
-cover: nyc/capa-hero-bg.jpg
+cover: nyc/capa-hero-bg.webp
 date: 2025-04-27
 description: "Voe com facilidade"
 tags: ["passagem"]
-thumbnail: nyc/passagem.jpg
+thumbnail: nyc/passagem.webp
 title: "Nova York: Passagens"
 sitemap:
   lastmod: 2025-04-27

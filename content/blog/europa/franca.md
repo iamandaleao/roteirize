@@ -1,11 +1,11 @@
 ---
 region: "france"
-cover: "franca/franca-bg.jpg"
+cover: "franca/franca-bg.webp"
 date: 2025-05-10
 description: "Beleza que atravessa séculos."
 tags: ["destinos"]
 published: true
-thumbnail: "franca/franca.jpg"
+thumbnail: "franca/franca.webp"
 title: "França"
 sitemap:
   lastmod: 2025-02-10
