@@ -23,7 +23,6 @@ useHead({
       <LandingSectionLatestPosts />
       <LandingSectionSpecialities />
       <LandingSectionPopularItineraries />
-      <LandingSectionPartners />
     </div>
     <Footer />
   </div>
